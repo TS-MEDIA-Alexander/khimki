@@ -1,10 +1,9 @@
 .contantContainer{
    margin: 0 auto;
-   border: 1px solid red;
    width: 1360px;
    /* border: 1px solid red; */
 }
-@media screen and (min-width: 1920px){
+/* @media screen and (min-width: 1920px){
    .contantContainer{
       width: 1480px;
    }
@@ -13,7 +12,7 @@
    .contantContainer{
       width: 1480px;
    }
-}
+} */
 
 @media screen and (max-width: 1500px){
    .contantContainer{

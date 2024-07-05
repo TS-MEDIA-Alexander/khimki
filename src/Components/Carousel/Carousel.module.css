@@ -1,0 +1,21 @@
+.mainContainer {
+   height: 420px;
+   width: 100%;
+}
+
+.window {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+}
+
+.allPagesContainer {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   transition: all ease-in-out 1s;
+}
+
+.btnContainer {
+   margin: 28px 0 24px 0;
+}
