@@ -13,10 +13,32 @@ input {
 button {
    border: none;
    cursor: pointer;
-   /* display: inline-block; */
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font-weight: normal;
+   vertical-align: baseline;
 }
 
 .App {
+   position: relative;
    display: flex;
    flex-direction: column;
    min-height: 100vh;
@@ -31,6 +53,107 @@ button {
    justify-content: space-between;
 }
 
+/* Заголовок страницы */
+.pageTitle {
+   color: var(--black, #212121);
+   font-size: 64px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 72px;
+   letter-spacing: -2.56px;
+}
+
+/* Фильтр */
+.filter {
+   display: flex;
+   flex-direction: column;
+}
+
+.filterSelect {
+   padding: 12px;
+   color: #212121;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   border-radius: 12px;
+   background: #F6F6F6;
+   cursor: pointer;
+}
+
+.filterThemeContainer {
+   display: flex;
+   position: relative;
+}
+
+.filterThemeContainer::after {
+   content: '';
+   position: absolute;
+   top: calc(50% - 12px);
+   right: 12px;
+   width: 24px;
+   height: 24px;
+   background: url('./assets/icons/filterInputCalendar.svg') 0 0/auto auto no-repeat;
+}
+
+.inputCalendar {
+   flex: 1;
+   padding: 12px;
+   border-radius: 12px;
+   background: #F6F6F6;
+   color: #212121;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.filterSearchContainer {
+   display: flex;
+   position: relative;
+}
+
+.filterSearchContainer::after {
+   content: '';
+   position: absolute;
+   top: calc(50% - 12px);
+   right: 12px;
+   width: 24px;
+   height: 24px;
+   background: url('./assets/icons/filterInputSearch.svg') 0 0/auto auto no-repeat;
+}
+
+.filterSearch {
+   flex: 1;
+   padding: 12px;
+   color: #808080;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.filterBtnNewsArchive {
+   padding: 12px;
+   border-radius: 12px;
+   border: 1px solid #EDEDED;
+   color: #212121;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.juridicalInfo {
+   color: #808080;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px;
+}
+
+
+
+
 /* Колонки */
 .columnContainer {
    display: flex;
@@ -41,7 +164,6 @@ button {
 }
 
 .columnSmal {
-   margin-left: 20px;
    width: calc(24% - 10px);
 }
 
@@ -108,6 +230,7 @@ button {
 .btnCircle:active {
    background-color: #EDEDED;
 }
+
 .btnCircle:active img {
    opacity: 1;
    background: #EDEDED;
@@ -214,9 +337,21 @@ button {
    line-height: 48px;
 }
 
+.ml20 {
+   margin-left: 20px;
+}
+
+.mr20 {
+   margin-right: 20px;
+}
+
 /* Отступы */
 .mt8 {
    margin-top: 8px;
+}
+
+.mt12 {
+   margin-top: 12px;
 }
 
 .mt16 {

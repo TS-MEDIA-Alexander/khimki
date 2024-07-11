@@ -7,7 +7,6 @@ import slider1 from '../../assets/img/sliders/main/1.png'
 import Carousel from '../../Components/Carousel';
 import BannerArrow from '../../Components/BannerArrow';
 import News from '../../Components/News';
-import Event from '../../Components/Event';
 import UsefulSourse from '../../Components/UsefulSourse';
 import Slide from '../../Components/Slide';
 
@@ -25,27 +24,18 @@ import Statistics from '../../BannersComopnents/Statistics';
 /* banner img */
 import governor from "../../assets/portrains/governor_moscow_region.png";
 import btnArr from '../../assets/icons/government_link_button.svg';
-import banner from '../../assets/img/banners/government_services.png';
 
-import voting_government from '../../assets/img/banners/voting_government.png';
-import municipal_programs from '../../assets/img/banners/municipal_programs.png';
 import program1 from '../../assets/img/banners/Programm1.png';
 import program2 from '../../assets/img/banners/Programm2.png';
 import program3 from '../../assets/img/banners/Programm3.png';
-import family_year from '../../assets/img/banners/family_year.png';
-import svo from '../../assets/img/banners/svo.png';
-import khimki_urban_district from '../../assets/img/banners/khimki_urban_district.png';
-import number_of_inhabitants from '../../assets/img/banners/number_of_inhabitants.png';
-import museum from '../../assets/img/banners/museum.png';
-import channel from '../../assets/img/banners/channel.png';
+
 
 /* Новости */
 import news from '../../backend/news/news';
-/* События */
-import events from '../../backend/events/events';
+
 /* Стили баннера */
-import styleBanner from '../../assets/styleBanner'
 import VirtualMuseum from '../../BannersComopnents/VirtualMuseum';
+import EventAnnouncements from '../../Components/EventAnnouncements';
 
 const Main = (props) => {
 
@@ -82,7 +72,7 @@ const Main = (props) => {
 
                </div>
 
-               <div className="columnSmal">
+               <div className="ml20 columnSmal">
                   <VirtualReception />
                   <div className="mt32">
                      <GovernmentServices />
@@ -102,7 +92,7 @@ const Main = (props) => {
                         <BannerArrow imgBanner={program3} />
                      </div>
                   </div>
-                  <div className="columnSmal">
+                  <div className="ml20 columnSmal">
                      <MunicipalPrograms />
                   </div>
                </div>
@@ -116,7 +106,7 @@ const Main = (props) => {
                         <News news={news} />
                      </div>
                   </div>
-                  <div className="columnSmal">
+                  <div className="ml20 columnSmal">
                      <FamilyYear />
                      <div className="mt20">
                         <SVO />
@@ -130,7 +120,7 @@ const Main = (props) => {
                   <div className="columnLarge">
                      <KhimkiDistrict />
                   </div>
-                  <div className="columnSmal">
+                  <div className="ml20 columnSmal">
                      <Statistics />
                   </div>
                </div>
@@ -140,12 +130,7 @@ const Main = (props) => {
                </div>
             </section>
 
-            <section className='mt80'>
-               <div className="subTitle">Анонсы мероприятий</div>
-               <div className={`mt40 ${s.eventsContainer}`}>
-                  {events.map(el => <Event key={el.id} img={el.imgPreview} title={el.title} />)}
-               </div>
-            </section>
+            <EventAnnouncements/>
 
             <UsefulSourse />
 

@@ -44,7 +44,7 @@ const UsefulSourse = (props) => {
                   </div>
                </div>
             </div>
-            <div className="columnSmal">
+            <div className="ml20 columnSmal">
                <div className={`borderMain ${s.bannerContainer}`}>
                   <div>
                      <div className={s.titleBanner}>Контакты</div>
