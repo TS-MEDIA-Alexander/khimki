@@ -1,0 +1,42 @@
+.bannerVirtual {
+   background: url('../../assets/img/banners/virtual_reception_background.png') 0 0/auto auto no-repeat;
+   background-size: cover;
+   padding: 40px;
+   width: calc(100% - 80px);
+   height: 370px;
+   border-radius: 40px;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.title {
+   display: inline-block;
+   margin-top: 32px;
+   font-size: 24px;
+   letter-spacing: -0.01em;
+   line-height: 28px;
+   font-weight: 500;
+   color: #303030;
+}
+
+.textBody {
+   width: 245px;
+   margin-top: 24px;
+   font-size: 14px;
+   letter-spacing: -0.01em;
+   line-height: 20px;
+   font-weight: 500;
+   color: #323232;
+
+}
+
+.button {
+   /* width: 199px; */
+   display: inline-block;
+   margin-top: 30px;
+   padding: 8px 24px;
+   border-radius: 40px;
+   background-color: #fff;
+   cursor: pointer;
+   
+}

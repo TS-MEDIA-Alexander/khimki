@@ -52,7 +52,7 @@
 }
 
 .hotLine {
-   margin-left: 24px;
+   margin-left: 32px;
    display: flex;
    padding: 8px 16px;
    justify-content: center;
@@ -100,10 +100,11 @@
    line-height: 24px;
    color: #FFFFFF;
    cursor: pointer;
+   letter-spacing: 1px;
 }
 
 .item:not(:first-child) {
-   margin-left: 24px;
+   margin-left: 36px;
 }
 
 .itemArrow:hover:after {
@@ -118,6 +119,7 @@
    content: '';
    position: absolute;
    bottom: 1px;
+   left: calc(100% + 4px);
    display: inline-block;
    width: 24px;
    height: 24px;
@@ -158,8 +160,13 @@
 }
 
 .searchBlock {
+   letter-spacing: 1px;
+   font-size: 16px;
+   line-height: 24px;
+   color: #a0a0a0;
    position: relative;
    padding-left: 32px;
+   cursor: pointer;
 }
 
 .searchBlock::after {

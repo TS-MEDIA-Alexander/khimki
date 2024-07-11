@@ -67,8 +67,9 @@ const Header = (props) => {
                      <div className={s.item}>Контакты</div>
                   </div>
 
-                  <div className={s.searchBlock}>
-                     <input type="text" placeholder='Поиск' className={s.search} />
+                  <div className={s.searchBlock}>Поиск
+                     
+                     {/* <input type="text" placeholder='Поиск' className={s.search} /> */}
                   </div>
                </div>
             </ContantContainerMain>

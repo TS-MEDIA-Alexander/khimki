@@ -20,6 +20,7 @@ const Footer = (props) => {
                  <div className={s.copyright}>©2024 Любое использование материалов допускается только при соблюдении </div>
                  <div className={s.copyright}>правил перепечатки и при наличии активной гиперссылки на admhimki.ru</div>
                  <div className={s.adress}>Московская обл., г.о. Химки, ул. Московская, д.15, ул. Калинина, д. 4</div>
+                 <div className={s.tsMedia}>Сделано - TS Media</div>
                </div>
             </div>
          </ContantContainerMain>
