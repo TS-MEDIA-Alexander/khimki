@@ -1,5 +1,5 @@
 import React from 'react';
-import ContantContainerMain from '../../utils/ContantContainerMain';
+import ContantContainerMain from '../../total/ContantContainerMain';
 import logo from '../../assets/img/logos/full-logo.svg';
 import s from './Footer.module.css';
 

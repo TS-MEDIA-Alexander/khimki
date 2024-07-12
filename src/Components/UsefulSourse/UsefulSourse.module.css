@@ -13,7 +13,10 @@
 }
 
 .column {
-   width: 290px; 
+   width: 290px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 
 .item {
@@ -25,6 +28,11 @@
    font-weight: 400;
    line-height: 20px;
    cursor: pointer;
+}
+
+.item:hover {
+   color: #303030;
+   font-weight: 500;
 }
 
 .item:not(:first-child) {
@@ -90,7 +98,7 @@
 }
 
 .btn {
-   margin-top: 126px;
+   margin-top: 144px;
    line-height: 24px;
    border-radius: 40px;
    background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #F5982A 0%, #EEEE20 100%);

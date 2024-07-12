@@ -1,6 +1,7 @@
 import React, { Children, cloneElement, useEffect, useState } from 'react';
 import s from './Carousel.module.css';
 import BtnCarousel from './btnCarousel';
+import btnArrowSlider from '../../assets/icons/btnArrowSlider.svg'
 
 const Carousel = ({ children, btnArrText }) => {
 
@@ -81,7 +82,8 @@ const Carousel = ({ children, btnArrText }) => {
          <div className={s.btnContainer}>
             {btnArrText.map((el, i) => {
                return <BtnCarousel key={i} current={offset} set={handleBtnSliderClick} text={el} distance={-(i * 100)} />
-            })}
+            })} 
+            <div className={`btnY ${s.btnArrowSlider}`}><img src={btnArrowSlider} alt="" /></div>
          </div>
       </div>
    )

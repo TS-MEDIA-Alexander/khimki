@@ -13,7 +13,7 @@ const SVO = (props) => {
             </div>
          </div>
 
-         <div className={`btnWBanner ${s.button}`}>Подробнее</div>
+         <div className={`btnWBanner ${s.button}`}><span className="btnText">Подробнее</span></div>
       </div>
    )
 }

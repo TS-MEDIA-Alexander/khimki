@@ -1,5 +1,5 @@
 import React from 'react';
-import ContantContainerMain from '../../utils/ContantContainerMain';
+import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './Main.module.css';
 
 /* Компоненты */
@@ -46,10 +46,10 @@ const Main = (props) => {
                btnArrText={
                   ['Круглосуточная горячая линия', 'Горячая линия строительного комплеса', 'Сведения о земельном участке', 'Оценка деятельности местной власти']
                }>
-               <Slide img={slider1} text={['Круглосуточная', 'горячая линия', 'главы городского округа']} />
-               <Slide img={slider1} text={['Горячая', 'линия строительного комплеса']} />
-               <Slide img={slider1} text={['Сведения', 'о земельном участке']} />
-               <Slide img={slider1} text={['Оценка деятельности', 'местной власти']} />
+               <Slide img={slider1} title={['Круглосуточная', 'горячая линия', 'главы городского округа']} description={'Принимаем обращения граждан 24/7'} />
+               <Slide img={slider1} title={['Горячая', 'линия строительного комплеса']} description={'Принимаем обращения граждан 24/7'} />
+               <Slide img={slider1} title={['Сведения', 'о земельном участке']}  description={'Принимаем обращения граждан 24/7'}/>
+               <Slide img={slider1} title={['Оценка деятельности', 'местной власти']}  description={'Принимаем обращения граждан 24/7'}/>
             </Carousel>
 
 
@@ -130,7 +130,7 @@ const Main = (props) => {
                </div>
             </section>
 
-            <EventAnnouncements/>
+            <EventAnnouncements />
 
             <UsefulSourse />
 

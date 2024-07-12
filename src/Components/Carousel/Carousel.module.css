@@ -61,6 +61,19 @@ progress::-moz-progress-bar {
    position: relative;
 }
 
+.btnArrowSlider {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 24px;
+   height: 24px;
+   padding: 8px;
+   border-radius: 50%;
+   background: #F6F6F6;
+   cursor: pointer;
+   z-index: 999;
+}
+
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .btnContainer::after {

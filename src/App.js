@@ -7,7 +7,8 @@ import Header from './Components/Header';
 /* import Map from './Components/Map'; */
 import Main from './Pages/Main';
 import NewsPage from './Pages/News';
-import ScrollButton from './utils/ScrollButton';
+import ScrollButton from './total/ScrollButton';
+import GaleryPage from './Pages/GaleryPage';
 
 function App() {
    return (
@@ -19,6 +20,8 @@ function App() {
             <Routes>
                <Route path="/" element={<Main />} />
                <Route path="/news" element={<NewsPage />} />
+               <Route path="/galery" element={<GaleryPage/>} />
+               
             </Routes>
          </div>
 

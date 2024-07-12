@@ -17,7 +17,7 @@ const VkChannel = (props) => {
             </div>
          </div>
 
-         <div className={`btnWBanner ${s.button}`}>Перейти</div>
+         <div className={`btnVkBanner ${s.button}`}>Перейти</div>
       </div>
    )
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Header.module.css';
-import ContantContainerMain from '../../utils/ContantContainerMain';
+import { NavLink } from "react-router-dom";
+import ContantContainerMain from '../../total/ContantContainerMain';
 import logo from '../../assets/img/logos/full-logo.svg';
 import icon from '../../assets/icons/version_visually_impaired.svg';
 
@@ -31,44 +32,83 @@ const Header = (props) => {
                   <div className={s.itemsContainer}>
                      <div className={`${s.item} ${s.itemArrow}`}>
                         Новости
-                        <ul>
-                           <li>Новости</li>
-                           <li>Галерея</li>
-                           <li>Видео</li>
-                        </ul>
+                        <div className={s.dropDownMenu}>
+                           <NavLink className={s.linkMenu} to="/news">
+                              Новости
+                           </NavLink>
+                           <NavLink className={s.linkMenu} to="/galery">
+                              Галерея
+                           </NavLink>
+                           <div className={s.linkMenu}>
+                              Видео
+                           </div>
                         </div>
+                     </div>
                      <div className={`${s.item} ${s.itemArrow}`}>
                         История
-                        <ul>
-                           <li>История</li>
-                           <li>История города Химки </li>
-                           <li>Памятники истории и культуры</li>
-                           <li>Город-побратим</li>
-                           <li>Герб города</li>
-                        </ul>
+                        <div className={s.dropDownMenu}>
+                           <div className={s.linkMenu} >
+                              История
+                           </div>
+                           <div className={s.linkMenu} >
+                              История города Химки
+                           </div>
+                           <div className={s.linkMenu} >
+                              Памятники истории и культуры
+                           </div>
+                           <div className={s.linkMenu} >
+                              Герб города
+                           </div>
                         </div>
+                     </div>
                      <div className={`${s.item} ${s.itemArrow}`} >
                         Округ
-                        <ul>
-                           <li>Городской округ Химки</li>
-                           <li>Структура администрации</li>
-                        </ul>
+                        <div className={s.dropDownMenu}>
+                           <div className={s.linkMenu}>
+                              Городской округ Химки
+                           </div>
+                           <div className={s.linkMenu}>
+                              Структура администрации
+                           </div>
+                           <div className={s.linkMenu}>
+                              Социальные программы
+                           </div>
+                           <div className={s.linkMenu}>
+                              Наукоград
+                           </div>
+                           <div className={s.linkMenu}>
+                              Общественные организации
+                           </div>
+                           <div className={s.linkMenu}>
+                              Контрольно-счетная палата
+                           </div>
+                           <div className={s.linkMenu}>
+                              Государственные организации
+                           </div>
+                           <div className={s.linkMenu}>
+                              Территориальная избирательная комиссия города химки
+                           </div>
                         </div>
+                     </div>
                      <div className={s.item}>Деятельность</div>
                      <div className={s.item}>Документы</div>
                      <div className={s.item}>Прокуратура </div>
                      <div className={`${s.item} ${s.itemArrow}`}>
                         Обращения граждан
-                        <ul>
-                           <li>Городской округ Химки</li>
-                           <li>Структура администрации</li>
-                        </ul>
-                         </div>
+                        <div className={s.dropDownMenu}>
+                           <div className={s.linkMenu}>
+                              Городской округ Химки
+                           </div>
+                           <div className={s.linkMenu}>
+                              Структура администрации
+                           </div>
+                        </div>
+                     </div>
                      <div className={s.item}>Контакты</div>
                   </div>
 
                   <div className={s.searchBlock}>Поиск
-                     
+
                      {/* <input type="text" placeholder='Поиск' className={s.search} /> */}
                   </div>
                </div>

@@ -1,10 +1,10 @@
 .ScrollButton {
    display: flex;
-   width: 325px;
+   width: 285px;
    text-align: center;
    position: fixed;
    bottom: 10px;
-   left: 250px;
+   left: 272px;
    padding: 16px;
    align-items: center;
    overflow: hidden;

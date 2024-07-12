@@ -18,7 +18,7 @@ const MunicipalPrograms = (props) => {
             </div>
          </div>
 
-         <div className={`btnWBanner ${s.button}`}>Все программы</div>
+         <div className={`btnWBanner ${s.button}`}><span className="btnText">Все программы</span></div>
       </div>
    )
 }

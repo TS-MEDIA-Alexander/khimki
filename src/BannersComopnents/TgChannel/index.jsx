@@ -17,7 +17,7 @@ const TgChannel = (props) => {
             </div>
          </div>
 
-         <div className={`btnWBanner ${s.button}`}>Перейти</div>
+         <div className={`btnTgBanner ${s.button}`}>Перейти</div>
       </div>
    )
 }

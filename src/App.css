@@ -69,20 +69,36 @@ p {
    flex-direction: column;
 }
 
-.filterSelect {
-   padding: 12px;
-   color: #212121;
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 24px;
+.filterBtnContainer {
+   display: flex;
+   justify-content: space-between;
+   width: 306px;
+   padding: 4px;
    border-radius: 12px;
+   background: #F6F6F6;
+}
+
+.filterChoce {
+   width: 157px;
+   height: 40px;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 8px;
    background: #F6F6F6;
    cursor: pointer;
 }
 
+.filterChoce.active {
+   background: #EEEE20;
+}
+
 .filterThemeContainer {
-   display: flex;
    position: relative;
+   display: flex;
+}
+
+.filterThemeContainer:hover .calendar {
+   display: block;
 }
 
 .filterThemeContainer::after {
@@ -219,22 +235,19 @@ p {
 
 /*  */
 .btnCircle {
-   background: #ffff;
+   /* background: #ffff; */
    box-shadow: 0px 13px 33px 1px rgba(71, 71, 71, 0.24);
 }
 
 .btnCircle:hover {
-   background-color: #F6F6F6;
+   /*  background-color: #F6F6F6; */
 }
 
 .btnCircle:active {
-   background-color: #EDEDED;
+   /* background-color: #EDEDED; */
 }
 
-.btnCircle:active img {
-   opacity: 1;
-   background: #EDEDED;
-}
+
 
 /*  */
 .btnRad {
@@ -261,6 +274,10 @@ p {
 
 .btnWBanner:active {
    background: #EDEDED;
+}
+
+.btnWBanner:active .btnText {
+   opacity: 0.5;
 }
 
 /* госуслуги */
