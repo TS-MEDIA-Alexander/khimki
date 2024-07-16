@@ -3,6 +3,8 @@ import News from '../../Components/News';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import Calendar from '../../total/Calendar';
 import ReactSelect from '../../total/ReactSelect';
+import ScrollButton from '../../total/ScrollButton';
+
 import s from './NewsPage.module.css';
 
 /* Новости */
@@ -11,6 +13,9 @@ import EventAnnouncements from '../../Components/EventAnnouncements';
 import UsefulSourse from '../../Components/UsefulSourse';
 import VkChannel from '../../BannersComopnents/VkChannel';
 import TgChannel from '../../BannersComopnents/TgChannel';
+
+/* Форматор - преобразует дату */
+import {formatter} from '../../utils/index';
 
 const NewsPage = (props) => {
 
@@ -21,7 +26,6 @@ const NewsPage = (props) => {
       { id: '02', value: 'currentMonth', text: 'В этом месяце' },
       { id: '03', value: 'monthAgo', text: 'Месяц назад' },
    ]
-
 
    const [filterRelevance, setFilterRelevance] = useState(filterRelevanceData[0]);
 
@@ -46,6 +50,10 @@ const NewsPage = (props) => {
    ]
 
    const [filterTheme, setFilterTheme] = useState(filterThemeData[0]);
+
+   const [calendarDateStart, setCalendarDateStart] = useState('24.06.2024')
+   const handleDateStartChange = e => setCalendarDateStart(formatter.format(e));
+
    return (
       <div>
          <ContantContainerMain>
@@ -82,8 +90,8 @@ const NewsPage = (props) => {
                      </div>
 
                      <div className="mt20 filterThemeContainer">
-                        <input type="text" value={'24.06.2024 - 30.06.2024'} onChange={() => false} className="inputCalendar" />
-                        <Calendar />
+                        <input type="text" value={calendarDateStart} onChange={() => false} className="inputCalendar" />
+                        <Calendar onChange={handleDateStartChange} />
                      </div>
 
                      <div className="mt20 filterSearchContainer"><input type="text" placeholder='Ключевое слово' className="filterSearch" /></div>
@@ -108,6 +116,7 @@ const NewsPage = (props) => {
             <UsefulSourse />
 
          </ContantContainerMain>
+         <ScrollButton/>
       </div>
    )
 }

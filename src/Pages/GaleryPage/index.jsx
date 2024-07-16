@@ -3,6 +3,7 @@ import Galery from '../../Components/Galery';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import Calendar from '../../total/Calendar';
 import ReactSelect from '../../total/ReactSelect';
+import ScrollButton from '../../total/ScrollButton';
 import s from './GaleryPage.module.css';
 
 /* Новости */
@@ -11,6 +12,9 @@ import EventAnnouncements from '../../Components/EventAnnouncements';
 import UsefulSourse from '../../Components/UsefulSourse';
 import FamilyYear from '../../BannersComopnents/FamilyYear';
 import TgChannel from '../../BannersComopnents/TgChannel';
+
+/* Форматор - преобразует дату */
+import { formatter } from '../../utils/index';
 
 const GaleryPage = (props) => {
 
@@ -32,6 +36,9 @@ const GaleryPage = (props) => {
       setFilterImg(!filterImg)
       setFilterVideo(!filterVideo)
    }
+
+   const [calendarDateStart, setCalendarDateStart] = useState('24.06.2024')
+   const handleDateStartChange = e => setCalendarDateStart(formatter.format(e));
 
 
    return (
@@ -63,13 +70,11 @@ const GaleryPage = (props) => {
                      </div>
 
                      <div className="mt20 filterThemeContainer">
-                        <input type="text" value={'24.06.2024 - 30.06.2024'} onChange={() => false} className="inputCalendar" />
-                        <Calendar />
+                        <input type="text" value={calendarDateStart} onChange={() => false} className="inputCalendar" />
+                        <Calendar onChange={handleDateStartChange} />
                      </div>
 
                      <div className="mt20 filterSearchContainer"><input type="text" placeholder='Ключевое слово' className="filterSearch" /></div>
-                     <button className='mt20 filterBtnNewsArchive'>Архив новостей</button>
-                     <div className="mt12 juridicalInfo">Свидетельство о регистрации СМИ от 22.04.2024 ЭЛ № ФС 77 - 87145</div>
 
                   </div>
                   <div className='mt40'>
@@ -89,6 +94,7 @@ const GaleryPage = (props) => {
             <UsefulSourse />
 
          </ContantContainerMain>
+         <ScrollButton />
       </div>
    )
 }

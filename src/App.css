@@ -146,6 +146,8 @@ p {
    font-style: normal;
    font-weight: 400;
    line-height: 24px;
+   border-radius: 12px;
+   border: 1px solid #EDEDED;
 }
 
 .filterBtnNewsArchive {
@@ -157,6 +159,7 @@ p {
    font-style: normal;
    font-weight: 400;
    line-height: 24px;
+   background-color: #fff;
 }
 
 .juridicalInfo {
@@ -387,10 +390,28 @@ p {
    margin-top: 32px;
 }
 
+.mt38 {
+   margin-top: 38px;
+}
+
 .mt40 {
    margin-top: 40px;
 }
 
+.mt48 {
+   margin-top: 48px;
+}
+
 .mt80 {
    margin-top: 80px;
+}
+
+.bannerArrowContainer {
+   display: flex;
+   justify-content: space-between;
+}
+
+
+.border {
+   border: 1px solid red;
 }

@@ -28,11 +28,10 @@ const Carousel = ({ children, btnArrText }) => {
       const timeout = setTimeout(() => {
 
          /* Остановка прогрессбара */
-         progressReset()
+         setCount(0);
 
          /* запуск "перелистывания слайдера" */
-         const newCurrent = offset - 100
-         newCurrent < -((btnArrText.length - 1) * 100) ? setOffset(0) : setOffset(newCurrent)
+         flipThrough()
 
       }, 6000)
       return () => clearTimeout(timeout)
@@ -50,16 +49,29 @@ const Carousel = ({ children, btnArrText }) => {
       return () => clearInterval(to);
    }, [])
 
-   const progressReset = () => {
-      setCount(0);
-   };
+
 
    const handleBtnSliderClick = (distance) => {
       setOffset(distance)
-      progressReset()
+      setCount(0);
    }
 
+   //Перелистывание слайдера
+   function flipThrough() {
+      const newCurrent = offset - 100
+      newCurrent < -((btnArrText.length - 1) * 100) ? setOffset(0) : setOffset(newCurrent)
+      setCount(0);
+   }
 
+   //Перелистывание кнопок сместе со слайдером
+   const flipThroughBtnSlider = () => {
+      flipThrough()
+      setHidden(prev => {
+         return offset < -200 ? 100 : offset //Проверяем, чтобы кнопки не исчезали из UI
+      })
+   }
+
+   const [hidden, setHidden] = useState(100)
 
 
    return (
@@ -81,9 +93,10 @@ const Carousel = ({ children, btnArrText }) => {
 
          <div className={s.btnContainer}>
             {btnArrText.map((el, i) => {
-               return <BtnCarousel key={i} current={offset} set={handleBtnSliderClick} text={el} distance={-(i * 100)} />
-            })} 
-            <div className={`btnY ${s.btnArrowSlider}`}><img src={btnArrowSlider} alt="" /></div>
+               return hidden > -(i * 100) &&
+                  <BtnCarousel key={i} current={offset} set={handleBtnSliderClick} text={el} distance={-(i * 100)} />
+            })}
+            <div onClick={flipThroughBtnSlider} className={`btnY ${s.btnArrowSlider}`}><img src={btnArrowSlider} alt="" /></div>
          </div>
       </div>
    )

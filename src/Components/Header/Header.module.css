@@ -14,6 +14,9 @@
 
 .logoBlock {
    display: flex;
+   cursor: pointer;
+   text-decoration: none;
+   color: #303030;
 }
 
 .textMain {
@@ -141,7 +144,6 @@
    color: black;
    padding: 16px;
    border-radius: 16px;
-   box-shadow: 1px 1px 10px black;
    z-index: 999;
 }
 

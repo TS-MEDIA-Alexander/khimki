@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import {ROUTER} from './config';
 import './App.css';
 /* Components */
 import Footer from './Components/Footer';
@@ -7,7 +8,7 @@ import Header from './Components/Header';
 /* import Map from './Components/Map'; */
 import Main from './Pages/Main';
 import NewsPage from './Pages/News';
-import ScrollButton from './total/ScrollButton';
+import NewsArticle from './Pages/NewsArticle';
 import GaleryPage from './Pages/GaleryPage';
 
 function App() {
@@ -18,15 +19,16 @@ function App() {
 
          <div className="wrapper">
             <Routes>
-               <Route path="/" element={<Main />} />
-               <Route path="/news" element={<NewsPage />} />
-               <Route path="/galery" element={<GaleryPage/>} />
+               <Route path={ROUTER.main} element={<Main />} />
+               <Route path={ROUTER.news} element={<NewsPage />} />
+               <Route path={ROUTER.newsArticle} element={<NewsArticle/>} />
+               <Route path={ROUTER.galery} element={<GaleryPage/>} />
                
             </Routes>
          </div>
 
          <Footer />
-         <ScrollButton/>
+         
       </div>
    );
 }

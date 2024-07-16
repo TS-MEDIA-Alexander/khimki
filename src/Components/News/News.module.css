@@ -10,11 +10,8 @@
    border-radius: 40px;
    border: 1px solid #EDEDED;
    padding: 24px;
+   text-decoration: none;
    cursor: pointer;
-}
-
-.newsContainer:nth-child(n+4) {
-   margin-top: 20px;
 }
 
 .preview {
@@ -35,7 +32,7 @@
    transform: scale(1.2);
 }
 
-.filter {
+.filterText {
    margin-top: 20px;
    color: #808080;
    font-size: 12px;

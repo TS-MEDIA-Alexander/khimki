@@ -4,7 +4,7 @@ import s from './FamilyYear.module.css';
 
 const FamilyYear = (props) => {
    return (
-      <div className={`borderMain ${s.bannerContainer}`}>
+      <div className={s.bannerContainer}>
          <div className={s.topContainer}>
             <img src={icon} alt="" />
             <div className={s.title}>

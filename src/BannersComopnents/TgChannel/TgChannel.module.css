@@ -8,6 +8,8 @@
    width: calc(100% - 80px);
    height: 370px;
    overflow: hidden;
+   padding: 40px;
+   border-radius: 40px;
    cursor: pointer;
 }
 

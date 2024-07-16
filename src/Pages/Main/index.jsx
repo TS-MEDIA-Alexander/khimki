@@ -48,8 +48,8 @@ const Main = (props) => {
                }>
                <Slide img={slider1} title={['Круглосуточная', 'горячая линия', 'главы городского округа']} description={'Принимаем обращения граждан 24/7'} />
                <Slide img={slider1} title={['Горячая', 'линия строительного комплеса']} description={'Принимаем обращения граждан 24/7'} />
-               <Slide img={slider1} title={['Сведения', 'о земельном участке']}  description={'Принимаем обращения граждан 24/7'}/>
-               <Slide img={slider1} title={['Оценка деятельности', 'местной власти']}  description={'Принимаем обращения граждан 24/7'}/>
+               <Slide img={slider1} title={['Сведения', 'о земельном участке']} description={'Принимаем обращения граждан 24/7'} />
+               <Slide img={slider1} title={['Оценка деятельности', 'местной власти']} description={'Принимаем обращения граждан 24/7'} />
             </Carousel>
 
 
@@ -86,7 +86,7 @@ const Main = (props) => {
                <div className="mt80 subTitle">Программы администрации</div>
                <div className="mt40 columnContainer">
                   <div className="columnLarge">
-                     <div className={s.bannerArrowContainer}>
+                     <div className="bannerArrowContainer">
                         <BannerArrow imgBanner={program1} />
                         <BannerArrow imgBanner={program2} />
                         <BannerArrow imgBanner={program3} />
@@ -102,8 +102,8 @@ const Main = (props) => {
                <div className="mt80 subTitle">Последние новости</div>
                <div className="mt40 columnContainer">
                   <div className="columnLarge">
-                     <div className={s.bannerArrowContainer}>
-                        <News news={news} />
+                     <div className="bannerArrowContainer">
+                        <News rowLength={3} news={news} />
                      </div>
                   </div>
                   <div className="ml20 columnSmal">
@@ -130,6 +130,7 @@ const Main = (props) => {
                </div>
             </section>
 
+            {/* Анонсы мероприятий */}
             <EventAnnouncements />
 
             <UsefulSourse />

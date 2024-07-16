@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Header.module.css';
 import { NavLink } from "react-router-dom";
+import {ROUTER} from '../../config';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import logo from '../../assets/img/logos/full-logo.svg';
 import icon from '../../assets/icons/version_visually_impaired.svg';
@@ -11,14 +12,14 @@ const Header = (props) => {
          <div className={s.bgBlock}>
             <ContantContainerMain>
                <div className={s.logoRow}>
-                  <div className={s.logoBlock}>
+                  <NavLink to={ROUTER.main} className={s.logoBlock}>
                      <img src={logo} alt="" />
                      <div className={s.textMain}>
                         <div className={s.titleInfo}>Официальный интернет-портал</div>
                         <div className={s.titleAdministration}>АДМИНИСТРАЦИИ ГОРОДСКОГО ОКРУГА ХИМКИ</div>
                         <div className={s.titleInfo}>Московской области</div>
                      </div>
-                  </div>
+                  </NavLink>
                   <div className={s.settingsContainer}>
                      <div className={s.versionVI}><img src={icon} alt="" />Версия для слабовидящих</div>
                      <button className={s.hotLine}>Горячая линия</button>
@@ -33,10 +34,10 @@ const Header = (props) => {
                      <div className={`${s.item} ${s.itemArrow}`}>
                         Новости
                         <div className={s.dropDownMenu}>
-                           <NavLink className={s.linkMenu} to="/news">
+                           <NavLink className={s.linkMenu} to={ROUTER.news}>
                               Новости
                            </NavLink>
-                           <NavLink className={s.linkMenu} to="/galery">
+                           <NavLink className={s.linkMenu} to={ROUTER.galery}>
                               Галерея
                            </NavLink>
                            <div className={s.linkMenu}>

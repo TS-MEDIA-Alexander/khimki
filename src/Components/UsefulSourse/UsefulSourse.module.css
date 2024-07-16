@@ -9,14 +9,28 @@
 .itemTextContainer {
    margin-top: 24px;
    display: flex;
-   justify-content: space-between;
 }
 
 .column {
    width: 290px;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+}
+
+.column:not(:first-child) {
+   margin-left: 20px;
+}
+
+.columnFirst {
+   flex: 1 1 31.84%;
+}
+
+.columnSecond {
+   flex: 1 1 37%
+}
+
+.columnLast {
+   flex: 1 1 31.84%
 }
 
 .item {
@@ -78,7 +92,25 @@
 }
 
 .socialMedia {
+   display: flex;
+   padding: 7px;
+   justify-content: center;
+   align-items: center;
    cursor: pointer;
+   border-radius: 12px;
+   background: #E6E6E6;
+}
+.socialMedia .img{
+   width: 24px;
+   height: 24px;
+}
+
+.socialMedia:hover {
+   background: #EEEE20;
+}
+
+.socialMedia:active img {
+   opacity: .5;
 }
 
 .socialMedia:not(:first-child) {
@@ -91,14 +123,19 @@
    height: 38px;
 }
 
+.columnMain {
+   /* flex: 1 0 auto; */
+}
+
 .bannerContainer {
+   height: calc(100% - 80px);
    display: flex;
    flex-direction: column;
    justify-content: space-between;
 }
 
 .btn {
-   margin-top: 144px;
+   /* margin-top: 86px; */
    line-height: 24px;
    border-radius: 40px;
    background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #F5982A 0%, #EEEE20 100%);

@@ -15,7 +15,7 @@ const UsefulSourse = (props) => {
                <div className="borderMain">
                   <div className={s.title}>Полезные ресурсы</div>
                   <div className={s.itemTextContainer}>
-                     <div className={s.column}>
+                     <div className={`${s.column} ${s.columnFirst}`}>
                         <div className={s.item}>Сайт Правительства Московской области</div>
                         <div className={s.item}>Официальный сайт Московской областной Думы</div>
                         <div className={s.item}>Инвестиционный портал Московской области</div>
@@ -24,15 +24,15 @@ const UsefulSourse = (props) => {
                         <div className={s.item}>Уполномоченный по правам ребёнка в Московской области</div>
                         <div className={s.item}>Прокуратура</div>
                      </div>
-                     <div className={s.column}>
-                        <div className={s.item}>Социальный фонд Российской Федерации (до 01.01.2023 - Пенсионный фонд Москвыи Московской области)</div>
+                     <div className={`${s.column} ${s.columnSecond} `}>
+                        <div className={s.item}>Социальный фонд Российской Федерации (до 01.01.2023 - Пенсионный фонд Москвы <p>и Московской области)</p></div>
                         <div className={s.item}>Межрайонная инспекция ФНС России по ГО Химки</div>
                         <div className={s.item}>Главное управление содержания территорий Московской области (до 10.01.2022 - ГАТН Московской области)</div>
                         <div className={s.item}>Служба медицинской профилактики Московской области</div>
                         <div className={s.item}>Открытый бюджет городского округа Химки​</div>
                         <div className={s.item}>Главное управление МЧС России по Московской области</div>
                      </div>
-                     <div className={s.column}>
+                     <div className={`${s.column} ${s.columnLast}`}>
                         <div className={s.item}>ГКУ МО «АРКИ»</div>
                         <div className={s.item}>Портал Госуслуги</div>
                         <div className={s.item}>Контрольно-счетная​ ​палата</div>
@@ -53,9 +53,9 @@ const UsefulSourse = (props) => {
                      <div className={`mt16 ${s.tel}`}>+7 (495) 793 01 01</div>
                      <div className={s.subTitleBanner}>Горячая линия Администрации</div>
                      <div className={s.socialMediaContainer}>
-                        <div className={s.socialMedia}><img src={vk} alt="" /></div>
-                        <div className={s.socialMedia}><img src={telegram} alt="" /></div>
-                        <div className={s.socialMedia}><img src={ok} alt="" /></div>
+                        <div className={s.socialMedia}><img className={s.img} src={vk} alt="" /></div>
+                        <div className={s.socialMedia}><img className={s.img} src={telegram} alt="" /></div>
+                        <div className={s.socialMedia}><img className={s.img} src={ok} alt="" /></div>
                      </div>
                   </div>
                   <div className={`btnRad ${s.btn}`}>Все контакты</div>

@@ -4,7 +4,7 @@ import s from './TgChannel.module.css';
 
 const TgChannel = (props) => {
    return (
-      <div className={`borderMain ${s.bannerContainer}`}>
+      <div className={s.bannerContainer}>
          <div className={s.topContainer}>
             <img src={icon} alt="" />
             <div className={s.title}>
