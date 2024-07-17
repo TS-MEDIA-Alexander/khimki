@@ -3,7 +3,7 @@ import s from './AdministrationPerformance.module.css';
 
 const AdministrationPerformance = (props) => {
    return (
-      <a href="https://t.me/adm_himki" target='_blank' className={s.bannerContainer}>
+      <a href="#" target='_blank' className={s.bannerContainer}>
          <div className={s.topContainer}>
             <div className={s.title}>
                <div>Показатели работы </div>

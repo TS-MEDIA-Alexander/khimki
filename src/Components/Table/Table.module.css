@@ -1,0 +1,27 @@
+.tableRow {
+   display: flex;
+   overflow: hidden;
+   border-top: 1px solid #EDEDED;
+   border-bottom: 1px solid #EDEDED;
+}
+
+.tableRow:first-child {
+   background: #EDEDED;
+   border-radius: 40px 40px 0 0;
+}
+
+.tableRow:last-child {
+   border-radius: 0 0 40px 40px;
+
+}
+
+.table {
+   flex: 1;
+   padding: 16px 24px;
+   border-left: 1px solid #EDEDED;
+   border-right: 1px solid #EDEDED;
+}
+
+.table:first-child {
+   min-width: 600px;
+}

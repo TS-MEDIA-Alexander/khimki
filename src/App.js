@@ -15,6 +15,7 @@ import GaleryArticle from './Pages/GaleryArticle';
 import VideoPage from './Pages/VideoPage';
 import History from './Pages/History';
 import HistoryKhimki from './Pages/HistoryKhimki';
+import Table from './Components/Table';
 
 function App() {
    return (
@@ -32,6 +33,7 @@ function App() {
                <Route path={ROUTER.video} element={<VideoPage/>} />
                <Route path={ROUTER.history} element={<History/>} />
                <Route path={ROUTER.historyKhimki} element={<HistoryKhimki/>} />
+               <Route path={ROUTER.table} element={<Table/>} />
                 
             </Routes>
          </div>

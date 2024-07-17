@@ -11,7 +11,7 @@ const HistoryCard = ({src, img, title, textBody}) => {
             <div className={s.title}>{title}</div>
             <div className={s.textBody}>{textBody}</div>
          </div>
-         <div className={s.btn}><img src={arrow_btn_link} alt="" /></div>
+         <div className={`btnCircleG ${s.btn}`}><img src={arrow_btn_link} alt="" /></div>
       </NavLink>
    )
 }

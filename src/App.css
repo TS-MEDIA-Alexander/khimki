@@ -33,7 +33,6 @@ p {
    padding: 0;
    border: 0;
    font-size: 100%;
-   font-weight: normal;
    vertical-align: baseline;
 }
 
@@ -267,6 +266,19 @@ p {
    /* background-color: #EDEDED; */
 }
 
+/*  */
+.btnCircleG {
+   background: #F6F6F6;
+}
+
+.btnCircleG:hover {
+    background-color: #EDEDED;
+}
+
+.btnCircleG:active {
+   background-color: #DCDCDC;
+}
+
 
 
 /*  */
@@ -286,6 +298,7 @@ p {
 /* белые кнопки на баннерах */
 .btnWBanner {
    background: #fff;
+   color: #303030;
 }
 
 .btnWBanner:hover {
