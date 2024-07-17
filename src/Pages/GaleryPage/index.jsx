@@ -3,12 +3,14 @@ import Galery from '../../Components/Galery';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import Calendar from '../../total/Calendar';
 import ReactSelect from '../../total/ReactSelect';
-import ScrollButton from '../../total/ScrollButton';
+/* import ScrollButton from '../../total/ScrollButton'; */
 import s from './GaleryPage.module.css';
 
-/* Новости */
+/* Галерея */
 import galery from '../../backend/galery/galery';
 import EventAnnouncements from '../../Components/EventAnnouncements';
+
+/* Баннеры */
 import UsefulSourse from '../../Components/UsefulSourse';
 import FamilyYear from '../../BannersComopnents/FamilyYear';
 import TgChannel from '../../BannersComopnents/TgChannel';
@@ -85,7 +87,7 @@ const GaleryPage = (props) => {
                   </div>
                </div>
                <div className="columnLarge">
-                  <Galery galery={ternaryArrGalery} />
+                  <Galery rowLength={3} galery={ternaryArrGalery} />
                </div>
 
             </div>
@@ -94,7 +96,7 @@ const GaleryPage = (props) => {
             <UsefulSourse />
 
          </ContantContainerMain>
-         <ScrollButton />
+         {/* <ScrollButton /> */}
       </div>
    )
 }

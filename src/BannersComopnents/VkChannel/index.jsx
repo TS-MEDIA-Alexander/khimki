@@ -4,7 +4,7 @@ import s from './VkChannel.module.css';
 
 const VkChannel = (props) => {
    return (
-      <div className={`borderMain ${s.bannerContainer}`}>
+      <a href='https://vk.com/gohimkiadm?ysclid=lyoalpdvo9896559218' target='_blank' className={`borderMain ${s.bannerContainer}`}>
          <div className={s.topContainer}>
             <img src={icon} alt="" />
             <div className={s.title}>
@@ -18,7 +18,7 @@ const VkChannel = (props) => {
          </div>
 
          <div className={`btnVkBanner ${s.button}`}>Перейти</div>
-      </div>
+      </a>
    )
 }
 export default VkChannel;

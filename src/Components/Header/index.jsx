@@ -40,17 +40,17 @@ const Header = (props) => {
                            <NavLink className={s.linkMenu} to={ROUTER.galery}>
                               Галерея
                            </NavLink>
-                           <div className={s.linkMenu}>
+                           <NavLink className={s.linkMenu} to={ROUTER.video}>
                               Видео
-                           </div>
+                           </NavLink>
                         </div>
                      </div>
                      <div className={`${s.item} ${s.itemArrow}`}>
                         История
                         <div className={s.dropDownMenu}>
-                           <div className={s.linkMenu} >
+                           <NavLink to={ROUTER.history} className={s.linkMenu} >
                               История
-                           </div>
+                           </NavLink>
                            <div className={s.linkMenu} >
                               История города Химки
                            </div>

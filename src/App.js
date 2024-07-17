@@ -4,12 +4,17 @@ import './App.css';
 /* Components */
 import Footer from './Components/Footer';
 import Header from './Components/Header';
+
 /* Pages */
 /* import Map from './Components/Map'; */
 import Main from './Pages/Main';
 import NewsPage from './Pages/News';
 import NewsArticle from './Pages/NewsArticle';
 import GaleryPage from './Pages/GaleryPage';
+import GaleryArticle from './Pages/GaleryArticle';
+import VideoPage from './Pages/VideoPage';
+import History from './Pages/History';
+import HistoryKhimki from './Pages/HistoryKhimki';
 
 function App() {
    return (
@@ -23,7 +28,11 @@ function App() {
                <Route path={ROUTER.news} element={<NewsPage />} />
                <Route path={ROUTER.newsArticle} element={<NewsArticle/>} />
                <Route path={ROUTER.galery} element={<GaleryPage/>} />
-               
+               <Route path={ROUTER.galeryArticle} element={<GaleryArticle/>} />
+               <Route path={ROUTER.video} element={<VideoPage/>} />
+               <Route path={ROUTER.history} element={<History/>} />
+               <Route path={ROUTER.historyKhimki} element={<HistoryKhimki/>} />
+                
             </Routes>
          </div>
 

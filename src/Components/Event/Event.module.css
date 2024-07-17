@@ -7,6 +7,7 @@
    border: 1px solid #EDEDED;
    text-decoration: none;
    box-sizing: border-box;
+   cursor: pointer;
 }
 
 .imgContainer {

@@ -4,7 +4,7 @@ import s from './TgChannel.module.css';
 
 const TgChannel = (props) => {
    return (
-      <div className={s.bannerContainer}>
+      <a href='https://t.me/adm_himki' target='_blank' className={s.bannerContainer}>
          <div className={s.topContainer}>
             <img src={icon} alt="" />
             <div className={s.title}>
@@ -18,7 +18,7 @@ const TgChannel = (props) => {
          </div>
 
          <div className={`btnTgBanner ${s.button}`}>Перейти</div>
-      </div>
+      </a>
    )
 }
 export default TgChannel;

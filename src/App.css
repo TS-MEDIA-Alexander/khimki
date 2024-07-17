@@ -95,6 +95,14 @@ p {
 .filterThemeContainer {
    position: relative;
    display: flex;
+   border-radius: 12px;
+   box-sizing: border-box;
+   border: 1px solid transparent;
+}
+
+.filterThemeContainer:hover {
+   border: 1px solid #EDEDED;
+   background: #F6F6F6;
 }
 
 .filterThemeContainer:hover .calendar {
@@ -123,6 +131,10 @@ p {
    line-height: 24px;
 }
 
+.inputCalendar:focus {
+   outline: none;
+}
+
 .filterSearchContainer {
    display: flex;
    position: relative;
@@ -141,13 +153,17 @@ p {
 .filterSearch {
    flex: 1;
    padding: 12px;
-   color: #808080;
+   color: #303030;
    font-size: 16px;
    font-style: normal;
    font-weight: 400;
    line-height: 24px;
    border-radius: 12px;
    border: 1px solid #EDEDED;
+}
+
+.filterSearch:focus {
+   outline: none;
 }
 
 .filterBtnNewsArchive {
@@ -160,6 +176,7 @@ p {
    font-weight: 400;
    line-height: 24px;
    background-color: #fff;
+   text-align: left;
 }
 
 .juridicalInfo {
@@ -276,24 +293,25 @@ p {
 }
 
 .btnWBanner:active {
-   background: #EDEDED;
+   background: #F6F6F6;
 }
 
 .btnWBanner:active .btnText {
-   opacity: 0.5;
+   color: #808080;
 }
 
 /* госуслуги */
 .btnGosBanner {
-   background: #0063B0;
+   background: #0D4CD3;
 }
 
 .btnGosBanner:hover {
-   background: #2E99EB;
+   background: #2C6AF0;
 }
 
 .btnGosBanner:active {
-   background: #024B84;
+   background: #0E3EA6;
+   color: rgba(255, 255, 255, 0.50);
 }
 
 /* himki virtual */
@@ -307,6 +325,7 @@ p {
 
 .btnVirtualBanner:active {
    background: #761006;
+   color: rgba(255, 255, 255, 0.50); 
 }
 
 /* telegram */
@@ -320,6 +339,7 @@ p {
 
 .btnTgBanner:active {
    background: #0573A7;
+   color: rgba(255, 255, 255, 0.50);
 }
 
 /* vk */
@@ -333,6 +353,7 @@ p {
 
 .btnVkBanner:active {
    background: #0059BE;
+   color: rgba(255, 255, 255, 0.50); 
 }
 
 /* priemnaya */
@@ -346,6 +367,7 @@ p {
 
 .btnPriemnayaBanner:active {
    background: #AABCC9;
+   color: #808080;
 }
 
 /* Текст */
@@ -404,6 +426,10 @@ p {
 
 .mt80 {
    margin-top: 80px;
+}
+
+.mt120 {
+   margin-top: 120px;
 }
 
 .bannerArrowContainer {

@@ -3,7 +3,7 @@ import s from './News.module.css';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
 
-const News = ({ news, rowLength }) => {
+const News = ({ news, rowLength, btnText }) => {
 
    const isWrap=(orderNumber)=>{
       return rowLength < (orderNumber + 1) && 'mt20'
@@ -19,7 +19,7 @@ const News = ({ news, rowLength }) => {
             <div className={s.title}>{el.title}</div>
             <div className={s.moreDetails}>Подробнее</div>
          </NavLink>)}
-         <div className={`btnW ${s.showMore}`}>Все новости</div>
+         <div className={`btnW ${s.showMore}`}>{btnText}</div>
       </div>
 
    )

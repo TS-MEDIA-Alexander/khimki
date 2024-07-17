@@ -5,7 +5,6 @@
    align-items: flex-start;
    background: url('../../assets/img/banners/museum.png') 0 0/auto auto no-repeat;
    background-size: cover;
-   width: calc(100% - 80px);
    width: 590px;
    height: 250px;
    overflow: hidden;

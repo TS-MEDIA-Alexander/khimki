@@ -103,7 +103,7 @@ const Main = (props) => {
                <div className="mt40 columnContainer">
                   <div className="columnLarge">
                      <div className="bannerArrowContainer">
-                        <News rowLength={3} news={news} />
+                        <News btnText={'Все новости'} rowLength={3} news={news} />
                      </div>
                   </div>
                   <div className="ml20 columnSmal">

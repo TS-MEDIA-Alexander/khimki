@@ -3,7 +3,7 @@ import News from '../../Components/News';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import Calendar from '../../total/Calendar';
 import ReactSelect from '../../total/ReactSelect';
-import ScrollButton from '../../total/ScrollButton';
+/* import ScrollButton from '../../total/ScrollButton'; */
 
 import s from './NewsPage.module.css';
 
@@ -107,7 +107,7 @@ const NewsPage = (props) => {
                   </div>
                </div>
                <div className="columnLarge">
-                  <News news={ternaryArrNews} />
+                  <News rowLength={3} btnText={'Загрузить еще'} news={ternaryArrNews} />
                </div>
 
             </div>
@@ -116,7 +116,7 @@ const NewsPage = (props) => {
             <UsefulSourse />
 
          </ContantContainerMain>
-         <ScrollButton/>
+         {/* <ScrollButton/> */}
       </div>
    )
 }

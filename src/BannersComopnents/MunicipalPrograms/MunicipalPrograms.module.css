@@ -3,6 +3,8 @@
    flex-direction: column;
    justify-content: space-between;
    align-items: flex-start;
+   padding: 40px;
+   border-radius: 40px;
    background: url('../../assets/img/banners/municipal_programs.png') 0 0/auto auto no-repeat;
    background-size: cover;
    width: calc(100% - 80px);

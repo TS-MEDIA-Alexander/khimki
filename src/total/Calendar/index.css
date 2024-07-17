@@ -1,6 +1,7 @@
 .calendar {
    display: none;
    position: absolute;
+   top: 100%;
    padding: 16px 17px;
    border-radius: 16px;
    border: 1px solid #EDEDED;

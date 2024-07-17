@@ -10,11 +10,8 @@
    border-radius: 40px;
    border: 1px solid #EDEDED;
    padding: 24px;
+   text-decoration: none;
    cursor: pointer;
-}
-
-.galeryContainer:nth-child(n+4) {
-   margin-top: 20px;
 }
 
 .preview {
