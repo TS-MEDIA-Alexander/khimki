@@ -12,7 +12,6 @@
 
 .tableRow:last-child {
    border-radius: 0 0 40px 40px;
-
 }
 
 .table {
@@ -21,6 +20,13 @@
    border-left: 1px solid #EDEDED;
    border-right: 1px solid #EDEDED;
 }
+.tableRow:last-child .table:first-child{
+   border-radius: 0 0 0 40px;
+}
+.tableRow:last-child .table:last-child{
+   border-radius: 0 0 40px 0;
+}
+
 
 .table:first-child {
    min-width: 600px;

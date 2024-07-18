@@ -15,6 +15,7 @@ import GaleryArticle from './Pages/GaleryArticle';
 import VideoPage from './Pages/VideoPage';
 import History from './Pages/History';
 import HistoryKhimki from './Pages/HistoryKhimki';
+import MonumentsHistoryArt from './Pages/MonumentsHistoryArt';
 import Table from './Components/Table';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
                <Route path={ROUTER.video} element={<VideoPage/>} />
                <Route path={ROUTER.history} element={<History/>} />
                <Route path={ROUTER.historyKhimki} element={<HistoryKhimki/>} />
+               <Route path={ROUTER.pamyatnikiIstoriiKultury} element={<MonumentsHistoryArt/>} />
                <Route path={ROUTER.table} element={<Table/>} />
                 
             </Routes>

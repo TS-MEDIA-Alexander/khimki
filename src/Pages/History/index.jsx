@@ -33,7 +33,7 @@ const History = (props) => {
 
                <div className={s.column}>
                   <HistoryCard img={gorodPobratym} title={'Город-побратим'} textBody={'Город в Белоруссии, административный центр Гродненской области.'} />
-                  <HistoryCard img={monuments} title={'Памятники истории и культуры '} textBody={'Памятник медицинским сестрам. Памятник открыт 8 мая 2005 года в сквере им. Марии Рубцовой.'} />
+                  <HistoryCard src={ROUTER.pamyatnikiIstoriiKultury} img={monuments} title={'Памятники истории и культуры '} textBody={'Памятник медицинским сестрам. Памятник открыт 8 мая 2005 года в сквере им. Марии Рубцовой.'} />
                </div>
             </div>
             <div className={`mt80 rowBlock`}>

@@ -279,8 +279,6 @@ p {
    background-color: #DCDCDC;
 }
 
-
-
 /*  */
 .btnRad {
    background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #F5982A 0%, #EEEE20 100%);
@@ -302,11 +300,11 @@ p {
 }
 
 .btnWBanner:hover {
-   background: #F6F6F6;
+   background: #EDEDED;
 }
 
 .btnWBanner:active {
-   background: #F6F6F6;
+   background: #DCDCDC;
 }
 
 .btnWBanner:active .btnText {

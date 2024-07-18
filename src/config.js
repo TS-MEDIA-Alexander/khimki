@@ -7,5 +7,6 @@ export const ROUTER = {
    video: '/video',
    history: '/istoriya',
    historyKhimki: '/istoriya/istoriya-himki',
+   pamyatnikiIstoriiKultury: '/istoriya/pamyatniki-istorii-kultury',
    table: '/tablitsa',
 }
