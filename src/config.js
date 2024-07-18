@@ -8,5 +8,7 @@ export const ROUTER = {
    history: '/istoriya',
    historyKhimki: '/istoriya/istoriya-himki',
    pamyatnikiIstoriiKultury: '/istoriya/pamyatniki-istorii-kultury',
+   gorodPobratim: '/istoriya/gorod-pobratim',
+   cityCoatOfArms: '/istoriya/gerb-goroda',
    table: '/tablitsa',
 }

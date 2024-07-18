@@ -272,7 +272,7 @@ p {
 }
 
 .btnCircleG:hover {
-    background-color: #EDEDED;
+   background-color: #EDEDED;
 }
 
 .btnCircleG:active {
@@ -336,7 +336,7 @@ p {
 
 .btnVirtualBanner:active {
    background: #761006;
-   color: rgba(255, 255, 255, 0.50); 
+   color: rgba(255, 255, 255, 0.50);
 }
 
 /* telegram */
@@ -364,7 +364,7 @@ p {
 
 .btnVkBanner:active {
    background: #0059BE;
-   color: rgba(255, 255, 255, 0.50); 
+   color: rgba(255, 255, 255, 0.50);
 }
 
 /* priemnaya */
@@ -388,6 +388,11 @@ p {
    font-style: normal;
    font-weight: 500;
    line-height: 48px;
+}
+
+/* Жирность */
+.fw600 {
+   font-weight: 600 !important;
 }
 
 .ml20 {
