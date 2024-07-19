@@ -130,7 +130,7 @@ const KhimkiDistrict = (props) => {
             </div>
             <div className="bannerArrowContainer">
                <div className={`mt32 borderMain ${s.districtVideo}`}>
-                  <img className={s.borderR} src={videoPreview} alt="" />
+                  <iframe className={s.borderR} src="https://www.youtube.com/embed/xfBzWJyErEc?si=9p-cJfQhW45QsOo3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                </div>
                <div className={`mt32 borderMain ${s.districtBanner}`}>
                   <div className={s.bannerTitle}>Показатели работы</div>
@@ -175,8 +175,8 @@ const KhimkiDistrict = (props) => {
             </div>
 
             <div className="mt32 bannerArrowContainer">
-               <Problem/>
-               <Problem/>
+               <Problem />
+               <Problem />
             </div>
          </ContantContainerMain>
       </div>
