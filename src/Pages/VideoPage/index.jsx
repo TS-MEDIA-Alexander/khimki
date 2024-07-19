@@ -9,7 +9,6 @@ import galery from '../../backend/galery/galery';
 import EventAnnouncements from '../../Components/EventAnnouncements';
 
 /* Баннеры */
-import UsefulSourse from '../../Components/UsefulSourse';
 import KhimkiTV from '../../BannersComopnents/KhimkiTV';
 
 const VideoPage = (props) => {
@@ -68,8 +67,6 @@ const VideoPage = (props) => {
 
             </div>
             <EventAnnouncements />
-
-            <UsefulSourse />
 
          </ContantContainerMain>
          {/* <ScrollButton /> */}

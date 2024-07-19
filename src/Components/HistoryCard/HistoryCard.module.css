@@ -50,12 +50,8 @@
 }
 
 .btn {
-   display: flex;
    position: absolute;
    right: 40px;
    bottom: 40px;
    padding: 16px;
-   justify-content: center;
-   align-items: center;
-   border-radius: 50%;
 }

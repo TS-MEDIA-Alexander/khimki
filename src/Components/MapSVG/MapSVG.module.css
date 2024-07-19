@@ -1,0 +1,10 @@
+path {
+   cursor: pointer;
+}
+
+path:hover {
+   cursor: pointer;
+   stroke-width: 5px;
+   cursor: pointer;
+   stroke: #EEEE20;
+}

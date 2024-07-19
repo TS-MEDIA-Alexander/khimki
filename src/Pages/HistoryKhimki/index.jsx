@@ -18,7 +18,6 @@ import img10 from '../../assets/img/history/historyKhimki/img10.png';
 /* Компоненты */
 import ImgContainerRow from '../../Components/ImgContainerRow';
 import VirtualMuseumLarge from '../../BannersComopnents/VirtualMuseumLarge';
-import UsefulSourse from '../../Components/UsefulSourse';
 
 /* Баннеры */
 import FamilyYear from '../../BannersComopnents/FamilyYear';
@@ -196,10 +195,6 @@ const HistoryKhimki = (props) => {
                   </div>
                </div>
             </div>
-
-
-
-            <UsefulSourse />
 
          </ContantContainerMain>
       </div>

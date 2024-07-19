@@ -113,8 +113,6 @@ const NewsPage = (props) => {
             </div>
             <EventAnnouncements />
 
-            <UsefulSourse />
-
          </ContantContainerMain>
          {/* <ScrollButton/> */}
       </div>

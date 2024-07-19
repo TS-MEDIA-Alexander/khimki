@@ -5,9 +5,6 @@ import s from './CityCoatOfArms.module.css';
 /* Фотографии */
 import mainImg from '../../assets/img/history/cityCoatOfArms/main_img.png';
 
-/* Компоненты */
-import UsefulSourse from '../../Components/UsefulSourse';
-
 /* Баннеры */
 import FamilyYear from '../../BannersComopnents/FamilyYear';
 import SVO from '../../BannersComopnents/svo';
@@ -94,10 +91,6 @@ const CityCoatOfArms = (props) => {
                   </div>
                </div>
             </div>
-
-
-
-            <UsefulSourse />
 
          </ContantContainerMain>
       </div>

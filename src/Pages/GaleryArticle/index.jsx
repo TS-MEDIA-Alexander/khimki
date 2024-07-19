@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './GaleryArticle.module.css';
 import { useParams } from 'react-router-dom';
-import UsefulSourse from '../../Components/UsefulSourse';
 
 import FamilyYear from '../../BannersComopnents/FamilyYear';
 import TgChannel from '../../BannersComopnents/TgChannel';
@@ -70,8 +69,6 @@ const GaleryArticle = (props) => {
                </div>
 
             </section>
-
-            <UsefulSourse />
 
          </ContantContainerMain>
       </div>

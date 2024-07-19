@@ -186,9 +186,6 @@ p {
    line-height: 20px;
 }
 
-
-
-
 /* Колонки */
 .columnContainer {
    display: flex;
@@ -206,7 +203,7 @@ p {
 .borderMain {
    padding: 40px;
    border-radius: 40px;
-   border: 1px solid #DFDFDF;
+   border: 1px solid #EDEDED;
 }
 
 /* Карточка */
@@ -268,6 +265,10 @@ p {
 
 /*  */
 .btnCircleG {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
    background: #F6F6F6;
 }
 
@@ -440,6 +441,10 @@ p {
    margin-top: 48px;
 }
 
+.mt75 {
+   margin-top: 75px;
+}
+
 .mt80 {
    margin-top: 80px;
 }
@@ -453,6 +458,9 @@ p {
    justify-content: space-between;
 }
 
+.flexContainer {
+   display: flex;
+}
 
 .border {
    border: 1px solid red;

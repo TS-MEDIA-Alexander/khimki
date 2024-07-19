@@ -12,7 +12,6 @@ import img5 from '../../assets/img/history/monumentsHistoryArt/img5.png';
 
 /* Компоненты */
 import VirtualMuseumLarge from '../../BannersComopnents/VirtualMuseumLarge';
-import UsefulSourse from '../../Components/UsefulSourse';
 
 /* Баннеры */
 import FamilyYear from '../../BannersComopnents/FamilyYear';
@@ -109,10 +108,6 @@ const MonumentsHistoryArt = (props) => {
                   </div>
                </div>
             </div>
-
-
-
-            <UsefulSourse />
 
          </ContantContainerMain>
       </div>

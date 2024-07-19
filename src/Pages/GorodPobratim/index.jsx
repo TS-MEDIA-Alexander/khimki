@@ -9,7 +9,6 @@ import icon from '../../assets/icons/btnPlanet.svg'
 
 /* Компоненты */
 import VirtualMuseumLarge from '../../BannersComopnents/VirtualMuseumLarge';
-import UsefulSourse from '../../Components/UsefulSourse';
 
 /* Баннеры */
 import FamilyYear from '../../BannersComopnents/FamilyYear';
@@ -54,8 +53,6 @@ const GorodPobratim = (props) => {
                      
                   </div>
 
-
-
                   <div className="mt120">
                      <VirtualMuseumLarge />
                   </div>
@@ -67,10 +64,6 @@ const GorodPobratim = (props) => {
                   </div>
                </div>
             </div>
-
-
-
-            <UsefulSourse />
 
          </ContantContainerMain>
       </div>

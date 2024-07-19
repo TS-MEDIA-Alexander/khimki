@@ -1,7 +1,9 @@
 import React from 'react';
 import s from './UsefulSourse.module.css';
-/* Картинка баннера */
-import banner from '../../assets/img/banners/contacts.png';
+
+/* Компоненты */
+import ContantContainerMain from '../../total/ContantContainerMain';
+
 /* Иконки */
 import vk from '../../assets/icons/vk.svg';
 import telegram from '../../assets/icons/telegram.svg';
@@ -10,6 +12,7 @@ import ok from '../../assets/icons/ok.svg';
 const UsefulSourse = (props) => {
    return (
       <div className='mt80'>
+         <ContantContainerMain >
          <div className='columnContainer'>
             <div className="columnLarge">
                <div className="borderMain">
@@ -66,7 +69,8 @@ const UsefulSourse = (props) => {
             <a href="#" className={s.link}>Карта сайта</a>
             <a href="#" className={s.link}>Предидущая версия сайта</a>
          </div>
-      </div>
+      </ContantContainerMain>
+      </div >
    )
 }
 export default UsefulSourse;

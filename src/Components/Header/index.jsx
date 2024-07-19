@@ -48,26 +48,29 @@ const Header = (props) => {
                      <div className={`${s.item} ${s.itemArrow}`}>
                         История
                         <div className={s.dropDownMenu}>
-                           <NavLink to={ROUTER.history} className={s.linkMenu} >
+                           <NavLink to={ROUTER.history.src} className={s.linkMenu} >
                               История
                            </NavLink>
-                           <div className={s.linkMenu} >
+                           <NavLink to={ROUTER.history.khimki} className={s.linkMenu} >
                               История города Химки
-                           </div>
-                           <div className={s.linkMenu} >
+                           </NavLink>
+                           <NavLink to={ROUTER.history.pamyatnikiIstoriiKultury} className={s.linkMenu} >
                               Памятники истории и культуры
-                           </div>
-                           <div className={s.linkMenu} >
+                           </NavLink>
+                           <NavLink to={ROUTER.history.gorodPobratim} className={s.linkMenu} >
+                              Город побратим
+                           </NavLink>
+                           <NavLink to={ROUTER.history.cityCoatOfArms} className={s.linkMenu} >
                               Герб города
-                           </div>
+                           </NavLink>
                         </div>
                      </div>
                      <div className={`${s.item} ${s.itemArrow}`} >
                         Округ
                         <div className={s.dropDownMenu}>
-                           <div className={s.linkMenu}>
+                           <NavLink to={ROUTER.khimkiDistrict} className={s.linkMenu}>
                               Городской округ Химки
-                           </div>
+                           </NavLink>
                            <div className={s.linkMenu}>
                               Структура администрации
                            </div>

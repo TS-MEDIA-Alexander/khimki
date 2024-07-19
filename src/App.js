@@ -4,6 +4,7 @@ import './App.css';
 /* Components */
 import Footer from './Components/Footer';
 import Header from './Components/Header';
+import UsefulSourse from './Components/UsefulSourse';
 
 /* Pages */
 /* import Map from './Components/Map'; */
@@ -16,8 +17,9 @@ import VideoPage from './Pages/VideoPage';
 import History from './Pages/History';
 import HistoryKhimki from './Pages/HistoryKhimki';
 import MonumentsHistoryArt from './Pages/MonumentsHistoryArt';
-import GorodPobratim from './Pages/CityCoatOfArms';
+import GorodPobratim from './Pages/GorodPobratim';
 import CityCoatOfArms from './Pages/CityCoatOfArms';
+import KhimkiDistrict from './Pages/KhimkiDistrict';
 import Table from './Components/Table';
 
 function App() {
@@ -34,16 +36,17 @@ function App() {
                <Route path={ROUTER.galery} element={<GaleryPage/>} />
                <Route path={ROUTER.galeryArticle} element={<GaleryArticle/>} />
                <Route path={ROUTER.video} element={<VideoPage/>} />
-               <Route path={ROUTER.history} element={<History/>} />
-               <Route path={ROUTER.historyKhimki} element={<HistoryKhimki/>} />
-               <Route path={ROUTER.pamyatnikiIstoriiKultury} element={<MonumentsHistoryArt/>} />
-               <Route path={ROUTER.gorodPobratim} element={<GorodPobratim/>} />
-               <Route path={ROUTER.cityCoatOfArms} element={<CityCoatOfArms/>} />
+               <Route path={ROUTER.history.src} element={<History/>} />
+               <Route path={ROUTER.history.khimki} element={<HistoryKhimki/>} />
+               <Route path={ROUTER.history.pamyatnikiIstoriiKultury} element={<MonumentsHistoryArt/>} />
+               <Route path={ROUTER.history.gorodPobratim} element={<GorodPobratim/>} />
+               <Route path={ROUTER.history.cityCoatOfArms} element={<CityCoatOfArms/>} />
                <Route path={ROUTER.table} element={<Table/>} />
-                
+               <Route path={ROUTER.khimkiDistrict} element={<KhimkiDistrict/>} />
             </Routes>
          </div>
 
+         <UsefulSourse/>
          <Footer />
          
       </div>

@@ -11,7 +11,6 @@ import galery from '../../backend/galery/galery';
 import EventAnnouncements from '../../Components/EventAnnouncements';
 
 /* Баннеры */
-import UsefulSourse from '../../Components/UsefulSourse';
 import FamilyYear from '../../BannersComopnents/FamilyYear';
 import TgChannel from '../../BannersComopnents/TgChannel';
 
@@ -92,8 +91,6 @@ const GaleryPage = (props) => {
 
             </div>
             <EventAnnouncements />
-
-            <UsefulSourse />
 
          </ContantContainerMain>
          {/* <ScrollButton /> */}

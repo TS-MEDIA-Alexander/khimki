@@ -6,7 +6,7 @@
 
 .galeryContainer {
    width: 277px;
-   height: 252px;
+   height: 277px;
    border-radius: 40px;
    border: 1px solid #EDEDED;
    padding: 24px;
@@ -49,7 +49,7 @@
    font-weight: 500;
    line-height: 22px;
    display: -webkit-box;
-   -webkit-line-clamp: 2;
+   -webkit-line-clamp: 3;
    -webkit-box-orient: vertical;
    overflow: hidden;
    text-overflow: ellipsis;

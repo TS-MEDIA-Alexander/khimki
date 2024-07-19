@@ -7,7 +7,6 @@ import slider1 from '../../assets/img/sliders/main/1.png'
 import Carousel from '../../Components/Carousel';
 import BannerArrow from '../../Components/BannerArrow';
 import News from '../../Components/News';
-import UsefulSourse from '../../Components/UsefulSourse';
 import Slide from '../../Components/Slide';
 
 /* Баннеры */
@@ -133,7 +132,7 @@ const Main = (props) => {
             {/* Анонсы мероприятий */}
             <EventAnnouncements />
 
-            <UsefulSourse />
+            
 
          </ContantContainerMain>
 
