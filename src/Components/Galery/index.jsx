@@ -11,7 +11,7 @@ const Galery = ({ galery, rowLength }) => {
 
    return (
       <div className={s.galeryWrapper}>
-         {galery.map((el, i) => <NavLink to={`${ROUTER.galeryArticle}${el.id}`} key={i} className={`${isWrap(i)} ${s.galeryContainer}`}>
+         {galery.map((el, i) => <NavLink to={`${ROUTER.galeryArticle}${el.id}`} key={i} className={`${isWrap(i)} ${s.galeryContainer} borderMain`}>
             <div className={s.preview}><img src={el.imgPreview} alt="" /></div>
             <div className={s.filterTitle}>{el.filter.date}</div>
             <div className={s.title}>{el.title}</div>

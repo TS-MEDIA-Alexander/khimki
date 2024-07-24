@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const HistoryCard = ({src, img, title, textBody}) => {
    return (
-      <NavLink to={src} className={s.cardContainer}>
+      <NavLink to={src} className={`${s.cardContainer} borderMain`}>
          <img className={s.img} src={img} alt="" />
          <div className={s.textContainer}>
             <div className={s.title}>{title}</div>

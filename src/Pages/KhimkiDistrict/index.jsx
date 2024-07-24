@@ -3,6 +3,8 @@ import ContantContainerMain from '../../total/ContantContainerMain';
 import Map from '../../Components/Map';
 import s from './KhimkiDistrict.module.css';
 import DistrictAbout from '../../Components/DistrictAbout';
+import { ROUTER } from '../../config';
+import { NavLink } from 'react-router-dom';
 
 /* Иконки */
 import arrow_btn_link from '../../assets/icons/arrow_btn_link.svg';
@@ -18,10 +20,14 @@ import lunyovskoye from '../../assets/icons/khimkiDistrict/lunyovskoye.svg';
 import DistrictCard from '../../Components/DistrictCard';
 
 /* Фото */
-import videoPreview from '../../assets/img/khimkiDistrict/videoPreview.png';
 import mayor from '../../assets/img/khimkiDistrict/mayor.png';
+
+/* Баннеры */
 import MunicipalProgramsMini from '../../BannersComopnents/MunicipalProgramsMini';
 import Problem from '../../BannersComopnents/Problem';
+
+/* Нужно решить баг с видео (в консоле вылетают ошибки) */
+/* import ReactPlayer from 'react-player'; */
 
 const KhimkiDistrict = (props) => {
 
@@ -48,7 +54,7 @@ const KhimkiDistrict = (props) => {
                <div className={`mt32 borderMain ${s.districtBanner}`}>
                   <div className={s.textContainer}>
                      <div className={s.bannerTitle}><img src={arrow} alt="" />277 185 человек</div>
-                     <div className={`mt8 ${s.description}`}>Cуммарная численность населения округа 2023 г.</div>
+                     <div className={`mt8 ${s.description} ${s.description_center}`}>Cуммарная численность населения округа 2023 г.</div>
                   </div>
                   <img className={`mt12 ${s.radialDiagram}`} src={radialDiagram} alt="" />
                   <div className="mt32">
@@ -130,16 +136,26 @@ const KhimkiDistrict = (props) => {
             </div>
             <div className="bannerArrowContainer">
                <div className={`mt32 borderMain ${s.districtVideo}`}>
-                  <iframe className={s.borderR} src="https://www.youtube.com/embed/xfBzWJyErEc?si=9p-cJfQhW45QsOo3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe className={s.borderR} src="https://www.youtube.com/embed/xfBzWJyErEc?si=9p-cJfQhW45QsOo3" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameBorder="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
+                  {/* В консоли вылетают ошибки, а также подгружается много информации из-за ютубовского iframe. Есть решение с ReactPlayer */}
+                  {/* <ReactPlayer
+                  light
+                  url={"https://www.youtube.com/embed/xfBzWJyErEc?si=9p-cJfQhW45QsOo3"}
+                  width="100%"
+                  height={"240px"}
+                  /> */}
+
                </div>
-               <div className={`mt32 borderMain ${s.districtBanner}`}>
+               <NavLink to={ROUTER.khimkiDistrict.performanceIndicators} className={`mt32 borderMain ${s.districtBanner}`}>
                   <div className={s.bannerTitle}>Показатели работы</div>
-                  <div className={`mt8 ${s.description}`}>Администрации городского округа</div>
-                  <img className={`mt24 ${s.borderR}`} src={mayor} alt="" />
+                  <div className={`mt48 ${s.imgContainerMayor}`}>
+                     <img className={s.borderR} src={mayor} alt="" />
+                  </div>
                   <div className={`mt32 ${s.text}`}>Мы любим наш город и сделаем все, что бы каждый день он становился лучше!</div>
                   <div className={`mt20 ${s.author}`}>Волошин Д.В.</div>
                   <div className={`btnCircleG ${s.btn}`}><img src={arrow_btn_link} alt="" /></div>
-               </div>
+               </NavLink>
             </div>
             <div className="bannerArrowContainer">
                <div className={`mt32 borderMain ${s.sectionMap}`}>
@@ -147,27 +163,20 @@ const KhimkiDistrict = (props) => {
                   <div className="mt40 bannerArrowContainer">
                      <div className={s.column}>
                         <div className={s.item}>Устав, символика, карта </div>
-                        <div className={s.item}>Глава городского округа</div>
-                        <div className={s.item}>Руководство </div>
-                        <div className={s.item}>Структура Администрации </div>
-                        <div className={s.item}>Деятельность</div>
-                        <div className={s.item}>Муниципальные программы  </div>
-                     </div>
-                     <div className={s.column}>
-                        <div className={s.item}>Социальные программы  </div>
-                        <div className={s.item}>Информационные системы </div>
-                        <div className={s.item}>Обращения граждан  </div>
-                        <div className={s.item}>Присяжные заседатели  </div>
-                        <div className={s.item}>Совет депутатов   </div>
-                        <div className={s.item}>ТИК города Химки  </div>
-                     </div>
-                     <div className={s.column}>
+                        <NavLink to={ROUTER.khimkiDistrict.administrationStructure} className={s.item}>Структура Администрации </NavLink>
+                        <div className={s.item}>Муниципальные программы </div>
                         <div className={s.item}>Контрольно-счетная палата </div>
-                        <div className={s.item}>Общественная палата </div>
-                        <div className={s.item}>Наукоград</div>
-                        <div className={s.item}>Общество</div>
-                        <div className={s.item}>Общественные организации</div>
+                     </div>
+                     <div className={s.column}>
+                        <div className={s.item}>Совет депутатов </div>
+                        <div className={s.item}>ТИК города Химки </div>
+                        <div className={s.item}>Присяжные заседатели </div>
+                        <div className={s.item}>Общественные организации  </div>
+                     </div>
+                     <div className={s.column}>
                         <div className={s.item}>Государственные организации</div>
+                        <div className={s.item}>Наукоград</div>
+                        <div className={s.item}>Информационные системы</div>
                      </div>
                      <MunicipalProgramsMini />
                   </div>

@@ -7,8 +7,6 @@
 .galeryContainer {
    width: 277px;
    height: 277px;
-   border-radius: 40px;
-   border: 1px solid #EDEDED;
    padding: 24px;
    text-decoration: none;
    cursor: pointer;

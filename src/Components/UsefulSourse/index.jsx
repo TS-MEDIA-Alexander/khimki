@@ -19,30 +19,30 @@ const UsefulSourse = (props) => {
                   <div className={s.title}>Полезные ресурсы</div>
                   <div className={s.itemTextContainer}>
                      <div className={`${s.column} ${s.columnFirst}`}>
-                        <div className={s.item}>Сайт Правительства Московской области</div>
-                        <div className={s.item}>Официальный сайт Московской областной Думы</div>
-                        <div className={s.item}>Инвестиционный портал Московской области</div>
-                        <div className={s.item}>Бизнес-навигатор МСП</div>
-                        <div className={s.item}>Представитель уполномоченного по правам человека в ГО Химки​</div>
-                        <div className={s.item}>Уполномоченный по правам ребёнка в Московской области</div>
-                        <div className={s.item}>Прокуратура</div>
+                        <a href='https://mosreg.ru/' target='_blank' className={s.item}>Сайт Правительства Московской области</a>
+                        <a href='https://www.mosoblduma.ru/' target='_blank' className={s.item}>Официальный сайт Московской областной Думы</a>
+                        <a href='https://invest.mosreg.ru/' target='_blank'  className={s.item}>Инвестиционный портал Московской области</a>
+                        <a href='https://smbn.ru/' target='_blank' className={s.item}>Бизнес-навигатор МСП</a>
+                        <a href='https://upch.mosreg.ru/' target='_blank' className={s.item}>Представитель уполномоченного по правам человека в ГО Химки​</a>
+                        <a href='https://detimo.mosreg.ru/' target='_blank' className={s.item}>Уполномоченный по правам ребёнка в Московской области</a>
+                        <a href='https://epp.genproc.gov.ru/web/proc_50' target='_blank' className={s.item}>Прокуратура</a>
                      </div>
                      <div className={`${s.column} ${s.columnSecond} `}>
-                        <div className={s.item}>Социальный фонд Российской Федерации (до 01.01.2023 - Пенсионный фонд Москвы <p>и Московской области)</p></div>
-                        <div className={s.item}>Межрайонная инспекция ФНС России по ГО Химки</div>
-                        <div className={s.item}>Главное управление содержания территорий Московской области (до 10.01.2022 - ГАТН Московской области)</div>
-                        <div className={s.item}>Служба медицинской профилактики Московской области</div>
-                        <div className={s.item}>Открытый бюджет городского округа Химки​</div>
-                        <div className={s.item}>Главное управление МЧС России по Московской области</div>
+                        <a href='https://sfr.gov.ru/' target='_blank' className={s.item}>Социальный фонд Российской Федерации (до 01.01.2023 - Пенсионный фонд Москвы <p>и Московской области)</p></a>
+                        <a href='https://www.nalog.gov.ru/rn50/ifns/imns_50_21/' target='_blank' className={s.item}>Межрайонная инспекция ФНС России по ГО Химки</a>
+                        <a href='https://gust.mosreg.ru/?ysclid=ll3k9953x1825169916' target='_blank' className={s.item}>Главное управление содержания территорий Московской области (до 10.01.2022 - ГАТН Московской области)</a>
+                        <a href='https://mpmo.ru/archives/category/novosti' target='_blank' className={s.item}>Служба медицинской профилактики Московской области</a>
+                        <a href='http://budget.admhimki.ru/analitika/ispolnenie-byudzheta/osnovnye-parametry-byudzheta' target='_blank' className={s.item}>Открытый бюджет городского округа Химки​</a>
+                        <a href='https://50.mchs.gov.ru/' target='_blank' className={s.item}>Главное управление МЧС России по Московской области</a>
                      </div>
                      <div className={`${s.column} ${s.columnLast}`}>
-                        <div className={s.item}>ГКУ МО «АРКИ»</div>
-                        <div className={s.item}>Портал Госуслуги</div>
-                        <div className={s.item}>Контрольно-счетная​ ​палата</div>
-                        <div className={s.item}>Совет депутатов​</div>
-                        <div className={s.item}>Дирекция парков​</div>
-                        <div className={s.item}>МФЦ</div>
-                        <div className={s.item}>Портал государственныхи муниципальных услуг Московской области</div>
+                        <a href='https://arki.mosreg.ru/' target='_blank' className={s.item}>ГКУ МО «АРКИ»</a>
+                        <a href='https://www.gosuslugi.ru/' target='_blank' className={s.item}>Портал Госуслуги</a>
+                        <a href='https://ksphimki.ru/' target='_blank' className={s.item}>Контрольно-счетная​ ​палата</a>
+                        <a href='https://sdhimki.ru/' target='_blank' className={s.item}>Совет депутатов​</a>
+                        <a href='https://parkihimki.ru/' target='_blank' className={s.item}>Дирекция парков​</a>
+                        <a href='http://hmfc.ru/' target='_blank' className={s.item}>МФЦ</a>
+                        <a href='https://uslugi.mosreg.ru/' target='_blank' className={s.item}>Портал государственныхи муниципальных услуг Московской области</a>
                      </div>
                   </div>
                </div>

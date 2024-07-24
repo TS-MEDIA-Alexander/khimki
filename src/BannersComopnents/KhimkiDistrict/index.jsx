@@ -4,7 +4,7 @@ import s from './KhimkiDistrict.module.css';
 
 const KhimkiDistrict = (props) => {
    return (
-      <div className={s.bannerContainer}>
+      <div className={`${s.bannerContainer} borderMain`}>
          <div className={s.topContainer}>
             <div className={s.title}>
                <div>Городской округ Химки</div>

@@ -1,9 +1,6 @@
 .cardContainer {
    position: relative;
    display: flex;
-   padding: 40px;
-   border-radius: 40px;
-   border: 1px solid #EDEDED;
    cursor: pointer;
    text-decoration: none;
 }

@@ -6,9 +6,9 @@ const Problem = (props) => {
       <a href="#" className={s.bannerContainer}>
          <div className={s.topContainer}>
             <div className={s.title}>
-               <div>Не убран мусор, </div>
-               <div>яма на дороге, </div>
-               <div>не горит фонарь?</div>
+               <div>Перечень муниципальных </div>
+               <div>программ городского округа </div>
+               <div>Химки</div>
             </div>
             <div className={s.textBody}>
                <div>Столкнулись с проблемой — сообщите о ней! </div>

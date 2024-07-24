@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import map from '../../assets/img/Map/map.svg';
 import s from './Map.module.css';
 import MapSVG from '../MapSVG';
 
@@ -91,6 +90,9 @@ const Map = ({ fnSet }) => {
                      </div>
                   )}
                </div>
+
+               {curId === 'clear' && null}
+
             </div>
 
          </div>

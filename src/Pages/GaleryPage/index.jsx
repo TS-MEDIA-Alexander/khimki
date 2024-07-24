@@ -15,7 +15,7 @@ import FamilyYear from '../../BannersComopnents/FamilyYear';
 import TgChannel from '../../BannersComopnents/TgChannel';
 
 /* Форматор - преобразует дату */
-import { formatter } from '../../utils/index';
+import { formatterCalendar } from '../../utils/index';
 
 const GaleryPage = (props) => {
 
@@ -39,7 +39,7 @@ const GaleryPage = (props) => {
    }
 
    const [calendarDateStart, setCalendarDateStart] = useState('24.06.2024')
-   const handleDateStartChange = e => setCalendarDateStart(formatter.format(e));
+   const handleDateStartChange = e => setCalendarDateStart(formatterCalendar.format(e));
 
 
    return (
@@ -52,8 +52,8 @@ const GaleryPage = (props) => {
                   <div className="filter">
 
                      <div className="filterBtnContainer">
-                        <div className={`filterChoce ${filterImg && 'active'}`} onClick={onClickFilter}>Только фото</div>
-                        <div className={`filterChoce ${filterVideo && 'active'}`} onClick={onClickFilter}>Только видео</div>
+                        <div className={`filterChoce ${filterImg && 'bgMain'}`} onClick={onClickFilter}>Только фото</div>
+                        <div className={`filterChoce ${filterVideo && 'bgMain'}`} onClick={onClickFilter}>Только видео</div>
                      </div>
 
                      <div className='mt20'>

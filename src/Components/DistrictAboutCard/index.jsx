@@ -32,7 +32,7 @@ const DistrictAboutCard = ({ title, description, countPeaple, km, chairman, dist
                </div>
             </div>
             <div className={s.imgContainer}>
-               <img className={`mt16 ${s.imgPerson}`} src={chairman.img} alt="" />
+               <img className={`${s.imgPerson}`} src={chairman.img} alt="" />
                <div className={`mt16 ${s.description}`}>
                   Председатель территориального управления {title}
                </div>

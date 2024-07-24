@@ -9,13 +9,13 @@ import icon from '../../assets/icons/version_visually_impaired.svg';
 const Header = (props) => {
    return (
       <div>
-         <div className={s.bgBlock}>
+         <div className={`bgMain ${s.bgBlock}`}>
             <ContantContainerMain>
                <div className={s.logoRow}>
                   <NavLink to={ROUTER.main} className={s.logoBlock}>
                      <img src={logo} alt="" />
                      <div className={s.textMain}>
-                        <div className={s.titleInfo}>Официальный интернет-портал</div>
+                        <div className={s.titleInfo}>Официальный интернет-сайат</div>
                         <div className={s.titleAdministration}>АДМИНИСТРАЦИИ ГОРОДСКОГО ОКРУГА ХИМКИ</div>
                         <div className={s.titleInfo}>Московской области</div>
                      </div>
@@ -48,7 +48,7 @@ const Header = (props) => {
                      <div className={`${s.item} ${s.itemArrow}`}>
                         История
                         <div className={s.dropDownMenu}>
-                           <NavLink to={ROUTER.history.src} className={s.linkMenu} >
+                           <NavLink to={ROUTER.history.main} className={s.linkMenu} >
                               История
                            </NavLink>
                            <NavLink to={ROUTER.history.khimki} className={s.linkMenu} >
@@ -68,12 +68,12 @@ const Header = (props) => {
                      <div className={`${s.item} ${s.itemArrow}`} >
                         Округ
                         <div className={s.dropDownMenu}>
-                           <NavLink to={ROUTER.khimkiDistrict} className={s.linkMenu}>
+                           <NavLink to={ROUTER.khimkiDistrict.main} className={s.linkMenu}>
                               Городской округ Химки
                            </NavLink>
-                           <div className={s.linkMenu}>
+                           <NavLink to={ROUTER.khimkiDistrict.administrationStructure} className={s.linkMenu}>
                               Структура администрации
-                           </div>
+                           </NavLink>
                            <div className={s.linkMenu}>
                               Социальные программы
                            </div>
@@ -97,16 +97,16 @@ const Header = (props) => {
                      <div className={s.item}>Деятельность</div>
                      <div className={s.item}>Документы</div>
                      <div className={s.item}>Прокуратура </div>
-                     <div className={`${s.item} ${s.itemArrow}`}>
+                     <div className={`${s.item}`}>
                         Обращения граждан
-                        <div className={s.dropDownMenu}>
+                        {/* <div className={s.dropDownMenu}>
                            <div className={s.linkMenu}>
                               Городской округ Химки
                            </div>
                            <div className={s.linkMenu}>
                               Структура администрации
                            </div>
-                        </div>
+                        </div> */}
                      </div>
                      <div className={s.item}>Контакты</div>
                   </div>

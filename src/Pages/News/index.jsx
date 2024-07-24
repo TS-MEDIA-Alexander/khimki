@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import News from '../../Components/News';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import Calendar from '../../total/Calendar';
@@ -7,17 +7,32 @@ import ReactSelect from '../../total/ReactSelect';
 
 import s from './NewsPage.module.css';
 
+import API from '../../API/index';
+
 /* Новости */
-import news from '../../backend/news/news';
 import EventAnnouncements from '../../Components/EventAnnouncements';
-import UsefulSourse from '../../Components/UsefulSourse';
 import VkChannel from '../../BannersComopnents/VkChannel';
 import TgChannel from '../../BannersComopnents/TgChannel';
 
 /* Форматор - преобразует дату */
-import {formatter} from '../../utils/index';
+import { formatterCalendar } from '../../utils/index';
 
 const NewsPage = (props) => {
+
+   const [news, setNews] = useState([]);
+   const [currentPage, setCurrentPage] = useState(1);
+
+   useEffect(() => {
+      API.getNews()
+         .then(data => setNews(data))
+   }, [])
+
+
+   const shiwMore = () => {
+      setCurrentPage(currentPage + 1)
+      API.getNews(currentPage)
+         .then(data => setNews([...news, ...data]))
+   }
 
    //ReactSelect
    //Вводные данные
@@ -28,9 +43,6 @@ const NewsPage = (props) => {
    ]
 
    const [filterRelevance, setFilterRelevance] = useState(filterRelevanceData[0]);
-
-   const ternaryArrNews = [...news, ...news, ...news]
-
 
    const filterThemeData = [
       { id: 1, value: 'all', text: 'Все новости' },
@@ -51,8 +63,9 @@ const NewsPage = (props) => {
 
    const [filterTheme, setFilterTheme] = useState(filterThemeData[0]);
 
+   /* Календарь */
    const [calendarDateStart, setCalendarDateStart] = useState('24.06.2024')
-   const handleDateStartChange = e => setCalendarDateStart(formatter.format(e));
+   const handleDateStartChange = e => setCalendarDateStart(formatterCalendar.format(e));
 
    return (
       <div>
@@ -107,7 +120,8 @@ const NewsPage = (props) => {
                   </div>
                </div>
                <div className="columnLarge">
-                  <News rowLength={3} btnText={'Загрузить еще'} news={ternaryArrNews} />
+                  <News rowLength={3} news={news} />
+                  <div onClick={shiwMore} className={`btnW ${s.showMore}`}>Загрузить еще</div>
                </div>
 
             </div>

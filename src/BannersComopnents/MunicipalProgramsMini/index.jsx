@@ -11,8 +11,7 @@ const MunicipalProgramsMini = (props) => {
             </div>
             <div className={s.textBody}>
                <div>Перечеь муниципальных</div>
-               <div>программ городского округа</div>
-               <div>Химки</div>
+               <div>программ</div>
             </div>
          </div>
 

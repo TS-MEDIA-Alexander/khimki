@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './Main.module.css';
+
+import API from '../../API';
 
 /* Компоненты */
 import slider1 from '../../assets/img/sliders/main/1.png'
@@ -28,15 +30,19 @@ import program1 from '../../assets/img/banners/Programm1.png';
 import program2 from '../../assets/img/banners/Programm2.png';
 import program3 from '../../assets/img/banners/Programm3.png';
 
-
-/* Новости */
-import news from '../../backend/news/news';
-
 /* Стили баннера */
 import VirtualMuseum from '../../BannersComopnents/VirtualMuseum';
 import EventAnnouncements from '../../Components/EventAnnouncements';
 
 const Main = (props) => {
+
+   /* Запрашиваем новости */
+   const [news, setNews] = useState([]);
+   
+   useEffect(() => {
+      API.getNews()
+         .then(data => setNews(data))
+   }, [])
 
    return (
       <div>
@@ -132,7 +138,7 @@ const Main = (props) => {
             {/* Анонсы мероприятий */}
             <EventAnnouncements />
 
-            
+
 
          </ContantContainerMain>
 

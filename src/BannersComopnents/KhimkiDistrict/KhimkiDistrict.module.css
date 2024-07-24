@@ -9,9 +9,6 @@
    height: 398px;
    overflow: hidden;
    cursor: pointer;
-   padding: 40px;
-   border: 1px solid #ededed;
-   border-radius: 40px;
 }
 
 .title {

@@ -100,6 +100,10 @@
    letter-spacing: -0.4px;
 }
 
+.textBody p:not(:first-child) {
+   margin-top: 38px;
+}
+
 .mediaTitle {
    color: #303030;
    font-size: 20px;

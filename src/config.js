@@ -6,13 +6,20 @@ export const ROUTER = {
    galeryArticle: '/galery/:id',
    video: '/video',
    history:{
-      src: '/istoriya',
+      main: '/istoriya',
       khimki: '/istoriya/istoriya-himki',
       pamyatnikiIstoriiKultury: '/istoriya/pamyatniki-istorii-kultury',
       gorodPobratim: '/istoriya/gorod-pobratim',
       cityCoatOfArms: '/istoriya/gerb-goroda',
    },
    
-   khimkiDistrict: '/gorodskoy-okrug-khimki',
+   khimkiDistrict: {
+      main: '/gorodskoy-okrug-khimki',
+      performanceIndicators: '/gorodskoy-okrug-khimki/pokazateli-raboty-administratsii',
+      administrationStructure: '/gorodskoy-okrug-khimki/struktura-administratsii'
+   },
+   administrationStructure: {
+      main: 'administrationStructure'
+   },
    table: '/tablitsa',
 }

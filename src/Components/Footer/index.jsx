@@ -11,7 +11,7 @@ const Footer = (props) => {
                <div className={s.footerLogoBlock}>
                   <img src={logo} alt="" />
                   <div className={s.textMain}>
-                     <div className={s.titleInfo}>Официальный интернет-портал</div>
+                     <div className={s.titleInfo}>Официальный интернет-сайт</div>
                      <div className={s.titleAdministration}>АДМИНИСТРАЦИИ ГОРОДСКОГО ОКРУГА ХИМКИ</div>
                      <div className={s.titleInfo}>Московской области</div>
                   </div>

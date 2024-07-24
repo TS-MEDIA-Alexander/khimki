@@ -4,7 +4,7 @@ import s from './Event.module.css';
 
 const Event = ({ img, title }) => {
    return (
-      <div className={s.container}>
+      <div className={`${s.container} borderMain`}>
          <div className={s.contantContainer}>
             <div className={s.imgContainer}><img src={img} alt="" /></div>
             <div className={s.title}>{title}</div>

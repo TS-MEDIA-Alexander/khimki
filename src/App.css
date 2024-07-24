@@ -87,10 +87,6 @@ p {
    cursor: pointer;
 }
 
-.filterChoce.active {
-   background: #EEEE20;
-}
-
 .filterThemeContainer {
    position: relative;
    display: flex;
@@ -206,6 +202,11 @@ p {
    border: 1px solid #EDEDED;
 }
 
+/* Главная заливка */
+.bgMain {
+   background: #FFEC00;
+}
+
 /* Карточка */
 .cardContainer {
    display: flex;
@@ -215,15 +216,16 @@ p {
 
 /* Состояние кнопок */
 .btnY {
-   background: #EEEE20;
+   border-radius: 40px;
+   background: #FFEC00;
 }
 
 .btnY:hover {
-   background: #FCFC3B;
+   background: #FFF57C;
 }
 
 .btnY:active {
-   background: #ECE513;
+   background: #F2DD6C;
 }
 
 /*  */
@@ -233,7 +235,7 @@ p {
 
 .btnW:hover {
    color: #DCDCDC;
-   border: 1px solid #EEEE20;
+   border: 1px solid #FFEC00;
 }
 
 .btnW:hover img {
@@ -242,7 +244,7 @@ p {
 
 .btnW:active {
    color: #303030;
-   border: 1px solid #EEEE20;
+   border: 1px solid #FFEC00;
 }
 
 .btnW:active img {
@@ -282,15 +284,15 @@ p {
 
 /*  */
 .btnRad {
-   background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #F5982A 0%, #EEEE20 100%);
+   background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #F5982A 0%, #FFEC00 100%);
 }
 
 .btnRad:hover {
-   background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #E1A522 0%, #FCFC3B 100%);
+   background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #E1A522 0%, #FFF57C 100%);
 }
 
 .btnRad:active {
-   background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #D37300 0%, #ECE513 100%);
+   background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #D37300 0%, #F2DD6C 100%);
 }
 
 /* Состояние кнопок для баннеров */

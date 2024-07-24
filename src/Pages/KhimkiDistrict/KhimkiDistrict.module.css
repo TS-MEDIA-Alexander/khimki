@@ -29,9 +29,9 @@
    padding: 31px;
    display: flex;
    flex-direction: column;
-
    align-items: center;
    width: 261px;
+   text-decoration: none;
 }
 
 .textContainer {
@@ -129,6 +129,10 @@
    letter-spacing: -0.24px;
 }
 
+.description.description_center {
+   text-align: center;
+}
+
 .districtLineChart {
    width: 100%;
    display: flex;
@@ -161,7 +165,7 @@
 }
 
 .forest {
-   width: 171px;
+   width: 178px;
 }
 
 .schools {
@@ -194,7 +198,12 @@
 
 .districtVideo {
    width: 950px;
+   height: 464px;
    padding: 32px;
+}
+
+.imgContainerMayor {
+   width: 261px;
 }
 
 .borderR {
@@ -237,7 +246,8 @@
    width: 100%;
    padding: 32px;
 }
-.sectionMapTitle{
+
+.sectionMapTitle {
    color: #303030;
    font-size: 28px;
    font-style: normal;
@@ -247,21 +257,27 @@
 }
 
 .item {
+   display: block;
    position: relative;
-   padding: 8px 24px 8px 48px;
    color: #303030;
+   padding: 16px 0px 0px 48px;
    font-size: 16px;
    font-style: normal;
    font-weight: 400;
    line-height: 24px;
+   text-decoration: none;
 }
 
+/* .item:not(:first-child){
+   padding: 16px 0px 0px 48px;
+}
+ */
 .item::before {
    content: '';
    position: absolute;
    border-radius: 50%;
    left: 24px;
-   top: 17px;
+   top: 25px;
    width: 6px;
    height: 6px;
    background: #F1E43D;
