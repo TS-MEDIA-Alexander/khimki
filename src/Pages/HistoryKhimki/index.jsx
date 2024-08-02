@@ -1,6 +1,8 @@
 import React from 'react';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './HistoryKhimki.module.css';
+import { NavLink } from 'react-router-dom';
+import { ROUTER } from '../../config';
 
 /* Фотографии */
 import mainImg from '../../assets/img/history/historyKhimki/main_img.png';
@@ -23,17 +25,15 @@ import VirtualMuseumLarge from '../../BannersComopnents/VirtualMuseumLarge';
 import FamilyYear from '../../BannersComopnents/FamilyYear';
 import SVO from '../../BannersComopnents/svo';
 
-
-
 const HistoryKhimki = (props) => {
 
 
    return (
       <div>
          <ContantContainerMain>
-            <div className={`mt80 ${s.breadcrumbs}`}>
-               <span className={s.breadcrumbsFrom}>Новости</span>
-               <span className={s.breadcrumbsTo}> / История города Химки </span>
+            <div className={`mt80 breadcrumbs`}>
+               <NavLink to={ROUTER.history.main} className='breadcrumbsFrom'>История</NavLink>
+               <span className='breadcrumbsTo'> / История города Химки </span>
             </div>
             <div className={`mt24 ${s.title}`}>История города Химки </div>
             <div className="mt80 columnContainer">

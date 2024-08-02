@@ -1,6 +1,6 @@
 import React from 'react';
 import ContantContainerMain from '../../total/ContantContainerMain';
-import logo from '../../assets/img/logos/full-logo.svg';
+import logo from '../../assets/img/logos/full-logo-footer.svg';
 import s from './Footer.module.css';
 
 const Footer = (props) => {

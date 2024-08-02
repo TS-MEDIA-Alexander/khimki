@@ -87,22 +87,6 @@ const Main = (props) => {
 
             </div>
 
-            <section className={s.programAdministratorContainer}>
-               <div className="mt80 subTitle">Программы администрации</div>
-               <div className="mt40 columnContainer">
-                  <div className="columnLarge">
-                     <div className="bannerArrowContainer">
-                        <BannerArrow imgBanner={program1} />
-                        <BannerArrow imgBanner={program2} />
-                        <BannerArrow imgBanner={program3} />
-                     </div>
-                  </div>
-                  <div className="ml20 columnSmal">
-                     <MunicipalPrograms />
-                  </div>
-               </div>
-            </section>
-
             <section className={s.lastNewsContainer}>
                <div className="mt80 subTitle">Последние новости</div>
                <div className="mt40 columnContainer">
@@ -116,6 +100,22 @@ const Main = (props) => {
                      <div className="mt20">
                         <SVO />
                      </div>
+                  </div>
+               </div>
+            </section>
+
+            <section className={s.programAdministratorContainer}>
+               <div className="mt80 subTitle">Программы администрации</div>
+               <div className="mt40 columnContainer">
+                  <div className="columnLarge">
+                     <div className="bannerArrowContainer">
+                        <BannerArrow imgBanner={program1} />
+                        <BannerArrow imgBanner={program2} />
+                        <BannerArrow imgBanner={program3} />
+                     </div>
+                  </div>
+                  <div className="ml20 columnSmal">
+                     <MunicipalPrograms />
                   </div>
                </div>
             </section>

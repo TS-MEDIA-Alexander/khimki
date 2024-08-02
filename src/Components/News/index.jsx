@@ -10,16 +10,18 @@ const News = ({ news, rowLength }) => {
    }
 
    return (
-         <div className={s.newsWrapper}>
-            {news?.map((el, i) => <NavLink to={`${ROUTER.newsArticle}${el.id}`} key={i}
-               className={`${isWrap(i)} ${s.newsContainer} borderMain`}
-            >
+      <div className={s.newsWrapper}>
+         {news?.map((el, i) => <NavLink to={`${ROUTER.newsArticle}${el.id}`} key={i}
+            className={`${isWrap(i)} ${s.newsContainer} borderMain`}
+         >
+            <div>
                <div className={s.preview}><img src={el.image_preview} alt="" /></div>
                <div className={s.filterText}>{el.date}</div>
                <div className={s.title}>{el.name}</div>
-               <div className={s.moreDetails}>Подробнее</div>
-            </NavLink>)}
-         </div>
+            </div>
+            <div className={s.moreDetails}>Подробнее</div>
+         </NavLink>)}
+      </div>
    )
 }
 export default News;

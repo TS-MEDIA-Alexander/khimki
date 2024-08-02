@@ -6,6 +6,9 @@
 }
 
 .newsContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    width: 277px;
    height: 302px;
    border-radius: 40px;

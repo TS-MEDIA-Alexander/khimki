@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { ROUTER } from '../../config';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './GaleryArticle.module.css';
 import { useParams } from 'react-router-dom';
@@ -26,7 +28,7 @@ const GaleryArticle = (props) => {
       <div>
          <ContantContainerMain>
             <div className={`mt80 ${s.breadcrumbs}`}>
-               <span className={s.breadcrumbsFrom}>Новости</span>
+               <NavLink to={ROUTER.galery} className='breadcrumbsFrom'>Галерея</NavLink>
                <span className={s.breadcrumbsTo}> / {currentGalery.title}</span>
             </div>
             <div className="mt40 columnContainer">

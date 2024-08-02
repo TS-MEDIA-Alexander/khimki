@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import ReactDOMServer from 'react-dom/server';
+import { NavLink } from 'react-router-dom';
+import { ROUTER } from '../../config';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './NewsArticle.module.css';
 import { useParams } from 'react-router-dom';
@@ -34,13 +35,13 @@ const NewsArticle = (props) => {
    return (
       <div>
          <ContantContainerMain>
-            <div className={`mt80 ${s.breadcrumbs}`}>
-               <span className={s.breadcrumbsFrom}>Новости</span>
-               <span className={s.breadcrumbsTo}> / {currentNews.title}</span>
+            <div className={`mt80 breadcrumbs`}>
+               <NavLink to={ROUTER.news} className='breadcrumbsFrom'>Новости</NavLink>
+               <span className='breadcrumbsTo'> / {currentNews.title}</span>
             </div>
             <div className="mt40 columnContainer">
                <div className="columnLarge">
-                  <img className={s.imgMain} src={currentNews.image_preview} alt="" />
+                  <img className={s.imgMain} src={currentNews.image_detail} alt="" />
                   <div className={s.mainTextContainer}>
                      {/* Фильтры, на будущее */}
                      <div className={`mt40 ${s.filterText}`}>{currentNews?.filter?.subject}, {currentNews?.filter?.date}</div>

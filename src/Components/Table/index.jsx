@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './Table.module.css';
-import table from '../../backend/tables/table1.json';
+/* import table from '../../backend/tables/table1.json'; */
 
-const Table = (props) => {
+const Table = ({table, style={}}) => {
 
    /* Временное решение. В дальнейшнм нужно написать парсер на бэке, чтобы пересоберал массив автоматически при загрузске json в базу */
    const utilsTableParser = (arr) => {
@@ -17,7 +17,7 @@ const Table = (props) => {
    })
 
    const getСell = (obj) => {
-      return Object.values(obj).map((el, i) => <div key={i} className={s.table}>{el === 'undefined' ? undefined : el}</div>)
+      return Object.values(obj).map((el, i) => <div key={i} className={`${s.table} ${style.table}`}>{el === 'undefined' ? undefined : el}</div>)
    }
 
    return (

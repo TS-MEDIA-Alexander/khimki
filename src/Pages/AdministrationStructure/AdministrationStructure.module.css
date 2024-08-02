@@ -91,6 +91,7 @@
 }
 
 .cardMoreDetails {
+   text-decoration: none;
    color: #808080;
    font-size: 12px;
    font-style: normal;

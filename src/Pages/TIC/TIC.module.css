@@ -1,0 +1,105 @@
+
+
+.card {
+   display: flex;
+   padding: 24px;
+}
+
+.rightContainer {
+   margin-left: 24px;
+   padding: 0 20px;
+}
+
+.portrainContainer {
+   overflow: hidden;
+   width: 285px;
+   height: 285px;
+   border-radius: 24px;
+}
+
+.portrainContainer img {
+   width: 100%;
+}
+
+.cardMoreDetails {
+   color: #808080;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.cardBtnRow {
+   display: flex;
+}
+
+.cardTel:not(:first-child) {
+   margin-left: 16px;
+}
+
+.cardBtnImgContainer img {
+   width: 100%;
+}
+
+.cardBtnLink {
+   margin-left: 8px;
+   display: flex;
+   width: 40px;
+   height: 40px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 40px;
+   background: #F6F6F6;
+   cursor: pointer;
+}
+
+.linkContainer {
+   padding: 32px;
+}
+
+.link {
+   padding: 9px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #303030;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: -0.2px;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.imgContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 24px;
+   padding: 9px;
+   border-radius: 50%;
+   background: #F6F6F6;
+}
+
+.imgContainer img {
+   width: 100%;
+}
+
+.subtitle {
+   color: #303030;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.cardSurname {
+   width: 955px;
+   color: #303030;
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: -0.56px;
+}

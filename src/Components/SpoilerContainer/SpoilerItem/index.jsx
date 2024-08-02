@@ -12,7 +12,7 @@ const SpoilerItem = ({ children, title }) => {
    const clickHandler = (id) => {
       setIsOpen(!isOpen)
    }
-   /* ${isOpen && s.open} */
+   
    return (
       <div>
          <div className={s.spoilerItemHead} onClick={clickHandler}>{title}

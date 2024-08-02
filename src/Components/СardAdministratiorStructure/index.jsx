@@ -1,9 +1,9 @@
 import React from 'react';
 import s from './СardAdministratiorStructure.module.css';
 
-import imgTotal from '../../assets/img/khimkiDistrict/Persons/img.png'
+import imgTotal from '../../assets/img/khimkiDistrict/Persons/img.png';
 
-const СardAdministratiorStructure = ({ img = imgTotal, jobTitle, surname, name, jobTitleTop}) => {
+const СardAdministratiorStructure = ({ img = imgTotal, jobTitle, surname, name, jobTitleTop }) => {
    return (
       <div className={`borderMain ${s.card}`}>
          {jobTitleTop && <div className={`mt24 ${s.jobTitle} ${s.jobTitleTop}`}>{jobTitleTop}</div>}
@@ -16,7 +16,6 @@ const СardAdministratiorStructure = ({ img = imgTotal, jobTitle, surname, name,
                <div className={s.surname}>{surname}</div>
                <div className={s.name}>{name}</div>
             </div>
-            <div className={`mt8 ${s.info}`}>Информация</div>
          </div>
       </div>
    )

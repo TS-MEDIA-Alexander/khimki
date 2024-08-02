@@ -1,6 +1,8 @@
 import React from 'react';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './MonumentsHistoryArt.module.css';
+import { NavLink } from 'react-router-dom';
+import { ROUTER } from '../../config';
 
 /* Фотографии */
 import mainImg from '../../assets/img/history/monumentsHistoryArt/main_img.png';
@@ -25,7 +27,7 @@ const MonumentsHistoryArt = (props) => {
       <div>
          <ContantContainerMain>
             <div className={`mt80 ${s.breadcrumbs}`}>
-               <span className={s.breadcrumbsFrom}>Новости</span>
+               <NavLink to={ROUTER.history.main} className='breadcrumbsFrom'>История</NavLink>
                <span className={s.breadcrumbsTo}> / Памятники истории и культуры</span>
             </div>
             <div className={`mt24 ${s.title}`}>Памятники истории и культуры</div>
@@ -93,10 +95,10 @@ const MonumentsHistoryArt = (props) => {
                         </p>
                         <a href="" className={`mt38 btnWBanner ${s.btn}`}>Место на карте </a>
                      </div>
-                     
+
                   </div>
 
-                  
+
                   <div className="mt120">
                      <VirtualMuseumLarge />
                   </div>

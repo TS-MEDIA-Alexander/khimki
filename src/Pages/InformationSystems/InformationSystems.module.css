@@ -1,0 +1,38 @@
+.cardBtnImgContainer img {
+   width: 100%;
+}
+
+.cardBtnLink {
+   margin-left: 8px;
+   display: flex;
+   width: 40px;
+   height: 40px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 40px;
+   background: #F6F6F6;
+   cursor: pointer;
+}
+
+.text {
+   color: #303030;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 28px;
+   letter-spacing: -0.4px;
+}
+
+.table:nth-child(2) {
+   max-width: 150px;
+}
+
+.table:nth-child(4) {
+   width: 344px;
+}
+
+
+
+.documentContainer>div:not(:first-child) {
+   margin-top: 32px;
+}

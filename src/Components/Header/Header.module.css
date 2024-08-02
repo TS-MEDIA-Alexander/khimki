@@ -129,9 +129,9 @@
    background: url('../../assets/icons/arrow_down.svg') 0 0/auto auto no-repeat;
 }
 
-.item:hover .dropDownMenu {
+/* .item:hover .dropDownMenu {
    display: block;
-}
+} */
 
 .item .dropDownMenu {
    display: none;
@@ -144,6 +144,10 @@
    padding: 16px;
    border-radius: 16px;
    z-index: 999;
+}
+
+.dropDownMenu.dropDownMenuActive{
+   display: block;
 }
 
 .linkMenu {

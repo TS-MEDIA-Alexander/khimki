@@ -11,15 +11,42 @@ export const ROUTER = {
       pamyatnikiIstoriiKultury: '/istoriya/pamyatniki-istorii-kultury',
       gorodPobratim: '/istoriya/gorod-pobratim',
       cityCoatOfArms: '/istoriya/gerb-goroda',
+      greatPatrioticWar: '/istoriya/velikaya-otechestvennaya-voyna',
    },
    
    khimkiDistrict: {
       main: '/gorodskoy-okrug-khimki',
       performanceIndicators: '/gorodskoy-okrug-khimki/pokazateli-raboty-administratsii',
-      administrationStructure: '/gorodskoy-okrug-khimki/struktura-administratsii'
+      administrationStructure: '/gorodskoy-okrug-khimki/struktura-administratsii',
+      administrationStructureMayor: '/gorodskoy-okrug-khimki/struktura-administratsii/mer',
+      administrationStructurePerson: '/gorodskoy-okrug-khimki/struktura-administratsii/:person-',
+      symbolism: '/gorodskoy-okrug-khimki/ustav-i-simvolika',
+      publicChamber: '/gorodskoy-okrug-khimki/obschestvennaya-palata',
+      publicChamberDocuments: '/gorodskoy-okrug-khimki/obschestvennaya-palata/dokumenty',
+      publicChamberCandidates: '/gorodskoy-okrug-khimki/obschestvennaya-palata/kandidaty',
+      listCommissionsPublicChamber: '/gorodskoy-okrug-khimki/obschestvennaya-palata/perechen-komissiy-obschestvennoy-palaty',
+      auditChamber: '/gorodskoy-okrug-khimki/kontrolno-schetnaya-palata',
+      tic: '/gorodskoy-okrug-khimki/territorialnaya-izbiratelnaya-komissiya-goroda-khimki',
+      ticDocuments: '/gorodskoy-okrug-khimki/territorialnaya-izbiratelnaya-komissiya-goroda-khimki/dokumenty',
+      contactInformation: '/gorodskoy-okrug-khimki/territorialnaya-izbiratelnaya-komissiya-goroda-khimki/kontaktnaya-informatsiya',
+      publicOrganizations: '/gorodskoy-okrug-khimki/obschestvennyye-organizatsii',
+      unionSummerResidents: '/gorodskoy-okrug-khimki/obschestvennyye-organizatsii/soyuz-dachnikov-podmoskovya',
+      associationApartmentBuildingsKhimki: '/gorodskoy-okrug-khimki/obschestvennyye-organizatsii/assotsiatsiya-mkd-khimok',
+      mooAgainstCorruption: '/gorodskoy-okrug-khimki/obschestvennyye-organizatsii/moo-protiv-korruptsii',
+      governmentAgency: '/gorodskoy-okrug-khimki/gosudarstvennyye-organizatsii',
+      informationSystems: '/gorodskoy-okrug-khimki/informatsionnyye-sistemy',
    },
    administrationStructure: {
-      main: 'administrationStructure'
+      main: '/administrationStructure'
    },
-   table: '/tablitsa',
+   activity: {
+      main: '/deyatelnost',
+      auctionsAndTrades: '/deyatelnost/auktsiony-i-torgi',
+      safety: '/deyatelnost/bezopasnost',
+      improvement: '/deyatelnost/blagoustroystvo',
+      publicPrivatePartnership: '/deyatelnost/gosudarstvenno-chastnoye-partnerstvo',
+      communalServices: '/deyatelnost/zhkkh',
+      healthcare: '/deyatelnost/zdravookhraneniye',/* 03.08 */
+      land: '/deyatelnost/zemelnyye-uchastki-mnogodetnym-semyam',
+   },
 }

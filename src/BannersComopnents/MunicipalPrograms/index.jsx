@@ -12,7 +12,7 @@ const MunicipalPrograms = (props) => {
                <div>программы</div>
             </div>
             <div className={s.textBody}>
-               <div>Перечеь муниципальных</div>
+               <div>Перечень муниципальных</div>
                <div>программ городского округа</div>
                <div>Химки</div>
             </div>
