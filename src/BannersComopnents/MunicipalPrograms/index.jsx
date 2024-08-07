@@ -1,10 +1,12 @@
 import React from 'react';
 import icon from '../../assets/iconsBanners/khimkiEmblem.svg'
 import s from './MunicipalPrograms.module.css';
+import { NavLink } from 'react-router-dom';
+import { ROUTER } from '../../config';
 
 const MunicipalPrograms = (props) => {
    return (
-      <div className={s.bannerContainer}>
+      <NavLink to={ROUTER.activity.municipalPrograms} className={s.bannerContainer}>
          <div className={s.topContainer}>
             <img src={icon} alt="" />
             <div className={s.title}>
@@ -19,7 +21,7 @@ const MunicipalPrograms = (props) => {
          </div>
 
          <div className={`btnWBanner ${s.button}`}><span className="btnText">Все программы</span></div>
-      </div>
+      </NavLink>
    )
 }
 export default MunicipalPrograms;

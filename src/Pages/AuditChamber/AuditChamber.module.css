@@ -18,67 +18,8 @@
    line-height: 24px;
 }
 
-.card {
-   display: flex;
-   padding: 24px;
-}
-
-.rightContainer {
-   margin-left: 24px;
-   padding: 0 20px;
-}
-
-.cardSurname {
-   color: #303030;
-   font-size: 24px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 32px;
-   letter-spacing: -0.48px;
-}
-
-.cardName {
-   color: #303030;
-   font-size: 24px;
-   font-style: normal;
-   font-weight: 600;
-   line-height: 32px;
-   letter-spacing: -0.48px;
-}
-
-.portrainContainer {
-   overflow: hidden;
-   width: 285px;
-   height: 285px;
-   border-radius: 24px;
-}
-
-.portrainContainer img {
-   width: 100%;
-}
-
-.cardBtnRow {
-   display: flex;
-}
-
-.cardTel:not(:first-child) {
-   margin-left: 16px;
-}
-
 .cardBtnImgContainer img {
    width: 100%;
-}
-
-.cardBtnLink {
-   margin-left: 8px;
-   display: flex;
-   width: 40px;
-   height: 40px;
-   justify-content: center;
-   align-items: center;
-   border-radius: 40px;
-   background: #F6F6F6;
-   cursor: pointer;
 }
 
 .time {

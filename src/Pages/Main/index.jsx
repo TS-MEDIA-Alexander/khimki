@@ -2,14 +2,17 @@ import React, { useEffect, useState } from 'react';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './Main.module.css';
 
+import { ROUTER } from '../../config';
+import { NavLink } from 'react-router-dom';
+
 import API from '../../API';
 
 /* Компоненты */
-import slider1 from '../../assets/img/sliders/main/1.png'
+import slider1 from '../../assets/img/sliders/main/1.png';
 import Carousel from '../../Components/Carousel';
 import BannerArrow from '../../Components/BannerArrow';
 import News from '../../Components/News';
-import Slide from '../../Components/Slide';
+import Slide from '../../Components/Slide'; 
 
 /* Баннеры */
 import VirtualReception from '../../BannersComopnents/VirtualReception';
@@ -40,7 +43,7 @@ const Main = (props) => {
    const [news, setNews] = useState([]);
    
    useEffect(() => {
-      API.getNews()
+      API.getNews(1, 9)
          .then(data => setNews(data))
    }, [])
 
@@ -51,8 +54,8 @@ const Main = (props) => {
                btnArrText={
                   ['Круглосуточная горячая линия', 'Горячая линия строительного комплеса', 'Сведения о земельном участке', 'Оценка деятельности местной власти']
                }>
-               <Slide img={slider1} title={['Круглосуточная', 'горячая линия', 'главы городского округа']} description={'Принимаем обращения граждан 24/7'} />
-               <Slide img={slider1} title={['Горячая', 'линия строительного комплеса']} description={'Принимаем обращения граждан 24/7'} />
+               <Slide img={slider1} title={['Круглосуточная', 'горячая линия', 'главы округа']} description={'Принимаем обращения граждан 24/7'} />
+               <Slide img={slider1} title={['Горячая', 'линия']} description={'Принимаем обращения граждан 24/7'} />
                <Slide img={slider1} title={['Сведения', 'о земельном участке']} description={'Принимаем обращения граждан 24/7'} />
                <Slide img={slider1} title={['Оценка деятельности', 'местной власти']} description={'Принимаем обращения граждан 24/7'} />
             </Carousel>
@@ -94,6 +97,7 @@ const Main = (props) => {
                      <div className="bannerArrowContainer">
                         <News btnText={'Все новости'} rowLength={3} news={news} />
                      </div>
+                     <NavLink to={ROUTER.news} className={`btnW ${s.showMore}`}>Загрузить еще</NavLink>
                   </div>
                   <div className="ml20 columnSmal">
                      <FamilyYear />

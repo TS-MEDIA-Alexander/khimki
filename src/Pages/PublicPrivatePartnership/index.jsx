@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
 import arrow from '../../assets/icons/arrow_btn_link.svg';
 import ministry_economic_development from '../../assets/img/activity/ministry_economic_development.png';
-import ministry_investment_Industry_and_science from '../../assets/img/activity/ministry_investment_Industry_and_science.png';
+import ministry_investment_industry_and_science from '../../assets/img/activity/ministry_investment_industry_and_science.png';
 
 
 const PublicPrivatePartnership = (props) => {
@@ -47,7 +47,7 @@ const PublicPrivatePartnership = (props) => {
                   <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                </NavLink>
                <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`borderMain ${s.link} ${s.link_min}`}>
-                  <div className={s.logoContainer}><img src={ministry_investment_Industry_and_science} alt="" /></div>
+                  <div className={s.logoContainer}><img src={ministry_investment_industry_and_science} alt="" /></div>
                   <div className={s.textContainer}>
                      <div className={s.description}>Полезный ресурс</div>
                      <div className={s.text}>Министерство

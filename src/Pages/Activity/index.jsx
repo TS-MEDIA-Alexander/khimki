@@ -43,49 +43,49 @@ const Activity = (props) => {
                         <div className={s.text}>ЖКХ</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.healthcare} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Здравоохранение</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.land} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Земельные участки многодетным семьям</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.landRelations} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Земельные отношения</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.propertyRelations} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Имущественные отношения</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.investities} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Инвестиции</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.participatoryBudgeting} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Инициативное бюджетирование</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.humanResourcesManagement} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Кадровое управление</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.commissionJuvenileAffairs} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>
@@ -94,7 +94,7 @@ const Activity = (props) => {
                         </div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.smallMediumBusinesses} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Малое и среднее предпринимательство</div>
@@ -102,43 +102,43 @@ const Activity = (props) => {
                   </NavLink>
                </div>
                <div className={s.column}>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`${s.link}`}>
+                  <NavLink to={ROUTER.activity.municipalСontrol} className={`${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Муниципальный контроль</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.socialPrograms} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Социальные программы</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.outdoorAdvertising} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Наружная реклама</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.regulatoryImpactAssessment} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Оценка регулирующего воздействия</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.burialFuneralServices} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Погребение и похоронное дело</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.supportCONPO} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Поддержка СО НКО</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.authorityFeldHandlingAnimalsWithoutOwners} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>
@@ -147,13 +147,13 @@ const Activity = (props) => {
                         </div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.antiCorruption} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Противодействие коррупции</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.publicHearingsPublicDiscussions} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>
@@ -162,25 +162,25 @@ const Activity = (props) => {
                         </div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.construction} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Строительство</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.transport} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Транспорт</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.ecologyEnvironmentalSafety} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Экология и экологическая безопасность</div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.commissionJuvenileAffairs} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>
@@ -189,7 +189,7 @@ const Activity = (props) => {
                         </div>
                      </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
                   </NavLink>
-                  <NavLink /* to={ROUTER.activity.unionSummerResidents} */ className={`mt24 ${s.link}`}>
+                  <NavLink to={ROUTER.activity.smallMediumBusinesses} className={`mt24 ${s.link}`}>
                      <div className={s.textContainer}>
                         <div className={s.radial}></div>
                         <div className={s.text}>Малое и среднее предпринимательство</div>

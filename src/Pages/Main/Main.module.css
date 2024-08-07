@@ -60,6 +60,20 @@
    object-fit: cover;
 }
 
-
-
-
+.showMore {
+   text-decoration: none;
+   margin: 40px auto 0 auto;
+   display: flex;
+   width: 325px;
+   padding: 24px 0;
+   justify-content: center;
+   align-items: center;
+   border-radius: 40px;
+   border: 1px solid #B0B0B0;
+   cursor: pointer;
+   color: #303030;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}

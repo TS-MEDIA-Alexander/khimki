@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
 import ContantContainerMain from '../../total/ContantContainerMain';
-import pchelintsev from '../../assets/img/khimkiDistrict/Persons/pchelintsev.png';
+import pchelintsev from '../../assets/img/Persons/pchelintsev.png';
 import s from './MOOAgainstCorruption.module.css';
 
 const MOOAgainstCorruption = (props) => {

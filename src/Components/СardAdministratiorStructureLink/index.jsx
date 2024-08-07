@@ -2,7 +2,7 @@ import React from 'react';
 import s from './СardAdministratiorStructureLink.module.css';
 import { NavLink } from 'react-router-dom';
 
-import imgTotal from '../../assets/img/khimkiDistrict/Persons/img.png'
+import imgTotal from '../../assets/img/Persons/img.png'
 import { ROUTER } from '../../config';
 
 const СardAdministratiorStructureLink = ({ url, img = imgTotal, jobTitle, surname, name, jobTitleTop }) => {

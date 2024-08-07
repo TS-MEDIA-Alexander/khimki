@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './СardAdministratiorStructure.module.css';
 
-import imgTotal from '../../assets/img/khimkiDistrict/Persons/img.png';
+import imgTotal from '../../assets/img/Persons/img.png';
 
 const СardAdministratiorStructure = ({ img = imgTotal, jobTitle, surname, name, jobTitleTop }) => {
    return (

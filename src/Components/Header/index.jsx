@@ -24,7 +24,7 @@ const Header = (props) => {
                      </div>
                   </NavLink>
                   <div className={s.settingsContainer}>
-                     <div className={s.versionVI}><img src={icon} alt="" />Версия для слабовидящих</div>
+                     {/* <div className={s.versionVI}><img src={icon} alt="" />Версия для слабовидящих</div> */}
                      <button className={s.hotLine}>Горячая линия</button>
                   </div>
                </div>
@@ -101,9 +101,9 @@ const Header = (props) => {
                            <NavLink to={ROUTER.khimkiDistrict.governmentAgency} className={s.linkMenu}>
                               Государственные организации
                            </NavLink>
-                           <div className={s.linkMenu}>
+                           <NavLink to={ROUTER.khimkiDistrict.scienceCity} className={s.linkMenu}>
                               Наукоград
-                           </div>
+                           </NavLink>
                            <NavLink to={ROUTER.khimkiDistrict.informationSystems} className={s.linkMenu}>
                               Информационные системы
                            </NavLink>
@@ -136,50 +136,50 @@ const Header = (props) => {
                            <NavLink to={ROUTER.activity.land} className={s.linkMenu}>
                               Земельные участки многодетным семьям
                            </NavLink>
-                           <div className={s.linkMenu}>
+                           <NavLink to={ROUTER.activity.landRelations} className={s.linkMenu}>
                               Земельные отношения
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.propertyRelations} className={s.linkMenu}>
                               Имущественные отношения
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.investities} className={s.linkMenu}>
                               Инвестиции
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.participatoryBudgeting} className={s.linkMenu}>
                               Инициативное бюджетирование
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.humanResourcesManagement} className={s.linkMenu}>
                               Кадровое управление
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.commissionJuvenileAffairs} className={s.linkMenu}>
                               <p>Комиссия по делам несовершеннолетних</p>
                               и защите их прав
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.smallMediumBusinesses} className={s.linkMenu}>
                               Малое и среднее предпринимательствои
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.municipalСontrol} className={s.linkMenu}>
                               Муниципальный контроль
-                           </div>
-                           <NavLink /* to={ROUTER.khimkiDistrict.informationSystems} */ className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.municipalPrograms} className={s.linkMenu}>
                               Муниципальные программы
                            </NavLink>
-                           <NavLink /* to={ROUTER.khimkiDistrict.informationSystems} */ className={s.linkMenu}>
+                           <NavLink to={ROUTER.activity.socialPrograms} className={s.linkMenu}>
                               Социальные программы
                            </NavLink>
-                           <div className={s.linkMenu}>
+                           <NavLink to={ROUTER.activity.outdoorAdvertising} className={s.linkMenu}>
                               Наружная реклама
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.regulatoryImpactAssessment} className={s.linkMenu}>
                               Оценка регулирующего воздействия
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.burialFuneralServices} className={s.linkMenu}>
                               Погребение и похоронное дело
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.supportCONPO} className={s.linkMenu}>
                               Поддержка СО НКО
-                           </div>
-                           <NavLink /* to={ROUTER.khimkiDistrict.informationSystems} */ className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.authorityFeldHandlingAnimalsWithoutOwners} className={s.linkMenu}>
                               <p>Полномочия в области обращения с животными</p>
                               без владельцев
                            </NavLink>
@@ -187,47 +187,94 @@ const Header = (props) => {
                               <p>Правовое просвещение и правовое</p>
                               информирование
                            </div>
-                           <div className={s.linkMenu}>
+                           <NavLink to={ROUTER.activity.antiCorruption} className={s.linkMenu}>
                               Противодействие коррупции
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.publicHearingsPublicDiscussions} className={s.linkMenu}>
                               <p>Публичные слушания и общественные</p>
                               обсуждения
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.construction} className={s.linkMenu}>
                               Строительство
-                           </div>
-                           <div className={s.linkMenu}>
+                           </NavLink>
+                           <NavLink to={ROUTER.activity.transport} className={s.linkMenu}>
                               Транспорт
-                           </div>
+                           </NavLink>
                            <div className={s.linkMenu}>
                               Установка шлагбаумов во дворах
                            </div>
-                           <div className={s.linkMenu}>
+                           <NavLink to={ROUTER.activity.ecologyEnvironmentalSafety} className={s.linkMenu}>
                               Экология и экологическая безопасность
-                           </div>
+                           </NavLink>
                         </div>
                      </div>
                      <div className={s.item}>Документы</div>
-                     <div className={s.item}>Прокуратура </div>
-                     <div className={`${s.item}`}>
+                     <div id='prosecutorOffice' className={`${s.item} ${s.itemArrow}`}>
+                        Прокуратура
+                        <div className={`${s.dropDownMenu} ${activeID === 'prosecutorOffice' && s.dropDownMenuActive}`}>
+                           <NavLink to={ROUTER.prosecutorOffice.main} className={s.linkMenu}>
+                              Прокуратура (разводная)
+                           </NavLink>
+                           <NavLink /* to={ROUTER.prosecutorOffice.main} */ className={s.linkMenu}>
+                              Химкинская городская прокуратура
+                           </NavLink>
+                           <NavLink to={ROUTER.prosecutorOffice.militaryProsecutorOfficeSolnechnogorskGarrison} className={s.linkMenu}>
+                              Военная прокуратура Солнечногорского гарнизона
+                           </NavLink>
+                           <NavLink to={ROUTER.prosecutorOffice.moscowInterregionalTransport} className={s.linkMenu}>
+                              Московская межрегиональная транспортная прокуратура
+                           </NavLink>
+                           <NavLink to={ROUTER.prosecutorOffice.correctionalInstitutions} className={s.linkMenu}>
+                              <p>Московская прокуратура по надзору за соблюдением</p>
+                              <p>законов в исправительных учреждениях Московской</p>
+                              области
+                           </NavLink>
+                           <NavLink to={ROUTER.prosecutorOffice.northernTransportProsecutorOffice} className={s.linkMenu}>
+                              Северная транспортная прокуратура
+                           </NavLink>
+                           <NavLink /* to={ROUTER.prosecutorOffice.main} */ className={s.linkMenu}>
+                              Правовое просвещение и правовое информирование
+                           </NavLink>
+                        </div>
+                     </div>
+                     <div id='citizensAppeals' className={`${s.item} ${s.itemArrow}`}>
                         Обращения граждан
-                        {/* <div className={s.dropDownMenu}>
-                           <div className={s.linkMenu}>
-                              Городской округ Химки
-                           </div>
-                           <div className={s.linkMenu}>
-                              Структура администрации
-                           </div>
-                        </div> */}
+                        <div className={`${s.dropDownMenu} ${activeID === 'citizensAppeals' && s.dropDownMenuActive}`}>
+                           <NavLink to={ROUTER.citizensAppeals.main} className={s.linkMenu}>
+                              Работа с обращениями граждан
+                           </NavLink>
+                           <NavLink to={ROUTER.citizensAppeals.legalRegulation} className={s.linkMenu}>
+                              Правовое регулирование
+                           </NavLink>
+                           <NavLink to={ROUTER.citizensAppeals.virtualReceptionHeadCityDistrict} className={s.linkMenu}>
+                              Виртуальная приемная Главы городского округа
+                           </NavLink>
+                           <NavLink to={ROUTER.citizensAppeals.resultsConsiderationApplications} className={s.linkMenu}>
+                              Результаты рассмотрения обращений
+                           </NavLink>
+                           <NavLink /* to={ROUTER.citizensAppeals.main} */ className={s.linkMenu}>
+                              Написать в Администрацию
+                           </NavLink>
+                           <NavLink /* to={ROUTER.citizensAppeals.main} */ className={s.linkMenu}>
+                              Порядок и время приема
+                           </NavLink>
+                           <NavLink /* to={ROUTER.citizensAppeals.main} */ className={s.linkMenu}>
+                              Общероссийский день приёма граждан в День Конституции Российской Федерации 12 декабря
+                           </NavLink>
+                           <NavLink /* to={ROUTER.citizensAppeals.main} */ className={s.linkMenu}>
+                              Информация для ознакомления желающим отправить обращениев форме электронного документа
+                           </NavLink>
+                           <NavLink /* to={ROUTER.citizensAppeals.main} */ className={s.linkMenu}>
+                              Ответы на обращения, затрагивающие интересы неопределенного круга лиц
+                           </NavLink>
+                        </div>
                      </div>
                      <div className={s.item}>Контакты</div>
                   </div>
 
-                  <div className={s.searchBlock}>Поиск
+                  {/* <div className={s.searchBlock}>Поиск
 
-                     {/* <input type="text" placeholder='Поиск' className={s.search} /> */}
-                  </div>
+                  </div> */}
                </div>
             </ContantContainerMain>
          </div>

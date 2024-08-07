@@ -12,9 +12,10 @@
 
 .textInner {
    width: 911px;
-   text-overflow: ellipsis;
+   font-size: 16px;
+   /* text-overflow: ellipsis;
    white-space: nowrap;
-   overflow: hidden;
+   overflow: hidden; */
 }
 
 .datePublication {

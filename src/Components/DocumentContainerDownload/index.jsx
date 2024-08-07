@@ -9,13 +9,14 @@ const DocumentContainerDownload = ({ document, documentName, text, date, type })
          <a
          download={documentName}
          href={document} className={s.link}>
+            <div className={s.imgContainer}>
             {type === 'DOCX' ? <img className={`${s.documentIcon} ${s.DOCX }`} src={doc} alt="" /> : <img className={`${s.documentIcon} ${s.PDF}`} src={pdf} alt="" />}
-            
+            </div>
             <div className={s.textInner}>
                {text}
             </div>
          </a>
-         <div className={s.datePublication}>Дата публикации: {date}</div>
+         {date && <div className={s.datePublication}>Дата публикации: {date}</div>}
       </div>
    )
 }

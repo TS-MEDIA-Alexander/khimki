@@ -2,7 +2,7 @@
    font-family: 'Inter', sans-serif;
 }
 
-ul {
+ul, ol {
    padding-left: 20px;
    margin: 0;
 }
@@ -229,6 +229,10 @@ p {
 /* Главная заливка */
 .bgMain {
    background: #FFEC00;
+}
+
+.borderLeftMain {
+   border-left: 2px solid #FFEC00;
 }
 
 /* Стили хлебных крошек */
@@ -553,4 +557,8 @@ p {
 
 .border {
    border: 1px solid red;
+}
+
+.borderDocumentContainer>div:not(:first-child) {
+   margin-top: 32px;
 }

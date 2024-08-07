@@ -1,0 +1,98 @@
+.linkContainer {
+   padding: 32px;
+}
+
+.link {
+   padding: 9px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-decoration: none;
+   color: #303030;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: -0.2px;
+   cursor: pointer;
+}
+
+.imgBlock:not(:first-child) {
+   margin-left: 20px;
+}
+
+.imgContainerArrow {
+   padding: 9px;
+   width: 24px;
+   height: 24px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 20px;
+   overflow: hidden;
+   background: #F6F6F6;
+}
+
+.imgContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 325px;
+   height: 182px;
+   border-radius: 20px;
+   overflow: hidden;
+}
+
+.imgContainer img {
+   width: 100%;
+}
+
+.description {
+   color: #808080;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px;
+}
+
+.containtContainer {
+   max-width: 1015px;
+}
+
+.citationTextBody {
+   box-sizing: border-box;
+   padding-left: 40px;
+   color: #303030;
+   font-size: 20px;
+   font-style: italic;
+   font-weight: 400;
+   line-height: 28px;
+   letter-spacing: -0.4px;
+}
+
+.citationTextBody p:not(:first-child) {
+   margin-top: 38px;
+}
+
+.authorInfoContainer {
+   margin-left: 40px;
+}
+
+.author {
+   color: #303030;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 28px;
+   letter-spacing: -0.4px;
+}
+
+.jobTitle {
+   margin-top: 4px;
+   color: #808080;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: -0.32px;
+}

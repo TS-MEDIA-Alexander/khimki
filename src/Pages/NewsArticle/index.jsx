@@ -51,7 +51,7 @@ const NewsArticle = (props) => {
 
                      {/* Цитаты, если есть */}
                      {currentNews.citation?.textBody && <div className={`mt38 ${s.citationConatiner}`}>
-                        <div className={s.citationTextBody}>
+                        <div className={`${s.citationTextBody} borderLeftMain`}>
                            «{currentNews.citation?.textBody}»
                         </div>
                         <div className={`mt20 ${s.authorInfoContainer}`}>

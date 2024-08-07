@@ -23,6 +23,7 @@ import GorodPobratim from './Pages/GorodPobratim';
 import CityCoatOfArms from './Pages/CityCoatOfArms';
 import KhimkiDistrict from './Pages/KhimkiDistrict';
 import PerformanceIndicators from './Pages/PerformanceIndicators';
+import ScienceCity from './Pages/ScienceCity';
 import AdministrationStructure from './Pages/AdministrationStructure';
 import AdministrationStructureMayor from './Pages/AdministrationStructureMayor';
 import AdministrationStructurePerson  from './Pages/AdministrationStructurePerson';
@@ -50,6 +51,35 @@ import PublicPrivatePartnership from './Pages/PublicPrivatePartnership';
 import CommunalServices from './Pages/CommunalServices';
 import Healthcare from './Pages/Healthcare';
 import Land from './Pages/Land';
+import LandRelations from './Pages/LandRelations';
+import PropertyRelations from './Pages/PropertyRelations';
+import Investities from './Pages/Investities';
+import ParticipatoryBudgeting from './Pages/ParticipatoryBudgeting';
+import SmallMediumBusinesses from './Pages/SmallMediumBusinesses';
+import HumanResourcesManagement from './Pages/HumanResourcesManagement';
+import CommissionJuvenileAffairs from './Pages/CommissionJuvenileAffairs';
+import MunicipalСontrol from './Pages/MunicipalСontrol';
+import RegulatoryImpactAssessment from './Pages/RegulatoryImpactAssessment';
+import BurialFuneralServices from './Pages/BurialFuneralServices';
+import SupportCONPO from './Pages/SupportCONPO';
+import AntiCorruption from './Pages/AntiCorruption';
+import PublicHearingsPublicDiscussions from './Pages/PublicHearingsPublicDiscussions';
+import Construction from './Pages/Construction';
+import Transport from './Pages/Transport';
+import EcologyEnvironmentalSafety from './Pages/EcologyEnvironmentalSafety';
+import MunicipalPrograms from './Pages/MunicipalPrograms';
+import SocialPrograms from './Pages/SocialPrograms';
+import OutdoorAdvertising from './Pages/OutdoorAdvertising';
+import AuthorityFeldHandlingAnimalsWithoutOwners from './Pages/AuthorityFeldHandlingAnimalsWithoutOwners';
+import ProsecutorOffice from './Pages/ProsecutorOffice';
+import MilitaryProsecutorOfficeSolnechnogorskGarrison from './Pages/MilitaryProsecutorOfficeSolnechnogorskGarrison';
+import MoscowInterregionalTransport from './Pages/MoscowInterregionalTransport';
+import CorrectionalInstitutions from './Pages/CorrectionalInstitutions';
+import NorthernTransportProsecutorOffice from './Pages/NorthernTransportProsecutorOffice';
+import CitizensAppeals from './Pages/CitizensAppeals';
+import LegalRegulation from './Pages/LegalRegulation';
+import ResultsConsiderationApplications from './Pages/ResultsConsiderationApplications';
+import VirtualReceptionHeadCityDistrict from './Pages/VirtualReceptionHeadCityDistrict';
 /* import Table from './Components/Table'; */
 
 function App() {
@@ -104,6 +134,7 @@ function App() {
                <Route path={ROUTER.khimkiDistrict.mooAgainstCorruption} element={<MOOAgainstCorruption />} />
                <Route path={ROUTER.khimkiDistrict.governmentAgency} element={<GovernmentAgency />} />
                <Route path={ROUTER.khimkiDistrict.informationSystems} element={<InformationSystems />} />
+               <Route path={ROUTER.khimkiDistrict.scienceCity} element={<ScienceCity />} />
 
                <Route path={ROUTER.activity.main} element={<Activity />} />
                <Route path={ROUTER.activity.auctionsAndTrades} element={<AuctionsAndTrades />} />
@@ -113,6 +144,39 @@ function App() {
                <Route path={ROUTER.activity.communalServices} element={<CommunalServices />} />
                <Route path={ROUTER.activity.healthcare} element={<Healthcare />} />
                <Route path={ROUTER.activity.land} element={<Land />} />
+               <Route path={ROUTER.activity.landRelations} element={<LandRelations />} />
+               <Route path={ROUTER.activity.propertyRelations} element={<PropertyRelations />} />
+               <Route path={ROUTER.activity.investities} element={<Investities />} />
+               <Route path={ROUTER.activity.participatoryBudgeting} element={<ParticipatoryBudgeting />} />
+               <Route path={ROUTER.activity.smallMediumBusinesses} element={<SmallMediumBusinesses />} />
+               <Route path={ROUTER.activity.humanResourcesManagement} element={<HumanResourcesManagement />} />
+               <Route path={ROUTER.activity.commissionJuvenileAffairs} element={<CommissionJuvenileAffairs />} />
+               <Route path={ROUTER.activity.municipalСontrol} element={<MunicipalСontrol />} />
+               <Route path={ROUTER.activity.regulatoryImpactAssessment} element={<RegulatoryImpactAssessment />} />
+               <Route path={ROUTER.activity.burialFuneralServices} element={<BurialFuneralServices />} />
+               <Route path={ROUTER.activity.supportCONPO} element={<SupportCONPO />} />
+               <Route path={ROUTER.activity.antiCorruption} element={<AntiCorruption />} />
+               <Route path={ROUTER.activity.publicHearingsPublicDiscussions} element={<PublicHearingsPublicDiscussions />} />
+               <Route path={ROUTER.activity.construction} element={<Construction />} />
+               <Route path={ROUTER.activity.transport} element={<Transport />} />
+               <Route path={ROUTER.activity.ecologyEnvironmentalSafety} element={<EcologyEnvironmentalSafety />} />
+               <Route path={ROUTER.activity.municipalPrograms} element={<MunicipalPrograms />} />
+               <Route path={ROUTER.activity.socialPrograms} element={<SocialPrograms />} />
+               <Route path={ROUTER.activity.outdoorAdvertising} element={<OutdoorAdvertising />} />
+               <Route path={ROUTER.activity.authorityFeldHandlingAnimalsWithoutOwners} element={<AuthorityFeldHandlingAnimalsWithoutOwners />} />
+               
+               <Route path={ROUTER.prosecutorOffice.main} element={<ProsecutorOffice />} />
+               <Route path={ROUTER.prosecutorOffice.militaryProsecutorOfficeSolnechnogorskGarrison} element={<MilitaryProsecutorOfficeSolnechnogorskGarrison />} />
+               <Route path={ROUTER.prosecutorOffice.moscowInterregionalTransport} element={<MoscowInterregionalTransport />} />
+               <Route path={ROUTER.prosecutorOffice.correctionalInstitutions} element={<CorrectionalInstitutions />} />
+               <Route path={ROUTER.prosecutorOffice.northernTransportProsecutorOffice} element={<NorthernTransportProsecutorOffice />} />
+
+               <Route path={ROUTER.citizensAppeals.main} element={<CitizensAppeals />} />
+               <Route path={ROUTER.citizensAppeals.legalRegulation} element={<LegalRegulation />} />
+               <Route path={ROUTER.citizensAppeals.resultsConsiderationApplications} element={<ResultsConsiderationApplications />} />
+               <Route path={ROUTER.citizensAppeals.virtualReceptionHeadCityDistrict} element={<VirtualReceptionHeadCityDistrict />} />
+               
+
             </Routes>
          </div>
 

@@ -39,11 +39,11 @@ const AuctionsAndTrades = (props) => {
                </p>
                <div className="mt38 pageSubtitle">Комфортное Подмосковье. Земельно-имущественные торги.</div>
                <div className="mt38">
-                  <iframe width="900" height="506" src="https://www.youtube.com/embed/Out9_3CCNZI?si=RqevZ7CtQvhIYyoP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="900" height="506" src="https://www.youtube.com/embed/Out9_3CCNZI?si=RqevZ7CtQvhIYyoP" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                </div>
                <div className="mt38 pageSubtitle">Напоминание для заявителей по земельно-имущественным торгам!</div>
                <div className="mt38">
-                  <iframe width="900" height="506" src="https://www.youtube.com/embed/SBymAXG8Iek?si=12_55jnPGuQIm1co" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="900" height="506" src="https://www.youtube.com/embed/SBymAXG8Iek?si=12_55jnPGuQIm1co" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                </div>
             </div>
 

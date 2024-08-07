@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
 import ContantContainerMain from '../../total/ContantContainerMain';
-import atakhanova from '../../assets/img/khimkiDistrict/Persons/atakhanova.png';
+import atakhanova from '../../assets/img/Persons/atakhanova.png';
 import s from './AssociationApartmentBuildingsKhimki.module.css';
 
 const AssociationApartmentBuildingsKhimki = (props) => {
