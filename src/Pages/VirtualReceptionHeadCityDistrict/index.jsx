@@ -16,7 +16,7 @@ const VirtualReceptionHeadCityDistrict = (props) => {
                <NavLink to={ROUTER.citizensAppeals.main} className='breadcrumbsFrom'>Обращения граждан</NavLink>
                <span className='breadcrumbsTo'> / Виртуальная приемная Главы городского округа</span>
             </div>
-            <div className="mt24 pageTitle">Виртуальная приемная Главы городского округа</div>
+            <div className="mt24 pageTitle">Виртуальная приемная Главы <br /> городского округа</div>
             <div className={`mt40 ${s.imgContainer}`}>
                <img src={virtual_reception_head_city_district} alt="" />
             </div>
@@ -56,7 +56,7 @@ const VirtualReceptionHeadCityDistrict = (props) => {
                </div>
                <div className={`mt32 ${s.flexContainer}`}>
                   <div className={s.inputContainer}>
-                     <div className={`${s.titleInput}`}>Улица</div>
+                     <div className={`${s.titleInput}`}>Дом</div>
                      <input type="text" className={`mt8 ${s.input}`} />
                   </div>
                   <div className={s.flexInputMin}>
@@ -64,7 +64,7 @@ const VirtualReceptionHeadCityDistrict = (props) => {
                         <div className={`${s.titleInput}`}>Корпус</div>
                         <input type="text" className={`mt8 ${s.input}  ${s.input_min}`} />
                      </div>
-                     <div className={s.inputContainer}>
+                     <div className={`ml16 ${s.inputContainer}`}>
                         <div className={`${s.titleInput}`}>Квартира</div>
                         <input type="text" className={`mt8 ${s.input}  ${s.input_min}`} />
                      </div>
@@ -87,7 +87,7 @@ const VirtualReceptionHeadCityDistrict = (props) => {
                <div className={`mt48 ${s.description}`}>Внимание! Максимальное количество файлов 7, общий объём приложенных файлов не должен превышать - 20 МбДопустимые форматы: jpg, png, gif, bmp, doc, docx, xls, xlsx, pdf, txt, zip, rar, 7z</div>
                <div className="mt48 flexContainer">
                   <input type="checkbox" />
-                  <div className={s.description}>Я даю согласие на использование персональных данных</div>
+                  <div className={`ml16 ${s.description}`}>Я даю согласие на использование персональных данных</div>
                </div>
 
                <div className={`mt48 ${s.submit}`}>Отправить</div>

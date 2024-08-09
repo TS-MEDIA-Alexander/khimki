@@ -67,7 +67,7 @@ const UsefulSourse = (props) => {
          </div>
          <div className={s.linkContainer}>
             <a href="#" className={s.link}>Карта сайта</a>
-            <a href="#" className={s.link}>Предидущая версия сайта</a>
+            <a href="#" className={s.link}>Предыдущая версия сайта</a>
          </div>
       </ContantContainerMain>
       </div >

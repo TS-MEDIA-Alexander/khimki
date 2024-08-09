@@ -80,6 +80,11 @@ import CitizensAppeals from './Pages/CitizensAppeals';
 import LegalRegulation from './Pages/LegalRegulation';
 import ResultsConsiderationApplications from './Pages/ResultsConsiderationApplications';
 import VirtualReceptionHeadCityDistrict from './Pages/VirtualReceptionHeadCityDistrict';
+import WriteAdministration from './Pages/WriteAdministration';
+import ReceptionProcedureTime from './Pages/ReceptionProcedureTime';
+import AllRussianDayReceptionCitizens from './Pages/AllRussianDayReceptionCitizens';
+import ResponsesInquiriesIndefiniteNumberPersons from './Pages/ResponsesInquiriesIndefiniteNumberPersons';
+import Contacts from './Pages/Contacts';
 /* import Table from './Components/Table'; */
 
 function App() {
@@ -175,7 +180,12 @@ function App() {
                <Route path={ROUTER.citizensAppeals.legalRegulation} element={<LegalRegulation />} />
                <Route path={ROUTER.citizensAppeals.resultsConsiderationApplications} element={<ResultsConsiderationApplications />} />
                <Route path={ROUTER.citizensAppeals.virtualReceptionHeadCityDistrict} element={<VirtualReceptionHeadCityDistrict />} />
-               
+               <Route path={ROUTER.citizensAppeals.writeAdministration} element={<WriteAdministration />} />
+               <Route path={ROUTER.citizensAppeals.receptionProcedureTime} element={<ReceptionProcedureTime />} />
+               <Route path={ROUTER.citizensAppeals.allRussianDayReceptionCitizens} element={<AllRussianDayReceptionCitizens />} />
+               <Route path={ROUTER.citizensAppeals.responsesInquiriesIndefiniteNumberPersons} element={<ResponsesInquiriesIndefiniteNumberPersons />} />
+
+               <Route path={ROUTER.contacts.main} element={<Contacts />} />
 
             </Routes>
          </div>

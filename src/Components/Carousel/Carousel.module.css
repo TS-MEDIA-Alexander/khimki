@@ -30,7 +30,6 @@ progress {
    margin-top: 10px;
    background: #eee;
    border: 0;
-   color: #EEEE20;
 }
 
 progress::-webkit-progress-bar {
@@ -39,12 +38,12 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-   background: #EEEE20;
+   background: #FFEC00;
    border-radius: 6px;
 }
 
 progress::-moz-progress-bar {
-   background: #EEEE20;
+   background: #FFEC00;
    border-radius: 6px;
 }
 
@@ -59,6 +58,9 @@ progress::-moz-progress-bar {
 .btnContainer {
    margin: 28px 0 24px 0;
    position: relative;
+   display: flex;
+   flex-wrap: nowrap;
+   overflow: hidden;
 }
 
 .btnArrowSlider {

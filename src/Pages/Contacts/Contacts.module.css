@@ -1,0 +1,53 @@
+.card {
+   display: flex;
+}
+
+.imgContainer {
+   width: 285px;
+   height: 285px;
+   border-radius: 40px;
+   overflow: hidden;
+}
+
+.imgContainer img {
+   width: 100%;
+}
+
+.textBlock {
+   margin-left: 40px;
+}
+
+.description {
+   color: #808080;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.scheduleItem {
+   display: flex;
+   justify-content: space-between;
+   width: 450px;
+}
+
+.scheduleItem,
+.timeItem {
+   color: #303030;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.btn img {
+   margin-right: 8px;
+}
+
+.btn:not(:first-child) {
+   margin-left: 16px;
+}
+
+.textCenter {
+   text-align: center;
+}

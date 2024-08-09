@@ -31,7 +31,9 @@ const Carousel = ({ children, btnArrText }) => {
          setCount(0);
 
          /* запуск "перелистывания слайдера" */
-         flipThrough()
+         /* flipThrough() */
+
+         flipThroughBtnSlider()
 
       }, 6000)
       return () => clearTimeout(timeout)
@@ -67,12 +69,11 @@ const Carousel = ({ children, btnArrText }) => {
    const flipThroughBtnSlider = () => {
       flipThrough()
       setHidden(prev => {
-         return offset < -200 ? 100 : offset //Проверяем, чтобы кнопки не исчезали из UI
+         return offset < -1200 ? 100 : offset //Проверяем, чтобы кнопки не исчезали из UI
       })
    }
 
    const [hidden, setHidden] = useState(100)
-
 
    return (
       <div>

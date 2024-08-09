@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Slide.module.css';
 
-const Slide = ({ img, title, description }) => {
+const Slide = ({ img, title, description, src, btnText }) => {
    return (
       <div className={s.slideContainer}>
          <div className={s.slideContantContainer}>
@@ -14,7 +14,7 @@ const Slide = ({ img, title, description }) => {
             </div>
          </div>
 
-         <div className={s.btn}>Подать обращение</div>
+         <a href={src} target='_blank' className={s.btn}>{btnText}</a>
 
       </div>
    )

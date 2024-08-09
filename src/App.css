@@ -2,7 +2,8 @@
    font-family: 'Inter', sans-serif;
 }
 
-ul, ol {
+ul,
+ol {
    padding-left: 20px;
    margin: 0;
 }
@@ -75,7 +76,7 @@ p {
 .text {
    width: 900px;
    color: #303030;
-   font-size: 20px;
+   font-size: 19px;
    font-style: normal;
    font-weight: 400;
    line-height: 28px;
@@ -521,6 +522,10 @@ p {
    margin-top: 120px;
 }
 
+.mt280 {
+   margin-top: 280px;
+}
+
 .bannerArrowContainer {
    display: flex;
    justify-content: space-between;
@@ -561,4 +566,8 @@ p {
 
 .borderDocumentContainer>div:not(:first-child) {
    margin-top: 32px;
+}
+
+.line {
+   background: #D9D9D9;
 }

@@ -101,8 +101,13 @@
    font-weight: 400;
    line-height: 24px;
    color: #FFFFFF;
-   cursor: pointer;
    letter-spacing: 1px;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.item:hover {
+   color: #FFEC00;
 }
 
 .item:not(:first-child) {
@@ -146,7 +151,7 @@
    z-index: 999;
 }
 
-.dropDownMenu.dropDownMenuActive{
+.dropDownMenu.dropDownMenuActive {
    display: block;
 }
 
@@ -156,7 +161,7 @@
    font-size: 16px;
    font-style: normal;
    font-weight: 400;
-   line-height: 24px;
+   line-height: 20px;
    text-decoration: none;
    white-space: nowrap;
    letter-spacing: normal;
@@ -167,7 +172,7 @@
 }
 
 .linkMenu:not(:first-child) {
-   margin-top: 8px;
+   margin-top: 16px;
 }
 
 .searchBlock {

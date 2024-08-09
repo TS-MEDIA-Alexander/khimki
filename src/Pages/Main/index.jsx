@@ -8,14 +8,29 @@ import { NavLink } from 'react-router-dom';
 import API from '../../API';
 
 /* Компоненты */
-import slider1 from '../../assets/img/sliders/main/1.png';
+/* import slider1 from '../../assets/img/sliders/main/1.png'; */
+import hotline from '../../assets/img/sliders/main/hotline.png';
+import head_urban_district_khimki from '../../assets/img/sliders/main/head_urban_district_khimki.png';
+import road_repairs_2024 from '../../assets/img/sliders/main/road_repairs_2024.png';
+import military_service_under_contract from '../../assets/img/sliders/main/military-service-under-contract.png';
+import virtual_museum from '../../assets/img/sliders/main/virtual-museum.png';
+import evaluation_local_government_activities from '../../assets/img/sliders/main/evaluation-of-local-government-activities.png';
+import investment_portal_moscow_region from '../../assets/img/sliders/main/investment-portal-of-moscow-region.png';
+import committee_competition_policy_moscow_region from '../../assets/img/sliders/main/committee-on-competition-policy-of-the-moscow-region.png';
+import mosobleirc from '../../assets/img/sliders/main/mosobleirc.png';
+import dobrodel_solving_problems_together from '../../assets/img/sliders/main/dobrodel-solving-problems-together.png';
+import remove_construction_waste_correctly from '../../assets/img/sliders/main/remove-construction-waste-correctly.png';
+import rescue_service from '../../assets/img/sliders/main/rescue-service.png';
+import ministry_internal_affairs_russia from '../../assets/img/sliders/main/ministry-of-internal-affairs-of-russia.png';
+import khimki_tv from '../../assets/img/sliders/main/khimki-tv.png';
+
 import Carousel from '../../Components/Carousel';
 import BannerArrow from '../../Components/BannerArrow';
 import News from '../../Components/News';
-import Slide from '../../Components/Slide'; 
+import Slide from '../../Components/Slide';
 
 /* Баннеры */
-import VirtualReception from '../../BannersComopnents/VirtualReception';
+import CityDay from '../../BannersComopnents/CityDay';
 import GovernmentServices from '../../BannersComopnents/GovernmentServices';
 import GovernmentServicesLarge from '../../BannersComopnents/GovernmentServicesLarge';
 import MunicipalPrograms from '../../BannersComopnents/MunicipalPrograms';
@@ -41,7 +56,7 @@ const Main = (props) => {
 
    /* Запрашиваем новости */
    const [news, setNews] = useState([]);
-   
+
    useEffect(() => {
       API.getNews(1, 9)
          .then(data => setNews(data))
@@ -52,14 +67,38 @@ const Main = (props) => {
          <ContantContainerMain>
             <Carousel
                btnArrText={
-                  ['Круглосуточная горячая линия', 'Горячая линия строительного комплеса', 'Сведения о земельном участке', 'Оценка деятельности местной власти']
+                  [
+                     'Горячая линия',
+                     'Глава г.о. Химки',
+                     'Ремонт дорог в 2024 г.',
+                     'Военная служба по контракту',
+                     'Виртуальный музей',
+                     'Оценка деятельности местной власти',
+                     'Инвестиционный портал Подмосковья',
+                     'Конкурентная политика',
+                     'МосОблЕИРЦ',
+                     'dobrodel.mosreg.ru',
+                     'Cтройотходы.рф',
+                     'Служба спасения',
+                     'МВД России',
+                     'Химки ТВ'
+                  ]
                }>
-               <Slide img={slider1} title={['Круглосуточная', 'горячая линия', 'главы округа']} description={'Принимаем обращения граждан 24/7'} />
-               <Slide img={slider1} title={['Горячая', 'линия']} description={'Принимаем обращения граждан 24/7'} />
-               <Slide img={slider1} title={['Сведения', 'о земельном участке']} description={'Принимаем обращения граждан 24/7'} />
-               <Slide img={slider1} title={['Оценка деятельности', 'местной власти']} description={'Принимаем обращения граждан 24/7'} />
+               <Slide img={hotline} title={['Круглосуточная горячая', 'линия Администрации']} description={''} src={'https://www.admhimki.ru/kontakty/'} btnText={'Подробнее'} />
+               <Slide img={head_urban_district_khimki} title={['Глава городского округа', 'Дмитрий Владимирович Волошин']} description={'Социальные сети'} btnText={'Telegram'} />
+               <Slide img={road_repairs_2024} title={['Программа ремонта', 'муниципальных и региональных', 'дорог на 2024 год']} description={'Ремонт дорог в 2024 г.'} btnText={'Подробнее'} src={'https://www.admhimki.ru/blagoustrojstvo/remont-dorog/'} />
+               <Slide img={military_service_under_contract} title={['Военная служба', 'по контракту']} description={''} btnText={'Подробнее'} src={'https://xn--80atbicfemrd.xn--p1ai/'} />
+               <Slide img={virtual_museum} title={['Виртуальный музей', 'городского округа Химки', '1941-1945']} description={''} btnText={'Подробнее'} src={'https://himkipobeda.ru/'} />
+               <Slide img={evaluation_local_government_activities} title={['Оценка деятельности', 'местной власти']} description={''} btnText={'Подробнее'} src={'https://panel.simpleforms.ru/yuweSgMuCEGXdQJVlj6r4w#/Panel/815a15f0-947c-483d-bcbf-763d56415674/TextBlockField'} />
+               <Slide img={investment_portal_moscow_region} title={['Инвестиционный портал', 'подмосковья']} description={''} btnText={'Подробнее'} src={'https://invest.mosreg.ru/'} />
+               <Slide img={committee_competition_policy_moscow_region} title={['Комитет по конкурентной', 'политике Московской области']} description={''} btnText={'Подробнее'} src={'https://zakaz-mo.mosreg.ru/'} />
+               <Slide img={mosobleirc} title={['Мобильное приложение', '«МосОблЕИРЦ»']} description={'Вся информация по вашей квитанции в личном кабинете'} btnText={'Подробнее'} src={'https://мособлеирц.рф/preimushchestva-lichnogo-kabineta/'} />
+               <Slide img={dobrodel_solving_problems_together} title={['Добродел: решаем', 'проблемы вместе']} description={''} btnText={'Подробнее'} src={'https://dobrodel.mosreg.ru/'} />
+               <Slide img={remove_construction_waste_correctly} title={['Вывозите стройотходы', 'правильно']} description={'Пункты приёма / заказ индивидуального вывоза'} btnText={'Подробнее'} src={'https://stroyothody.mosreg.ru/'} />
+               <Slide img={rescue_service} title={['Служба спасения', 'Московской области']} description={'Полиция. МЧС. Скорая помощь'} btnText={'Подробнее'} src={'https://112mo.ru/'} />
+               <Slide img={ministry_internal_affairs_russia} title={['ГУ МВД России по', 'Московской области']} description={'УМВД России по городскому округу Химки'} btnText={'Подробнее'} src={'https://50.xn--b1aew.xn--p1ai/'} />
+               <Slide img={khimki_tv} title={['Городской телеканал', 'Химки ТВ']} description={''} btnText={'Смотреть'} src={'https://www.himkismi.ru/'} />
             </Carousel>
-
 
             <div className="mt32 columnContainer">
 
@@ -81,7 +120,7 @@ const Main = (props) => {
                </div>
 
                <div className="ml20 columnSmal">
-                  <VirtualReception />
+                  <CityDay />
                   <div className="mt32">
                      <GovernmentServices />
                   </div>
@@ -140,7 +179,7 @@ const Main = (props) => {
             </section>
 
             {/* Анонсы мероприятий */}
-            <EventAnnouncements />
+            {/* <EventAnnouncements /> */}
 
 
 

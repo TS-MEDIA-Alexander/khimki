@@ -83,5 +83,12 @@ export const ROUTER = {
       legalRegulation: '/obrascheniya-grazhdan/pravovoye-regulirovaniye', 
       resultsConsiderationApplications: '/obrascheniya-grazhdan/rezultaty-rassmotreniya-obrascheniy', 
       virtualReceptionHeadCityDistrict: '/obrascheniya-grazhdan/virtualnaya-priyemnaya-glavy-gorodskogo-okruga', 
+      writeAdministration: '/obrascheniya-grazhdan/napisat-v-administratsiyu',
+      receptionProcedureTime: '/obrascheniya-grazhdan/grafik-lichnogo-priyoma-grazhdan-glavoy-gorodskogo-okruga-i-zamestitelyami-glavy',
+      allRussianDayReceptionCitizens: '/obrascheniya-grazhdan/obscherossiyskiy-den-priyoma-grazhdan',
+      responsesInquiriesIndefiniteNumberPersons: '/obrascheniya-grazhdan/otvety-na-obrascheniya-zatragivayuschiye-interesy-neopredelennogo-kruga-lits',
+   },
+   contacts: {
+      main: '/contacts'
    }
 }

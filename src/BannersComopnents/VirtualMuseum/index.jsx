@@ -3,7 +3,7 @@ import s from './VirtualMuseum.module.css';
 
 const VirtualMuseum = (props) => {
    return (
-      <a href="#" className={s.bannerContainer}>
+      <a href="https://himkipobeda.ru/" target='_blank' className={s.bannerContainer}>
          <div className={s.topContainer}>
             <div className={s.title}>
                <div>Виртуальный музей </div>

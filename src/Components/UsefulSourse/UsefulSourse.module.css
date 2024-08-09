@@ -139,7 +139,8 @@
    /* margin-top: 86px; */
    line-height: 24px;
    border-radius: 40px;
-   background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #F5982A 0%, #EEEE20 100%);
+   background: linear-gradient(0.439turn,rgba(255,236,0,1) 35%,rgba(254,227,5,1) 61%,rgba(249,191,22,1) 100%);
+   
    padding: 12px 24px;
    font-size: 16px;
    line-height: 24px;

@@ -136,7 +136,9 @@ const KhimkiDistrict = (props) => {
             </div>
             <div className="bannerArrowContainer">
                <div className={`mt32 borderMain ${s.districtVideo}`}>
-                  <iframe className={s.borderR} src="https://www.youtube.com/embed/xfBzWJyErEc?si=9p-cJfQhW45QsOo3" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameBorder="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                  {/* <iframe className={s.borderR} src="https://www.youtube.com/embed/xfBzWJyErEc?si=9p-cJfQhW45QsOo3" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameBorder="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
+                  
+                  <iframe className={s.borderR} src="https://rutube.ru/play/embed/d6076888fa49c5cc7f021c8516b9b70c/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
                   {/* В консоли вылетают ошибки, а также подгружается много информации из-за ютубовского iframe. Есть решение с ReactPlayer */}
                   {/* <ReactPlayer

@@ -20,7 +20,7 @@ const CardHuman = ({jobTitle, name, surname, subtitle, info, adress, WorkingHour
             {WorkingHours && <div className={s.time}><div className={`${s.cardMoreDetails}`}>Режим работы: </div>{`${WorkingHours}`}</div>}
 
             <div className={`mt24 ${s.cardBtnRow}`}>
-               {contactsArr.map((el, i)=> typeof el=== "string"? <div key={i} className={`oval ${s.cardTel}`}>{el}</div>:<div key={i} className={` ${s.imgContainer}`}>{el}</div>)}
+               {contactsArr?.map((el, i)=> typeof el=== "string"? <div key={i} className={`oval ${s.cardTel}`}>{el}</div>:<div key={i} className={` ${s.imgContainer}`}>{el}</div>)}
             </div>
 
             {btn && <div style={btnStyle} className={`mt16 ${s.btn}`}>{btn}</div>}

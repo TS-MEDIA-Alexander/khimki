@@ -43,12 +43,13 @@ const ResultsConsiderationApplications = (props) => {
 
             <div className={`mt40 ${s.description}`}>Дата публикации: 04.03.2024</div>
 
+            <div className="text">
             <div className="mt120 fw600">Обращения 2018 г.</div>
             <div className="mt38">
                <div className={`${s.bannerContainer}`}><img src={banner_1} alt="" /></div>
             </div>
-            <div className="text mt38">
-               <div className="pageSubtitle">
+            
+               <div className="mt38 pageSubtitle">
                   Поступление обращений граждан в администрацию
                   городского округа химки за 2018 год</div>
 
@@ -76,11 +77,12 @@ const ResultsConsiderationApplications = (props) => {
                </p>
             </div>
             <div className="mt120 fw600">Обращения Ⅰ квартал 2018 г.</div>
+            <div className="text">
             <div className="mt38">
                <div className={`${s.bannerContainer}`}><img src={banner_2} alt="" /></div>
             </div>
-            <div className="mt38 text">
-               <div className="pageSubtitle">Информация о результатах рассмотрения обращений граждан и принятых по ним мерах за первый квартал 2018 года </div>
+            
+               <div className="mt38 pageSubtitle">Информация о результатах рассмотрения обращений граждан и принятых по ним мерах за первый квартал 2018 года </div>
                <p>
                   В I квартале 2018 г. в адрес Администрации городского округа Химки поступило 3036 обращений граждан, в том числе 518 обращений, направленных на рассмотрение из Администрации Губернатора Московской области.
                </p>

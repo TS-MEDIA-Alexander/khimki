@@ -98,6 +98,7 @@
    line-height: 24px;
    border-radius: 40px;
    background: #FFEC00;
+   cursor: pointer;
 }
 
 .descriptionContainer {

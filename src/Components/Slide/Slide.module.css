@@ -8,6 +8,10 @@
    height: 100%;
 }
 
+.slideContainer img {
+   width: 100%;
+}
+
 .slideContantContainer {
    padding: 40px;
 }
@@ -42,6 +46,7 @@
 }
 
 .btn {
+   text-decoration: none;
    height: 26px;
    margin: 0 0 60px 40px;
    padding: 19px 50px;

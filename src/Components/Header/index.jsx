@@ -247,29 +247,29 @@ const Header = (props) => {
                               Правовое регулирование
                            </NavLink>
                            <NavLink to={ROUTER.citizensAppeals.virtualReceptionHeadCityDistrict} className={s.linkMenu}>
-                              Виртуальная приемная Главы городского округа
+                              Виртуальная приемная Главы <br /> городского округа
                            </NavLink>
                            <NavLink to={ROUTER.citizensAppeals.resultsConsiderationApplications} className={s.linkMenu}>
                               Результаты рассмотрения обращений
                            </NavLink>
-                           <NavLink /* to={ROUTER.citizensAppeals.main} */ className={s.linkMenu}>
+                           <NavLink to={ROUTER.citizensAppeals.writeAdministration} className={s.linkMenu}>
                               Написать в Администрацию
                            </NavLink>
-                           <NavLink /* to={ROUTER.citizensAppeals.main} */ className={s.linkMenu}>
+                           <NavLink to={ROUTER.citizensAppeals.receptionProcedureTime} className={s.linkMenu}>
                               Порядок и время приема
                            </NavLink>
-                           <NavLink /* to={ROUTER.citizensAppeals.main} */ className={s.linkMenu}>
-                              Общероссийский день приёма граждан в День Конституции Российской Федерации 12 декабря
+                           <NavLink to={ROUTER.citizensAppeals.allRussianDayReceptionCitizens} className={s.linkMenu}>
+                              Общероссийский день приёма <br /> граждан в День Конституции <br /> Российской Федерации 12 декабря
                            </NavLink>
-                           <NavLink /* to={ROUTER.citizensAppeals.main} */ className={s.linkMenu}>
-                              Информация для ознакомления желающим отправить обращениев форме электронного документа
+                           <NavLink to={ROUTER.citizensAppeals.main} className={s.linkMenu}>
+                              Информация для ознакомления <br /> желающим отправить обращениев <br /> форме электронного документа
                            </NavLink>
-                           <NavLink /* to={ROUTER.citizensAppeals.main} */ className={s.linkMenu}>
-                              Ответы на обращения, затрагивающие интересы неопределенного круга лиц
+                           <NavLink to={ROUTER.citizensAppeals.responsesInquiriesIndefiniteNumberPersons} className={s.linkMenu}>
+                              Ответы на обращения, <br /> затрагивающие интересы <br /> неопределенного круга лиц
                            </NavLink>
                         </div>
                      </div>
-                     <div className={s.item}>Контакты</div>
+                     <NavLink to={ROUTER.contacts.main} className={s.item}>Контакты</NavLink>
                   </div>
 
                   {/* <div className={s.searchBlock}>Поиск
