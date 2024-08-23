@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
 import arrow from '../../assets/icons/arrow_btn_link.svg';
 import CardHuman from '../../Components/CardHuman';
-import HeadDepartment from '../../assets/img/Persons/poznyakova.png'
 
 
 const OutdoorAdvertising = (props) => {
@@ -23,8 +22,8 @@ const OutdoorAdvertising = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Правовые и нормативные акты<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Схема размещения рекламных конструкций городского округа Химки<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Правовые и нормативные акты<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Схема размещения рекламных конструкций городского округа Химки<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
             </div>
 
             <div className="mt80 pageSubtitle">Начальник управления</div>

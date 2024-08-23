@@ -72,6 +72,9 @@
 }
 
 .calendarBtnArrow {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    background: #F6F6F6;
    border-radius: 50%;
    width: 40px;

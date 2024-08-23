@@ -1,6 +1,10 @@
-.contactContainer{
+.contactContainer {
    position: relative;
-   width: 440px;
+   width: 370px;
+}
+
+.contactContainer:not(:first-child) {
+   margin-left: 16px;
 }
 
 .titleRow {
@@ -15,7 +19,7 @@
 }
 
 .title {
-   width: 296px;
+   margin-left: 16px;
    color: #303030;
    font-size: 14px;
    font-style: normal;
@@ -41,8 +45,16 @@
    letter-spacing: -0.48px;
 }
 
-.description{
+.description {
    color: #808080;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.date {
+   color: #303030;
    font-size: 16px;
    font-style: normal;
    font-weight: 400;

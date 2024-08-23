@@ -10,6 +10,13 @@ import MayorCard from '../../Components/MayorCard';
 import ContactBanner from '../../Components/ContactBanner';
 
 import skhodnya_firsanovka from '../../assets/img/contacts/skhodnya_firsanovka.svg';
+import podrezkovo from '../../assets/img/contacts/podrezkovo.svg';
+import klyazma_starbeevo from '../../assets/img/contacts/klyazma_starbeevo.svg';
+import kutuzovskoe from '../../assets/img/contacts/kutuzovskoe.svg';
+import lunevskoe from '../../assets/img/contacts/lunevskoe.svg';
+import CardHuman from '../../Components/CardHuman';
+
+import governor from "../../assets/img/Persons/vorobiev.png";
 
 const Contacts = (props) => {
    return (
@@ -60,19 +67,122 @@ const Contacts = (props) => {
 
             <div className={`mt80 pageSubtitle ${s.textCenter}`}>Территориальные управления городского округа</div>
 
-            <div className="mt40">
+            <div className={`mt40 ${s.cardBannerContainer}`}>
                <ContactBanner
                   img={skhodnya_firsanovka}
                   title={'Территориальное управлениемикрорайона Сходня - Фирсановка'}
                   name={'Петрухин'}
                   subtitle={'Сергей Сергеевич'}
-                  info={'Горячая линия главы округа: '}
-                  WorkingHours={'Режим работы: Пн-Пт 09:00-18:00'}
+                  WorkingHours={'Пн-Пт 09:00-18:00'}
                   tel={'+7 (495) 574-72-67'}
                   mail={' sf_ta@admhimki.ru'}
                />
+               <ContactBanner
+                  title={'Территориальное управление микрорайонов Новогорск-Планерная'}
+                  name={'Шпендик'}
+                  subtitle={'Ярослав Олегович'}
+                  WorkingHours={'Пн-Пт 09:00-18:00'}
+                  tel={'+7 (495) 571-01-40'}
+                  mail={'np_ta@admhimki.ru'}
+               />
+               <ContactBanner
+                  title={'Территориальное управлениемикрорайона Сходня - Фирсановка'}
+                  name={'Мишина'}
+                  subtitle={'Наталья Владимировна '}
+                  WorkingHours={'Пн-Пт 09:00-18:00'}
+                  tel={'+7 (495) 570-34-98'}
+                  mail={'lv_ta@admhimki.ru'}
+               />
+            </div>
+            <div className={`mt20 ${s.cardBannerContainer}`}>
+               <ContactBanner
+                  img={podrezkovo}
+                  title={'Территориальное управление микрорайона Подрезково'}
+                  name={'Капустина'}
+                  subtitle={'Людмила Юрьевна'}
+                  WorkingHours={'Пн-Пт 09:00-18:00'}
+                  tel={'+7 (495) 574-84-85'}
+                  mail={'pd_ta@admhimki.ru'}
+               />
+               <ContactBanner
+                  img={klyazma_starbeevo}
+                  title={'Территориальное управление микрорайона Клязьма - Старбеево'}
+                  name={'Гентер'}
+                  subtitle={'Анна Сергеевна'}
+                  WorkingHours={'Пн-Пт 09:00-18:00'}
+                  tel={'+7 (495) 572-83-88'}
+                  mail={'ks_ta@admhimki.ru'}
+               />
+               <ContactBanner
+                  img={kutuzovskoe}
+                  title={'Территориальное управление Кутузовское'}
+                  name={'Воронов'}
+                  subtitle={'Дмитрий Александрович'}
+                  WorkingHours={'Пн-Пт 09:00-18:00'}
+                  tel={'+7 (495) 572-32-28'}
+                  mail={'kutuzovskoe@admhimki.ru'}
+               />
+            </div>
+            <div className={`mt20 ${s.cardBannerContainer}`}>
+               <ContactBanner
+                  img={lunevskoe}
+                  title={'Территориальное управление Лунёвское'}
+                  name={'Машковцев'}
+                  subtitle={'Эдуард Александрович'}
+                  WorkingHours={'Пн-Пт 09:00-18:00'}
+                  tel={'+7 (495) 572-03-29'}
+                  mail={'lunevo@admhimki.ru'}
+               />
             </div>
 
+            <div className={`mt80 pageSubtitle ${s.textCenter}`}>Горячие линии ведомств</div>
+            <div className={`mt40 ${s.cardBannerContainer}`}>
+               <div className={`borderMain ${s.cardHotline}`}>
+                  <div className={s.title}>«Горячая линия» по вопросам незаконной торговли алкоголем, фактам незаконного игорного бизнеса, незаконной торговли</div>
+                  <div className={`mt40 ${s.description}`}>Режим работы: <span className={s.date}>Пн-Чт 09:00-18:00, Пт 09:00-16:45</span></div>
+                  <div className="mt16 flexContainer">
+                     <div className="oval">+7 (495) 572-65-00</div>
+                     <div className="ml16 oval">hotline@admhimki.ru</div>
+                  </div>
+               </div>
+               <div className={`borderMain ${s.cardHotline}`}>
+                  <div className={s.title}>«Горячая линия» по вопросам незаконной торговли алкоголем, фактам незаконного игорного бизнеса, незаконной торговли</div>
+                  <div className={`mt40 ${s.description}`}>Режим работы: <span className={s.date}>Пн-Чт 09:00-18:00, Пт 09:00-16:45</span></div>
+                  <div className="mt16 flexContainer">
+                     <div className="oval">+7 (495) 572-65-00</div>
+                     <div className="ml16 oval">hotline@admhimki.ru</div>
+                  </div>
+               </div>
+            </div>
+            <div className={`mt20 ${s.cardBannerContainer}`}>
+               <div className={`borderMain ${s.cardHotline}`}>
+                  <div className={s.title}>«Горячая линия» по вопросам незаконной торговли алкоголем, фактам незаконного игорного бизнеса, незаконной торговли</div>
+                  <div className={`mt40 ${s.description}`}>Режим работы: <span className={s.date}>Пн-Чт 09:00-18:00, Пт 09:00-16:45</span></div>
+                  <div className="mt16 flexContainer">
+                     <div className="oval">+7 (495) 572-65-00</div>
+                     <div className="ml16 oval">hotline@admhimki.ru</div>
+                  </div>
+               </div>
+               <div className={`borderMain ${s.cardHotline}`}>
+                  <div className={s.title}>«Горячая линия» по вопросам незаконной торговли алкоголем, фактам незаконного игорного бизнеса, незаконной торговли</div>
+                  <div className={`mt40 ${s.description}`}>Режим работы: <span className={s.date}>Пн-Чт 09:00-18:00, Пт 09:00-16:45</span></div>
+                  <div className="mt16 flexContainer">
+                     <div className="oval">+7 (495) 572-65-00</div>
+                     <div className="ml16 oval">hotline@admhimki.ru</div>
+                  </div>
+               </div>
+            </div>
+
+            <div className={`mt80 pageSubtitle ${s.textCenter}`}>Правительство Московской области</div>
+               <CardHuman
+                  jobTitle='Губернатор Московской области'
+                  name='Воробьев'
+                  surname='Андрей Юрьевич'
+                  info='Контакты для обращения граждан:'
+                  adress='Московская область, г. Красногорск, бульвар Строителей, д.1'
+                  contactsArr={['+7 (800) 550-50-30', 'andreyvorobiev@mosreg.ru', 'amo@mosreg.ru', 'mosreg.ru']}
+                  img={governor}
+               />
          </ContantContainerMain>
       </div>
    )

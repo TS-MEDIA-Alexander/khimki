@@ -7,21 +7,6 @@
    justify-content: space-between;
 }
 
-.imgContainer {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 24px;
-   height: 24px;
-   padding: 9px;
-   border-radius: 50%;
-   background: #F6F6F6;
-}
-
-.imgContainer img {
-   width: 100%;
-}
-
 .logoContainer {
    width: 120px;
    height: 120px;
@@ -46,7 +31,7 @@
    cursor: pointer;
 }
 
-.link_min{
+.link_min {
    width: 580px;
 }
 
@@ -67,4 +52,42 @@
    font-weight: 500;
    line-height: 32px;
    letter-spacing: -0.48px;
+}
+
+@media screen and (max-width: 1370px) {
+   .linkContainerColumn {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .linkContainerColumn>a:not(:first-child) {
+      margin-top: 32px;
+   }
+
+   .textContainer {
+      margin-top: 32px;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .mobilCardLink {
+      flex-direction: column;
+   }
+
+   .text {
+      width: 100%;
+      font-size: 16px;
+   }
+
+   .link_min {
+      width: 100%;
+   }
+
+   .mobilArrowNone {
+      display: none;
+   }
+
+   .text {
+      width: 100%;
+   }
 }

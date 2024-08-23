@@ -18,18 +18,18 @@ const CityCoatOfArms = (props) => {
    return (
       <div>
          <ContantContainerMain>
-            <div className={`mt80 ${s.breadcrumbs}`}>
+            <div className={`mt80 breadcrumbs`}>
                <NavLink to={ROUTER.history.main} className='breadcrumbsFrom'>История</NavLink>
-               <span className={s.breadcrumbsTo}> / Герб города</span>
+               <span className={'breadcrumbsTo'}> / Герб города</span>
             </div>
-            <div className={`mt24 ${s.title}`}>Герб города</div>
+            <div className={`mt24 pageTitle`}>Герб города</div>
             <div className="mt80 columnContainer">
                <div className="columnLarge">
 
                   <img className={s.imgMain} src={mainImg} alt="" />
                   <div className={`mt80 ${s.mainTextContainer}`}>
-                     <div className={s.subtitle}>Герб города Химки</div>
-                     <div className={`mt38 ${s.textBody}`}>
+                     <div className={`pageSubtitle`}>Герб города Химки</div>
+                     <div className={`mt38 text`}>
                         <p>
                            В чёрном поле — золотой, скачущий, крылатый Кентавр, который держит в распростёртых руках лук и стрелу.  Во главе, внизу и по сторонам кентавра — золотые звёзды.
                         </p>
@@ -42,7 +42,7 @@ const CityCoatOfArms = (props) => {
                            Именно такой вариант герба определен в 1996-1997 годах по итогам специального конкурса. В финал конкурса вышли три проекта: художника Александра Мустафина – «Кентавр», художника Евгения Потапова – «Стрижи» и председателя областного клуба геральдистов, химчанина Константина Моченова – «Дуб». Из трех работ комиссия отдала предпочтениям первым двум. Эти варианты направили для экспертизы в Герольдию при Президенте РФ, заместителю директора «Эрмитажа», главному герольдмейстеру, академику Георгию Вадимовичу Вилинбахову. Победу одержал проект «Кентавр».
                         </p>
                         <p>
-                           <div className={s.subtitle}>Символика герба:</div>
+                           <div className={`pageSubtitle`}>Символика герба:</div>
                            <br />
                            Кентавр со времён вавилонской и египетской культур символизирует единение разума человека и мощи природных сил, стремящихся к познанию неведомого и преодолению преград. Широко используется в греческой античной литературе, а из неё перешёл в русскую с принятием христианства..
                         </p>
@@ -57,8 +57,8 @@ const CityCoatOfArms = (props) => {
                         </p>
                      </div>
 
-                     <div className={`mt38 ${s.subtitle}`}>Гимн городского округа Химки</div>
-                     <div className={`mt38 ${s.textBody}`}>
+                     <div className={`mt38 pageSubtitle`}>Гимн городского округа Химки</div>
+                     <div className={`mt38 text`}>
                         <p>
                            Химки навеки в истории нашей,<br />
                            Память о подвиге нам дорога-<br />
@@ -91,7 +91,7 @@ const CityCoatOfArms = (props) => {
                   </div>
 
                </div>
-               <div className="ml20 columnSmal">
+               <div className="ml20 columnSmal mobileNoneContainer">
                   <FamilyYear />
                   <div className="mt40">
                      <SVO />

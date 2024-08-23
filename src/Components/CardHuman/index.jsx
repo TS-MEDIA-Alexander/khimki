@@ -2,8 +2,8 @@ import React from 'react';
 import s from './CardHuman.module.css';
 import plug from '../../assets/img/Persons/img.png';
 
-const CardHuman = ({jobTitle, name, surname, subtitle, info, adress, WorkingHours, contactsArr,  img, btn, btnStyle}) => {
-   
+const CardHuman = ({ jobTitle, name, surname, subtitle, info, adress, WorkingHours, contactsArr, img, btn, btnStyle }) => {
+
    return (
       <div className={`mt80 borderMain ${s.card}`}>
          <div className={s.portrainContainer}>
@@ -20,7 +20,11 @@ const CardHuman = ({jobTitle, name, surname, subtitle, info, adress, WorkingHour
             {WorkingHours && <div className={s.time}><div className={`${s.cardMoreDetails}`}>Режим работы: </div>{`${WorkingHours}`}</div>}
 
             <div className={`mt24 ${s.cardBtnRow}`}>
-               {contactsArr?.map((el, i)=> typeof el=== "string"? <div key={i} className={`oval ${s.cardTel}`}>{el}</div>:<div key={i} className={` ${s.imgContainer}`}>{el}</div>)}
+               {contactsArr?.map((el, i) => typeof el === "string" ?
+                  <div key={i} className={`oval ${s.cardTel}`}>{el}</div>
+                  : typeof el === "object" ?
+                  <div key={i} className={`oval ${s.cardTel}`}><a className={s.link} target='_blank' href={el.link}>{el.text}</a></div>
+                  :<div key={i} className={` ${s.imgContainer}`}>{el}</div>)}
             </div>
 
             {btn && <div style={btnStyle} className={`mt16 ${s.btn}`}>{btn}</div>}

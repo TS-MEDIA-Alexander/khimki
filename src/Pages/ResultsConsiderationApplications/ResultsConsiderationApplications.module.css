@@ -13,20 +13,6 @@
    cursor: pointer;
 }
 
-.imgContainer {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 20px;
-   padding: 9px;
-   border-radius: 50%;
-   background: #F6F6F6;
-}
-
-.imgContainer img {
-   width: 100%;
-}
-
 .table:nth-child(1) {
    max-width: 660px;
 }

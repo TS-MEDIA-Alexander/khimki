@@ -27,10 +27,9 @@ const NewsPage = (props) => {
          .then(data => setNews(data))
    }, [])
 
-
    const shiwMore = () => {
       setCurrentPage(currentPage + 1)
-      API.getNews(currentPage)
+      API.getNews(currentPage + 1)
          .then(data => setNews([...news, ...data]))
    }
 
@@ -109,18 +108,23 @@ const NewsPage = (props) => {
 
                      <div className="mt20 filterSearchContainer"><input type="text" placeholder='Ключевое слово' className="filterSearch" /></div>
                      <button className='mt20 filterBtnNewsArchive'>Архив новостей</button>
+                     <button className='mt20 subscribe'>Подписаться на рассылку</button>
                      <div className="mt12 juridicalInfo">Свидетельство о регистрации СМИ от 22.04.2024 ЭЛ № ФС 77 - 87145</div>
 
                   </div>
-                  <div className='mt40'>
-                     <VkChannel />
+
+                  <div className='mobileNoneContainer'>
+                     <div className='mt40'>
+                        <VkChannel />
+                     </div>
+                     <div className='mt40'>
+                        <TgChannel />
+                     </div>
                   </div>
-                  <div className='mt40'>
-                     <TgChannel />
-                  </div>
+
                </div>
                <div className="columnLarge">
-                  <News rowLength={3} news={news} />
+                  <News news={news} mobilFullPhoto={true} />
                   <div onClick={shiwMore} className={`btnW ${s.showMore}`}>Загрузить еще</div>
                </div>
 

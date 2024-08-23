@@ -1,13 +1,14 @@
 import React from 'react';
 import arrow_btn_link from '../../assets/icons/arrow_btn_link.svg';
 import s from './DistrictCard.module.css';
+import pattern from '../../assets/icons/khimkiDistrict/pattern.svg'
 
 const DistrictCard = ({title, img}) => {
    return (
          <div className={s.navLinkContainer}>
             <div className={s.contantContainer}>
                <div className={s.imgContainer}>
-                  {img && <img src={img} alt="" />}
+                  <img src={img || pattern} alt="" />
                </div>
                <div className={s.navLinkTitle}>{title}</div>
             </div>

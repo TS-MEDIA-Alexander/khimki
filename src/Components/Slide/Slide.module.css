@@ -10,6 +10,7 @@
 
 .slideContainer img {
    width: 100%;
+   height: 100%;
 }
 
 .slideContantContainer {
@@ -27,7 +28,6 @@
 .slideTitle {
    display: flex;
    flex-direction: column;
-   color: #212121;
    font-size: 44px;
    font-style: normal;
    font-weight: 600;
@@ -67,4 +67,34 @@
 
 .btn:active {
    background: #EDEDED;
+}
+
+@media screen and (max-width: 1225px) {
+   .slideTitle {
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: -2%;
+   }
+
+   .btn {
+      padding: 12px 24px;
+      font-size: 14px;
+      margin: 0 0 24px 24px;
+   }
+
+   .slideDescription {
+      font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 500px){
+.btn{
+   /* margin: 0 0 24px 40px; */
+}
+}
+
+@media screen and (max-width: 745px) {
+   .slideContantContainer {
+      padding: 24px;
+   }
 }

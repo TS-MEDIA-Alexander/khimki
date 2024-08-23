@@ -51,3 +51,33 @@
 .textCenter {
    text-align: center;
 }
+
+.cardBannerContainer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.cardHotline {
+   width: 590px;
+}
+
+.cardHotline:not(:first-child) {
+   margin-left: 20px;
+}
+
+.title {
+   color: #303030;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 32px;
+   letter-spacing: -0.48px;
+}
+
+.date {
+   color: #303030;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}

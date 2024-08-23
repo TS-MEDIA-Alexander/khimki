@@ -50,7 +50,8 @@
    line-height: 16px;
    letter-spacing: -0.24px;
    border-radius: 40px;
-   background: rgba(255, 236, 0, 0.24);;
+   background: rgba(255, 236, 0, 0.24);
+   ;
 }
 
 .rowContainer {
@@ -60,10 +61,23 @@
 .rowContainer .tags:first-child {
    margin: 0;
 }
+
 .rowContainer .tags:last-child {
    margin: 0 0 0 8px;
 }
 
 .tags {
    margin-top: 8px;
+}
+
+@media screen and (max-width: 1370px) {
+   .bannerContainer {
+      height: 240px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .bannerContainer {
+      width: calc(100% - 48px);
+   }
 }

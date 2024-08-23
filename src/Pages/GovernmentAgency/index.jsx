@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
 import ContantContainerMain from '../../total/ContantContainerMain';
+import CardHuman from '../../Components/CardHuman';
 import s from './GovernmentAgency.module.css';
 
 import FamilyYear from '../../BannersComopnents/FamilyYear';
@@ -32,9 +33,8 @@ const GovernmentAgency = (props) => {
 
                   </div>
 
-
                </div>
-               <div className="ml20 mt40 columnSmal">
+               <div className="ml20 mt40 columnSmal mobileNoneContainer">
                   <FamilyYear />
                </div>
             </div>
@@ -43,23 +43,14 @@ const GovernmentAgency = (props) => {
                <DocumentContainerDownload text='Федеральный закон от 15 ноября 1997 г. № 143-ФЗ «Об актах гражданского состояния»' date="06.02.2023" />
             </div>
 
-            <div className={`mt80 borderMain ${s.card}`}>
-               <div className={s.portrainContainer}>
-                  <img src={department_civil} alt="" />
-               </div>
-               <div className={s.rightContainer}>
-                  <div className={`mt8 ${s.title}`}>Отдел № 1 Управления ЗАГС по городским округам Химки и Долгопрудный</div>
-
-                  <div>
-                     <div className={`mt40 ${s.cardMoreDetails}`}>г. Химки, ул. Московская, д. 30 </div>
-                     <div className={s.time}><div className={`${s.cardMoreDetails}`}>Режим работы: </div>Вт-Пт 09:00–18:00, перерыв 13:00–14:00; Сб 09:00–17:30, перерыв 13:00–13:30</div>
-                     <div className={`mt24 ${s.cardBtnRow}`}>
-                        <div className={`oval ${s.cardTel}`}>+7 (495) 573-27-18</div>
-                        <div className={`oval ${s.cardTel}`}>+7 (495) 572-65-66</div>
-                        <div className={`oval ${s.cardTel}`}><a className={s.link} target='_blank' href="https://zags.mosreg.ru/">zags.mosreg.ru</a></div>
-                     </div>
-                  </div>
-               </div>
+            <div className="mt80">
+               <CardHuman
+                  jobTitle={'Отдел № 1 Управления ЗАГС по городским округам Химки и Долгопрудный'}
+                  info={'г. Химки, ул. Московская, д. 30'}
+                  adress={'Режим работы: Вт-Пт 09:00–18:00, перерыв 13:00–14:00; Сб 09:00–17:30, перерыв 13:00–13:30'}
+                  contactsArr={['+7 (495) 573-27-18', '+7 (495) 572-65-66', {text: 'zags.mosreg.ru', link: 'https://zags.mosreg.ru/'}]}
+                  img={department_civil}
+               />
             </div>
 
          </ContantContainerMain>

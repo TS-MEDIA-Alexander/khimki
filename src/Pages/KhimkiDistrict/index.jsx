@@ -36,7 +36,7 @@ const KhimkiDistrict = (props) => {
    return (
       <div>
          <ContantContainerMain>
-            <div className={`mt80 ${s.title}`}>Городской округ Химки</div>
+            <div className={`mt80 pageTitle`}>Городской округ Химки</div>
             <div className={`mt80 ${s.mapContainer}`}>
                <Map fnSet={setCurDistrictId} />
                <DistrictAbout curDistrictId={curDistrictId} />
@@ -53,7 +53,7 @@ const KhimkiDistrict = (props) => {
                </div>
                <div className={`mt32 borderMain ${s.districtBanner}`}>
                   <div className={s.textContainer}>
-                     <div className={s.bannerTitle}><img src={arrow} alt="" />277 185 человек</div>
+                     <div className={s.bannerTitle}><img src={arrow} alt="" />411 000 человек</div>
                      <div className={`mt8 ${s.description} ${s.description_center}`}>Cуммарная численность населения округа 2023 г.</div>
                   </div>
                   <img className={`mt12 ${s.radialDiagram}`} src={radialDiagram} alt="" />
@@ -92,7 +92,7 @@ const KhimkiDistrict = (props) => {
                <div className={`mt32 borderMain ${s.districtBanner}`}>
                   <div className={s.bannerTitle}>Городской округ Химки</div>
                   <div className={`mt8 ${s.description}`}>В цифрах 2023 г.</div>
-                  <div className="mt32">
+                  <div className={`mt32 ${s.container}`}>
                      <div className={s.districtLineChart}>
                         <div className={`${s.lineChart} ${s.area}`}>Площадь (Г)</div>
                         <div className={s.statistiCscount}>25 777</div>
@@ -137,7 +137,7 @@ const KhimkiDistrict = (props) => {
             <div className="bannerArrowContainer">
                <div className={`mt32 borderMain ${s.districtVideo}`}>
                   {/* <iframe className={s.borderR} src="https://www.youtube.com/embed/xfBzWJyErEc?si=9p-cJfQhW45QsOo3" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameBorder="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
-                  
+
                   <iframe className={s.borderR} src="https://rutube.ru/play/embed/d6076888fa49c5cc7f021c8516b9b70c/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
                   {/* В консоли вылетают ошибки, а также подгружается много информации из-за ютубовского iframe. Есть решение с ReactPlayer */}
@@ -162,7 +162,7 @@ const KhimkiDistrict = (props) => {
             <div className="bannerArrowContainer">
                <div className={`mt32 borderMain ${s.sectionMap}`}>
                   <div className={s.sectionMapTitle}>Карта раздела </div>
-                  <div className="mt40 bannerArrowContainer">
+                  <div className={`mt40 bannerArrowContainer ${s.mobilArrowContainer}`}>
                      <div className={s.column}>
                         <div className={s.item}>Устав, символика, карта </div>
                         <NavLink to={ROUTER.khimkiDistrict.administrationStructure} className={s.item}>Структура Администрации </NavLink>
@@ -180,12 +180,14 @@ const KhimkiDistrict = (props) => {
                         <div className={s.item}>Наукоград</div>
                         <div className={s.item}>Информационные системы</div>
                      </div>
-                     <MunicipalProgramsMini />
+                     <div className={s.mobilMt24}>
+                        <MunicipalProgramsMini />
+                     </div>
                   </div>
                </div>
             </div>
 
-            <div className="mt32 bannerArrowContainer">
+            <div className={`mt32 bannerArrowContainer ${s.mobilBannerArrowContainer}`}>
                <Problem />
                <Problem />
             </div>

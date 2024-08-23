@@ -31,7 +31,6 @@ const NewsArticle = (props) => {
       return text?.replace(/<p>(\s|(&nbsp))<\/p>/gmi, '')
    }
 
-
    return (
       <div>
          <ContantContainerMain>
@@ -39,18 +38,18 @@ const NewsArticle = (props) => {
                <NavLink to={ROUTER.news} className='breadcrumbsFrom'>Новости</NavLink>
                <span className='breadcrumbsTo'> / {currentNews.title}</span>
             </div>
-            <div className="mt40 columnContainer">
+            <div className={`mt40 columnContainer ${s.mobileContainer}`}>
                <div className="columnLarge">
-                  <img className={s.imgMain} src={currentNews.image_detail} alt="" />
+                  {currentNews.image_detail && <img className={s.imgMain} src={currentNews.image_detail} alt="" />}
                   <div className={s.mainTextContainer}>
                      {/* Фильтры, на будущее */}
-                     <div className={`mt40 ${s.filterText}`}>{currentNews?.filter?.subject}, {currentNews?.filter?.date}</div>
+                     <div className={`mt40 ${s.filterText}`}>{currentNews?.filter?.subject} {currentNews?.date}</div>
 
                      <div className={`mt48 ${s.title}`}>{currentNews.title}</div>
                      <div className={`mt48 ${s.subtitle}`}>{currentNews.subtitle}</div>
 
                      {/* Цитаты, если есть */}
-                     {currentNews.citation?.textBody && <div className={`mt38 ${s.citationConatiner}`}>
+                     {/* {currentNews.citation?.textBody && <div className={`mt38 ${s.citationConatiner}`}>
                         <div className={`${s.citationTextBody} borderLeftMain`}>
                            «{currentNews.citation?.textBody}»
                         </div>
@@ -58,7 +57,7 @@ const NewsArticle = (props) => {
                            <div className={s.author}>{currentNews.citation?.author}</div>
                            <div className={s.jobTitle}>{currentNews.citation?.jobTitle}</div>
                         </div>
-                     </div>}
+                     </div>} */}
 
                      <div dangerouslySetInnerHTML={{ __html: clearHTML(currentNews.text) }} className={`mt38 ${s.textBody}`} />
 
@@ -79,7 +78,7 @@ const NewsArticle = (props) => {
 
 
                </div>
-               <div className="ml20 columnSmal">
+               <div className="ml20 columnSmal mobileNoneContainer">
                   <FamilyYear />
                   <div className="mt40">
                      <TgChannel />
@@ -92,7 +91,7 @@ const NewsArticle = (props) => {
                <div className="mt80 subTitle">Последние новости</div>
 
                <div className="mt40">
-                  <News rowLength={4} news={news} />
+                  <News news={news} mobilFullPhoto={true}/>
                </div>
 
             </section>

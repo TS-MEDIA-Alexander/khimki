@@ -5,13 +5,16 @@ import { ROUTER } from '../../config';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import logo from '../../assets/img/logos/full-logo.svg';
 import icon from '../../assets/icons/version_visually_impaired.svg';
+import HeaderMobile from '../HeaderMobile';
 
 const Header = (props) => {
 
-   const [activeID, setActiveID] = useState()
+   const [activeID, setActiveID] = useState();
+   const [mobilMenu, setMobilMenu] = useState(false);
 
    return (
       <div onMouseOver={(e) => setActiveID(false)} >
+         {mobilMenu && <HeaderMobile setMobilMenu={setMobilMenu} />}
          <div className={`bgMain ${s.bgBlock}`}>
             <ContantContainerMain>
                <div className={s.logoRow}>
@@ -23,6 +26,7 @@ const Header = (props) => {
                         <div className={s.titleInfo}>Московской области</div>
                      </div>
                   </NavLink>
+                  <div onClick={() => setMobilMenu(true)} className={s.mobilMenu}>Меню</div>
                   <div className={s.settingsContainer}>
                      {/* <div className={s.versionVI}><img src={icon} alt="" />Версия для слабовидящих</div> */}
                      <button className={s.hotLine}>Горячая линия</button>
@@ -30,9 +34,10 @@ const Header = (props) => {
                </div>
             </ContantContainerMain>
          </div>
+         
          <div className={s.mainMenuContainer}>
             <ContantContainerMain>
-               <div className={s.mainMenu}>
+               <div className={`${s.mainMenu}`}>
                   <div onMouseOver={e => e.stopPropagation()} onClick={(e) => e.target.id ? setActiveID(e.target.id) : setActiveID(false)} className={s.itemsContainer}>
                      <div id='news' className={`${s.item} ${s.itemArrow}`}>
                         Новости
@@ -58,10 +63,12 @@ const Header = (props) => {
                               История города Химки
                            </NavLink>
                            <NavLink to={ROUTER.history.greatPatrioticWar} className={s.linkMenu} >
-                              Великая Отечественная война 1941-1945 гг.
+                              <p>Великая Отечественная</p>
+                               война 1941-1945 гг.
                            </NavLink>
                            <NavLink to={ROUTER.history.pamyatnikiIstoriiKultury} className={s.linkMenu} >
-                              Памятники истории и культуры
+                              <p>Памятники истории</p>
+                               и культуры
                            </NavLink>
                            <NavLink to={ROUTER.history.gorodPobratim} className={s.linkMenu} >
                               Город побратим
@@ -156,7 +163,7 @@ const Header = (props) => {
                               и защите их прав
                            </NavLink>
                            <NavLink to={ROUTER.activity.smallMediumBusinesses} className={s.linkMenu}>
-                              Малое и среднее предпринимательствои
+                              Малое и среднее предпринимательство
                            </NavLink>
                            <NavLink to={ROUTER.activity.municipalСontrol} className={s.linkMenu}>
                               Муниципальный контроль
@@ -180,8 +187,8 @@ const Header = (props) => {
                               Поддержка СО НКО
                            </NavLink>
                            <NavLink to={ROUTER.activity.authorityFeldHandlingAnimalsWithoutOwners} className={s.linkMenu}>
-                              <p>Полномочия в области обращения с животными</p>
-                              без владельцев
+                              <p>Полномочия в области обращения</p>
+                              с животными без владельцев
                            </NavLink>
                            <div className={s.linkMenu}>
                               <p>Правовое просвещение и правовое</p>
@@ -213,27 +220,30 @@ const Header = (props) => {
                         Прокуратура
                         <div className={`${s.dropDownMenu} ${activeID === 'prosecutorOffice' && s.dropDownMenuActive}`}>
                            <NavLink to={ROUTER.prosecutorOffice.main} className={s.linkMenu}>
-                              Прокуратура (разводная)
+                              Прокуратура
                            </NavLink>
                            <NavLink /* to={ROUTER.prosecutorOffice.main} */ className={s.linkMenu}>
                               Химкинская городская прокуратура
                            </NavLink>
                            <NavLink to={ROUTER.prosecutorOffice.militaryProsecutorOfficeSolnechnogorskGarrison} className={s.linkMenu}>
-                              Военная прокуратура Солнечногорского гарнизона
+                              <p>Военная прокуратура</p>
+                               Солнечногорского гарнизона
                            </NavLink>
                            <NavLink to={ROUTER.prosecutorOffice.moscowInterregionalTransport} className={s.linkMenu}>
-                              Московская межрегиональная транспортная прокуратура
+                              <p>Московская межрегиональная</p>
+                               транспортная прокуратура
                            </NavLink>
                            <NavLink to={ROUTER.prosecutorOffice.correctionalInstitutions} className={s.linkMenu}>
-                              <p>Московская прокуратура по надзору за соблюдением</p>
-                              <p>законов в исправительных учреждениях Московской</p>
-                              области
+                              <p>Московская прокуратура по надзору</p>
+                              <p>за соблюдением законов в исправительных</p>
+                              <p> учреждениях Московской области</p>
                            </NavLink>
                            <NavLink to={ROUTER.prosecutorOffice.northernTransportProsecutorOffice} className={s.linkMenu}>
                               Северная транспортная прокуратура
                            </NavLink>
                            <NavLink /* to={ROUTER.prosecutorOffice.main} */ className={s.linkMenu}>
-                              Правовое просвещение и правовое информирование
+                              <p>Правовое просвещение и правовое</p> 
+                              информирование
                            </NavLink>
                         </div>
                      </div>
@@ -270,6 +280,8 @@ const Header = (props) => {
                         </div>
                      </div>
                      <NavLink to={ROUTER.contacts.main} className={s.item}>Контакты</NavLink>
+
+                     <button className={`${s.mobilHotLine} ${s.hotLine}`}>Горячая линия</button>
                   </div>
 
                   {/* <div className={s.searchBlock}>Поиск

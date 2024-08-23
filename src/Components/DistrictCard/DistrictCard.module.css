@@ -25,6 +25,7 @@
    height: 48px;
    border-radius: 50%;
    background: #F6F6F6;
+   overflow: hidden;
 }
 
 .navLinkTitle {
@@ -47,4 +48,26 @@
 .btn img {
    width: 24px;
    height: 24px;
+}
+
+@media screen and (max-width: 745px) {
+   .navLinkContainer {
+      width: 90%;
+      height: auto;
+   }
+
+   .navLinkTitle {
+      font-size: 16px;
+      letter-spacing: -0.32px;
+   }
+
+   .btn {
+      padding: 8px;
+   }
+}
+
+@media screen and (max-width: 443px) {
+   .btn {
+      display: none;
+   }
 }

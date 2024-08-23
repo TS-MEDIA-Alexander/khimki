@@ -36,7 +36,7 @@ const PublicPrivatePartnership = (props) => {
             </div>
 
             <div className={`mt80  ${s.linkContainerColumn}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`borderMain ${s.link} ${s.link_min}`}>
+               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`borderMain ${s.link} ${s.link_min} ${s.mobilCardLink}`}>
                   <div className={s.logoContainer}><img src={ministry_economic_development} alt="" /></div>
                   <div className={s.textContainer}>
                      <div className={s.description}>Полезный ресурс</div>
@@ -44,9 +44,9 @@ const PublicPrivatePartnership = (props) => {
                         экономического развития
                         Российской Федерации</div>
                   </div>
-                  <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
+                  <div className={`btnCircleG imgContainerArrow ${s.mobilArrowNone}`}><img src={arrow} alt="" /></div>
                </NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`borderMain ${s.link} ${s.link_min}`}>
+               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`borderMain ${s.link} ${s.link_min} ${s.mobilCardLink}`}>
                   <div className={s.logoContainer}><img src={ministry_investment_industry_and_science} alt="" /></div>
                   <div className={s.textContainer}>
                      <div className={s.description}>Полезный ресурс</div>
@@ -54,13 +54,13 @@ const PublicPrivatePartnership = (props) => {
                         экономического развития
                         Российской Федерации</div>
                   </div>
-                  <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
+                  <div className={`btnCircleG imgContainerArrow ${s.mobilArrowNone}`}><img src={arrow} alt="" /></div>
                </NavLink>
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Нормативная база<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Проекты<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Нормативная база<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Проекты<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
             </div>
          </ContantContainerMain>
       </div>

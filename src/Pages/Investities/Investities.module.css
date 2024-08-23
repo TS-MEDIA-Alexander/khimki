@@ -21,18 +21,6 @@
    margin-left: 20px;
 }
 
-.imgContainerArrow {
-   padding: 9px;
-   width: 24px;
-   height: 24px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 20px;
-   overflow: hidden;
-   background: #F6F6F6;
-}
-
 .imgContainer {
    display: flex;
    align-items: center;
@@ -95,4 +83,15 @@
    font-weight: 400;
    line-height: 24px;
    letter-spacing: -0.32px;
+}
+
+@media screen and (max-width: 1105px) {
+   .mobilFlexContainer {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+   }
+   .imgBlock:not(:first-child) {
+      margin-left: 0px;
+   }
 }

@@ -18,10 +18,10 @@ const TICDocuments = (props) => {
             <div className={`mt24 pageTitle`}>Документы </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <div className={`${s.link}`}>Решения ТИК города Химки <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></div>
-               <div className={`mt24 ${s.link}`}>Паспорт муниципального образования<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></div>
-               <div className={`mt24 ${s.link}`}>Постановления<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></div>
-               <div className={`mt24 ${s.link}`}>Решения Избирательной комиссии Московской области<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></div>
+               <div className={`${s.link}`}>Решения ТИК города Химки <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></div>
+               <div className={`mt24 ${s.link}`}>Паспорт муниципального образования<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></div>
+               <div className={`mt24 ${s.link}`}>Постановления<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></div>
+               <div className={`mt24 ${s.link}`}>Решения Избирательной комиссии Московской области<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></div>
             </div>
 
             <div className={`mt80 borderMain ${s.documentContainer}`}>

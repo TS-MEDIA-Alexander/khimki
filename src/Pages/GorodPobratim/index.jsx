@@ -23,18 +23,18 @@ const GorodPobratim = (props) => {
    return (
       <div>
          <ContantContainerMain>
-            <div className={`mt80 ${s.breadcrumbs}`}>
+            <div className={`mt80 breadcrumbs`}>
                <NavLink to={ROUTER.history.main} className='breadcrumbsFrom'>История</NavLink>
-               <span className={s.breadcrumbsTo}> / Город-побратим</span>
+               <span className={'breadcrumbsTo'}> / Город-побратим</span>
             </div>
-            <div className={`mt24 ${s.title}`}>Город-побратим</div>
+            <div className={`mt24 pageTitle`}>Город-побратим</div>
             <div className="mt80 columnContainer">
                <div className="columnLarge">
 
                   <img className={s.imgMain} src={mainImg} alt="" />
                   <div className={`mt80 ${s.mainTextContainer}`}>
-                     <div className={s.subtitle}>Гродно</div>
-                     <div className={`mt38 ${s.textBody}`}>
+                     <div className={`pageSubtitle`}>Гродно</div>
+                     <div className={`mt38 text`}>
                         <p>
                            Город в Белоруссии, административный центр Гродненской области.
                         </p>
@@ -58,11 +58,11 @@ const GorodPobratim = (props) => {
 
                   </div>
 
-                  <div className="mt120">
+                  <div className="mt120 mobileNoneContainer">
                      <VirtualMuseumLarge />
                   </div>
                </div>
-               <div className="ml20 columnSmal">
+               <div className="ml20 columnSmal mobileNoneContainer">
                   <FamilyYear />
                   <div className="mt40">
                      <SVO />

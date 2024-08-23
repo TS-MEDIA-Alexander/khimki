@@ -41,3 +41,21 @@
    font-weight: 400;
    line-height: 24px;
 }
+
+@media screen and (max-width: 745px) {
+   .bannerContainer{
+      width: calc(100% - 48px);
+      height: 200px;
+      padding: 24px;
+   }
+   .title {
+      font-size: 20px;
+      line-height: 24px;
+   }
+
+   .button {
+      line-height: 16px;
+   }
+
+   
+}

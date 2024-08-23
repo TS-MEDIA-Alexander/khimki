@@ -3,7 +3,7 @@ import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './Table.module.css';
 /* import table from '../../backend/tables/table1.json'; */
 
-const Table = ({table, style={}}) => {
+const Table = ({ table, style = {} }) => {
 
    /* Временное решение. В дальнейшнм нужно написать парсер на бэке, чтобы пересоберал массив автоматически при загрузске json в базу */
    const utilsTableParser = (arr) => {
@@ -21,12 +21,14 @@ const Table = ({table, style={}}) => {
    }
 
    return (
-      <div>
-         <ContantContainerMain>
-            {newTableState.map((el, i) => <div key={i} className={s.tableRow}>
-               {getСell(el)}
-            </div>)}
-         </ContantContainerMain>
+      <div className={s.tableContainMain}>
+         {/* <ContantContainerMain> */}
+            <div className={s.tableContainer}>
+               {newTableState.map((el, i) => <div key={i} className={s.tableRow}>
+                  {getСell(el)}
+               </div>)}
+            </div>
+         {/* </ContantContainerMain> */}
          <br />
       </div>
    )

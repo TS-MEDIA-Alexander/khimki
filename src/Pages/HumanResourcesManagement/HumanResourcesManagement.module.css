@@ -17,21 +17,6 @@
    cursor: pointer;
 }
 
-.imgContainer {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 24px;
-   height: 24px;
-   padding: 9px;
-   border-radius: 50%;
-   background: #F6F6F6;
-}
-
-.imgContainer img {
-   width: 100%;
-}
-
 .description{
    color: #808080;
    font-size: 14px;

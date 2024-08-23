@@ -11,6 +11,19 @@
    cursor: pointer;
 }
 
+@media screen and (max-width: 1370px) {
+   .bannerContainer {
+      background-position: right;
+      background-size: 500px;
+      width: calc(100% - 48px);
+   }
+}
+@media screen and (max-width: 765px) {
+   .bannerContainer {
+      background-size: contain;
+   }
+}
+
 .title {
    display: inline-block;
    font-size: 24px;
@@ -37,4 +50,12 @@
    font-size: 16px;
    line-height: 24px;
    color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+   .button {
+      font-size: 12px;
+      padding: 8px 16px;
+      line-height: 16px;
+   }
 }

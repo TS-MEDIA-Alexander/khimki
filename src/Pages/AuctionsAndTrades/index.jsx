@@ -18,9 +18,9 @@ const AuctionsAndTrades = (props) => {
             <div className={`mt24 pageTitle`}>Аукционы и торги</div>
             <div className={`mt38 text`}>
                <div className={`mt80 borderMain ${s.linkContainer}`}>
-                  <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Земельные участки<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Нежилые помещения<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Организация ярмарок<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+                  <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Земельные участки<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+                  <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Нежилые помещения<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Организация ярмарок<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
                </div>
 
                <div className="mt80 pageSubtitle">Уважаемые посетители сайта!</div>

@@ -11,6 +11,28 @@
    display: flex;
 }
 
+@media screen and (max-width: 740px) {
+   .itemTextContainer {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .title {
+      text-align: center;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .itemTextContainer {
+      flex-direction: column;
+      align-items: start;
+   }
+
+   .title {
+      text-align: left;
+   }
+}
+
 .column {
    width: 290px;
    display: flex;
@@ -31,6 +53,12 @@
 
 .columnLast {
    flex: 1 1 31.84%
+}
+
+@media screen and (max-width: 745px) {
+   .column:not(:first-child) {
+      margin-left: 0px;
+   }
 }
 
 .item {
@@ -101,7 +129,8 @@
    border-radius: 12px;
    background: #E6E6E6;
 }
-.socialMedia .img{
+
+.socialMedia .img {
    width: 24px;
    height: 24px;
 }
@@ -132,15 +161,17 @@
    height: calc(100% - 80px);
    display: flex;
    flex-direction: column;
+   align-items: center;
    justify-content: space-between;
 }
 
 .btn {
    /* margin-top: 86px; */
+   width: 195px;
    line-height: 24px;
    border-radius: 40px;
-   background: linear-gradient(0.439turn,rgba(255,236,0,1) 35%,rgba(254,227,5,1) 61%,rgba(249,191,22,1) 100%);
-   
+   background: linear-gradient(0.439turn, rgba(255, 236, 0, 1) 35%, rgba(254, 227, 5, 1) 61%, rgba(249, 191, 22, 1) 100%);
+
    padding: 12px 24px;
    font-size: 16px;
    line-height: 24px;
@@ -166,4 +197,48 @@
 
 .link:not(:first-child) {
    margin-left: 24px;
+}
+
+@media screen and (max-width: 1370px) {
+
+   .titleBanner,
+   .tel,
+   .subTitleBanner {
+      text-align: center;
+   }
+
+   .bannerContainer {
+      margin-top: 20px;
+      height: 304px;
+   }
+
+   .socialMediaContainer {
+      justify-content: center;
+   }
+
+}
+
+@media screen and (max-width: 600px) {
+
+   .titleBanner,
+   .tel,
+   .subTitleBanner {
+      text-align: left;
+   }
+
+   .socialMediaContainer {
+      justify-content: start;
+   }
+
+   .bannerContainer {
+      align-items: start;
+   }
+
+   .item {
+      padding-left: 16px;
+   }
+
+   .btn {
+      width: calc(100% - 48px);
+   }
 }

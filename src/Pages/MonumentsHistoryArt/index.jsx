@@ -26,18 +26,18 @@ const MonumentsHistoryArt = (props) => {
    return (
       <div>
          <ContantContainerMain>
-            <div className={`mt80 ${s.breadcrumbs}`}>
+            <div className={`mt80 breadcrumbs`}>
                <NavLink to={ROUTER.history.main} className='breadcrumbsFrom'>История</NavLink>
-               <span className={s.breadcrumbsTo}> / Памятники истории и культуры</span>
+               <span className={'breadcrumbsTo'}> / Памятники истории и культуры</span>
             </div>
-            <div className={`mt24 ${s.title}`}>Памятники истории и культуры</div>
+            <div className={`mt24 pageTitle`}>Памятники истории и культуры</div>
             <div className="mt80 columnContainer">
                <div className="columnLarge">
 
                   <img className={s.imgMain} src={mainImg} alt="" />
                   <div className={`mt80 ${s.mainTextContainer}`}>
-                     <div className={s.subtitle}>«Подвиг милосердие»</div>
-                     <div className={`mt38 ${s.textBody}`}>
+                     <div className={'pageSubtitle'}>«Подвиг милосердие»</div>
+                     <div className={`mt38 text`}>
                         <p>
                            Памятник медицинским сестрам. Памятник открыт 8 мая 2005 года в сквере им. Марии Рубцовой.
                         </p>
@@ -50,7 +50,7 @@ const MonumentsHistoryArt = (props) => {
                      <img className={`mt80 ${s.imgMain}`} src={img1} alt="" />
 
                      <div className={`mt38 ${s.subtitle}`}>Памятник химчанам, отдавшим жизнь за родину в 1941-1945 годах.</div>
-                     <div className={`mt38 ${s.textBody}`}>
+                     <div className={`mt38 text`}>
                         <p>
                            Мемориал, расположенный в центре города Химки. Скульптурная композиция называется «Подарившие жизнь». Авторы: скульптор Бурганов И. А. и художник Менчиц Ю. В. Торжественное открытие памятника состоялось 7 мая 2015 года. На мемориале выбиты имена более 2500 Химчан, отдавших жизнь за Родину в боях 1941–1945 годов. Композиция памятника представляет собой две плиты в форме прорезанной звезды. Звезда — как прорыв доблести героев, павших в боях Великой Отечественной войны, с изображениями георгиевской ленты, рук, символизирующих дар воинов нам живым, птицу. По бокам мемориала располагаются 12 стел из гранита с именами. В гранитном основании мемориала заложена книга памяти с именами химчан, пропавших без вести.
                         </p>
@@ -61,7 +61,7 @@ const MonumentsHistoryArt = (props) => {
                         <img className={s.imgMain} src={img3} alt="" />
                      </div>
                      <div className={`mt80 ${s.subtitle}`}>Монумент «Отстоявшим отчизну»</div>
-                     <div className={`mt38 ${s.textBody}`}>
+                     <div className={`mt38 text`}>
                         <p>
                            Как и вся страна Химки чтут подвиг советского солдата. «Отстоявшим Отчизну» — главный мемориал города, увековечивающий память не вернувшихся с полей сражений бойцов. Он расположен в Старых Химках на улице Победы. Обелиск установили в 1965 году в честь 20 — той годовщины Великой Победы. Памятник — результат труда коллектива НПО «Энергомаш». Стела сделана из космического титана. В 2009 году памятник был обновлён.
                         </p>
@@ -73,7 +73,7 @@ const MonumentsHistoryArt = (props) => {
 
                   <div className={` ${s.mainTextContainer}`}>
                      <div className={`mt38 ${s.subtitle}`}>Памятник «ЛА-7»</div>
-                     <div className={`mt38 ${s.textBody}`}>
+                     <div className={`mt38 text`}>
                         <p>
                            Самолет Ла-7 — памятник отважным летчикам и труженикам тыла, которые работали для Победы. Установлен и освящен 7 мая 2007 года на пересечении улиц Лавочкина и 9 мая при входе в парк «Дубки». В 2008 году первый макет самолета заменили на новый.
                         </p>
@@ -89,7 +89,7 @@ const MonumentsHistoryArt = (props) => {
 
                   <div className={` ${s.mainTextContainer}`}>
                      <div className={`mt38 ${s.subtitle}`}>Мемориальный воинский комплекс «Доблесть и слава подразделений специального назначения россии»</div>
-                     <div className={`mt38 ${s.textBody}`}>
+                     <div className={`mt38 text`}>
                         <p>
                            Он установлен в сквере им. Марии Рубцовой 8 сентября 2007 года.В камне увековеченны наименования всех частей и подразделений, участвовавших в выполнении интернационального долга. Памятник представляет собой гранитную колонну, увенчанную расправившим крылья орлом, в клюве которого — автомат, символ спецназа. На колоне 2060 фамилий павших воинов-спецназовцев. У подножия памятника лежит неувядающая каменная роза. Последняя фамилия была выгравированна 15 февраля 2013 года — Илья Владимирович Шаинский, старший лейтенант «Вымпела», погибший на Северном Кавказе в ходе боевого столкновения с боевиками.
                         </p>
@@ -99,11 +99,11 @@ const MonumentsHistoryArt = (props) => {
                   </div>
 
 
-                  <div className="mt120">
+                  <div className="mt120 mobileNoneContainer">
                      <VirtualMuseumLarge />
                   </div>
                </div>
-               <div className="ml20 columnSmal">
+               <div className="ml20 columnSmal mobileNoneContainer">
                   <FamilyYear />
                   <div className="mt40">
                      <SVO />

@@ -1,4 +1,5 @@
 .imgMain {
+   border: none;
    object-fit: cover;
    width: 100%;
    height: 400px;
@@ -36,7 +37,7 @@
    letter-spacing: -0.4px;
 }
 
-.citationTextBody {
+/* .citationTextBody {
    box-sizing: border-box;
    padding-left: 40px;
    color: #303030;
@@ -45,22 +46,22 @@
    font-weight: 400;
    line-height: 28px;
    letter-spacing: -0.4px;
-}
+} */
 
-.authorInfoContainer {
+/* .authorInfoContainer {
    margin-left: 40px;
-}
+} */
 
-.author {
+/* .author {
    color: #303030;
    font-size: 20px;
    font-style: normal;
    font-weight: 600;
    line-height: 28px;
    letter-spacing: -0.4px;
-}
+} */
 
-.jobTitle {
+/* .jobTitle {
    margin-top: 4px;
    color: #808080;
    font-size: 16px;
@@ -68,7 +69,7 @@
    font-weight: 400;
    line-height: 24px;
    letter-spacing: -0.32px;
-}
+} */
 
 .textBody {
    color: #303030;
@@ -79,7 +80,8 @@
    letter-spacing: -0.4px;
 }
 
-.textBody p:not(:first-child) {
+.textBody p:not(:first-child),
+.textBody blockquote:not(:first-child) {
    margin-top: 38px;
 }
 
@@ -135,4 +137,40 @@
    width: 100%;
    height: 100%;
    z-index: 1;
+}
+
+blockquote {
+   margin: 0;
+   box-sizing: border-box;
+   color: #303030;
+   font-size: 20px;
+   font-style: italic;
+   font-weight: 400;
+   line-height: 28px;
+   letter-spacing: -0.4px;
+   padding-left: 40px;
+   border-left: 2px solid #EEEE20;
+}
+
+@media screen and (max-width: 745px) {
+   .mobileContainer {
+      margin-top: 0;
+   }
+
+   .title {
+      font-size: 24px;
+   }
+
+   .textBody {
+      font-size: 16px;
+   }
+
+   .textBody p:not(:first-child) {
+      margin-top: 24px;
+   }
+
+   blockquote{
+      font-size: 16px;
+      padding-left: 21px;
+   }
 }

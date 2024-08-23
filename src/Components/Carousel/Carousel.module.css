@@ -88,3 +88,9 @@ progress::-moz-progress-bar {
    background: url('../../assets/img/sliders/effect.png') 0 0/auto auto no-repeat;
    background-size: cover;
 }
+
+@media screen and (max-width: 745px) {
+   .window {
+      border-radius: 24px;
+   }
+}

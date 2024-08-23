@@ -43,7 +43,7 @@ const ScienceCity = (props) => {
                   <div className="mt38 oval">Правовое регулирование</div>
 
                </div>
-               <div className="ml20 mt80 columnSmal">
+               <div className="ml20 mt80 columnSmal mobileNoneContainer">
                   <div className="mt32">
                      <FamilyYear />
                   </div>

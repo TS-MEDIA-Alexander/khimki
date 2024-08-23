@@ -17,3 +17,13 @@
 .spoilerContentContainer {
    padding: 24px;
 }
+
+@media screen and (max-width: 745px) {
+   .spoilerHeader {
+      border-radius: 24px 24px 0 0;
+   }
+
+   .spoilerHeader {
+      font-size: 16px;
+   }
+}

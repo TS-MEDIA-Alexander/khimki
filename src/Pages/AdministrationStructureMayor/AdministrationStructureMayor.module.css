@@ -67,8 +67,9 @@
 
 .cardBtnRow {
    display: flex;
-   justify-content: space-between;
-   width: 150px;
+   align-items: center;
+   /* justify-content: space-between; */
+   /* width: 150px; */
 }
 
 .virtualBtn {

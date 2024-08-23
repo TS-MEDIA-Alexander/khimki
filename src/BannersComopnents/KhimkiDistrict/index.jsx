@@ -10,13 +10,12 @@ const KhimkiDistrict = (props) => {
                <div>Городской округ Химки</div>
             </div>
             <div className={s.textBody}>
-               <div>В состав городского округа входят 37</div>
-               <div>населённых пунктов, в том числе 1 город</div>
-               <div>и 36 сельских населённых пунктов</div>
+               <div>В состав городского округа входят 36</div>
+               <div>сельских поселений и 1 город.</div>
             </div>
          </div>
 
-         <div className={`btnY ${s.button}`}>Все программы <img src={arrowBtn} alt="" /></div>
+         <div className={`btnY ${s.button}`}>Подробнее <img src={arrowBtn} alt="" /></div>
       </div>
    )
 }

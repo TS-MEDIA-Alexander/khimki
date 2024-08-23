@@ -26,15 +26,16 @@ const History = (props) => {
                <div className={s.column}>
                   <HistoryCard src={ROUTER.history.khimki} img={history} title={'История города Химки '} textBody={'Название город получил от реки Химка, на которой было основанно предшествовавшее городу поселение. Окончательное происхождение и значение названия реки пока не выясненно. В древности употреблялась форма Хинска, Хынска'} />
                   <HistoryCard src={ROUTER.history.pamyatnikiIstoriiKultury} img={monuments} title={'Памятники истории и культуры '} textBody={'Памятник медицинским сестрам. Памятник открыт 8 мая 2005 года в сквере им. Марии Рубцовой.'} />
-                  <HistoryCard src={ROUTER.history.cityCoatOfArms} img={cityCoatArms} title={'Герб города '} textBody={'В чёрном поле золотой скачущий крылатый Кентавр, держащий в распростёртых руках лук и стрелу и сопровождаемый в круг — во главе, в окончании, по сторонам и в каждом из углов, кроме правого верхнего, золотыми звёздами о четырёх, простёртых накрест.'} />
+                  <HistoryCard src={ROUTER.history.gorodPobratim} img={gorodPobratym} title={'Город-побратим'} textBody={'Город в Белоруссии, административный центр Гродненской области.'} />
                </div>
 
                <div className={s.column}>
-                  <HistoryCard src={ROUTER.history.gorodPobratim} img={greatPatrioticWar} title={'Великая Отечественная война 1941-1945 гг.'} textBody={'Территория г.о. Химки, явилась поворотной точкой в наступлении фашистской Германии на г. Москву. '} />
-                  <HistoryCard src={ROUTER.history.gorodPobratim} img={gorodPobratym} title={'Город-побратим'} textBody={'Город в Белоруссии, административный центр Гродненской области.'} />
+                  <HistoryCard src={ROUTER.history.greatPatrioticWar} img={greatPatrioticWar} title={'Великая Отечественная война 1941-1945 гг.'} textBody={'Территория г.о. Химки, явилась поворотной точкой в наступлении фашистской Германии на г. Москву. '} />
+                  <HistoryCard src={ROUTER.history.cityCoatOfArms} img={cityCoatArms} title={'Герб города '} textBody={'В чёрном поле золотой скачущий крылатый Кентавр, держащий в распростёртых руках лук и стрелу и сопровождаемый в круг — во главе, в окончании, по сторонам и в каждом из углов, кроме правого верхнего, золотыми звёздами о четырёх, простёртых накрест.'} />
+                  
                </div>
             </div>
-            <div className={`mt80 rowBlock`}>
+            <div className={`mt80 rowBlock ${s.mobilContainer}`}>
                <VirtualMuseum />
                <AdministrationPerformance />
             </div>

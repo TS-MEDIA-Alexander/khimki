@@ -19,7 +19,7 @@ const Transport = (props) => {
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Средства индивидуальной мобильности
-                  <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+                  <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
             </div>
 
 

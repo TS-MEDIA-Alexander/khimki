@@ -8,6 +8,25 @@
    justify-content: space-between;
 }
 
+@media screen and (max-width: 810px) {
+   .footerRow {
+      flex-direction: column;
+   }
+
+   .footerColumn {
+      margin-top: 32px;
+   }
+
+   .footerColumn>div {
+      text-align: left;
+   }
+
+   .adress,
+   .tsMedia {
+      margin-top: 32px;
+   }
+}
+
 
 .footerLogoBlock {
    display: flex;
@@ -49,7 +68,7 @@
    color: #FFFFFF;
 }
 
-.tsMedia{
+.tsMedia {
    color: #656565;
    font-size: 12px;
    font-style: normal;

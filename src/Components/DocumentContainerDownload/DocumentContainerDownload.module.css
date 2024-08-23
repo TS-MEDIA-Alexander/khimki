@@ -11,7 +11,6 @@
 }
 
 .textInner {
-   width: 911px;
    font-size: 16px;
    /* text-overflow: ellipsis;
    white-space: nowrap;
@@ -43,7 +42,14 @@
 }
 
 .documentContainer {
+   width: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+@media screen and (max-width: 745px) {
+   .datePublication {
+      display: none;
+   }
 }

@@ -44,3 +44,59 @@
    width: 24px;
    height: 24px;
 }
+
+@media screen and (max-width: 745px) {
+   .bannerContainer {
+      background-size: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      width: calc(100% - 48px);
+   }
+
+   .topContainer {
+      width: 100%;
+   }
+
+   .title {
+      width: 100%;
+      font-size: 24px;
+      text-align: center;
+   }
+
+   .textBody {
+      text-align: center;
+   }
+
+   .button {
+      margin-top: 24px;
+      font-size: 12px;
+      padding: 8px 16px;
+   }
+}
+
+@media screen and (max-width: 470px) {
+   .bannerContainer {
+      background-size: 150%;
+      background-position: -140px 0px;
+      align-items: start;
+   }
+
+   .title {
+      text-align: left;
+   }
+
+   .textBody {
+      text-align-last: left;
+   }
+
+   .button {
+      font-size: 12px;
+      padding: 8px 16px;
+      line-height: 16px;
+   }
+
+   .button img {
+      width: 16px;
+      height: 16px;
+   }
+}

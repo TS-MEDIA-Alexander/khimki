@@ -75,3 +75,25 @@
 .imgPerson {
    border-radius: 12px;
 }
+
+@media screen and (max-width: 745px) {
+   .districtAboutContainer {
+      width: calc(100% - 48px);
+      height: auto;
+   }
+
+   .InfoFlexContainer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .imgContainer {
+      margin: 32px 0 0 0;
+   }
+
+   .img {
+      margin: 32px 0 0 0;
+      width: 70%;
+   }
+}

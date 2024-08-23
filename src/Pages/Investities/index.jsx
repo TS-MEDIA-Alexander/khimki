@@ -28,12 +28,12 @@ const Investities = (props) => {
             <div className={s.containtContainer}>
 
                <div className={`mt80 borderMain ${s.linkContainer}`}>
-                  <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Инвестиционные программы<div className={`btnCircleG ${s.imgContainerArrow}`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Торги<div className={`btnCircleG ${s.imgContainerArrow}`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Льготы и преференции<div className={`btnCircleG ${s.imgContainerArrow}`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Законодательство<div className={`btnCircleG ${s.imgContainerArrow}`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Опросы<div className={`btnCircleG ${s.imgContainerArrow}`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Контакты<div className={`btnCircleG ${s.imgContainerArrow}`}><img src={arrow} alt="" /></div></NavLink>
+                  <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Инвестиционные программы<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+                  <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Торги<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Льготы и преференции<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Законодательство<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Опросы<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Контакты<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
                </div>
 
                <div className="mt80 subTitle">Округ, нацеленный на результат</div>
@@ -58,7 +58,7 @@ const Investities = (props) => {
                   </div>
                </div>
 
-               <div className={`mt80 flexContainer`}>
+               <div className={`mt80 flexContainer ${s.mobilFlexContainer}`}>
                   <div className={s.imgBlock}>
                      <div className={s.imgContainer}>
                         <img src={img1} alt="" />
@@ -129,7 +129,7 @@ const Investities = (props) => {
                   </ul> */}
                </div>
 
-               <div className={`mt80 flexContainer`}>
+               <div className={`mt80 flexContainer ${s.mobilFlexContainer}`}>
                   <div className={s.imgBlock}>
                      <div className={s.imgContainer}>
                         <img src={img4} alt="" />
@@ -168,7 +168,7 @@ const Investities = (props) => {
                   </p>
                </div>
 
-               <div className={`mt80 flexContainer`}>
+               <div className={`mt80 flexContainer ${s.mobilFlexContainer}`}>
                   <div className={s.imgBlock}>
                      <div className={s.imgContainer}>
                         <img src={img7} alt="" />

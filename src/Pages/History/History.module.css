@@ -67,9 +67,22 @@
 .column {
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
 }
 
 .column:not(:first-child) {
    margin-left: 20px;
+}
+
+@media screen and (max-width: 1370px) {
+   .histotyContainer {
+      flex-direction: column;
+   }
+
+   .mobilContainer, .mobilContainer a:not(:first-child) {
+      margin-top: 32px;
+   }
+
+   .column:not(:first-child) {
+      margin: 20px 0px 0px 0px;
+   }
 }

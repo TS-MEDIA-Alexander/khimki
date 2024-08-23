@@ -1,9 +1,8 @@
 import React from 'react';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './Activity.module.css';
-import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
+import LinkContainer from '../../Components/LinkContainer';
 
 const Activity = (props) => {
    return (
@@ -13,188 +12,91 @@ const Activity = (props) => {
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <div className={s.column}>
-                  <NavLink to={ROUTER.activity.auctionsAndTrades} className={`${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Аукционы и торги</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.safety} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Безопасность</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.improvement} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Благоустройство</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.publicPrivatePartnership} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Государственно-частное партнерство</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.communalServices} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>ЖКХ</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.healthcare} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Здравоохранение</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.land} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Земельные участки многодетным семьям</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.landRelations} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Земельные отношения</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.propertyRelations} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Имущественные отношения</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.investities} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Инвестиции</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.participatoryBudgeting} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Инициативное бюджетирование</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.humanResourcesManagement} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Кадровое управление</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.commissionJuvenileAffairs} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>
-                           <p>Комиссия по делам несовершеннолетних </p>
-                           и защите их прав
-                        </div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.smallMediumBusinesses} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Малое и среднее предпринимательство</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
+                  <LinkContainer link={ROUTER.activity.auctionsAndTrades} text='Аукционы и торги' />
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.safety} text='Безопасность' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.improvement} text='Благоустройство' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.publicPrivatePartnership} text='Государственно-частное партнерство' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.communalServices} text='ЖКХ' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.healthcare} text='Здравоохранение' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.land} text='Земельные участки многодетным семьям' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.landRelations} text='Земельные отношения' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.propertyRelations} text='Имущественные отношения' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.investities} text='Инвестиции' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.participatoryBudgeting} text='Инициативное бюджетирование' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.humanResourcesManagement} text='Кадровое управление' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.commissionJuvenileAffairs} text='Комиссия по делам несовершеннолетних и защите их прав' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.smallMediumBusinesses} text='Малое и среднее предпринимательство' />
+                  </div>
                </div>
                <div className={s.column}>
-                  <NavLink to={ROUTER.activity.municipalСontrol} className={`${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Муниципальный контроль</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.socialPrograms} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Социальные программы</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.outdoorAdvertising} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Наружная реклама</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.regulatoryImpactAssessment} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Оценка регулирующего воздействия</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.burialFuneralServices} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Погребение и похоронное дело</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.supportCONPO} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Поддержка СО НКО</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.authorityFeldHandlingAnimalsWithoutOwners} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>
-                           <p>Полномочия в области обращения с животными</p>
-                           без владельцев
-                        </div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.antiCorruption} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Противодействие коррупции</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.publicHearingsPublicDiscussions} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>
-                           <p>Публичные слушания и общественые</p>
-                           обсуждения
-                        </div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.construction} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Строительство</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.transport} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Транспорт</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.ecologyEnvironmentalSafety} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Экология и экологическая безопасность</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.commissionJuvenileAffairs} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>
-                           <p>Комиссия по делам несовершеннолетних </p>
-                           и защите их прав
-                        </div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
-                  <NavLink to={ROUTER.activity.smallMediumBusinesses} className={`mt24 ${s.link}`}>
-                     <div className={s.textContainer}>
-                        <div className={s.radial}></div>
-                        <div className={s.text}>Малое и среднее предпринимательство</div>
-                     </div> <div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div>
-                  </NavLink>
+                  <LinkContainer link={ROUTER.activity.municipalСontrol} text='Муниципальный контроль' />
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.municipalPrograms} text='Муниципальные программы' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.socialPrograms} text='Социальные программы' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.outdoorAdvertising} text='Наружная реклама' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.regulatoryImpactAssessment} text='Оценка регулирующего воздействия' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.burialFuneralServices} text='Погребение и похоронное дело' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.supportCONPO} text='Поддержка СО НКО' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.authorityFeldHandlingAnimalsWithoutOwners} text='Полномочия в области обращения с животными без владельцев' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.antiCorruption} text='Противодействие коррупции' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.publicHearingsPublicDiscussions} text='Публичные слушания и общественые обсуждения' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.construction} text='Строительство' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.transport} text='Транспорт' />
+                  </div>
+                  <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.ecologyEnvironmentalSafety} text='Экология и экологическая безопасность' />
+                  </div>
+                  {/* <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.commissionJuvenileAffairs} text='Комиссия по делам несовершеннолетних и защите их прав' />
+                  </div> */}
+                  {/* <div className="mt20">
+                     <LinkContainer link={ROUTER.activity.smallMediumBusinesses} text='Малое и среднее предпринимательство' />
+                  </div> */}
                </div>
             </div>
          </ContantContainerMain>

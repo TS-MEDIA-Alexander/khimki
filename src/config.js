@@ -90,5 +90,9 @@ export const ROUTER = {
    },
    contacts: {
       main: '/contacts'
+   },
+   events: {
+      /* main: '/sobytiya', */
+      khimkiCityDay: '/sobytiya/den-goroda-khimki'
    }
 }

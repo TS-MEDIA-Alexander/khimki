@@ -1,11 +1,11 @@
-.title {
+/* .title {
    color: #303030;
    font-size: 64px;
    font-style: normal;
    font-weight: 500;
    line-height: 72px;
    letter-spacing: -2.56px;
-}
+} */
 
 .mapContainer {
    display: flex;
@@ -21,10 +21,10 @@
 .districtCard {
    padding: 24px;
    width: 622px;
-
 }
 
 .districtBanner {
+   margin-left: 16px;
    position: relative;
    padding: 31px;
    display: flex;
@@ -281,4 +281,76 @@
    width: 6px;
    height: 6px;
    background: #F1E43D;
+}
+
+@media screen and (max-width: 1370px) {
+   .mapContainer {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .mapContainer>div:not(:first-child) {
+      margin-top: 32px;
+   }
+
+   .mobilBannerArrowContainer {
+      justify-content: center;
+   }
+
+   .mobilBannerArrowContainer>a:not(:first-child) {
+      margin-top: 32px;
+   }
+}
+
+@media screen and (max-width: 1225px) {
+   .mobilMt24 {
+      margin-top: 24px;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .sectionMapTitle {
+      text-align: center;
+   }
+
+   .mobilArrowContainer {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .sectionMapTitle {
+      text-align: left;
+   }
+
+   .mobilArrowContainer {
+      align-items: start;
+   }
+
+   .districtCard {
+      width: calc(100% - 48px);
+   }
+
+   .districtBanner {
+      width: calc(100% - 32px);
+      margin: 32px 0 0 0;
+   }
+
+   .districtVideo {
+      width: calc(100% - 64px);
+      height: 168px;
+   }
+
+   .sectionMap {
+      width: calc(100% - 64px);
+   }
+
+   .container {
+      width: 100%;
+   }
+
+   .imgContainerMayor {
+      width: 100%;
+   }
 }

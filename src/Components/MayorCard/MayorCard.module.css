@@ -74,6 +74,13 @@
 .cardBtnRow {
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: flex-start
+}
+
+.btnFlexContainer {
+   display: flex;
+   justify-content: space-between;
 }
 
 .virtualBtn {
@@ -115,4 +122,95 @@
    border-radius: 40px;
    background: #F6F6F6;
    cursor: pointer;
+}
+
+@media screen and (max-width: 1160px) {
+   .card {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .rightContainer {
+      margin-top: 24px;
+   }
+
+   .citation {
+      display: none;
+   }
+
+   .cardMoreDetails {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 881px) {
+   .btnFlexContainer {
+      margin-top: 24px;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .cardSubtitle {
+      font-size: 12px;
+   }
+
+   .portrainContainer {
+      width: 100%;
+      height: 190px;
+   }
+
+   .cardSurname,
+   .cardName {
+      font-size: 20px;
+      line-height: 27px
+   }
+
+   .cardName {
+      font-weight: 400;
+   }
+}
+
+@media screen and (max-width: 723px) {
+   .virtualBtn {
+      margin-bottom: 32px;
+   }
+
+   .btnFlexContainer {
+      margin-top: 0px;
+   }
+}
+
+@media screen and (max-width: 625px) {
+   .btnFlexContainer {
+      margin-top: 24px;
+   }
+}
+
+@media screen and (max-width: 468px) {
+   .rightContainer {
+      margin: 24px 0 0 0;
+      padding: 0;
+      justify-content: start;
+   }
+
+   .cardBtnImgContainer,
+   .schedule {
+      display: none;
+   }
+
+   .btnFlexContainer {
+      margin-top: 0px;
+   }
+}
+
+@media screen and (max-width: 428px) {
+
+   .cardBtnImgContainer,
+   .schedule {
+      display: none;
+   }
+
+   .btnFlexContainer {
+      margin-top: 24px;
+   }
 }

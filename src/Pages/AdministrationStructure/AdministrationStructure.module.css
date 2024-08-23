@@ -18,15 +18,6 @@
    line-height: 24px;
 }
 
-.title {
-   color: #303030;
-   font-size: 64px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 72px;
-   letter-spacing: -2.56px;
-}
-
 .cardTel {
    display: flex;
    align-items: center;

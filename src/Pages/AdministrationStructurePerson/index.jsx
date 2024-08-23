@@ -60,9 +60,6 @@ const AdministrationStructurePerson = (props) => {
                      </div>
                   </div>}
 
-
-
-
                </div>
                <div className="mt80 ml20 columnSmal">
                   <FamilyYear />

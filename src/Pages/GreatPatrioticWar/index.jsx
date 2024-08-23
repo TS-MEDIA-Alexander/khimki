@@ -22,18 +22,18 @@ const GreatPatrioticWar = (props) => {
    return (
       <div>
          <ContantContainerMain>
-            <div className={`mt80 ${s.breadcrumbs}`}>
+            <div className={`mt80 breadcrumbs`}>
                <NavLink to={ROUTER.history.main} className='breadcrumbsFrom'>История</NavLink>
-               <span className={s.breadcrumbsTo}> / Великая Отечественная война 1941-1945 гг.</span>
+               <span className={'breadcrumbsTo'}> / Великая Отечественная война 1941-1945 гг.</span>
             </div>
-            <div className={`mt24 ${s.title}`}>Великая Отечественная война 1941-1945 гг.</div>
+            <div className={`mt24 pageTitle`}>Великая Отечественная война 1941-1945 гг.</div>
             <div className="mt80 columnContainer">
                <div className="columnLarge">
 
                   <img className={s.imgMain} src={mainImg} alt="" />
                   <div className={`mt80 ${s.mainTextContainer}`}>
-                     <div className={s.subtitle}>Территория г.о. Химки, явилась поворотной точкой в наступлении фашистской Германии на г. Москву. </div>
-                     <div className={`mt38 ${s.textBody}`}>
+                     <div className={`pageSubtitle ${s.subtitle}`}>Территория г.о. Химки, явилась поворотной точкой в наступлении фашистской Германии на г. Москву. </div>
+                     <div className={`mt38 text`}>
                         <p>
                            22 июня 1941 года мирную жизнь химчан и всего советского народа
                            нарушило вероломное нападение гитлеровской Германии на Советский Союз.
@@ -69,7 +69,7 @@ const GreatPatrioticWar = (props) => {
                      <img className={`mt80 ${s.imgMain}`} src={img1} alt="" />
                      <div className={`mt38 ${s.description}`}>Штаб 7-й гвардейской стрелковой диви­зии находился в это время в п. Сходня на углу Первомайской и Папанинской улиц, д. 23. Дом сохранился. На нём мемориальная доска, а недалеко от дома бывшая Речная улица названа сейчас в честь 7-й гвардей­ской стрелковой дивизии.</div>
 
-                     <div className={`mt80 ${s.textBody}`}>
+                     <div className={`mt80 text`}>
                         <p>
                            Красная Армия отступала, но за каждый оставленный километр русской
                            земли враг платил большую цену. В руках гитлеровцев оказались 13 населенных
@@ -104,11 +104,11 @@ const GreatPatrioticWar = (props) => {
                      </div>
                   </div>
 
-                  <div className="mt120">
+                  <div className="mt120 mobileNoneContainer">
                      <VirtualMuseumLarge />
                   </div>
                </div>
-               <div className="ml20 columnSmal">
+               <div className="ml20 columnSmal mobileNoneContainer">
                   <FamilyYear />
                   <div className="mt40">
                      <SVO />

@@ -11,6 +11,8 @@ import telegram from '../../assets/icons/telegram.svg';
 
 import FamilyYear from '../../BannersComopnents/FamilyYear';
 import SVO from '../../BannersComopnents/svo';
+import { NavLink } from 'react-router-dom';
+import { ROUTER } from '../../config';
 
 
 
@@ -19,12 +21,12 @@ const AdministrationStructureMayor = (props) => {
       <div>
          <ContantContainerMain>
 
-            <div className={`mt80 ${s.breadcrumbs}`}>
-               <span className={s.breadcrumbsFrom}>Округ</span>
-               <span className={s.breadcrumbsTo}> / Структура администрации </span>
-               <span className={s.breadcrumbsTo}> / Глава городского округа </span>
+            <div className={`mt80 breadcrumbs`}>
+               <NavLink to={ROUTER.khimkiDistrict.main} className='breadcrumbsFrom'>Округ</NavLink>
+               <NavLink to={ROUTER.khimkiDistrict.administrationStructure} className='breadcrumbsTo'> / Структура администрации </NavLink>
+               <span className='breadcrumbsTo'> / Глава городского округа </span>
             </div>
-            <div className={`mt24 ${s.title}`}>Структура администрации </div>
+            <div className={`mt24 ${s.title}`}>Глава городского округа </div>
             <div className="columnContainer">
                <div className="columnLarge">
                   <div className={`mt80  ${s.card}`}>
@@ -36,11 +38,12 @@ const AdministrationStructureMayor = (props) => {
                         <div className={s.cardName}>Дмитрий Владимирович</div>
 
                         <div className={`mt48 btnY ${s.virtualBtn}`}>Виртуальная приемная </div>
-                        <div className={`mt24 ${s.cardTel}`}>+7 (495) 793-01 01
-                           <div className={s.cardBtnImgContainer}><img src={clock} alt="" /></div>
-                           <div className={s.schedule}>Круглосуточно </div>
-                        </div>
+
                         <div className={`mt24 ${s.cardBtnRow}`}>
+                           <div className={`${s.cardTel}`}>+7 (495) 793-01 01
+                              <div className={s.cardBtnImgContainer}><img src={clock} alt="" /></div>
+                              <div className={s.schedule}>Круглосуточно </div>
+                           </div>
                            <div className={s.cardBtnLink}><img src={ok} alt="" /></div>
                            <div className={s.cardBtnLink}><img src={vk} alt="" /></div>
                            <div className={s.cardBtnLink}><img src={telegram} alt="" /></div>

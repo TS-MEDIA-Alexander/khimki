@@ -54,6 +54,13 @@ p {
    justify-content: space-between;
 }
 
+@media screen and (max-width: 1370px) {
+   .rowBlock {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
 /* Заголовок страницы */
 .pageTitle {
    color: #212121;
@@ -199,6 +206,18 @@ p {
    text-align: left;
 }
 
+.subscribe{
+   padding: 12px;
+   border-radius: 12px;
+   color: #212121;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   background-color: #F6F6F6;
+   text-align: left;
+}
+
 .juridicalInfo {
    color: #808080;
    font-size: 14px;
@@ -220,11 +239,33 @@ p {
    width: calc(24% - 10px);
 }
 
+@media screen and (max-width: 1370px) {
+   .columnContainer {
+      flex-direction: column;
+   }
+
+   .columnLarge,
+   .columnSmal {
+      width: 100%;
+   }
+}
+
 /* Граница */
 .borderMain {
    padding: 40px;
    border-radius: 40px;
    border: 1px solid #EDEDED;
+}
+
+@media screen and (max-width: 745px) {
+   .borderMain {
+      padding: 24px;
+      border-radius: 24px;
+   }
+
+   .juridicalInfo {
+      display: none;
+   }
 }
 
 /* Главная заливка */
@@ -347,15 +388,15 @@ p {
 
 /*  */
 .btnRad {
-   background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #F5982A 0%, #FFEC00 100%);
+   background: linear-gradient(.439turn, #ffec00 35%, #fee305 61%, #f9bf16);
 }
 
 .btnRad:hover {
-   background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #E1A522 0%, #FFF57C 100%);
+   background: linear-gradient(.439turn, #FFF57C 35%, #FFF57C 61%, #ffd373);
 }
 
 .btnRad:active {
-   background: radial-gradient(446.15% 170.03% at 105.79% 213.75%, #D37300 0%, #F2DD6C 100%);
+   background: linear-gradient(.439turn, #F2DD6C 35%, #F2DD6C 61%, #f7b465);
 }
 
 /* Состояние кнопок для баннеров */
@@ -456,6 +497,13 @@ p {
    line-height: 48px;
 }
 
+@media screen and (max-width: 745px) {
+   .subTitle {
+      font-size: 24px;
+      line-height: 28px;
+   }
+}
+
 /* Жирность */
 .fw600 {
    font-weight: 600 !important;
@@ -467,6 +515,12 @@ p {
 
 .ml20 {
    margin-left: 20px;
+}
+
+@media screen and (max-width: 1370px) {
+   .ml20 {
+      margin-left: 0px;
+   }
 }
 
 .mr20 {
@@ -528,7 +582,9 @@ p {
 
 .bannerArrowContainer {
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
+   width: 100%;
 }
 
 .oval {
@@ -570,4 +626,91 @@ p {
 
 .line {
    background: #D9D9D9;
+}
+
+.containerGap24 {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 24px;
+}
+
+.imgContainerArrow{
+   flex: 0 0 24px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 24px;
+   height: 24px;
+   padding: 9px;
+   border-radius: 50%;
+   background: #F6F6F6;
+}
+
+.imgContainerArrow img {
+   width: 100%;
+}
+
+@media screen and (max-width: 1370px) {
+   .mobileNoneContainer {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 1225px) {
+   .pageTitle {
+      margin-top: 0;
+   }
+
+   .breadcrumbs {
+      margin-top: 0;
+   }
+}
+
+@media screen and (max-width: 1125px) {
+   .bannerArrowContainer {
+      justify-content: center;
+   }
+}
+
+@media screen and (max-width: 1006px) {
+   .text {
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .breadcrumbs {
+      display: none;
+   }
+
+   .pageTitle {
+      margin-top: 0 !important;
+      font-size: 28px;
+      line-height: 28px;
+      letter-spacing: -0.48px;
+   }
+
+   .pageSubtitle {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.48px;
+   }
+
+   .text {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.32px;
+   }
+
+   .mt80 {
+      margin-top: 64px;
+   }
+
+   .mt40 {
+      margin-top: 20px;
+   }
+
+   .mt48 {
+      margin-top: 32px;
+   }
 }

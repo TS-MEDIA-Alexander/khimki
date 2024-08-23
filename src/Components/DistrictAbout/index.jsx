@@ -8,7 +8,7 @@ import DistrictAboutCard from '../DistrictAboutCard';
 
 const DistrictAbout = ({ curDistrictId }) => {
    return (
-      <div>
+      <div className={s.contain}>
          {curDistrictId === 'lunyovskoye' && (
             <DistrictAboutCard
                districtImg={skhodnyaFirsanovka}

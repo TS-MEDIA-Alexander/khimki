@@ -1,9 +1,9 @@
-.mapBlock{
+.mapBlock {
    width: 590px;
    height: 590px;
 }
 
-.title{
+.title {
    color: #303030;
    font-size: 20px;
    font-style: normal;
@@ -12,13 +12,13 @@
    letter-spacing: -0.2px;
 }
 
-.description{
+.description {
    width: 181px;
    color: #808080;
    font-size: 12px;
    font-style: normal;
    font-weight: 400;
-   line-height: 16px; 
+   line-height: 16px;
    letter-spacing: -0.24px;
 }
 
@@ -53,25 +53,25 @@
 }
 
 /* Клязьма-Старбеево */
-.klyazmaStarbeevo{
+.klyazmaStarbeevo {
    top: 250px;
    left: 368px;
 }
 
 /* Подрезково */
-.podrezkovo{
+.podrezkovo {
    top: 250px;
    left: 238px;
 }
 
 /* Новогорск-Планерная */
-.novogorskPlanernaya{
+.novogorskPlanernaya {
    top: 351px;
    left: 238px;
 }
 
 /* Левобережный */
-.levoberezhniy{
+.levoberezhniy {
    top: 402px;
    left: 426px;
 }
@@ -96,6 +96,34 @@
    letter-spacing: -0.02em;
 }
 
-.popUpText {
-   
+@media screen and (max-width: 1370px) {
+   .textBlock {
+      text-align: center;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .mapContainer {
+      margin-top: 64px;
+   }
+
+   .mapContainer svg {
+      width: 90%;
+      height: auto;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .mapBlock {
+      width: calc(100% - 48px);
+      height: 90%;
+   }
+
+   .title,
+   .description {
+      width: 100%;
+      text-align: left;
+   }
 }

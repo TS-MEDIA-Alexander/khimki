@@ -28,9 +28,11 @@ const MayorCard = (props) => {
                   <div className={s.cardBtnImgContainer}><img src={clock} alt="" /></div>
                   <div className={s.schedule}>Круглосуточно </div>
                </div>
-               <div className={s.cardBtnLink}><img src={ok} alt="" /></div>
-               <div className={s.cardBtnLink}><img src={vk} alt="" /></div>
-               <div className={s.cardBtnLink}><img src={telegram} alt="" /></div>
+               <div className={s.btnFlexContainer}>
+                  <div className={s.cardBtnLink}><img src={ok} alt="" /></div>
+                  <div className={s.cardBtnLink}><img src={vk} alt="" /></div>
+                  <div className={s.cardBtnLink}><img src={telegram} alt="" /></div>
+               </div>
             </div>
          </div>
       </div>

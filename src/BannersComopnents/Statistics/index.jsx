@@ -6,7 +6,7 @@ const Statistics = (props) => {
    return (
       <div className={`borderMain ${s.bannerContainer}`}>
          <div className={s.title}>
-            <img src={arrow} alt="" /> 30 185 человек
+            <img src={arrow} alt="" /> 411 000 человек
          </div>
          <div className={s.textBody}>
             <div>Cуммарная численность населения</div>
@@ -14,7 +14,7 @@ const Statistics = (props) => {
          </div>
 
          <div className={`mt32 ${s.title}`}>
-            25,37 км<sup>2</sup>
+            25 777 га
          </div>
          <div className={s.textBody}>
             <div>Общая площадь территориального </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { ROUTER } from '../../config';
 import s from './PerformanceIndicators.module.css';
 
 /* Компоненты */
@@ -25,7 +27,11 @@ const PerformanceIndicators = (props) => {
    return (
       <div>
          <ContantContainerMain>
-            <div className={`mt80 ${s.title}`}>Городской округ Химки</div>
+            <div className={`mt80 breadcrumbs`}>
+               <NavLink to={ROUTER.khimkiDistrict.main} className='breadcrumbsFrom'>Округ</NavLink>
+               <span className='breadcrumbsTo'> / Городской округ Химки </span>
+            </div>
+            <div className={`mt80 pageTitle`}>Городской округ Химки</div>
             <div className={`mt80 ${s.mapContainer}`}>
 
                <div className={`borderMain ${s.mapBlock}`}>
@@ -46,7 +52,7 @@ const PerformanceIndicators = (props) => {
                      </div>
                      <div className={s.textBlock}>
                         <div className={`mt12 ${s.subtitle}`}>
-                           Наша главная цель развивать <div>и улучшать все в нашем округе.</div>
+                           Наша главная цель развивать и улучшать все в нашем округе.
                         </div>
                         <div className={`mt24 ${s.subtitle}`}>
                            Волошин Д.В.

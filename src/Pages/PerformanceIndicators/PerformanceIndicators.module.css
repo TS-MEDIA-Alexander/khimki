@@ -1,13 +1,14 @@
-.title {
+/* .title {
    color: #303030;
    font-size: 64px;
    font-style: normal;
    font-weight: 500;
    line-height: 72px;
    letter-spacing: -2.56px;
-}
+} */
 
 .subtitle {
+   width: 308px;
    color: #303030;
    font-size: 20px;
    font-style: normal;
@@ -59,10 +60,6 @@
    width: 100%;
 }
 
-.textBlock {
-   width: 315px;
-}
-
 .mayorBlock {
    display: flex;
    justify-content: space-between;
@@ -101,7 +98,6 @@ li.description {
    font-weight: 500;
    line-height: 40px;
    letter-spacing: -0.56px;
-
 }
 
 .columnContainer {
@@ -186,4 +182,96 @@ li.description {
    font-style: normal;
    font-weight: 400;
    line-height: 16px;
+}
+
+@media screen and (max-width: 1370px) {
+   .mapContainer {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .blockContainerColumn {
+      width: 100%;
+      align-items: center;
+   }
+
+   .mapContainer>div.indicatorsBlock:not(:first-child),
+   .blockContainerColumn>div {
+      margin-top: 32px;
+   }
+}
+
+@media screen and (max-width: 1370px) {
+   .textBlock {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .mapImgContainer {
+      margin-top: 64px;
+   }
+
+   .mapBlock {
+      height: 654px;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .textBlock {
+      align-items: start;
+   }
+
+   .subtitle {
+      text-align-last: left;
+   }
+
+   .mapBlock {
+      width: calc(100% - 64px);
+   }
+
+   .mapImgContainer {
+      width: 80%;
+      top: 100px;
+      left: 20px;
+   }
+
+   .mayorBlock {
+      width: calc(100% - 64px);
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+   }
+
+   .infoBlock {
+      display: none;
+   }
+
+   .pageTitle {
+      font-size: 24px;
+      padding: 0;
+   }
+
+   .mapDescription {
+      text-align: left;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .mapBlock {
+      height: 600px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .mapBlock {
+      height: 520px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .mapBlock {
+      height: 450px;
+   }
 }

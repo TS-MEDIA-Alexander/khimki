@@ -84,6 +84,7 @@ import WriteAdministration from './Pages/WriteAdministration';
 import ReceptionProcedureTime from './Pages/ReceptionProcedureTime';
 import AllRussianDayReceptionCitizens from './Pages/AllRussianDayReceptionCitizens';
 import ResponsesInquiriesIndefiniteNumberPersons from './Pages/ResponsesInquiriesIndefiniteNumberPersons';
+import KhimkiCityDay from './Pages/KhimkiCityDay';
 import Contacts from './Pages/Contacts';
 /* import Table from './Components/Table'; */
 
@@ -186,6 +187,8 @@ function App() {
                <Route path={ROUTER.citizensAppeals.responsesInquiriesIndefiniteNumberPersons} element={<ResponsesInquiriesIndefiniteNumberPersons />} />
 
                <Route path={ROUTER.contacts.main} element={<Contacts />} />
+
+               <Route path={ROUTER.events.khimkiCityDay} element={<KhimkiCityDay />} />
 
             </Routes>
          </div>
