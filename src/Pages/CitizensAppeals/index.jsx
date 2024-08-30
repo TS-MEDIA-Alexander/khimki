@@ -13,14 +13,14 @@ const CitizensAppeals = (props) => {
          <ContantContainerMain>
             <div className="mt80 pageTitle">Работа с обращениями граждан</div>
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Правовое регулирование<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Виртуальная приемная Главы городского округа<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Результаты рассмотрения обращений<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Написать в Администрацию<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Порядок и время приема<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Общероссийский день приёма граждан в День Конституции Российской Федерации 12 декабря<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Информация для ознакомления желающим отправить обращение в форме электронного документа<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Ответы на обращения, затрагивающие интересы неопределенного круга лиц<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+               <NavLink to={ROUTER.citizensAppeals.legalRegulation} className={`${s.link}`}>Правовое регулирование<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+               <NavLink to={ROUTER.citizensAppeals.virtualReceptionHeadCityDistrict} className={`mt24 ${s.link}`}>Виртуальная приемная Главы городского округа<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+               <NavLink to={ROUTER.citizensAppeals.resultsConsiderationApplications} className={`mt24 ${s.link}`}>Результаты рассмотрения обращений<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+               <NavLink to={ROUTER.citizensAppeals.writeAdministration} className={`mt24 ${s.link}`}>Написать в Администрацию<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+               <NavLink to={ROUTER.citizensAppeals.receptionProcedureTime} className={`mt24 ${s.link}`}>Порядок и время приема<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+               <NavLink to={ROUTER.citizensAppeals.allRussianDayReceptionCitizens} className={`mt24 ${s.link}`}>Общероссийский день приёма граждан в День Конституции Российской Федерации 12 декабря<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+               <NavLink to={ROUTER.citizensAppeals.informationForReview} className={`mt24 ${s.link}`}>Информация для ознакомления желающим отправить обращение в форме электронного документа<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+               <NavLink to={ROUTER.citizensAppeals.responsesInquiriesIndefiniteNumberPersons} className={`mt24 ${s.link}`}>Ответы на обращения, затрагивающие интересы неопределенного круга лиц<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
             </div>
 
             <div className="mt80 text">
@@ -35,7 +35,7 @@ const CitizensAppeals = (props) => {
                <p>
                   Письмом: <br />
                   кая область, г. Химки, ул. Кирова, д. 30
-                                 («Муниципальный центр <br /> управления регионом»)
+                  («Муниципальный центр <br /> управления регионом»)
                </p>
 
                <div className="mt38 pageSubtitle">Требования к письменному обращению</div>

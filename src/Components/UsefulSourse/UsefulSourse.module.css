@@ -136,7 +136,7 @@
 }
 
 .socialMedia:hover {
-   background: #EEEE20;
+   background: #FFEC00;
 }
 
 .socialMedia:active img {
@@ -178,6 +178,7 @@
    color: #8c7e00;
    text-align: center;
    cursor: pointer;
+   text-decoration: none;
 }
 
 

@@ -52,7 +52,7 @@ const PerformanceIndicators = (props) => {
                      </div>
                      <div className={s.textBlock}>
                         <div className={`mt12 ${s.subtitle}`}>
-                           Наша главная цель развивать и улучшать все в нашем округе.
+                        Вместе с командой единомышленников мы ежегодно реализуем сотни проектов, чтобы сделать жизнь химчан комфортнее
                         </div>
                         <div className={`mt24 ${s.subtitle}`}>
                            Волошин Д.В.
@@ -69,12 +69,12 @@ const PerformanceIndicators = (props) => {
                </div>
             </div>
 
-            <div className={`mt80 ${s.pageTitle}`}>Показатели работы Администрации городского округа Химки по направлениям</div>
+            <div className={`mt80 pageSubtitle`}>Показатели работы Администрации городского округа Химки по направлениям</div>
 
             <div className="mt40">
                <SpoilerContainer title={'Данные с 2016 по 2023  г.'}>
                   <SpoilerItem title={'Благоустройство'}>
-                     <div className={`mt40 ${s.pageTitle}`}>Дворы</div>
+                     <div className={`mt40 pageSubtitle`}>Дворы</div>
                      <div className={`mt40 borderMain ${s.columnContainer}`}>
                         <div className={s.indicatorsBlocksContainer}>
                            <div className={s.indicatorsBlock}>
@@ -107,7 +107,7 @@ const PerformanceIndicators = (props) => {
                         </div>
                      </div>
 
-                     <div className={`mt80 ${s.pageTitle}`}>Парки</div>
+                     <div className={`mt80 pageSubtitle`}>Парки</div>
                      <div className={`mt40 borderMain ${s.columnContainer}`}>
                         <div className={s.indicatorsBlocksContainer}>
                            <div className={s.indicatorsBlock}>
@@ -143,9 +143,9 @@ const PerformanceIndicators = (props) => {
                         </div>
                      </div>
 
-                     <div className={`mt80 ${s.pageTitle}`}>Масштабная реконструкция парка Толстого</div>
-                     <div className="mt40 borderMain">
-                        <div className={` ${s.columnContainer}`}>
+                     <div className={`mt80 pageSubtitle`}>Масштабная реконструкция парка Толстого</div>
+                     <div className={`mt40 borderMain  ${s.columnContainer}`}>
+                        <div className={`${s.flexContainerRow}`}>
                            <div className={s.indicatorsBlocksContainer}>
                               <div className={s.textRow}>
                                  <div className={s.date}>2013-2023 гг.</div>
@@ -168,7 +168,7 @@ const PerformanceIndicators = (props) => {
                            </div>
 
                         </div>
-                        <div className={`mt20 ${s.columnContainer}`}>
+                        <div className={`mt20 ${s.flexContainerRow}`}>
                            <div className={s.indicatorsBlocksContainer}>
                               <div className={s.textRow}>
                                  <div className={s.date}>2013-2023 гг.</div>
@@ -190,8 +190,8 @@ const PerformanceIndicators = (props) => {
                         </div>
                      </div>
 
-                     <div className={`mt80 ${s.pageTitle}`}>Планы по благоустройству </div>
-                     <div className="mt40 borderMain">
+                     <div className={`mt80 pageSubtitle`}>Планы по благоустройству </div>
+                     <div className={`mt40 borderMain ${s.columnContainer}`}>
 
                         <div className={s.indicatorsBlocksContainer}>
                            <div className={s.textRow}>
@@ -201,7 +201,7 @@ const PerformanceIndicators = (props) => {
                            <div className={`mt16 ${s.textBody}`}><span>130</span> Га</div>
                         </div>
 
-                        <div className={`mt24 ${s.columnContainer}`}>
+                        <div className={`mt24 ${s.flexContainerRow}`}>
                            <div>
                               <div className={`${s.imgContainer} ${s.imgContainer_small}`}>
                                  <img src={ecoberegParkLandscape} alt="" />
@@ -217,9 +217,9 @@ const PerformanceIndicators = (props) => {
                         </div>
                      </div>
 
-                     <div className={`mt80 ${s.pageTitle}`}>Планы по благоустройству </div>
-                     <div className="mt40 borderMain">
-                        <div className={` ${s.columnContainer}`}>
+                     <div className={`mt80 pageSubtitle`}>Планы по благоустройству </div>
+                     <div className={`mt40 borderMain ${s.columnContainer}`}>
+                        <div className={` ${s.flexContainerRow}`}>
                            <div className={s.indicatorsBlocksContainer}>
                               <div className={s.textRow}>
                                  <div className={s.date}>Программа губернатора «Парки в лесу»</div>
@@ -237,7 +237,7 @@ const PerformanceIndicators = (props) => {
                               </ul>
                            </div>
                            <div>
-                              <div className={s.imgContainer}>
+                              <div className={`${s.imgContainer} ${s.imgContainer_small}`}>
                                  <img src={BarashkinskyPond} alt="" />
                               </div>
                               <div className={s.imgDescription}>Барашкинский пруд</div>

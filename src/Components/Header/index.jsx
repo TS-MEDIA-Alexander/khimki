@@ -29,7 +29,7 @@ const Header = (props) => {
                   <div onClick={() => setMobilMenu(true)} className={s.mobilMenu}>Меню</div>
                   <div className={s.settingsContainer}>
                      {/* <div className={s.versionVI}><img src={icon} alt="" />Версия для слабовидящих</div> */}
-                     <button className={s.hotLine}>Горячая линия</button>
+                     <NavLink to={ROUTER.citizensAppeals.writeAdministration} className={s.hotLine}>Горячая линия</NavLink>
                   </div>
                </div>
             </ContantContainerMain>
@@ -271,7 +271,7 @@ const Header = (props) => {
                            <NavLink to={ROUTER.citizensAppeals.allRussianDayReceptionCitizens} className={s.linkMenu}>
                               Общероссийский день приёма <br /> граждан в День Конституции <br /> Российской Федерации 12 декабря
                            </NavLink>
-                           <NavLink to={ROUTER.citizensAppeals.main} className={s.linkMenu}>
+                           <NavLink to={ROUTER.citizensAppeals.informationForReview} className={s.linkMenu}>
                               Информация для ознакомления <br /> желающим отправить обращениев <br /> форме электронного документа
                            </NavLink>
                            <NavLink to={ROUTER.citizensAppeals.responsesInquiriesIndefiniteNumberPersons} className={s.linkMenu}>

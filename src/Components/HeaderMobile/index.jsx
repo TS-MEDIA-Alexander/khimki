@@ -25,7 +25,7 @@ const HeaderMobile = ({ setMobilMenu }) => {
             </div>
 
             <div className={s.bottomBlock}>
-               <button className={s.hotLine}>Горячая линия</button>
+               <NavLink to={ROUTER.citizensAppeals.writeAdministration} className={s.hotLine}>Горячая линия</NavLink>
             </div>
          </div>
 
@@ -136,7 +136,7 @@ const HeaderMobile = ({ setMobilMenu }) => {
                   Кадровое управление
                </NavLink>
                <NavLink to={ROUTER.activity.commissionJuvenileAffairs} className={s.linkMenu}>
-                  <p>Комиссия по делам несовершеннолетних</p>
+                  Комиссия по делам несовершеннолетних
                   и защите их прав
                </NavLink>
                <NavLink to={ROUTER.activity.smallMediumBusinesses} className={s.linkMenu}>
@@ -164,18 +164,18 @@ const HeaderMobile = ({ setMobilMenu }) => {
                   Поддержка СО НКО
                </NavLink>
                <NavLink to={ROUTER.activity.authorityFeldHandlingAnimalsWithoutOwners} className={s.linkMenu}>
-                  <p>Полномочия в области обращения с животными</p>
+                  Полномочия в области обращения с животными
                   без владельцев
                </NavLink>
                <div className={s.linkMenu}>
-                  <p>Правовое просвещение и правовое</p>
+                  Правовое просвещение и правовое
                   информирование
                </div>
                <NavLink to={ROUTER.activity.antiCorruption} className={s.linkMenu}>
                   Противодействие коррупции
                </NavLink>
                <NavLink to={ROUTER.activity.publicHearingsPublicDiscussions} className={s.linkMenu}>
-                  <p>Публичные слушания и общественные</p>
+                  Публичные слушания и общественные
                   обсуждения
                </NavLink>
                <NavLink to={ROUTER.activity.construction} className={s.linkMenu}>
@@ -240,7 +240,7 @@ const HeaderMobile = ({ setMobilMenu }) => {
                <NavLink to={ROUTER.citizensAppeals.allRussianDayReceptionCitizens} className={s.linkMenu}>
                   Общероссийский день приёма <br /> граждан в День Конституции <br /> Российской Федерации 12 декабря
                </NavLink>
-               <NavLink to={ROUTER.citizensAppeals.main} className={s.linkMenu}>
+               <NavLink to={ROUTER.citizensAppeals.informationForReview} className={s.linkMenu}>
                   Информация для ознакомления <br /> желающим отправить обращениев <br /> форме электронного документа
                </NavLink>
                <NavLink to={ROUTER.citizensAppeals.responsesInquiriesIndefiniteNumberPersons} className={s.linkMenu}>

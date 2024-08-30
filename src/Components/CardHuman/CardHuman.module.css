@@ -11,6 +11,8 @@
 
 .portrainContainer img {
    width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
 .rightContainer {
@@ -75,13 +77,13 @@
 
 .cardBtnRow {
    display: flex;
-   flex-wrap: wrap;
-   gap: 24px;
+   align-items: start;
+   gap: 16px;
 }
 
-.cardTel:not(:first-child) {
+/* .cardTel:not(:first-child) {
    margin-left: 16px;
-}
+} */
 
 .btn {
    padding: 8px 24px;
@@ -92,6 +94,7 @@
    font-style: normal;
    font-weight: 400;
    line-height: 24px;
+   text-decoration: none;
 }
 
 .imgContainer {
@@ -129,7 +132,7 @@
 
    .cardSurname {
       font-size: 16px;
-      line-height: 16px;
+      line-height: 32px;
    }
 
    .subtitle {
@@ -147,7 +150,8 @@
 @media screen and (max-width: 745px) {
 
    .rightContainer {
-      margin-left: 0;
+      margin: 24px 0 0 0;
+      padding: 0;
       width: 100%;
    }
 
@@ -162,14 +166,44 @@
       line-height: 16px;
    }
 
-   .cardTel:not(:first-child) {
+   /* .cardTel:not(:first-child) {
       margin-left: 0px;
+   } */
+
+   .cardMoreDetails {
+      font-size: 14px;
+      line-height: 20px;
+   }
+
+   .btn {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+   }
+}
+
+@media screen and (max-width: 560px) {
+   .cardBtnRow {
+      flex-direction: column;
    }
 }
 
 @media screen and (max-width: 400px) {
+   .card {
+      align-items: start;
+   }
+
    .portrainContainer {
       width: 100%;
-      height: 250px;
+      height: 172px;
+   }
+
+   .jobTitle {
+      text-align: left;
+   }
+
+   .rightContainer,
+   .time {
+      align-items: start;
    }
 }

@@ -20,14 +20,14 @@ const Statistics = (props) => {
             <div>Общая площадь территориального </div>
             <div>округа</div>
          </div>
-         <div className="mt32">
+         {/* <div className="mt32">
             <div className={s.rowContainer}>
                <div className={s.tags}>25 Школ</div>
                <div className={s.tags}>100 Больниц </div>
             </div>
             <div className={s.tags}>40 детских площадок</div>
             <div className={s.tags}>20 детских садов</div>
-         </div>
+         </div> */}
 
       </div>
    )

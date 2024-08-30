@@ -70,24 +70,35 @@
 }
 
 @media screen and (max-width: 745px) {
+   .link {
+      font-size: 16px;
+   }
+
    .mobilCardLink {
-      flex-direction: column;
+      align-items: center;
+   }
+
+   .logoContainer {
+      height: auto;
+   }
+
+   .textContainer {
+      margin: 0 0 0 16px;
    }
 
    .text {
       width: 100%;
       font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.48px;
    }
 
    .link_min {
-      width: 100%;
+      width: calc(100% - 48px);
    }
 
    .mobilArrowNone {
       display: none;
    }
 
-   .text {
-      width: 100%;
-   }
 }

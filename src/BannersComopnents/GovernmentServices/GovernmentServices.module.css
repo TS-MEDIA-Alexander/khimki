@@ -9,6 +9,7 @@
    height: 245px;
    overflow: hidden;
    cursor: pointer;
+   text-decoration: none;
 }
 
 @media screen and (max-width: 1370px) {

@@ -43,10 +43,10 @@ const NewsArticle = (props) => {
                   {currentNews.image_detail && <img className={s.imgMain} src={currentNews.image_detail} alt="" />}
                   <div className={s.mainTextContainer}>
                      {/* Фильтры, на будущее */}
-                     <div className={`mt40 ${s.filterText}`}>{currentNews?.filter?.subject} {currentNews?.date}</div>
+                     <div className={`mt40 ${s.filterText}`}>{currentNews?.filter?.subject} {currentNews?.dateTime}</div>
 
-                     <div className={`mt48 ${s.title}`}>{currentNews.title}</div>
-                     <div className={`mt48 ${s.subtitle}`}>{currentNews.subtitle}</div>
+                     <div className={`mt48 pageTitle ${s.mobilMt32}`}>{currentNews.title}</div>
+                     <div className={`mt48 ${s.subtitle}`}>{currentNews.description}</div>
 
                      {/* Цитаты, если есть */}
                      {/* {currentNews.citation?.textBody && <div className={`mt38 ${s.citationConatiner}`}>
@@ -59,7 +59,7 @@ const NewsArticle = (props) => {
                         </div>
                      </div>} */}
 
-                     <div dangerouslySetInnerHTML={{ __html: clearHTML(currentNews.text) }} className={`mt38 ${s.textBody}`} />
+                     <div dangerouslySetInnerHTML={{ __html: clearHTML(currentNews.text) }} className={`mt38 text ${s.textBody}`} />
 
                      {/* Заголовок фотоотчёта-если есть */}
                      {currentNews.media?.title && <div className={`mt38 ${s.mediaTitle}`}>

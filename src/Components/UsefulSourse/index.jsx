@@ -8,6 +8,8 @@ import ContantContainerMain from '../../total/ContantContainerMain';
 import vk from '../../assets/icons/vk.svg';
 import telegram from '../../assets/icons/telegram.svg';
 import ok from '../../assets/icons/ok.svg';
+import { NavLink } from 'react-router-dom';
+import { ROUTER } from '../../config';
 
 const UsefulSourse = (props) => {
    return (
@@ -56,18 +58,18 @@ const UsefulSourse = (props) => {
                      <div className={`mt16 ${s.tel}`}>+7 (495) 793 01 01</div>
                      <div className={s.subTitleBanner}>Горячая линия Администрации</div>
                      <div className={s.socialMediaContainer}>
-                        <div className={s.socialMedia}><img className={s.img} src={vk} alt="" /></div>
-                        <div className={s.socialMedia}><img className={s.img} src={telegram} alt="" /></div>
-                        <div className={s.socialMedia}><img className={s.img} src={ok} alt="" /></div>
+                        <a href='https://vk.com/gohimkiadm' target='_blank' className={s.socialMedia}><img className={s.img} src={vk} alt="" /></a>
+                        <a href='https://t.me/adm_himki' target='_blank' className={s.socialMedia}><img className={s.img} src={telegram} alt="" /></a>
+                        <a href='https://ok.ru/profile/580707341478' target='_blank' className={s.socialMedia}><img className={s.img} src={ok} alt="" /></a>
                      </div>
                   </div>
-                  <div className={`btnRad ${s.btn}`}>Все контакты</div>
+                  <NavLink to={ROUTER.contacts.main} className={`btnRad ${s.btn}`}>Все контакты</NavLink>
                </div>
             </div>
          </div>
          <div className={s.linkContainer}>
-            <a href="#" className={s.link}>Карта сайта</a>
-            <a href="#" className={s.link}>Предыдущая версия сайта</a>
+            {/* <a href="#" className={s.link}>Карта сайта</a> */}
+            <a href="https://www.admhimki.ru/" target='_blank' className={s.link}>Предыдущая версия сайта</a>
          </div>
       </ContantContainerMain>
       </div >

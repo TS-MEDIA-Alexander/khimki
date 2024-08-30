@@ -37,21 +37,21 @@ const AdministrationStructureMayor = (props) => {
                         <div className={`mt8 ${s.cardSurname}`}>Волошин</div>
                         <div className={s.cardName}>Дмитрий Владимирович</div>
 
-                        <div className={`mt48 btnY ${s.virtualBtn}`}>Виртуальная приемная </div>
+                        <NavLink to={ROUTER.citizensAppeals.virtualReceptionHeadCityDistrict} className={`mt48 btnY ${s.virtualBtn}`}>Виртуальная приемная </NavLink>
 
                         <div className={`mt24 ${s.cardBtnRow}`}>
                            <div className={`${s.cardTel}`}>+7 (495) 793-01 01
                               <div className={s.cardBtnImgContainer}><img src={clock} alt="" /></div>
                               <div className={s.schedule}>Круглосуточно </div>
                            </div>
-                           <div className={s.cardBtnLink}><img src={ok} alt="" /></div>
-                           <div className={s.cardBtnLink}><img src={vk} alt="" /></div>
-                           <div className={s.cardBtnLink}><img src={telegram} alt="" /></div>
+                           <a href='https://vk.com/gohimkiadm' target='_blank' className={s.cardBtnLink}><img src={ok} alt="" /></a>
+                           <a href='https://t.me/adm_himki' target='_blank' className={s.cardBtnLink}><img src={vk} alt="" /></a>
+                           <a href='https://ok.ru/profile/580707341478' className={s.cardBtnLink}><img src={telegram} alt="" /></a>
                         </div>
                      </div>
                   </div>
 
-                  <div className={s.textContainer}>
+                  <div className={`mt80 ${s.textContainer}`}>
                      Чуткая и открытая власть — принцип, которым мы руководствуемся в нашей командной работе. Наш округ — живой организм. Он развивается, растет, меняется... Возникают новые потребности, что-то приходит в негодность, требует ремонта или замены. Без помощи жителей невозможно сделать действительно комфортный и безопасный для проживания округ. Только вместе мы сможем оперативно решать возникающие проблемы. Комплексный подход ко всему приведет нас к общему успеху. Я прошу использовать все каналы связи для общения: телефоны горячей линии, электронную почту, социальные сети. Мы приняли меры, чтобы обращения жителей решались еще более оперативно. Работает круглосуточная горячая линия во всех микрорайонах округа. Я лично просматриваю свою электронную почту. Мы открыты для общения в любое время. Качественно повысить уровень жизни химчан — наша основная задача. Только реальные дела, только работа на результат!
 
                      <div className={`mt32 ${s.textBold}`}>Дата рождения</div>

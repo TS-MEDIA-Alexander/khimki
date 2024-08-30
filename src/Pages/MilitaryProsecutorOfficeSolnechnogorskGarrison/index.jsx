@@ -32,7 +32,7 @@ const MilitaryProsecutorOfficeSolnechnogorskGarrison = (props) => {
                   surname={'Юрий Владимирович'}
                   adress={'Московская область, г. Химки, ул. Чапаева, д.6.'}
                   WorkingHours={'Пн-Пт 09:00 – 13:0014:00 – 18:00'}
-                  contactsArr={['8-495-572-01-39']}
+                  contactsArr={['8 (495) 572-01-39']}
                   img={card_img_2}
                />
             </div>

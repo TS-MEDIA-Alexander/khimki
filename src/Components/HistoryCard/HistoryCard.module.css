@@ -63,18 +63,20 @@
       height: 80px;
       border-radius: 14px;
    }
-   
-   .title{
+
+   .title {
       height: auto;
       font-size: 16px;
       line-height: 20px;
       letter-spacing: -0.32px;
    }
 
-   .textBody{
+   .textBody {
+      height: auto;
       margin-top: 12px;
       font-size: 12px;
       line-height: 16px;
+      -webkit-line-clamp: 5;
    }
 
    .btn {

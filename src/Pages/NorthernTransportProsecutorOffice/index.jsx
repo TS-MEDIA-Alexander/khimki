@@ -33,7 +33,7 @@ const NorthernTransportProsecutorOffice = (props) => {
                   surname={'Илья Анатольевич'}
                   adress={'07140, г. Москва, ул. 2-я Леснорядская, д.13/15, 3 этаж'}
                   WorkingHours={'Пн-Чт 09:00 – 13:00 14:00 – 18:00, Пт 09:00 – 13:00 14:00 – 16:45'}
-                  contactsArr={['+7(499) 264-49-61', 'sevt@190.mailop.ru', 'epp.genproc.gov.ru', <img src={vk} alt="" />, <img src={ok} alt="" />]}
+                  contactsArr={['+7(499) 264-49-61', 'sevt@190.mailop.ru', 'epp.genproc.gov.ru']}
                   img={card_img_1}
                />
             </div>

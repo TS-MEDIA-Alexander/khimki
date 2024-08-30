@@ -36,7 +36,7 @@ const Investities = (props) => {
                   <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Контакты<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
                </div>
 
-               <div className="mt80 subTitle">Округ, нацеленный на результат</div>
+               <div className="mt80 pageSubtitle">Округ, нацеленный на результат</div>
                <div className={`mt38 text ${s.citationConatiner}`}>
                   <div className={`${s.citationTextBody} borderLeftMain`}>
                      <p>

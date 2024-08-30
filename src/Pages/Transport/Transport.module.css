@@ -61,3 +61,9 @@
    display: flex;
 }
 
+@media screen and (max-width: 745px) {
+   .link {
+      font-size: 16px;
+      line-height: 20px;
+   }
+}

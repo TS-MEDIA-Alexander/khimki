@@ -20,7 +20,7 @@ const PublicChamber = (props) => {
             </div>
             <div className="mt24 pageTitle">Общественная палата</div>
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <div className={`${s.link}`}>Члены Общественной палаты городского округа <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></div>
+               <div to={ROUTER.khimkiDistrict.publicChamberDocuments}  className={`${s.link}`}>Члены Общественной палаты городского округа {/* <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div> */}</div>
                <NavLink to={ROUTER.khimkiDistrict.publicChamberDocuments} className={`mt24 ${s.link}`}>Документы <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
                <NavLink to={ROUTER.khimkiDistrict.publicChamberCandidates} className={`mt24 ${s.link}`}>Кандидаты в члены муниципальной общественной палаты <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
                <NavLink to={ROUTER.khimkiDistrict.listCommissionsPublicChamber} className={`mt24 ${s.link}`}>Перечень Комиссий Общественной палаты <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
@@ -31,7 +31,7 @@ const PublicChamber = (props) => {
                <СardAdministratiorStructure url={'lyovochka'} img={batyshev} jobTitle={'Заместитель председателя Общественной палаты г.о. Химки'} surname={'Русакова'} name={'Ольга Вячеславовна'} />
                <СardAdministratiorStructure url={'lyovochka'} img={gureva} jobTitle={'Заместитель председателя Общественной палаты г.о. Химки'} surname={'Шаипов'} name={'Руслан Нариманович'} />
             </div>
-            <div className={`mt80 ${s.title}`}>Цели и задачи общественной палаты городского округа химки </div>
+            <div className={`mt80 pageSubtitle`}>Цели и задачи общественной палаты городского округа Химки </div>
             <ul>
                <li className='mt38'>Объединение граждан для осуществления эффективного местного самоуправления</li>
                <li>Общественный контроль за деятельностью органов местного самоуправления </li>
@@ -39,7 +39,7 @@ const PublicChamber = (props) => {
             </ul>
             <div className={`mt38 ${s.nameTitle}`}>Твеленёв Евгений Иванович</div>
             <div className={`${s.description}`}>Заместитель председателя Общественной палаты городского округа Химки</div>
-            <div className={`mt38 ${s.title}`}>Чем конкретно занимается общественная палата?</div>
+            <div className={`mt38 pageSubtitle`}>Чем конкретно занимается общественная палата?</div>
             <div className={`mt38 text`}>
                <p>
                   Полномочия и порядок работы Общественой палаты установлены Законом Московской области от 22 июля 2015 г. № 130/2015-ОЗ "«Об отдельных вопросах осуществления общественного контроля в Московской области»
@@ -59,11 +59,11 @@ const PublicChamber = (props) => {
                </p>
             </div>
             <div className={`mt38 ${s.description}`}>Следите за новостями Общественной палаты </div>
-            <div className={`mt38 ${s.btnText}`}>Общественная палата Московской области</div>
+            <div className={`mt38 oval`}>Общественная палата Московской области</div>
             <div className={`mt38 ${s.description}`}>Горячая линия и прием обращений  </div>
             <div className={`mt38 ${s.btnContainerRow}`}>
-               <div className={`${s.btnText}`}>+7 (495) 230-52-54</div>
-               <div className={`ml16 ${s.btnText} ${s.mobilMl}`}>info@op-khimki.ru</div>
+               <div className={`oval`}>+7 (495) 230-52-54</div>
+               <div className={`ml16 oval ${s.mobilMl}`}>info@op-khimki.ru</div>
             </div>
 
 

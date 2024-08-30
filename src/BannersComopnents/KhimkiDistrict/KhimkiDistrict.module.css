@@ -9,6 +9,7 @@
    height: 398px;
    overflow: hidden;
    cursor: pointer;
+   text-decoration: none;
 }
 
 .title {

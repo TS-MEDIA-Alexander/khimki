@@ -1,9 +1,12 @@
 import React from 'react';
 import s from './AntiCorruptionBanner.module.css';
+import { NavLink } from 'react-router-dom';
+import { ROUTER } from '../../config';
+
 
 const AntiCorruptionBanner = (props) => {
    return (
-      <a href="#" className={s.bannerContainer}>
+      <NavLink to={ROUTER.citizensAppeals.writeAdministration} href="#" className={s.bannerContainer}>
          <div className={s.topContainer}>
             <div className={s.title}>
                <p>Обратная связь для сообщений</p>
@@ -15,7 +18,7 @@ const AntiCorruptionBanner = (props) => {
          </div>
 
          <div className={`btnWBanner ${s.button}`}>Написать Администрации</div>
-      </a>
+      </NavLink>
    )
 }
 export default AntiCorruptionBanner;

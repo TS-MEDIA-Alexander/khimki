@@ -33,6 +33,7 @@
 .imgContainer {
    display: flex;
    align-items: center;
+   flex: 0 0 auto;
    justify-content: center;
    width: 24px;
    height: 24px;

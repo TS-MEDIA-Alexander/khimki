@@ -92,6 +92,7 @@
    font-weight: 400;
    line-height: 24px;
    cursor: pointer;
+   text-decoration: none;
 }
 
 .cardBtnImgContainer {
@@ -168,6 +169,15 @@
    .cardName {
       font-weight: 400;
    }
+
+   .virtualBtn {
+      padding: 8px 16px;
+   }
+
+   .cardBtnLink {
+      width: 32px;
+      height: 32px;
+   }
 }
 
 @media screen and (max-width: 723px) {
@@ -209,7 +219,9 @@
    .schedule {
       display: none;
    }
+}
 
+@media screen and (max-width: 370px) {
    .btnFlexContainer {
       margin-top: 24px;
    }

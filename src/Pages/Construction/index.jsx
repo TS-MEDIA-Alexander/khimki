@@ -57,7 +57,7 @@ const Construction = (props) => {
                </div>
 
                <p>
-                  Контакты: Адрес: г. Химки, Кирова, д.24
+                  Адрес: г. Химки, Кирова, д.24
                </p>
                <div className={`mt38 ${s.btnContainerRow}`}>
                   <div className={`oval`}>+7 (495) 572-73-70</div>

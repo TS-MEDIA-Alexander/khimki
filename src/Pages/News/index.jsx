@@ -3,6 +3,7 @@ import News from '../../Components/News';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import Calendar from '../../total/Calendar';
 import ReactSelect from '../../total/ReactSelect';
+import Modal from '../../total/modal';
 /* import ScrollButton from '../../total/ScrollButton'; */
 
 import s from './NewsPage.module.css';
@@ -17,10 +18,13 @@ import TgChannel from '../../BannersComopnents/TgChannel';
 /* Форматор - преобразует дату */
 import { formatterCalendar } from '../../utils/index';
 
+import close from '../../assets/icons/close.svg';
+
 const NewsPage = (props) => {
 
    const [news, setNews] = useState([]);
    const [currentPage, setCurrentPage] = useState(1);
+   const [emailSubscribe, setEmailSubscribe] = useState('')
 
    useEffect(() => {
       API.getNews()
@@ -66,6 +70,18 @@ const NewsPage = (props) => {
    const [calendarDateStart, setCalendarDateStart] = useState('24.06.2024')
    const handleDateStartChange = e => setCalendarDateStart(formatterCalendar.format(e));
 
+   //Открытие PopUp окна на подписаться на рассылку
+   const [modalActive, setModalActive] = useState();
+
+   //Подписаться на рассылку
+   const subscribe=()=>{
+      API.postSubscribeNews({email: emailSubscribe})
+      .then(response=>{
+         setModalActive(false);
+         setEmailSubscribe('')
+      })
+   }
+
    return (
       <div>
          <ContantContainerMain>
@@ -108,7 +124,7 @@ const NewsPage = (props) => {
 
                      <div className="mt20 filterSearchContainer"><input type="text" placeholder='Ключевое слово' className="filterSearch" /></div>
                      <button className='mt20 filterBtnNewsArchive'>Архив новостей</button>
-                     <button className='mt20 subscribe'>Подписаться на рассылку</button>
+                     <button onClick={() => setModalActive(true)} className='mt20 subscribe'>Подписаться на рассылку</button>
                      <div className="mt12 juridicalInfo">Свидетельство о регистрации СМИ от 22.04.2024 ЭЛ № ФС 77 - 87145</div>
 
                   </div>
@@ -134,6 +150,22 @@ const NewsPage = (props) => {
             {/* <EventAnnouncements /> */}
 
          </ContantContainerMain>
+         <Modal
+            active={modalActive}
+            setActive={setModalActive}
+         >
+            <div className={s.modalContainer}>
+               <div className={s.uppContainerRow}>
+                  <div className="pageSubtitle">Подписаться на рассылку</div>
+                  <div onClick={() => setModalActive(false)} className={s.close}><img src={close} alt="" /></div>
+               </div>
+               <div className="mt32 juridicalInfo">Укажите вашу почту </div>
+               <input value={emailSubscribe} onChange={(e) => { setEmailSubscribe(e.target.value) }} type="text" className={`mt8 ${s.subscribe}`} />
+               <div className={s.flexContainerModal}>
+                  <button onClick={subscribe} className={`mt24 btnY ${s.buttonSubscribe}`}>Подписаться</button>
+               </div>
+            </div>
+         </Modal>
          {/* <ScrollButton/> */}
       </div>
    )

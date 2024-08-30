@@ -30,7 +30,7 @@ const ProsecutorOffice = (props) => {
                   surname={'Денис Владимирович'}
                   adress={'141400, Московская область, город Химки, ул. Маяковского, дом 30'}
                   WorkingHours={'Пн-Чт 09:00 – 13:00, 14:00 – 18:00. Пт 09:00 – 13:00, 14:00 – 16:45'}
-                  contactsArr={['+7 (495) 571-62-35', 'epp.genproc.gov.ru', <img src={vk} alt="" />, <img src={ok} alt="" />, <img src={tg} alt="" />]}
+                  contactsArr={['+7 (495) 571-62-35', 'epp.genproc.gov.ru']}
                   img={card_img_1}
                />
                <div className="mt40">
@@ -62,7 +62,7 @@ const ProsecutorOffice = (props) => {
                      surname={'Константин Николаевич'}
                      adress={'107140, г. Москва, вн.тер.г. Муниципальный Округ Красносельский, ул Краснопрудная, д. 22Б'}
                      WorkingHours={'Пн-Чт 09:00 – 13:0013:45 – 18:00, Пт 09:00 – 13:00 13:45 – 17:00'}
-                     contactsArr={['+7 (495) 785-70-00', 'epp.genproc.gov.ru', <img src={vk} alt="" />, <img src={ok} alt="" />, <img src={tg} alt="" />]}
+                     contactsArr={['+7 (495) 785-70-00', 'epp.genproc.gov.ru']}
                      img={card_img_4}
                   />
                </div>
@@ -73,7 +73,7 @@ const ProsecutorOffice = (props) => {
                      surname={'Вячеслав Александрович'}
                      adress={'Ленинградская ул., 11, Химки'}
                      WorkingHours={'Пн-Чт 09:00 – 13:00 14:00 – 18:00, Пт 09:00 – 13:00 14:00 – 16:45'}
-                     contactsArr={['+7 (495) 571-10-46', 'epp.genproc.gov.ru', <img src={vk} alt="" />, <img src={ok} alt="" />]}
+                     contactsArr={['+7 (495) 571-10-46', 'epp.genproc.gov.ru']}
                      img={card_img_5}
                   />
                </div>
@@ -84,7 +84,7 @@ const ProsecutorOffice = (props) => {
                      surname={'Илья Анатольевич'}
                      adress={'07140, г. Москва, ул. 2-я Леснорядская, д.13/15, 3 этаж'}
                      WorkingHours={'Пн-Чт 09:00 – 13:00 14:00 – 18:00, Пт 09:00 – 13:00 14:00 – 16:45'}
-                     contactsArr={['+7(499) 264-49-61', 'sevt@190.mailop.ru', 'epp.genproc.gov.ru', <img src={vk} alt="" />, <img src={ok} alt="" />]}
+                     contactsArr={['+7(499) 264-49-61', 'sevt@190.mailop.ru', 'epp.genproc.gov.ru']}
                      img={card_img_6}
                   />
                </div>

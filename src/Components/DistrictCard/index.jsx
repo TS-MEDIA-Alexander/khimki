@@ -12,7 +12,7 @@ const DistrictCard = ({title, img}) => {
                </div>
                <div className={s.navLinkTitle}>{title}</div>
             </div>
-            <div className={`btnCircleG ${s.btn}`}><img src={arrow_btn_link} alt="" /></div>
+            {/* <div className={`btnCircleG ${s.btn}`}><img src={arrow_btn_link} alt="" /></div> */}
          </div>
    )
 }

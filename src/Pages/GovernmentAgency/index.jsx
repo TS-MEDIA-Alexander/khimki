@@ -8,6 +8,7 @@ import s from './GovernmentAgency.module.css';
 import FamilyYear from '../../BannersComopnents/FamilyYear';
 import state_organizations from '../../assets/img/khimkiDistrict/state_organizations.png';
 import department_civil from '../../assets/img/khimkiDistrict/department_civil.png';
+import department_civil_mob from '../../assets/img/khimkiDistrict/department_civil_mob.png';
 import DocumentContainerDownload from '../../Components/DocumentContainerDownload';
 
 const GovernmentAgency = (props) => {
@@ -25,7 +26,7 @@ const GovernmentAgency = (props) => {
                <div className="columnLarge">
                   <img className={`mt40 ${s.imgMain}`} src={state_organizations} alt="" />
                   <div className={`mt80 ${s.mainTextContainer}`}>
-                     <div className={`${s.title}`}>Химкинское управление загс главного управления ЗАГС московской области</div>
+                     <div className={`pageSubtitle`}>Химкинское управление загс главного управления ЗАГС московской области</div>
 
                      <div className={`mt38 ${s.textBody}`} >
                         Деятельность населения Отдела № 1 Межрайонного управления ЗАГС по городским округам Химки и Долгопрудный Главного управления ЗАГС Московской области осуществляется в соответствии требованиями Федерального закона
@@ -50,6 +51,7 @@ const GovernmentAgency = (props) => {
                   adress={'Режим работы: Вт-Пт 09:00–18:00, перерыв 13:00–14:00; Сб 09:00–17:30, перерыв 13:00–13:30'}
                   contactsArr={['+7 (495) 573-27-18', '+7 (495) 572-65-66', {text: 'zags.mosreg.ru', link: 'https://zags.mosreg.ru/'}]}
                   img={department_civil}
+                  imgMob={department_civil_mob}
                />
             </div>
 

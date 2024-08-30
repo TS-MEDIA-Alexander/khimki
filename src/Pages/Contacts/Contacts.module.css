@@ -40,6 +40,10 @@
    line-height: 24px;
 }
 
+.timeItem {
+   width: 300px;
+}
+
 .btn img {
    margin-right: 8px;
 }
@@ -54,15 +58,13 @@
 
 .cardBannerContainer {
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
+   gap: 20px;
 }
 
 .cardHotline {
-   width: 590px;
-}
-
-.cardHotline:not(:first-child) {
-   margin-left: 20px;
+   width: 580px;
 }
 
 .title {
@@ -80,4 +82,62 @@
    font-style: normal;
    font-weight: 400;
    line-height: 24px;
+}
+
+.tel {
+   text-decoration: none;
+}
+
+@media screen and (max-width: 1160px) {
+   .card {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .textBlock {
+      margin-top: 24px;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .imgContainer {
+      width: 100%;
+      border-radius: 24px;
+   }
+
+   .textBlock {
+      margin-left: 0;
+   }
+
+   .timeItem {
+      width: 150px;
+      font-size: 14px;
+   }
+
+   .description,
+   .scheduleItem {
+      width: 100%;
+      font-size: 14px;
+   }
+
+   .title,
+   .date {
+      font-size: 14px;
+      line-height: 20px;
+   }
+
+   .mobilFlexContainer {
+      flex-direction: column;
+      align-items: start;
+   }
+
+   .mobilFlexContainer>div:not(:first-child) {
+      margin: 24px 0 0 0;
+   }
+}
+
+@media screen and (max-width: 390px) {
+   .imgContainer {
+      height: 160px;
+   }
 }

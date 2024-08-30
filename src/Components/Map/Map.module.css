@@ -1,6 +1,7 @@
 .mapBlock {
    width: 590px;
    height: 590px;
+   overflow: hidden;
 }
 
 .title {

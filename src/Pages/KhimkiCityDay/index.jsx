@@ -25,7 +25,7 @@ const KhimkiCityDay = (props) => {
                      {/* Фильтры, на будущее */}
                      <div className={`mt40 ${s.filterText}`}>Мероприятия, 12 августа, 11:50</div>
 
-                     <div className={`mt48 ${s.title}`}>Программа празднования мероприятий на август, посвященных дню города</div>
+                     <div className={`mt48 ${s.title}`}>Программа празднования мероприятий на август, посвященных Дню города</div>
 
                      <div className={`mt38 text`} >
                         <p>
@@ -33,7 +33,7 @@ const KhimkiCityDay = (props) => {
                         </p>
 
                         <div className={`mt48 ${s.lime} ${s.btn}`}>01 августа - 22 сентября</div>
-                        <div className={`mt38 ${s.subtitle}`}>Программа празднования мероприятий на август, посвященных дню города</div>
+                        <div className={`mt38 ${s.subtitle}`}>Программа празднования мероприятий на август, посвященных Дню города</div>
                         <div>Ленинский пр-т,  д.2Б ПКиО им. Л.Н.Толстого , МВК «Артишок»</div>
 
                         <div className={`mt38 ${s.cian} ${s.btn}`}>01 августа - 22 сентября</div>

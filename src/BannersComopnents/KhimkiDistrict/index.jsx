@@ -1,10 +1,12 @@
 import React from 'react';
 import arrowBtn from '../../assets/icons/arrowYellow.svg'
 import s from './KhimkiDistrict.module.css';
+import { NavLink } from 'react-router-dom';
+import { ROUTER } from '../../config';
 
 const KhimkiDistrict = (props) => {
    return (
-      <div className={`${s.bannerContainer} borderMain`}>
+      <NavLink to={ROUTER.khimkiDistrict.main} className={`${s.bannerContainer} borderMain`}>
          <div className={s.topContainer}>
             <div className={s.title}>
                <div>Городской округ Химки</div>
@@ -16,7 +18,7 @@ const KhimkiDistrict = (props) => {
          </div>
 
          <div className={`btnY ${s.button}`}>Подробнее <img src={arrowBtn} alt="" /></div>
-      </div>
+      </NavLink>
    )
 }
 export default KhimkiDistrict;

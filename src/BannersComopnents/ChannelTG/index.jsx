@@ -11,7 +11,7 @@ const ChannelTG = (props) => {
             </div>
             <div className={s.textBody}>
                <div>Подписывайтесь на официальный</div>
-               <div>канал, что бы оперативно следить </div>
+               <div>канал, чтобы оперативно следить </div>
                <div>за новостями в своем мобильном.</div>
             </div>
          </div>

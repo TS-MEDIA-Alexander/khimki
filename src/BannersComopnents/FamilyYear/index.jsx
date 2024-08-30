@@ -8,8 +8,8 @@ const FamilyYear = (props) => {
          <div className={s.topContainer}>
             <img src={icon} alt="" />
             <div className={s.title}>
-               <div>2024 год - год</div>
-               <div>семьи</div>
+               <div>2024 год - Год</div>
+               <div>Семьи</div>
             </div>
             <div className={s.textBody}>
                

@@ -86,6 +86,7 @@ export const ROUTER = {
       writeAdministration: '/obrascheniya-grazhdan/napisat-v-administratsiyu',
       receptionProcedureTime: '/obrascheniya-grazhdan/grafik-lichnogo-priyoma-grazhdan-glavoy-gorodskogo-okruga-i-zamestitelyami-glavy',
       allRussianDayReceptionCitizens: '/obrascheniya-grazhdan/obscherossiyskiy-den-priyoma-grazhdan',
+      informationForReview:'/obrascheniya-grazhdan/informatsiya-dlya-oznakomleniya-zhelayuschim-otpravit-obrascheniye-v-forme-elektronnogo-dokumenta',
       responsesInquiriesIndefiniteNumberPersons: '/obrascheniya-grazhdan/otvety-na-obrascheniya-zatragivayuschiye-interesy-neopredelennogo-kruga-lits',
    },
    contacts: {

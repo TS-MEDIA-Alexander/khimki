@@ -67,6 +67,7 @@
 .column {
    display: flex;
    flex-direction: column;
+   line-height: 24px;
 }
 
 .column:not(:first-child) {
@@ -78,7 +79,8 @@
       flex-direction: column;
    }
 
-   .mobilContainer, .mobilContainer a:not(:first-child) {
+   .mobilContainer,
+   .mobilContainer a:not(:first-child) {
       margin-top: 32px;
    }
 

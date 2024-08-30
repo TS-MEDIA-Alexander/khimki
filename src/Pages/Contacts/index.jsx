@@ -3,6 +3,7 @@ import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './Contacts.module.css';
 
 import img_yellow from '../../assets/img/Persons/img_yellow.png';
+import img_yellow_mobil from '../../assets/img/Persons/img_yellow_mobil.png';
 
 import tg from '../../assets/icons/telegram.svg';
 import vk from '../../assets/icons/vk.svg';
@@ -19,13 +20,16 @@ import CardHuman from '../../Components/CardHuman';
 import governor from "../../assets/img/Persons/vorobiev.png";
 
 const Contacts = (props) => {
+
+   const isMobil = window.innerWidth < 746;
+
    return (
       <div>
          <ContantContainerMain>
             <div className="mt80 pageTitle">Контакты</div>
             <div className={`mt80 borderMain ${s.card}`}>
                <div className={s.imgContainer}>
-                  <img src={img_yellow} alt="" />
+                  <img src={isMobil ? img_yellow_mobil : img_yellow} alt="" />
                </div>
                <div className={s.textBlock}>
                   <div className={`pageSubtitle ${s.pageSubtitile}`}>Администрация городского округа Химки </div>
@@ -44,14 +48,14 @@ const Contacts = (props) => {
                   <div className="mt20 pageSubtitle">Единый контактный номер </div>
                   <div className="mt20">Режим работы: Круглосуточно</div>
 
-                  <div className="mt16 oval">+7 (495) 572-65-00</div>
+                  <a href={`tel: +7 (495) 572-65-00`} className={`mt16 oval ${s.tel}`}>+7 (495) 572-65-00</a>
 
                   <div className="mt20 line"></div>
 
                   <div className="mt20 pageSubtitle">«Горячая линия» </div>
 
                   <div className="mt20">Режим работы: Круглосуточно</div>
-                  <div className="mt16 oval">+7 (495) 793-01-01</div>
+                  <a href={`tel: +7 (495) 793-01-01`} className={`mt16 oval ${s.tel}`}>+7 (495) 793-01-01</a>
 
                   <div className="mt20 line"></div>
 
@@ -93,8 +97,7 @@ const Contacts = (props) => {
                   tel={'+7 (495) 570-34-98'}
                   mail={'lv_ta@admhimki.ru'}
                />
-            </div>
-            <div className={`mt20 ${s.cardBannerContainer}`}>
+
                <ContactBanner
                   img={podrezkovo}
                   title={'Территориальное управление микрорайона Подрезково'}
@@ -122,8 +125,7 @@ const Contacts = (props) => {
                   tel={'+7 (495) 572-32-28'}
                   mail={'kutuzovskoe@admhimki.ru'}
                />
-            </div>
-            <div className={`mt20 ${s.cardBannerContainer}`}>
+
                <ContactBanner
                   img={lunevskoe}
                   title={'Территориальное управление Лунёвское'}
@@ -140,16 +142,16 @@ const Contacts = (props) => {
                <div className={`borderMain ${s.cardHotline}`}>
                   <div className={s.title}>«Горячая линия» по вопросам незаконной торговли алкоголем, фактам незаконного игорного бизнеса, незаконной торговли</div>
                   <div className={`mt40 ${s.description}`}>Режим работы: <span className={s.date}>Пн-Чт 09:00-18:00, Пт 09:00-16:45</span></div>
-                  <div className="mt16 flexContainer">
-                     <div className="oval">+7 (495) 572-65-00</div>
+                  <div className={`mt16 flexContainer ${s.mobilFlexContainer}`}>
+                     <a href={`tel: +7 (495) 572-65-00`} className={`oval ${s.tel}`}>+7 (495) 572-65-00</a>
                      <div className="ml16 oval">hotline@admhimki.ru</div>
                   </div>
                </div>
                <div className={`borderMain ${s.cardHotline}`}>
                   <div className={s.title}>«Горячая линия» по вопросам незаконной торговли алкоголем, фактам незаконного игорного бизнеса, незаконной торговли</div>
                   <div className={`mt40 ${s.description}`}>Режим работы: <span className={s.date}>Пн-Чт 09:00-18:00, Пт 09:00-16:45</span></div>
-                  <div className="mt16 flexContainer">
-                     <div className="oval">+7 (495) 572-65-00</div>
+                  <div className={`mt16 flexContainer ${s.mobilFlexContainer}`}>
+                     <a href={`tel: +7 (495) 572-65-00`} className={`oval ${s.tel}`}>+7 (495) 572-65-00</a>
                      <div className="ml16 oval">hotline@admhimki.ru</div>
                   </div>
                </div>
@@ -158,31 +160,31 @@ const Contacts = (props) => {
                <div className={`borderMain ${s.cardHotline}`}>
                   <div className={s.title}>«Горячая линия» по вопросам незаконной торговли алкоголем, фактам незаконного игорного бизнеса, незаконной торговли</div>
                   <div className={`mt40 ${s.description}`}>Режим работы: <span className={s.date}>Пн-Чт 09:00-18:00, Пт 09:00-16:45</span></div>
-                  <div className="mt16 flexContainer">
-                     <div className="oval">+7 (495) 572-65-00</div>
+                  <div className={`mt16 flexContainer ${s.mobilFlexContainer}`}>
+                     <a href={`tel: +7 (495) 572-65-00`} className={`oval ${s.tel}`}>+7 (495) 572-65-00</a>
                      <div className="ml16 oval">hotline@admhimki.ru</div>
                   </div>
                </div>
                <div className={`borderMain ${s.cardHotline}`}>
                   <div className={s.title}>«Горячая линия» по вопросам незаконной торговли алкоголем, фактам незаконного игорного бизнеса, незаконной торговли</div>
                   <div className={`mt40 ${s.description}`}>Режим работы: <span className={s.date}>Пн-Чт 09:00-18:00, Пт 09:00-16:45</span></div>
-                  <div className="mt16 flexContainer">
-                     <div className="oval">+7 (495) 572-65-00</div>
+                  <div className={`mt16 flexContainer ${s.mobilFlexContainer}`}>
+                     <a href={`tel: +7 (495) 572-65-00`} className={`oval ${s.tel}`}>+7 (495) 572-65-00</a>
                      <div className="ml16 oval">hotline@admhimki.ru</div>
                   </div>
                </div>
             </div>
 
             <div className={`mt80 pageSubtitle ${s.textCenter}`}>Правительство Московской области</div>
-               <CardHuman
-                  jobTitle='Губернатор Московской области'
-                  name='Воробьев'
-                  surname='Андрей Юрьевич'
-                  info='Контакты для обращения граждан:'
-                  adress='Московская область, г. Красногорск, бульвар Строителей, д.1'
-                  contactsArr={['+7 (800) 550-50-30', 'andreyvorobiev@mosreg.ru', 'amo@mosreg.ru', 'mosreg.ru']}
-                  img={governor}
-               />
+            <CardHuman
+               jobTitle='Губернатор Московской области'
+               name='Воробьев'
+               surname='Андрей Юрьевич'
+               info='Контакты для обращения граждан:'
+               adress='Московская область, г. Красногорск, бульвар Строителей, д.1'
+               contactsArr={['+7 (800) 550-50-30', 'andreyvorobiev@mosreg.ru', 'amo@mosreg.ru', 'mosreg.ru']}
+               img={governor}
+            />
          </ContantContainerMain>
       </div>
    )

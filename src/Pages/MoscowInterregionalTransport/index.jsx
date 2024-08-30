@@ -32,7 +32,7 @@ const MoscowInterregionalTransport = (props) => {
                   surname={'Константин Николаевич'}
                   adress={'107140, г. Москва, вн.тер.г. Муниципальный Округ Красносельский, ул Краснопрудная, д. 22Б'}
                   WorkingHours={'Пн-Чт 09:00 – 13:0013:45 – 18:00, Пт 09:00 – 13:00 13:45 – 17:00'}
-                  contactsArr={['+7 (495) 785-70-00', 'epp.genproc.gov.ru', <img src={vk} alt="" />, <img src={ok} alt="" />, <img src={tg} alt="" />,]}
+                  contactsArr={['+7 (495) 785-70-00', 'epp.genproc.gov.ru']}
                   img={card_img_1}
                />
             </div>

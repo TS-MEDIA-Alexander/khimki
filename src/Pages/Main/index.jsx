@@ -51,7 +51,7 @@ import MunicipalPrograms from '../../BannersComopnents/MunicipalPrograms';
 import FamilyYear from '../../BannersComopnents/FamilyYear';
 import SVO from '../../BannersComopnents/svo';
 import KhimkiDistrict from '../../BannersComopnents/KhimkiDistrict';
-import ChannelTG from '../../BannersComopnents/ChannelTG';
+/* import ChannelTG from '../../BannersComopnents/ChannelTG'; */
 import Statistics from '../../BannersComopnents/Statistics';
 
 import program1 from '../../assets/img/banners/Programm1.png';
@@ -62,9 +62,13 @@ import program3 from '../../assets/img/banners/Programm3.png';
 import program3Mobil from '../../assets/img/banners/Programm3_mobil.svg';
 
 /* Стили баннера */
-import VirtualMuseum from '../../BannersComopnents/VirtualMuseum';
-import EventAnnouncements from '../../Components/EventAnnouncements';
+/* import VirtualMuseum from '../../BannersComopnents/VirtualMuseum';
+import EventAnnouncements from '../../Components/EventAnnouncements'; */
 import CardContainerGovernor from '../../Components/CardContainerGovernor';
+import VirtualMuseumMini from '../../BannersComopnents/VirtualMuseumMini';
+import GuideMini from '../../BannersComopnents/GuideMini';
+import VkChannelMini from '../../BannersComopnents/VkChannelMini';
+import TgChannelMini from '../../BannersComopnents/TgChannelMini';
 
 const Main = (props) => {
 
@@ -98,13 +102,13 @@ const Main = (props) => {
                      'Химки ТВ'
                   ]
                }>
-               <Slide img={hotline} imgMobil={hotline_mobil} title={['Круглосуточная горячая', 'линия Администрации']} description={''} src={'https://www.admhimki.ru/kontakty/'} btnText={'Подробнее'} />
+               <Slide img={hotline} imgMobil={hotline_mobil} title={['Круглосуточная горячая', 'линия Администрации']} description={''} src={ROUTER.contacts.main} btnText={'Подробнее'} />
                <Slide img={head_urban_district_khimki} imgMobil={head_urban_district_khimki_mobil} title={['Глава городского округа', 'Дмитрий Владимирович Волошин']} description={'Социальные сети'} btnText={'Telegram'} />
                <Slide img={road_repairs_2024} imgMobil={road_repairs_2024_mobil} title={['Программа ремонта', 'муниципальных и региональных', 'дорог на 2024 год']} description={'Ремонт дорог в 2024 г.'} btnText={'Подробнее'} src={'https://www.admhimki.ru/blagoustrojstvo/remont-dorog/'} />
                <Slide img={military_service_under_contract} imgMobil={military_service_under_contract_mobil} colorMobil={'white'} title={['Военная служба', 'по контракту']} description={''} btnText={'Подробнее'} src={'https://xn--80atbicfemrd.xn--p1ai/'} />
                <Slide img={virtual_museum} imgMobil={virtual_museum_mobil} title={['Виртуальный музей', 'городского округа Химки', '1941-1945']} description={''} btnText={'Подробнее'} src={'https://himkipobeda.ru/'} />
                <Slide img={evaluation_local_government_activities} imgMobil={evaluation_local_government_activities_mobil} title={['Оценка деятельности', 'местной власти']} description={''} btnText={'Подробнее'} src={'https://panel.simpleforms.ru/yuweSgMuCEGXdQJVlj6r4w#/Panel/815a15f0-947c-483d-bcbf-763d56415674/TextBlockField'} />
-               <Slide img={investment_portal_moscow_region} imgMobil={investment_portal_moscow_region_mobil} title={['Инвестиционный портал', 'подмосковья']} description={''} btnText={'Подробнее'} src={'https://invest.mosreg.ru/'} colorMobil={'white'} />
+               <Slide img={investment_portal_moscow_region} imgMobil={investment_portal_moscow_region_mobil} title={['Инвестиционный портал', 'Подмосковья']} description={''} btnText={'Подробнее'} src={'https://invest.mosreg.ru/'} colorMobil={'white'} />
                <Slide img={committee_competition_policy_moscow_region} imgMobil={committee_competition_policy_moscow_region_mobil} title={['Комитет по конкурентной', 'политике Московской области']} description={''} btnText={'Подробнее'} src={'https://zakaz-mo.mosreg.ru/'} />
                <Slide img={mosobleirc} imgMobil={mosobleirc_mobil} title={['Мобильное приложение', '«МосОблЕИРЦ»']} description={'Вся информация по вашей квитанции в личном кабинете'} btnText={'Подробнее'} src={'https://мособлеирц.рф/preimushchestva-lichnogo-kabineta/'} />
                <Slide img={dobrodel_solving_problems_together} imgMobil={dobrodel_solving_problems_together_mobil} title={['Добродел: решаем', 'проблемы вместе']} description={''} btnText={'Подробнее'} src={'https://dobrodel.mosreg.ru/'} />
@@ -184,11 +188,15 @@ const Main = (props) => {
                      <Statistics />
                   </div>
                </div>
-               <div className={`mt80 rowBlock`}>
-                  <VirtualMuseum />
-                  <div className={s.mobilTGChannel}>
+               <div className={`mt80  ${s.bannersContainerMini}`}>
+                  <VirtualMuseumMini/>
+                  <GuideMini/>
+                  <VkChannelMini/>
+                  <TgChannelMini/>
+                  {/* <VirtualMuseum /> */}
+                  {/* <div className={s.mobilTGChannel}>
                      <ChannelTG />
-                  </div>
+                  </div> */}
                </div>
             </section>
 

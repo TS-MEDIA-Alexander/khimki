@@ -35,7 +35,7 @@ const CorrectionalInstitutions = (props) => {
                   surname={'Вячеслав Александрович'}
                   adress={'Ленинградская ул., 11, Химки'}
                   WorkingHours={'Пн-Чт 09:00 – 13:00 14:00 – 18:00, Пт 09:00 – 13:00 14:00 – 16:45'}
-                  contactsArr={['+7 (495) 571-10-46', 'epp.genproc.gov.ru', <img src={vk} alt="" />, <img src={ok} alt="" />]}
+                  contactsArr={['+7 (495) 571-10-46', 'epp.genproc.gov.ru']}
                   img={card_img_1}
                />
             </div>

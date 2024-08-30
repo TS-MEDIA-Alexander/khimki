@@ -83,6 +83,7 @@ import VirtualReceptionHeadCityDistrict from './Pages/VirtualReceptionHeadCityDi
 import WriteAdministration from './Pages/WriteAdministration';
 import ReceptionProcedureTime from './Pages/ReceptionProcedureTime';
 import AllRussianDayReceptionCitizens from './Pages/AllRussianDayReceptionCitizens';
+import InformationForReview from './Pages/InformationForReview';
 import ResponsesInquiriesIndefiniteNumberPersons from './Pages/ResponsesInquiriesIndefiniteNumberPersons';
 import KhimkiCityDay from './Pages/KhimkiCityDay';
 import Contacts from './Pages/Contacts';
@@ -184,6 +185,7 @@ function App() {
                <Route path={ROUTER.citizensAppeals.writeAdministration} element={<WriteAdministration />} />
                <Route path={ROUTER.citizensAppeals.receptionProcedureTime} element={<ReceptionProcedureTime />} />
                <Route path={ROUTER.citizensAppeals.allRussianDayReceptionCitizens} element={<AllRussianDayReceptionCitizens />} />
+               <Route path={ROUTER.citizensAppeals.informationForReview} element={<InformationForReview />} />
                <Route path={ROUTER.citizensAppeals.responsesInquiriesIndefiniteNumberPersons} element={<ResponsesInquiriesIndefiniteNumberPersons />} />
 
                <Route path={ROUTER.contacts.main} element={<Contacts />} />

@@ -8,6 +8,7 @@ import ContantContainerMain from '../../total/ContantContainerMain';
 import CardHuman from '../../Components/CardHuman';
 
 import img from '../../assets/img/activity/social_programs.png';
+import imgMobil from '../../assets/img/activity/social_programs_mobil.png';
 import card_companys from '../../assets/img/activity/card_companys.png';
 import social_programs_statistics from '../../assets/img/activity/social_programs_statistics.png';
 import CardCompanys from '../../Components/CardCompanys';
@@ -33,6 +34,8 @@ const SocialPrograms = (props) => {
                   adress={'Химки, пр-т Мельникова, д.12'}
                   contactsArr={['+7 (495) 255-39-06', 'info@mbh.htpp.ru']}
                   img={img}
+                  imgMob={imgMobil}
+                  btnSrc={'https://yandex.ru/maps/213/moscow/?ll=37.375600%2C55.928215&mode=usermaps&source=constructorLink&um=constructor%3A56065f73921fa2829764a4a1613a992b991d71faf6bb7e8ec57d55d816774896&z=13'}
                   btn={'Интерактивная карта по предприятиям социальной программы «Вместе»'}
                   btnStyle={{ background: '#AFC904', color: '#FFF' }}
                />
@@ -100,7 +103,7 @@ const SocialPrograms = (props) => {
                         <p>1.19 Вдовы граждан, пострадавших вследствие воздействия радиации.</p>
                         <p>1.20 Вдовы ветеранов и инвалидов боевых действий.</p>
 
-                        <div className="mt38 fw600">1. Граждане, являющиеся пенсионерами из числа следующих категорий:</div>
+                        <div className="mt38 fw600">2. Граждане, являющиеся пенсионерами из числа следующих категорий:</div>
                         <p className="mt38">2.1 Многодетные семьи.</p>
                         <p>2.2 Лица, награжденные знаком «Почетный Донор России» или «Почетный Донор СССР».</p>
                         <p>2.3 Ветераны боевых действий.</p>
@@ -118,24 +121,38 @@ const SocialPrograms = (props) => {
 
             <div className="mt80">
                <SpoilerContainer title={''}>
-                  <SpoilerItem title={'О социальной программе «Вместе»'}></SpoilerItem>
+                  <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/o-socialnoj-programme-vmeste/" target="_blank">
+                     <SpoilerItem title={'О социальной программе «Вместе»'}></SpoilerItem>
+                  </a>
                   <div className="mt24">
-                     <SpoilerItem title={'Преимущества участия в социальной программе «Вместе»'}></SpoilerItem>
+                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/preimushestva-uchastiya-v-socialnoj-programme-vmeste/" target="_blank">
+                        <SpoilerItem title={'Преимущества участия в социальной программе «Вместе»'}></SpoilerItem>
+                     </a>
                   </div>
                   <div className="mt24">
-                     <SpoilerItem title={'Список льготных категорий граждан'}></SpoilerItem>
+                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/spisok-lgotnyh-kategorij-grazhdan/" target="_blank">
+                        <SpoilerItem title={'Список льготных категорий граждан'}></SpoilerItem>
+                     </a>
                   </div>
                   <div className="mt24">
-                     <SpoilerItem title={'Адреса расположения социальных объектов'}></SpoilerItem>
+                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/adresa-raspolozheniya-socialnyh-obektov/" target="_blank">
+                        <SpoilerItem title={'Адреса расположения социальных объектов'}></SpoilerItem>
+                     </a>
                   </div>
                   <div className="mt24">
-                     <SpoilerItem title={'Порядок вступления предпринимателей в социальную программу «Вместе»'}></SpoilerItem>
+                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/poryadok-vstupleniya-predprinimatelej-v-socialnuyu-programmu-vmeste/" target="_blank">
+                        <SpoilerItem title={'Порядок вступления предпринимателей в социальную программу «Вместе»'}></SpoilerItem>
+                     </a>
                   </div>
                   <div className="mt24">
-                     <SpoilerItem title={'Перечень продуктов питания в социальных магазинах'}></SpoilerItem>
+                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/perechen-produktov-pitaniya-v-socialnyh-magazinah/" target="_blank">
+                        <SpoilerItem title={'Перечень продуктов питания в социальных магазинах'}></SpoilerItem>
+                     </a>
                   </div>
                   <div className="mt24">
-                     <SpoilerItem title={'Перечень лекарств в социальных аптеках'}></SpoilerItem>
+                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/perechen-lekarstv-v-socialnyh-aptekah/" target="_blank">
+                        <SpoilerItem title={'Перечень лекарств в социальных аптеках'}></SpoilerItem>
+                     </a>
                   </div>
                   
                </SpoilerContainer>

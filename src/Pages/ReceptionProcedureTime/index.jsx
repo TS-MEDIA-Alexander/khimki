@@ -6,10 +6,13 @@ import { NavLink } from 'react-router-dom';
 
 import ContantContainerMain from '../../total/ContantContainerMain';
 import MayorCard from '../../Components/MayorCard';
-import arrow from '../../assets/icons/arrowYellow.svg'
+import arrow from '../../assets/icons/arrowYellow.svg';
+import arrowBtn from '../../assets/icons/arrow_btn_link.svg';
 import Table from '../../Components/Table';
 import GovernmentServices from '../../BannersComopnents/GovernmentServices';
 import GovernmentServicesLargeMin from '../../BannersComopnents/GovernmentServicesLargeMin';
+
+import graphik_glava from '../../assets/tables/graphik_glava.json'
 
 const ReceptionProcedureTime = (props) => {
    return (
@@ -43,9 +46,9 @@ const ReceptionProcedureTime = (props) => {
                <div className={`btnY ${s.virtualBtn}`}>Архив графиков <img src={arrow} alt="" /></div>
             </div>
 
-            <div className="columnContainer">
+            {/* <div className="columnContainer">
                <div className="columnLarge">
-                  {/* <Table table={} /> */}
+                  <Table table={graphik_glava} />
                </div>
                <div className="ml20 columnSmal">
                   <GovernmentServicesLargeMin />
@@ -53,15 +56,19 @@ const ReceptionProcedureTime = (props) => {
                      <GovernmentServices />
                   </div>
                </div>
+            </div> */}
+
+            <div className="mt40">
+               <Table table={graphik_glava} />
             </div>
 
-            <div className={`mt280 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>График встреч жителей городского округа с Администрацией<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>График личного приёма граждан в общественных приёмных исполнительных органов Московской области<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>График личного приёма граждан Председателем Совета депутатов городского округа<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>График приёма граждан в Приёмной Правительства Московской области<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>"День приема" График приема сотрудниками Администрации и подведомственных учреждений и представителями территориальных органов государственной власти в МФЦ городского округа Химки<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>График проведения тематических и личных приемов граждан<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+            <div className={`mt80 borderMain ${s.linkContainer}`}>
+               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>График встреч жителей городского округа с Администрацией<div className={`btnCircleG ${s.imgContainer}`}><img src={arrowBtn} alt="" /></div></NavLink>
+               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>График личного приёма граждан в общественных приёмных исполнительных органов Московской области<div className={`btnCircleG ${s.imgContainer}`}><img src={arrowBtn} alt="" /></div></NavLink>
+               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>График личного приёма граждан Председателем Совета депутатов городского округа<div className={`btnCircleG ${s.imgContainer}`}><img src={arrowBtn} alt="" /></div></NavLink>
+               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>График приёма граждан в Приёмной Правительства Московской области<div className={`btnCircleG ${s.imgContainer}`}><img src={arrowBtn} alt="" /></div></NavLink>
+               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>"День приема" График приема сотрудниками Администрации и подведомственных учреждений и представителями территориальных органов государственной власти в МФЦ городского округа Химки<div className={`btnCircleG ${s.imgContainer}`}><img src={arrowBtn} alt="" /></div></NavLink>
+               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>График проведения тематических и личных приемов граждан<div className={`btnCircleG ${s.imgContainer}`}><img src={arrowBtn} alt="" /></div></NavLink>
             </div>
          </ContantContainerMain>
       </div>

@@ -7,27 +7,6 @@
    letter-spacing: -0.56px;
 }
 
-/* .textBody {
-   color: #303030;
-   font-size: 20px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 28px;
-   letter-spacing: -0.4px;
-   width: 900px;
-} */
-
-.charterContainer {
-   cursor: pointer;
-   padding: 32px;
-   border-radius: 40px;
-   border: 1px solid #EDEDED;
-   background: #FFF;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-
 .charter {
    text-decoration: none;
    display: flex;
@@ -133,8 +112,12 @@
    }
 }
 
-@media screen and (max-width: 745px){
+@media screen and (max-width: 745px) {
    .titleCard {
       font-size: 24px;
+   }
+
+   .flexContainer {
+      align-items: start;
    }
 }

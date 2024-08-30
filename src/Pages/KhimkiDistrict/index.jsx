@@ -54,7 +54,7 @@ const KhimkiDistrict = (props) => {
                <div className={`mt32 borderMain ${s.districtBanner}`}>
                   <div className={s.textContainer}>
                      <div className={s.bannerTitle}><img src={arrow} alt="" />411 000 человек</div>
-                     <div className={`mt8 ${s.description} ${s.description_center}`}>Cуммарная численность населения округа 2023 г.</div>
+                     <div className={`mt8 ${s.description} ${s.description_center}`}>Cуммарная численность населения округа в 2023 г.</div>
                   </div>
                   <img className={`mt12 ${s.radialDiagram}`} src={radialDiagram} alt="" />
                   <div className="mt32">
@@ -164,21 +164,20 @@ const KhimkiDistrict = (props) => {
                   <div className={s.sectionMapTitle}>Карта раздела </div>
                   <div className={`mt40 bannerArrowContainer ${s.mobilArrowContainer}`}>
                      <div className={s.column}>
-                        <div className={s.item}>Устав, символика, карта </div>
+                        <NavLink to={ROUTER.khimkiDistrict.symbolism}  className={s.item}>Устав, символика, карта </NavLink>
                         <NavLink to={ROUTER.khimkiDistrict.administrationStructure} className={s.item}>Структура Администрации </NavLink>
-                        <div className={s.item}>Муниципальные программы </div>
-                        <div className={s.item}>Контрольно-счетная палата </div>
+                        <NavLink to={ROUTER.activity.municipalPrograms} className={s.item}>Муниципальные программы </NavLink>
+                        <NavLink to={ROUTER.khimkiDistrict.auditChamber} className={s.item}>Контрольно-счетная палата </NavLink>
                      </div>
                      <div className={s.column}>
-                        <div className={s.item}>Совет депутатов </div>
-                        <div className={s.item}>ТИК города Химки </div>
-                        <div className={s.item}>Присяжные заседатели </div>
-                        <div className={s.item}>Общественные организации  </div>
+                        <a href='https://sdhimki.ru/deputaty/' target='_blank' className={s.item}>Совет депутатов </a>
+                        <NavLink to={ROUTER.khimkiDistrict.tic} className={s.item}>ТИК города Химки </NavLink>
+                        <NavLink to={ROUTER.khimkiDistrict.publicOrganizations} className={s.item}>Общественные организации  </NavLink>
                      </div>
                      <div className={s.column}>
-                        <div className={s.item}>Государственные организации</div>
-                        <div className={s.item}>Наукоград</div>
-                        <div className={s.item}>Информационные системы</div>
+                        <NavLink to={ROUTER.khimkiDistrict.governmentAgency} className={s.item}>Государственные организации</NavLink>
+                        <NavLink to={ROUTER.khimkiDistrict.scienceCity} className={s.item}>Наукоград</NavLink>
+                        <NavLink to={ROUTER.khimkiDistrict.informationSystems} className={s.item}>Информационные системы</NavLink>
                      </div>
                      <div className={s.mobilMt24}>
                         <MunicipalProgramsMini />
@@ -187,10 +186,10 @@ const KhimkiDistrict = (props) => {
                </div>
             </div>
 
-            <div className={`mt32 bannerArrowContainer ${s.mobilBannerArrowContainer}`}>
+            {/* <div className={`mt32 bannerArrowContainer mobileNoneContainer ${s.mobilBannerArrowContainer}`}>
                <Problem />
                <Problem />
-            </div>
+            </div> */}
          </ContantContainerMain>
       </div>
    )

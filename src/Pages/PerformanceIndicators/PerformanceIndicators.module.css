@@ -90,17 +90,13 @@ li.description {
    list-style: disc;
 }
 
-.pageTitle {
-   padding-left: 8px;
-   color: #212121;
-   font-size: 28px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 40px;
-   letter-spacing: -0.56px;
+.columnContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 
-.columnContainer {
+.flexContainerRow {
    display: flex;
    justify-content: space-between;
 }
@@ -146,6 +142,7 @@ li.description {
    border-radius: 40px;
    width: 606px;
    height: 350px;
+
 }
 
 .imgContainer.imgContainer_small {
@@ -154,6 +151,7 @@ li.description {
 
 .imgContainer img {
    width: 100%;
+   height: 100%;
    object-fit: cover;
 }
 
@@ -216,6 +214,10 @@ li.description {
    .mapBlock {
       height: 654px;
    }
+
+   .flexContainerRow {
+      flex-direction: column;
+   }
 }
 
 @media screen and (max-width: 745px) {
@@ -224,11 +226,12 @@ li.description {
    }
 
    .subtitle {
-      text-align-last: left;
+      text-align: left;
+      width: 100%;
    }
 
    .mapBlock {
-      width: calc(100% - 64px);
+      width: calc(100% - 48px);
    }
 
    .mapImgContainer {
@@ -238,7 +241,7 @@ li.description {
    }
 
    .mayorBlock {
-      width: calc(100% - 64px);
+      width: calc(100% - 48px);
       flex-direction: column;
       align-items: center;
       height: auto;
@@ -255,6 +258,69 @@ li.description {
 
    .mapDescription {
       text-align: left;
+   }
+
+   .imgMayorContainer {
+      width: 100%;
+   }
+
+   .textRow {
+      flex-direction: column;
+      align-items: start;
+   }
+
+   .date {
+      font-size: 12px;
+   }
+
+   .description {
+      margin-top: 14px;
+      font-size: 14px;
+   }
+
+   .textBody,
+   .textBody span {
+      font-size: 24px;
+   }
+
+   .columnContainer {
+      flex-direction: column;
+      border: none;
+      padding: 0;
+      width: 100%;
+   }
+
+   .imgContainer {
+      margin-top: 32px;
+      width: 100%;
+      border-radius: 24px;
+   }
+
+   .imgContainerDuble {
+      flex-direction: column;
+      width: 100%;
+   }
+
+   .imgContainerDuble .imgContainer {
+      width: 100%;
+   }
+
+   .imgContainerDuble div:last-child {
+      margin-left: 0px;
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .imgContainer.imgContainer_small {
+      height: auto;
+   }
+
+   .imgContainer {
+      height: 192px !important;
+   }
+
+   .imgContainer img {
+      height: 100%;
    }
 }
 

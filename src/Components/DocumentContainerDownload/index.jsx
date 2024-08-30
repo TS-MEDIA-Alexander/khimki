@@ -7,10 +7,10 @@ const DocumentContainerDownload = ({ document, documentName, text, date, type })
    return (
       <div className={s.documentContainer}>
          <a
-         download={documentName}
-         href={document} className={s.link}>
+            download={documentName}
+            href={document} className={s.link}>
             <div className={s.imgContainer}>
-            {type === 'DOCX' ? <img className={`${s.documentIcon} ${s.DOCX }`} src={doc} alt="" /> : <img className={`${s.documentIcon} ${s.PDF}`} src={pdf} alt="" />}
+               {type === 'DOCX' ? <img className={`${s.documentIcon} ${s.DOCX}`} src={doc} alt="" /> : <img className={`${s.documentIcon} ${s.PDF}`} src={pdf} alt="" />}
             </div>
             <div className={s.textInner}>
                {text}

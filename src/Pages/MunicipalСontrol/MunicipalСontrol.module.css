@@ -16,3 +16,10 @@
    letter-spacing: -0.2px;
    cursor: pointer;
 }
+
+@media screen and (max-width: 745px) {
+   .link {
+      font-size: 16px;
+      line-height: 20px;
+   }
+}

@@ -206,7 +206,7 @@ p {
    text-align: left;
 }
 
-.subscribe{
+.subscribe {
    padding: 12px;
    border-radius: 12px;
    color: #212121;
@@ -322,6 +322,7 @@ p {
 .btnY {
    border-radius: 40px;
    background: #FFEC00;
+   color: #5c5300 !important;
 }
 
 .btnY:hover {
@@ -330,6 +331,13 @@ p {
 
 .btnY:active {
    background: #F2DD6C;
+}
+
+@media screen and (max-width: 745px) {
+   .btnY {
+      font-size: 12px !important;
+      line-height: 16px !important;
+   }
 }
 
 /*  */
@@ -606,6 +614,15 @@ p {
    color: #303030;
 }
 
+@media screen and (max-width: 745px) {
+   .oval {
+      font-size: 12px;
+      line-height: 16px;
+      padding: 8px 16px;
+   }
+}
+
+
 .line {
    width: 100%;
    height: 1px;
@@ -634,7 +651,7 @@ p {
    gap: 24px;
 }
 
-.imgContainerArrow{
+.imgContainerArrow {
    flex: 0 0 24px;
    display: flex;
    align-items: center;
@@ -644,6 +661,7 @@ p {
    padding: 9px;
    border-radius: 50%;
    background: #F6F6F6;
+   cursor: pointer;
 }
 
 .imgContainerArrow img {
@@ -697,10 +715,12 @@ p {
    }
 
    .text {
+      width: 100%;
       font-size: 16px;
-      line-height: 20px;
-      letter-spacing: -0.32px;
+      line-height: 24px;
+      letter-spacing: -0.48px;
    }
+
 
    .mt80 {
       margin-top: 64px;

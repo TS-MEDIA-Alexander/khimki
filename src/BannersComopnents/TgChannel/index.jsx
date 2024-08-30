@@ -10,7 +10,7 @@ const TgChannel = (props) => {
             <div className={s.title}>
                <div>Официальный </div>
                <div>канал администрации </div>
-               <div>во Телеграмм </div>
+               <div>в Телеграм </div>
             </div>
             <div className={s.textBody}>
 

@@ -6,9 +6,6 @@ import { ROUTER } from '../../config';
 import arrow from '../../assets/icons/arrow_btn_link.svg';
 import s from './TIC.module.css';
 
-/* Фото */
-import plug from '../../assets/img/khimkiDistrict/Symbolism/plug.svg';
-
 const TIC = (props) => {
    return (
       <div>
@@ -30,7 +27,6 @@ const TIC = (props) => {
                   subtitle={'Количественный состав ТИК – 12 чел.'}
                   info={'Московская область, городской округ Химки, Калинина, 4'}
                   contactsArr={['+7 (495) 572-64-22', 'tik_himki@mail.ru']}
-                  img={plug}
                />
             </div>
 

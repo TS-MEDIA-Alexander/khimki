@@ -12,7 +12,7 @@ const Slide = ({ img, imgMobil, title, description, src, btnText, colorMobil }) 
             <div className={s.slideTitle} style={{ 'color': !isMobil ? colorMobil || '#212121' : '#212121' }}>
                {title.map((el, i) => <div key={i}>{el}</div>)}
             </div>
-            <div className={s.slideDescription} style={{ 'color': colorMobil || '#212121' }}>
+            <div className={s.slideDescription} style={{ 'color': !isMobil ? colorMobil : '#212121' }}>
                {description}
             </div>
          </div>

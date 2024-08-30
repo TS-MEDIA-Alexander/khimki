@@ -23,15 +23,15 @@ const MayorCard = (props) => {
             <div className={`mt8 ${s.citation}`}>Чуткая и открытая власть — принцип, которым мы руководствуемся в нашей командной работе. Наш округ — живой организм. Он развивается, растет, меняется... Возникают новые потребности, что-то приходит в негодность, требует ремонта или замены. Без помощи жителей невозможно сделать действительно комфортный и безопасный для проживания округ. Только вместе мы сможем оперативно решать возникающие проблемы. Комплексный подход ко всему приведет нас к общему успеху. Я прошу использовать все каналы связи для общения: телефоны горячей линии, электронную почту, социальные сети. Мы приняли меры, чтобы обращения жителей решались еще более оперативно. Работает круглосуточная горячая линия во всех микрорайонах округа. Я лично просматриваю свою электронную почту. Мы открыты для общения в любое время. Качественно повысить уровень жизни химчан — наша основная задача. Только реальные дела, только работа на результат!</div>
             <NavLink to={ROUTER.khimkiDistrict.administrationStructureMayor} className={`mt8 ${s.cardMoreDetails}`}>Подробнее</NavLink>
             <div className={`mt48 ${s.cardBtnRow}`}>
-               <div className={`btnY ${s.virtualBtn}`}>Виртуальная приемная </div>
+               <NavLink to={ROUTER.citizensAppeals.virtualReceptionHeadCityDistrict} className={`btnY ${s.virtualBtn}`}>Виртуальная приемная </NavLink>
                <div className='oval'>+7 (495) 793-01 01
                   <div className={s.cardBtnImgContainer}><img src={clock} alt="" /></div>
                   <div className={s.schedule}>Круглосуточно </div>
                </div>
                <div className={s.btnFlexContainer}>
-                  <div className={s.cardBtnLink}><img src={ok} alt="" /></div>
-                  <div className={s.cardBtnLink}><img src={vk} alt="" /></div>
-                  <div className={s.cardBtnLink}><img src={telegram} alt="" /></div>
+                  <a href='https://ok.ru/profile/580707341478' target='_blank' className={s.cardBtnLink}><img src={ok} alt="" /></a>
+                  <a href='https://vk.com/gohimkiadm' target='_blank' className={s.cardBtnLink}><img src={vk} alt="" /></a>
+                  <a href='https://t.me/adm_himki' target='_blank' className={s.cardBtnLink}><img src={telegram} alt="" /></a>
                </div>
             </div>
          </div>

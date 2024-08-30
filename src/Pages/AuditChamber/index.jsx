@@ -5,7 +5,6 @@ import { ROUTER } from '../../config';
 import s from './AuditChamber.module.css';
 
 /* Фото */
-import plug from '../../assets/img/khimkiDistrict/Symbolism/plug.svg';
 import CardHuman from '../../Components/CardHuman';
 
 const AuditChamber = (props) => {
@@ -29,7 +28,6 @@ const AuditChamber = (props) => {
                info={'ул. Московская, 15'}
                WorkingHours={'Пн-Чт 9:00-18:00, Пт 9:00-16:45, 13:00-13:45'}
                contactsArr={['+7 (495) 572-50-04', 'info@ksphimki.ru', 'ksphimki.ru']}
-               img={plug}
             />
          </ContantContainerMain>
       </div>
