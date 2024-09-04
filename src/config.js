@@ -5,7 +5,7 @@ export const ROUTER = {
    galery: '/galery',
    galeryArticle: '/galery/:id',
    video: '/video',
-   history:{
+   history: {
       main: '/istoriya',
       khimki: '/istoriya/istoriya-himki',
       pamyatnikiIstoriiKultury: '/istoriya/pamyatniki-istorii-kultury',
@@ -13,7 +13,7 @@ export const ROUTER = {
       cityCoatOfArms: '/istoriya/gerb-goroda',
       greatPatrioticWar: '/istoriya/velikaya-otechestvennaya-voyna',
    },
-   
+
    khimkiDistrict: {
       main: '/gorodskoy-okrug-khimki',
       performanceIndicators: '/gorodskoy-okrug-khimki/pokazateli-raboty-administratsii',
@@ -70,7 +70,7 @@ export const ROUTER = {
       outdoorAdvertising: '/deyatelnost/otdel-reklamy-mku-upravleniye-delami-administratsii',
       authorityFeldHandlingAnimalsWithoutOwners: '/deyatelnost/polnomochiya-v-oblasti-obrascheniya-s-zhivotnymi-bez-vladeltsev',
    },
-   prosecutorOffice:{
+   prosecutorOffice: {
       main: '/prokuratura',
       militaryProsecutorOfficeSolnechnogorskGarrison: '/prokuratura/voyennaya-prokuratura-solnechnogorskogo-garnizona',
       moscowInterregionalTransport: '/prokuratura/moskovskaya-mezhregionalnaya-transportnaya-prokuratura',
@@ -80,13 +80,13 @@ export const ROUTER = {
    },
    citizensAppeals: {
       main: '/obrascheniya-grazhdan',
-      legalRegulation: '/obrascheniya-grazhdan/pravovoye-regulirovaniye', 
-      resultsConsiderationApplications: '/obrascheniya-grazhdan/rezultaty-rassmotreniya-obrascheniy', 
-      virtualReceptionHeadCityDistrict: '/obrascheniya-grazhdan/virtualnaya-priyemnaya-glavy-gorodskogo-okruga', 
+      legalRegulation: '/obrascheniya-grazhdan/pravovoye-regulirovaniye',
+      resultsConsiderationApplications: '/obrascheniya-grazhdan/rezultaty-rassmotreniya-obrascheniy',
+      virtualReceptionHeadCityDistrict: '/obrascheniya-grazhdan/virtualnaya-priyemnaya-glavy-gorodskogo-okruga',
       writeAdministration: '/obrascheniya-grazhdan/napisat-v-administratsiyu',
       receptionProcedureTime: '/obrascheniya-grazhdan/grafik-lichnogo-priyoma-grazhdan-glavoy-gorodskogo-okruga-i-zamestitelyami-glavy',
       allRussianDayReceptionCitizens: '/obrascheniya-grazhdan/obscherossiyskiy-den-priyoma-grazhdan',
-      informationForReview:'/obrascheniya-grazhdan/informatsiya-dlya-oznakomleniya-zhelayuschim-otpravit-obrascheniye-v-forme-elektronnogo-dokumenta',
+      informationForReview: '/obrascheniya-grazhdan/informatsiya-dlya-oznakomleniya-zhelayuschim-otpravit-obrascheniye-v-forme-elektronnogo-dokumenta',
       responsesInquiriesIndefiniteNumberPersons: '/obrascheniya-grazhdan/otvety-na-obrascheniya-zatragivayuschiye-interesy-neopredelennogo-kruga-lits',
    },
    contacts: {
@@ -94,6 +94,8 @@ export const ROUTER = {
    },
    events: {
       /* main: '/sobytiya', */
-      khimkiCityDay: '/sobytiya/den-goroda-khimki'
-   }
+      khimkiCityDay: '/sobytiya/den-goroda-khimki',
+      savePast: '/sobytiya/sokhranyaya-proshloye-zaschischayem-buduschee',
+   },
+   successSubscribe: '/vy-uspeshno-podpisalis'
 }

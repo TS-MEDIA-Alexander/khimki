@@ -103,7 +103,7 @@ const Main = (props) => {
                   ]
                }>
                <Slide img={hotline} imgMobil={hotline_mobil} title={['Круглосуточная горячая', 'линия Администрации']} description={''} src={ROUTER.contacts.main} btnText={'Подробнее'} />
-               <Slide img={head_urban_district_khimki} imgMobil={head_urban_district_khimki_mobil} title={['Глава городского округа', 'Дмитрий Владимирович Волошин']} description={'Социальные сети'} btnText={'Telegram'} />
+               <Slide img={head_urban_district_khimki} imgMobil={head_urban_district_khimki_mobil} title={['Глава городского округа', 'Дмитрий Владимирович Волошин']} description={'Социальные сети'} src={'https://vk.com/gohimkiadm'} btnText={'Telegram'} />
                <Slide img={road_repairs_2024} imgMobil={road_repairs_2024_mobil} title={['Программа ремонта', 'муниципальных и региональных', 'дорог на 2024 год']} description={'Ремонт дорог в 2024 г.'} btnText={'Подробнее'} src={'https://www.admhimki.ru/blagoustrojstvo/remont-dorog/'} />
                <Slide img={military_service_under_contract} imgMobil={military_service_under_contract_mobil} colorMobil={'white'} title={['Военная служба', 'по контракту']} description={''} btnText={'Подробнее'} src={'https://xn--80atbicfemrd.xn--p1ai/'} />
                <Slide img={virtual_museum} imgMobil={virtual_museum_mobil} title={['Виртуальный музей', 'городского округа Химки', '1941-1945']} description={''} btnText={'Подробнее'} src={'https://himkipobeda.ru/'} />

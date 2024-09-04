@@ -87,6 +87,9 @@ import InformationForReview from './Pages/InformationForReview';
 import ResponsesInquiriesIndefiniteNumberPersons from './Pages/ResponsesInquiriesIndefiniteNumberPersons';
 import KhimkiCityDay from './Pages/KhimkiCityDay';
 import Contacts from './Pages/Contacts';
+import PageNotFound from './Pages/PageNotFound';
+import SuccessSubscribe from './Pages/SuccessSubscribe';
+import SavePast from './Pages/SavePast';
 /* import Table from './Components/Table'; */
 
 function App() {
@@ -191,6 +194,12 @@ function App() {
                <Route path={ROUTER.contacts.main} element={<Contacts />} />
 
                <Route path={ROUTER.events.khimkiCityDay} element={<KhimkiCityDay />} />
+               <Route path={ROUTER.events.savePast} element={<SavePast />} />
+
+               <Route path={ROUTER.successSubscribe} element={<SuccessSubscribe />} />
+
+               <Route path='*' element={<PageNotFound />} />
+
 
             </Routes>
          </div>

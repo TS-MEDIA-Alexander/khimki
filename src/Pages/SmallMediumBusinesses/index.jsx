@@ -4,8 +4,8 @@ import s from './SmallMediumBusinesses.module.css';
 
 import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 
+import LinkContainer from '../../Components/LinkContainer';
 
 const SmallMediumBusinesses = (props) => {
    return (
@@ -21,20 +21,20 @@ const SmallMediumBusinesses = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Правовые и нормативные акты<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Новости<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Муниципальная программа развития МСП<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Формы финансовой поддержки МСП в Московской области<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Имущественная поддержка МСП <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Информация о свободных местах проведения ярмарок<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Порядок формирования и ведения перечня муниципального имущества (за исключением земельных участков)<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Выкуп имущества (за исключением земельных участков)<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Прием предпринимателей Главой городского округа Химки<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Горячая линия для обращения МСП/книга жалоб и предложений (перенести на основную страницу «Малое и среднее предпринимательство»)<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Коворкинг- центр<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Нестационарные торговые объекты<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Предоставление имущества (за исключением земельных участков)<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Уполномоченный по защите прав предпринимателей в Московской области и его Аппарат<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/normativno-pravovye-akty/' text={'Правовые и нормативные акты'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/novosti/' text={'Новости'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/municipalnye-programmy/predprinimatelstvo/' text={'Муниципальная программа развития МСП'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/formy-finansovoj-podderzhki-msp-v-moskovskoj-oblasti/' text={'Формы финансовой поддержки МСП в Московской области'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/imushestvennaya-podderzhka-subektov-msp/' text={'Имущественная поддержка МСП'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/informaciya-o-svobodnyh-mestah-provedeniya-yarmarok_/' text={'Информация о свободных местах проведения ярмарок'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/poryadok-formirovaniya-i-vedeniya-perechnya-municipalnogo-imushestva-za-isklyucheniem-zemelnyh-uchastkov' text={'Порядок формирования и ведения перечня муниципального имущества (за исключением земельных участков)'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/vykup-imushestva-za-isklyucheniem-zemelnyh-uchastkov' text={'Выкуп имущества (за исключением земельных участков)'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/priem-predprinimatelej-glavoj-gorodskogo-okruga-himki/' text={'Прием предпринимателей Главой городского округа Химки'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/goryachaya-liniya-dlya-obrasheniya-mspkniga-zhalob-i-predlozhenij/' text={'Горячая линия для обращения МСП/книга жалоб и предложений (перенести на основную страницу «Малое и среднее предпринимательство»)'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/kovorking-centr/' text={'Коворкинг- центр'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/nestacionarnye-torgovye-obekty/' text={'Нестационарные торговые объекты'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/predostavlenie-imushestva-za-isklyucheniem-zemelnyh-uchastkov/' text={'Предоставление имущества (за исключением земельных участков)'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/upolnomochennyj-po-zashite-prav-predprinimatelej-v-moskovskoj-oblasti-i-ego-apparat/' text={'Уполномоченный по защите прав предпринимателей в Московской области и его Аппарат'} /></div>
             </div>
 
          </ContantContainerMain>

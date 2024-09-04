@@ -4,9 +4,9 @@ import s from './RegulatoryImpactAssessment.module.css';
 
 import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 import banner from '../../assets/img/activity/banner.png';
 
+import LinkContainer from '../../Components/LinkContainer';
 
 const RegulatoryImpactAssessment = (props) => {
    return (
@@ -21,8 +21,8 @@ const RegulatoryImpactAssessment = (props) => {
                воздействия</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Законодательство<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Публичные консультации<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/ocenka-reguliruyushego-vozdejstviya/zakonodatelstvo/' text={'Законодательство'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/publichnye-konsultacii/' text={'Публичные консультации'} /></div>
             </div>
 
             <div className="mt80 pageSubtitle">Что такое ОРВ?</div>

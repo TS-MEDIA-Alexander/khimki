@@ -2,16 +2,17 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
 import ContantContainerMain from '../../total/ContantContainerMain';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 import s from './ParticipatoryBudgeting.module.css';
 import DocumentContainerDownload from '../../Components/DocumentContainerDownload';
+
+import LinkContainer from '../../Components/LinkContainer';
 
 const ParticipatoryBudgeting = (props) => {
    return (
       <div>
          <ContantContainerMain>
             <div className={`mt80 breadcrumbs`}>
-               <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Округ</NavLink>
+               <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Инициативное бюджетирование</span>
             </div>
             <div className={`mt24 pageTitle`}>
@@ -19,8 +20,8 @@ const ParticipatoryBudgeting = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Протоколы Конкурсной комиссии г.о. Химки по отбору проектов инициативного бюджетирования<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Отчеты о реализации проектов инициативного бюджетирования<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/dokumenty/protokoly-konkursnoj-komissii-go-himki-po-otboru-p/' text={'Протоколы Конкурсной комиссии г.о. Химки по отбору проектов инициативного бюджетирования'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/otchety-o-realizacii-proektov-iniciativnogo-byudzh/' text={'Отчеты о реализации проектов инициативного бюджетирования'} /></div>
             </div>
 
 

@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
 import arrow from '../../assets/icons/arrow_btn_link.svg';
 
+import LinkContainer from '../../Components/LinkContainer';
 
 const Improvement = (props) => {
    return (
@@ -18,11 +19,11 @@ const Improvement = (props) => {
             <div className={`mt24 pageTitle`}>Благоустройство</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Общественные пространства<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Ремонт объектов дорожного хозяйства в рамках повышения БДД<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Ремонт дорог<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Благоустройство дворов<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Благоустройство парков<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/blagoustrojstvo/obshestvennye-prostranstva/' text={'Общественные пространства'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/blagoustrojstvo/remont-obektov-dorozhnogo-hozyajstva-v-ramkah-povysheniya-bgd/' text={'Ремонт объектов дорожного хозяйства в рамках повышения БДД'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/blagoustrojstvo/remont-dorog/' text={'Ремонт дорог'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/blagoustrojstvo/blagoustrojstvo-dvorov/' text={'Благоустройство дворов'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/blagoustrojstvo/blagoustrojstvo-parkov/' text={'Благоустройство парков'} /></div>
             </div>
          </ContantContainerMain>
       </div>

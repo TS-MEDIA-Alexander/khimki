@@ -19,7 +19,7 @@ const SpoilerItem = ({ children, title }) => {
             {children && <div className={s.btn}>
                {
                   isOpen ? <span >Свернуть</span> : <span>Развернуть</span>
-               }<img className={isOpen && s.rotate} src={arrow} alt="" />
+               }<img className={isOpen ? s.rotate : ''} src={arrow} alt="" />
             </div>}
          </div>
          <div

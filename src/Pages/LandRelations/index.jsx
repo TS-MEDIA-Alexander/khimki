@@ -6,6 +6,8 @@ import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
 import arrow from '../../assets/icons/arrow_btn_link.svg';
 
+import LinkContainer from '../../Components/LinkContainer';
+
 
 const LandRelations = (props) => {
    return (
@@ -18,12 +20,12 @@ const LandRelations = (props) => {
             <div className={`mt24 pageTitle`}>Земельные отношения</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Аукционы и торги<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Муниципальный земельный контроль<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Сообщения о планируемом изъятии земельных участков<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Памятки и разъяснения<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Сообщения о возможном установлении публичных сервитутов в рамках предоставления государственных услуг<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Извещения о проведении собрания о согласовании местоположения границ земельных участков<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/aukciony-i-torgi/' text={'Аукционы и торги'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zemelnye-otnosheniya/municipalnyj-zemelnyj-kontrol2/' text={'Муниципальный земельный контроль'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zemelnye-otnosheniya/soobsheniya-o-planiruemom-izyatii-zemelnyh-uchastkov/' text={'Сообщения о планируемом изъятии земельных участков'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zemelnye-otnosheniya/pamyatki-i-razyasneniya/' text={'Памятки и разъяснения'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zemelnye-otnosheniya/soobsheniya-ob-ustanovlenii-publichnyh-servitutov-v-ramkah-predostavleniya-gosudarstvennyh-uslug/' text={'Сообщения о возможном установлении публичных сервитутов в рамках предоставления государственных услуг'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zemelnye-otnosheniya/izvesheniya-o-provedenii-sobraniya-o-soglasovanii-mestopolozheniya-granic-zemelnyh-uchastkov/' text={'Извещения о проведении собрания о согласовании местоположения границ земельных участков'} /></div>
             </div>
          </ContantContainerMain>
       </div>

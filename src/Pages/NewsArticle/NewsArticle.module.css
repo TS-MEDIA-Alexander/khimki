@@ -28,49 +28,6 @@
    letter-spacing: -0.4px;
 }
 
-/* .citationTextBody {
-   box-sizing: border-box;
-   padding-left: 40px;
-   color: #303030;
-   font-size: 20px;
-   font-style: italic;
-   font-weight: 400;
-   line-height: 28px;
-   letter-spacing: -0.4px;
-} */
-
-/* .authorInfoContainer {
-   margin-left: 40px;
-} */
-
-/* .author {
-   color: #303030;
-   font-size: 20px;
-   font-style: normal;
-   font-weight: 600;
-   line-height: 28px;
-   letter-spacing: -0.4px;
-} */
-
-/* .jobTitle {
-   margin-top: 4px;
-   color: #808080;
-   font-size: 16px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 24px;
-   letter-spacing: -0.32px;
-} */
-
-/* .textBody {
-   color: #303030;
-   font-size: 20px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 28px;
-   letter-spacing: -0.4px;
-} */
-
 .textBody p:not(:first-child),
 .textBody blockquote:not(:first-child) {
    margin-top: 38px;
@@ -171,5 +128,10 @@ blockquote {
       line-height: 24px;
       letter-spacing: -0.48px;
       padding-left: 21px;
+   }
+
+   .imgMain {
+      height: 220px;
+      border-radius: 24px;
    }
 }

@@ -2,9 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
 import ContantContainerMain from '../../total/ContantContainerMain';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 import s from './Land.module.css';
 import DocumentContainerDownload from '../../Components/DocumentContainerDownload';
+
+import LinkContainer from '../../Components/LinkContainer';
 
 const Land = (props) => {
    return (
@@ -20,8 +21,8 @@ const Land = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Нормативные правовые акты<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Реестр многодетных семей<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zemelnye-uchastki-mnogodetnym-semyam/normativno-pravovye-akty/' text={'Нормативные правовые акты'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zemelnye-uchastki-mnogodetnym-semyam/reestr-mnogodetnyh-semej/' text={'Реестр многодетных семей'} /></div>
             </div>
 
 
@@ -50,13 +51,13 @@ const Land = (props) => {
                      Члены многодетной семьи не произвели отчуждение, а также раздел  принадлежащих им на праве собственности земельных участков площадью 0,06 га  и более со дня вступления в силу указанного Закона
                   </li>
                </ul>
-               </div>
+            </div>
 
-               <div className="mt38 borderMain">
-                  <DocumentContainerDownload text='Закон Московской области от 01.06.2011 №73/2011-ОЗ «О бесплатном предоставлении земельных участков многодетным семьям Московской области»' date="06.02.2023" />
-               </div>
+            <div className="mt38 borderMain">
+               <DocumentContainerDownload text='Закон Московской области от 01.06.2011 №73/2011-ОЗ «О бесплатном предоставлении земельных участков многодетным семьям Московской области»' date="06.02.2023" />
+            </div>
 
-               <div className={`mt80 text`}>
+            <div className={`mt80 text`}>
 
                <div className="pageSubtitle">Уважаемые многодетные семьи г.о. Химки!</div>
                <p>

@@ -26,7 +26,7 @@ const CardHuman = ({ jobTitle, name, surname, subtitle, info, adress, WorkingHou
 
             <div className={`mt24 ${s.cardBtnRow}`}>
                {contactsArr?.map((el, i) => typeof el === "string" ?
-                  <contactsArr key={i} className={`oval ${s.cardTel}`}>{el}</contactsArr>
+                  <div key={i} className={`oval ${s.cardTel}`}>{el}</div>
                   : typeof el === "object" ?
                      <div key={i} className={`oval ${s.cardTel}`}><a className={s.link} target='_blank' href={el.link}>{el.text}</a></div>
                      : <div key={i} className={` ${s.imgContainer}`}>{el}</div>)}

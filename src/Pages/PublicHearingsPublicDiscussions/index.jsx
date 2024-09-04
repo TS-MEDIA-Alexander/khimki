@@ -4,7 +4,8 @@ import s from './PublicHearingsPublicDiscussions.module.css';
 
 import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
+
+import LinkContainer from '../../Components/LinkContainer';
 
 
 const PublicHearingsPublicDiscussions = (props) => {
@@ -21,8 +22,8 @@ const PublicHearingsPublicDiscussions = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Протоколы и заключения<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Назначение публичных слушаний и общественных обсуждений<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/publichnye-slushaniya/protokoly-i-zaklyucheniya/' text={'Протоколы и заключения'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/publichnye-slushaniya/naznachenie-publichnyh-slushanij/' text={'Назначение публичных слушаний и общественных обсуждений'} /></div>
             </div>
 
          </ContantContainerMain>

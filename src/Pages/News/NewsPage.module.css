@@ -51,11 +51,27 @@
    justify-content: end;
 }
 
+.btnApply {
+   text-align: center;
+   padding: 12px 0;
+   border-radius: 12px;
+}
+
 @media screen and (max-width: 700px) {
    .showMore {
       margin-top: 64px;
       padding: 8px 0;
       width: 164px;
       font-size: 16px;
+   }
+
+   .modalContainer {
+      width: 100%;
+   }
+
+   .close {
+      padding: 8px;
+      width: 24px;
+      height: 24px;
    }
 }

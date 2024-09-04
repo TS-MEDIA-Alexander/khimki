@@ -1,12 +1,3 @@
-/* .title {
-   color: #303030;
-   font-size: 64px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 72px;
-   letter-spacing: -2.56px;
-} */
-
 .mapContainer {
    display: flex;
    justify-content: space-between;

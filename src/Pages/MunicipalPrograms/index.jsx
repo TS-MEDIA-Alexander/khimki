@@ -21,63 +21,63 @@ const MunicipalPrograms = (props) => {
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <div className={s.column}>
-                  <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Здравоохранение' />
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Культура' />
+                  <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/zdravoohranenie/' text='Здравоохранение' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/kultura/' text='Культура' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Образование' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/obrazovanie/' text='Образование' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Социальная защита населения городского округа Химки' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/socialnaya-zashita-naseleniya-gorodskogo-okruga-himki/' text='Социальная защита населения городского округа Химки' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Спорт городского округа Химки' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/sport/' text='Спорт городского округа Химки' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Развитие сельского хозяйства' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/razvitie-selskogo-hozyajstva/' text='Развитие сельского хозяйства' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Экология и окружающая среда' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/ekologiya-i-okruzhayushaya-sreda/' text='Экология и окружающая среда' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Безопасность и обеспечение безопасности жизнедеятельности населения' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/bezopasnost/' text='Безопасность и обеспечение безопасности жизнедеятельности населения' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Жилище' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/zhilishe/' text='Жилище' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Развитие инженерной инфраструктуры, энергоэффективности и отрасли обращения с отходами' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/soderzhanie-i-razvitie-inzhenernoj-infrastruktury-i-energoeffektivnosti/' text='Развитие инженерной инфраструктуры, энергоэффективности и отрасли обращения с отходами' />
                   </div>
                </div>
                <div className={s.column}>
-                  <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Предпринимательство' />
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Управление имуществом и финансами' />
+                  <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/predprinimatelstvo/' text='Предпринимательство' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/upravlenie-imushestvom-i-finansami/' text='Управление имуществом и финансами' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Развитие институтов гражданского общества, повышение эффективности местного самоуправления и реализации молодежной политики' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/razvitie-sistemi-informirovaniya-o-deyatelnosti-omsu/' text='Развитие институтов гражданского общества, повышение эффективности местного самоуправления и реализации молодежной политики' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Развитие и функционирование дорожно-транспортного комплекса' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/razvitie-i-funkcionirovanie-dorozhno-transportnogo-kompleksa/' text='Развитие и функционирование дорожно-транспортного комплекса' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Цифровое муниципальное образование' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/cifrovoj-gorodskoj-okrug-himki/' text='Цифровое муниципальное образование' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Архитектура и градостроительство' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/arhitektura-i-gradostroitelstvo/' text='Архитектура и градостроительство' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Формирование современной городской среды' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/formirovanie-sovremennoj-gorodskoj-sredy/' text='Формирование современной городской среды' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Строительство объектов социальной инфраструктуры' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/stroitelstvo-obektov-socialnoj-infrastruktury/' text='Строительство объектов социальной инфраструктуры' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Переселение граждан из аварийного жилищного фонда' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/pereselenie-grazhdan-iz-avarijnogo-zhilishnogo-fonda/' text='Переселение граждан из аварийного жилищного фонда' />
                   </div>
-                  <div className="mt20">
-                     <LinkContainer /* link={ROUTER.activity.auctionsAndTrades} */ text='Комплексная программа' />
+                  <div className="mt24">
+                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/kompleksnaya-programma/' text='Комплексная программа' />
                   </div>
                </div>
             </div>

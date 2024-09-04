@@ -36,10 +36,17 @@
    display: none;
 }
 
-.description{
+.description {
    color: #808080;
    font-size: 16px;
    font-style: normal;
    font-weight: 400;
    line-height: 24px;
+}
+
+@media screen and (max-width: 745px) {
+   .imgMain {
+      height: 220px;
+      border-radius: 24px;
+   }
 }

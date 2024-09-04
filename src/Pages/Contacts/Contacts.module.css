@@ -44,6 +44,10 @@
    width: 300px;
 }
 
+.btn {
+   text-decoration: none;
+}
+
 .btn img {
    margin-right: 8px;
 }
@@ -133,6 +137,10 @@
 
    .mobilFlexContainer>div:not(:first-child) {
       margin: 24px 0 0 0;
+   }
+
+   .btn img {
+      height: 16px;
    }
 }
 

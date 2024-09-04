@@ -138,10 +138,6 @@
    .citation {
       display: none;
    }
-
-   .cardMoreDetails {
-      display: none;
-   }
 }
 
 @media screen and (max-width: 881px) {

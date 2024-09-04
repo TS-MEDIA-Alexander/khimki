@@ -4,9 +4,9 @@ import s from './Healthcare.module.css';
 
 import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 import HealthcareBanner from '../../BannersComopnents/HealthcareBanner';
 
+import LinkContainer from '../../Components/LinkContainer';
 
 const Healthcare = (props) => {
    return (
@@ -24,10 +24,10 @@ const Healthcare = (props) => {
                </div>
 
                <div className={`mt80 borderMain ${s.linkContainer}`}>
-                  <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>График работы учреждений здравоохранения в праздничные дни<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Диспансеризация<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Экспертное мнение<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Аптечные организации<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+                  <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zdravoohranenie/grafik-raboty-uchrezhdenij-zdravoohraneniya-v-prazdnechnii-dni/' text={'График работы учреждений здравоохранения в праздничные дни'} />
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zdravoohranenie/dispanserizaciya/' text={'Диспансеризация'} /></div>
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zdravoohranenie/ekspertnoe-mnenie/' text={'Экспертное мнение'} /></div>
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zdravoohranenie/aptechnye-organizacii/' text={'Аптечные организации'} /></div>
                </div>
 
                <div className={`mt80 text`}>

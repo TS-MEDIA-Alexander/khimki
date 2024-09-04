@@ -1,10 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
+import s from './PublicChamber.module.css';
+
 import ContantContainerMain from '../../total/ContantContainerMain';
 import СardAdministratiorStructure from '../../Components/СardAdministratiorStructure';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
-import s from './PublicChamber.module.css';
+import LinkContainer from '../../Components/LinkContainer';
+
 import yurkov from '../../assets/img/khimkiDistrict/PublicChamber/yurkov.png';
 import vatutina from '../../assets/img/khimkiDistrict/PublicChamber/vatutina.png';
 import batyshev from '../../assets/img/khimkiDistrict/PublicChamber/batyshev.png';
@@ -20,10 +22,10 @@ const PublicChamber = (props) => {
             </div>
             <div className="mt24 pageTitle">Общественная палата</div>
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <div to={ROUTER.khimkiDistrict.publicChamberDocuments}  className={`${s.link}`}>Члены Общественной палаты городского округа {/* <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div> */}</div>
-               <NavLink to={ROUTER.khimkiDistrict.publicChamberDocuments} className={`mt24 ${s.link}`}>Документы <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.khimkiDistrict.publicChamberCandidates} className={`mt24 ${s.link}`}>Кандидаты в члены муниципальной общественной палаты <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.khimkiDistrict.listCommissionsPublicChamber} className={`mt24 ${s.link}`}>Перечень Комиссий Общественной палаты <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/okrug/obshestvennaya-palata/chleny-obshestvennoj-palaty-gorodskogo-okruga/' text={'Члены Общественной палаты городского округа'} />
+               <div className="mt20"><LinkContainer link={ROUTER.khimkiDistrict.publicChamberDocuments} text={'Документы'} /></div>
+               <div className="mt20"><LinkContainer link={ROUTER.khimkiDistrict.publicChamberCandidates} text={'Кандидаты в члены муниципальной общественной палаты'} /></div>
+               <div className="mt20"><LinkContainer link={ROUTER.khimkiDistrict.listCommissionsPublicChamber} text={'Перечень Комиссий Общественной палаты'} /></div>
             </div>
             <div className={`mt80 ${s.personsContainerRow}`}>
                <СardAdministratiorStructure url={'lyovochka'} img={yurkov} jobTitle={'Председатель Общественной палаты г.о. Химки'} surname={'Ларченко'} name={'Владислав Петрович'} />

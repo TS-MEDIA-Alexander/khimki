@@ -2,8 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
 import ContantContainerMain from '../../total/ContantContainerMain';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 import s from './Construction.module.css';
+
+import LinkContainer from '../../Components/LinkContainer';
 
 const Construction = (props) => {
    return (
@@ -15,13 +16,13 @@ const Construction = (props) => {
             </div>
             <div className="mt24 pageTitle">Строительство</div>
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink to={ROUTER.khimkiDistrict.publicChamberDocuments} className={`${s.link}`}>О Стройкомплексе <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.khimkiDistrict.publicChamberCandidates} className={`mt24 ${s.link}`}>Правила землепользования и застройки<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.khimkiDistrict.publicChamberCandidates} className={`mt24 ${s.link}`}>Расселение ветхого фонда<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.khimkiDistrict.listCommissionsPublicChamber} className={`mt24 ${s.link}`}>Стандарты качества жилого помещения и комфортности проживания на территории Московской области <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.khimkiDistrict.listCommissionsPublicChamber} className={`mt24 ${s.link}`}>Местные нормативы градостроительного проектирования (МНГП)<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.khimkiDistrict.listCommissionsPublicChamber} className={`mt24 ${s.link}`}>Аэропорт Шереметьево <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.khimkiDistrict.listCommissionsPublicChamber} className={`mt24 ${s.link}`}>Документация по планировке территории<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/stroitelstvo/o-strojkomplekse/' text={'О Стройкомплексе'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stroitelstvo/pravila-zemlepolzovaniya-i-zastrojki/' text={'Правила землепользования и застройки'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stroitelstvo/rasselenie-vethogo-fonda/' text={'Расселение ветхого фонда'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stroitelstvo/standarty-kachestva-zhilogo-pomesheniya-i-komfortnosti-prozhivaniya-na-territorii-moskovskoj-oblasti/' text={'Стандарты качества жилого помещения и комфортности проживания на территории Московской области'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stroitelstvo/mestnye-normativy-gradostroitelnogo-proektirovaniya-mngp/' text={'Местные нормативы градостроительного проектирования (МНГП)'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stroitelstvo/aeroport-sheremetevo/' text={'Аэропорт Шереметьево'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stroitelstvo/dokumentaciya-po-planirovke-territorii/' text={'Документация по планировке территории'} /></div>
             </div>
             <div className="text">
                <div className={`mt80 pageSubtitle`}>Муниципальное казенное учреждение «Управление капитального строительства и архитектуры» </div>
@@ -66,10 +67,10 @@ const Construction = (props) => {
 
                <div className={`mt38 pageSubtitle`}>Муниципальное предприятие «Архитектурно-планировочное управление» городского округа Химки</div>
                <p>
-               Деятельность: Предоставляет услуги в сфере архитектурного и градостроительного проектирования, геодезических и кадастровых работ.
+                  Деятельность: Предоставляет услуги в сфере архитектурного и градостроительного проектирования, геодезических и кадастровых работ.
                </p>
                <p>
-               Руководство: Халидова Аминат Магомедовна
+                  Руководство: Халидова Аминат Магомедовна
                </p>
                <div className={`mt38 ${s.btnContainerRow}`}>
                   <div className={`oval`}>+ 7 (495) 572-81-88</div>
@@ -77,7 +78,7 @@ const Construction = (props) => {
                </div>
 
                <p>
-               Контакты: г. Химки, ул. Ватутина, д. 4 кор. 2
+                  Контакты: г. Химки, ул. Ватутина, д. 4 кор. 2
                </p>
                <div className={`mt38 ${s.btnContainerRow}`}>
                   <div className={`oval`}>+7 (495) 572-81-88</div>

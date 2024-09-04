@@ -4,7 +4,8 @@ import s from './Safety.module.css';
 
 import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
+
+import LinkContainer from '../../Components/LinkContainer';
 
 
 const Safety = (props) => {
@@ -18,14 +19,14 @@ const Safety = (props) => {
             <div className={`mt24 pageTitle`}>Безопасность</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Муниципальная программа "Безопасность и обеспечение безопасности жизнедеятельности населения"<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Объекты безопасности городского округа<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Охрана труда<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Пожарный надзор<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Полиция<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Профилактика распространения наркотиков и наркомании<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Химкинский отдел вневедомственной охраны<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Антитеррористическая деятельность<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/okrug/municipalnye-programmy/bezopasnost/' text={'Муниципальная программа "Безопасность и обеспечение безопасности жизнедеятельности населения"'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/bezopasnost/obekty-bezopasnosti-gorodskogo-okruga/' text={'Объекты безопасности городского округа'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/bezopasnost/ohrana-truda/' text={'Охрана труда'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/bezopasnost/pozharnyj-nadzor/' text={'Пожарный надзор'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/policiya/' text={'Полиция'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/mdiamore/video/profilaktika-rasprostraneniya-narkotikov-i-narkomanii/' text={'Профилактика распространения наркотиков и наркомании'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/himkinskij-otdel-vnevedomstvennoj-ohrany/' text={'Химкинский отдел вневедомственной охраны'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/bezopasnost/antiterroristicheskaya-deyatelnost/' text={'Антитеррористическая деятельность'} /></div>
             </div>
 
             <div className="mt80 pageSubtitle">Cделаем подмосковье безопасным вместе! </div>

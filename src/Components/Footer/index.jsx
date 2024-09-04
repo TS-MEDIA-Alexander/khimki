@@ -2,20 +2,22 @@ import React from 'react';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import logo from '../../assets/img/logos/full-logo-footer.svg';
 import s from './Footer.module.css';
+import { NavLink } from 'react-router-dom';
+import { ROUTER } from '../../config';
 
 const Footer = (props) => {
    return (
       <div className={s.footer}>
          <ContantContainerMain>
             <div className={s.footerRow}>
-               <div className={s.footerLogoBlock}>
+               <NavLink to={ROUTER.main} className={s.footerLogoBlock}>
                   <img src={logo} alt="" />
                   <div className={s.textMain}>
                      <div className={s.titleInfo}>Официальный интернет-сайт</div>
                      <div className={s.titleAdministration}>АДМИНИСТРАЦИИ ГОРОДСКОГО ОКРУГА ХИМКИ</div>
                      <div className={s.titleInfo}>Московской области</div>
                   </div>
-               </div>
+               </NavLink>
                <div className={s.footerColumn}>
                  <div className={s.copyright}>©2024 Любое использование материалов допускается только при соблюдении </div>
                  <div className={s.copyright}>правил перепечатки и при наличии активной гиперссылки на admhimki.ru</div>

@@ -30,6 +30,7 @@
 
 .footerLogoBlock {
    display: flex;
+   text-decoration: none;
 }
 
 .textMain {

@@ -4,8 +4,8 @@ import s from './MunicipalСontrol.module.css';
 
 import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 
+import LinkContainer from '../../Components/LinkContainer';
 
 const MunicipalСontrol = (props) => {
    return (
@@ -18,13 +18,11 @@ const MunicipalСontrol = (props) => {
             <div className={`mt24 pageTitle`}>Муниципальный контроль</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>
-               Муниципальный контроль на автомобильном транспорте, городском наземном электрическом транспорте <br /> и в дорожном хозяйстве
-               <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Пресечение самовольного строительства<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Муниципальный земельный контроль<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/municipalnyj-kontrol/municipalnyj-kontrol-na-avtomobilnom-transporte-gorodskom-nazemnom-elektricheskom-transporte-i-v-dorozhnom-hozyajstve/' text={'Муниципальный контроль на автомобильном транспорте, городском наземном электрическом транспорте и в дорожном хозяйстве'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/municipalnyj-kontrol/presechenie-samovolnogo-stroitelstva/' text={'Пресечение самовольного строительства'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zemelnye-otnosheniya/municipalnyj-zemelnyj-kontrol2/' text={'Муниципальный земельный контроль'} /></div>
             </div>
-            
+
          </ContantContainerMain>
       </div>
    )

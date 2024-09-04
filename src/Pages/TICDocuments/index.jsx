@@ -2,9 +2,10 @@ import React from 'react';
 import ContantContainerMain from '../../total/ContantContainerMain';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 import s from './TICDocuments.module.css';
+
 import DocumentContainerDownload from '../../Components/DocumentContainerDownload';
+import LinkContainer from '../../Components/LinkContainer';
 
 const TICDocuments = (props) => {
    return (
@@ -18,10 +19,10 @@ const TICDocuments = (props) => {
             <div className={`mt24 pageTitle`}>Документы </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <div className={`${s.link}`}>Решения ТИК города Химки <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></div>
-               <div className={`mt24 ${s.link}`}>Паспорт муниципального образования<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></div>
-               <div className={`mt24 ${s.link}`}>Постановления<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></div>
-               <div className={`mt24 ${s.link}`}>Решения Избирательной комиссии Московской области<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></div>
+               <LinkContainer link='https://www.admhimki.ru/dokumenty/resheniya-tik-goroda-himki/' text={'Решения ТИК города Химки'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/pasport-municipalnogo-obrazovaniya/' text={'Паспорт муниципального образования'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/postanovleniya_t_izbir_komis/' text={'Постановления'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/resheniya-izbiratelnoj-komissii-moskovskoj-oblasti/' text={'Решения Избирательной комиссии Московской области'} /></div>
             </div>
 
             <div className={`mt80 borderMain ${s.documentContainer}`}>

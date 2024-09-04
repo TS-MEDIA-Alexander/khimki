@@ -4,7 +4,9 @@ import s from './SupportCONPO.module.css';
 
 import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
+
+import LinkContainer from '../../Components/LinkContainer';
+
 import banner1 from '../../assets/img/activity/banner_support_co_npo_1.png';
 import banner2 from '../../assets/img/activity/banner_support_co_npo_2.png';
 import banner3 from '../../assets/img/activity/banner_support_co_npo_3.png';
@@ -21,10 +23,10 @@ const SupportCONPO = (props) => {
             <div className={`mt24 pageTitle`}>Поддержка СО НКО</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Поддержка социально ориентированных некоммерческих организаций (и их обособленных подразделений) на уровне муниципального образования<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Включение СО НКО в реестр поставщиков социальных услуг МО<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Понятие СО НКО - исполнители общественно полезных услуг<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Реестр СО НКО в сфере образования<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/podderzhka-so-nko/podderzhka-socialno-orientirovannyh-nekommercheskih-organizacij-i-ih-obosoblennyh-podrazdelenij-na-urovne-municipalnogo-obrazovaniya/' text={'Поддержка социально ориентированных некоммерческих организаций (и их обособленных подразделений) на уровне муниципального образования'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/podderzhka-so-nko/vklyuchenie-so-nko-v-reestr-postavshikov-socialnyh-uslug-mo/' text={'Включение СО НКО в реестр поставщиков социальных услуг МО'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/podderzhka-so-nko/ponyatie-so-nko-ispolniteli-obshestvenno-poleznyh-uslug/' text={'Понятие СО НКО - исполнители общественно полезных услуг'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/reestr-so-nko-v-sfere-obrazovaniya/' text={'Реестр СО НКО в сфере образования'} /></div>
             </div>
 
             <div className="mt80">

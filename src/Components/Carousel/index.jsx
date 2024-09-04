@@ -31,8 +31,6 @@ const Carousel = ({ children, btnArrText }) => {
          setCount(0);
 
          /* запуск "перелистывания слайдера" */
-         /* flipThrough() */
-
          flipThroughBtnSlider()
 
       }, 6000)
@@ -51,8 +49,6 @@ const Carousel = ({ children, btnArrText }) => {
       return () => clearInterval(to);
    }, [])
 
-
-
    const handleBtnSliderClick = (distance) => {
       setOffset(distance)
       setCount(0);
@@ -65,9 +61,11 @@ const Carousel = ({ children, btnArrText }) => {
       setCount(0);
    }
 
-   //Перелистывание кнопок сместе со слайдером
+   //Перелистывание кнопок вместе со слайдером
    const flipThroughBtnSlider = () => {
+      /* запуск "перелистывания слайдера" */
       flipThrough()
+      
       setHidden(prev => {
          return offset < -1200 ? 100 : offset //Проверяем, чтобы кнопки не исчезали из UI
       })

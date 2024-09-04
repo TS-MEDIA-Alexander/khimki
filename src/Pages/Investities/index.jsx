@@ -4,7 +4,7 @@ import s from './Investities.module.css';
 
 import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
+import LinkContainer from '../../Components/LinkContainer';
 
 import img1 from '../../assets/img/activity/Investities/img1.png';
 import img2 from '../../assets/img/activity/Investities/img2.png';
@@ -28,12 +28,12 @@ const Investities = (props) => {
             <div className={s.containtContainer}>
 
                <div className={`mt80 borderMain ${s.linkContainer}`}>
-                  <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Инвестиционные программы<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Торги<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Льготы и преференции<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Законодательство<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Опросы<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Контакты<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+                  <LinkContainer link='https://www.admhimki.ru/investicii/investicionnye-programmy/' text={'Инвестиционные программы'} />
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/torgi/' text={'Торги'} /></div>
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/lgoty-i-preferencii/' text={'Льготы и преференции'} /></div>
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/zakonodatelstvo/' text={'Законодательство'} /></div>
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/oprosy/' text={'Опросы'} /></div>
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/kontakty/' text={'Контакты'} /></div>
                </div>
 
                <div className="mt80 pageSubtitle">Округ, нацеленный на результат</div>

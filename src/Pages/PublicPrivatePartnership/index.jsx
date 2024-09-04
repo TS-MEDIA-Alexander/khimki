@@ -8,6 +8,7 @@ import arrow from '../../assets/icons/arrow_btn_link.svg';
 import ministry_economic_development from '../../assets/img/activity/ministry_economic_development.png';
 import ministry_investment_industry_and_science from '../../assets/img/activity/ministry_investment_industry_and_science.png';
 
+import LinkContainer from '../../Components/LinkContainer';
 
 const PublicPrivatePartnership = (props) => {
    return (
@@ -59,8 +60,8 @@ const PublicPrivatePartnership = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Нормативная база<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Проекты<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/gosudarstvenno-chastnoe-partnerstvo/normativnaya-baza/' text={'Нормативная база'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/proekty/' text={'Проекты'} /></div>
             </div>
          </ContantContainerMain>
       </div>

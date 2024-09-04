@@ -91,7 +91,7 @@ const NewsArticle = (props) => {
                <div className="mt80 subTitle">Последние новости</div>
 
                <div className="mt40">
-                  <News news={news} mobilFullPhoto={true}/>
+                  <News news={news} mobilFullPhoto={true} />
                </div>
 
             </section>

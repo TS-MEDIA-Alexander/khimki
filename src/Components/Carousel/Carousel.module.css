@@ -55,13 +55,6 @@ progress::-moz-progress-bar {
    transition: all ease-in-out 1s;
 }
 
-.btnContainer {
-   margin: 28px 0 24px 0;
-   position: relative;
-   display: flex;
-   flex-wrap: nowrap;
-   overflow: hidden;
-}
 
 .btnArrowSlider {
    position: absolute;
@@ -76,6 +69,13 @@ progress::-moz-progress-bar {
    z-index: 999;
 }
 
+.btnContainer {
+   margin: 28px 0 24px 0;
+   position: relative;
+   display: flex;
+   flex-wrap: nowrap;
+   overflow: hidden;
+}
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .btnContainer::after {
@@ -92,5 +92,20 @@ progress::-moz-progress-bar {
 @media screen and (max-width: 745px) {
    .window {
       border-radius: 24px;
+   }
+
+   .btnArrowSlider {
+      display: none;
+   }
+   .btnContainer::-webkit-scrollbar{
+      width: 0;
+   }
+
+   .btnContainer {
+      overflow: auto;
+   }
+
+   .btnContainer::after {
+      display: none;
    }
 }

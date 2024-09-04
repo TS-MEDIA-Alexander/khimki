@@ -75,7 +75,7 @@ const PerformanceIndicators = (props) => {
                <SpoilerContainer title={'Данные с 2016 по 2023  г.'}>
                   <SpoilerItem title={'Благоустройство'}>
                      <div className={`mt40 pageSubtitle`}>Дворы</div>
-                     <div className={`mt40 borderMain ${s.columnContainer}`}>
+                     <div className={`mt40 borderMain ${s.columnContainerRow}`}>
                         <div className={s.indicatorsBlocksContainer}>
                            <div className={s.indicatorsBlock}>
                               <div className={s.textRow}>
@@ -108,7 +108,7 @@ const PerformanceIndicators = (props) => {
                      </div>
 
                      <div className={`mt80 pageSubtitle`}>Парки</div>
-                     <div className={`mt40 borderMain ${s.columnContainer}`}>
+                     <div className={`mt40 borderMain ${s.columnContainerRow}`}>
                         <div className={s.indicatorsBlocksContainer}>
                            <div className={s.indicatorsBlock}>
                               <div className={s.textRow}>

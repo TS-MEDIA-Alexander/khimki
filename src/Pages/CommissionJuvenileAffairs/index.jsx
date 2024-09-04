@@ -2,9 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
 import ContantContainerMain from '../../total/ContantContainerMain';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 import s from './CommissionJuvenileAffairs.module.css';
 import DocumentContainerDownload from '../../Components/DocumentContainerDownload';
+
+import LinkContainer from '../../Components/LinkContainer';
 
 const CommissionJuvenileAffairs = (props) => {
    return (
@@ -21,10 +22,10 @@ const CommissionJuvenileAffairs = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Состав Комиссии по делам несовершеннолетних и защите их прав городско-го округа Химки <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Учреждения системы профилактики безнадзорности и правонарушений несовершеннолетних<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Нормативные документы<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Контакты (перенести на основную страницу “Комиссия по делам несовершеннолетних и защите их прав”)<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/komissiya-po-delam-nesovershennoletnih-i-zashite-ih-prav/sostav-komissii-po-delam-nesovershennoletnih-i-zashite-ih-prav-gorodsko-go-okruga-himki/' text={'Состав Комиссии по делам несовершеннолетних и защите их прав городско-го округа Химки'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/komissiya-po-delam-nesovershennoletnih-i-zashite-ih-prav/uchrezhdeniya-sistemy-profilaktiki-beznadzornosti-i-pravonarushenij-nesovershennoletnih/' text={'Учреждения системы профилактики безнадзорности и правонарушений несовершеннолетних'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/normativnye-dokumenty/' text={'Нормативные документы'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/komissiya-po-delam-nesovershennoletnih-i-zashite-ih-prav/kontakty/' text={'Контакты (перенести на основную страницу “Комиссия по делам несовершеннолетних и защите их прав”)'} /></div>
             </div>
 
 

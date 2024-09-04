@@ -1,12 +1,12 @@
 import React from 'react';
 import s from './BannerArrow.module.css';
 
-const BannerArrow = ({ mt, imgBanner, imgBannerMobil, src="#" }) => {
+const BannerArrow = ({ imgBanner, imgBannerMobil, src="#" }) => {
 
    const isMobil = window.innerWidth > 750;
 
    return (
-      <div href={src} className={`${mt} ${s.banner}`}>
+      <div href={src} className={`${s.banner}`}>
          <div className={s.bannerContainer}>
            {/*  <div className={`btnCircle ${s.btn}`}></div> */}
          </div>

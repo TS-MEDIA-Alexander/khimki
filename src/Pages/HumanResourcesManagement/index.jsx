@@ -4,10 +4,10 @@ import s from './HumanResourcesManagement.module.css';
 
 import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 import CardHuman from '../../Components/CardHuman';
-import HeadDepartment from '../../assets/img/Persons/poznyakova.png'
+import HeadDepartment from '../../assets/img/Persons/poznyakova.png';
 
+import LinkContainer from '../../Components/LinkContainer';
 
 const HumanResourcesManagement = (props) => {
    return (
@@ -20,10 +20,10 @@ const HumanResourcesManagement = (props) => {
             <div className={`mt24 pageTitle`}>Кадровое управление</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Порядок поступления граждан на государственную и муниципальную службу<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Контакты управления муниципальной службы и кадров<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Правовое регулирование<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Ведомственный контроль за соблюдением трудового законодательства<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/poryadok-postupleniya-grazhdan-na-gosudarstvennuyu-i-municipalnuyu-sluzhbuu/' text={'Порядок поступления граждан на государственную и муниципальную службу'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/kontakty-upravleniya-municipalnoj-sluzhby-i-kadrov/' text={'Контакты управления муниципальной службы и кадров'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/pravovoe-obespechenie/' text={'Правовое регулирование'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/vedomstvennyj-kontrol-za-soblyudeniem-trudovogo-zakonodatelstva/' text={'Ведомственный контроль за соблюдением трудового законодательства'} /></div>
             </div>
 
             <div className="mt80 pageSubtitle">Начальник управления</div>
@@ -68,7 +68,7 @@ const HumanResourcesManagement = (props) => {
                   <li>При замещении должности муниципальной службы в муниципальном образовании заключению трудового договора может предшествовать конкурс, в ходе которого осуществляется оценка профессионального уровня претендентов на замещение должности муниципальной службы, их соответствия установленным квалификационным требованиям к должности муниципальной службы.</li>
                   <li>Порядок проведения конкурса на замещение должности муниципальной службы устанавливается муниципальным правовым актом, принимаемым представительным органом муниципального образования. Порядок проведения конкурса должен предусматривать опубликование его условий, сведений о дате, времени и месте его проведения, а также проекта трудового договора не позднее чем за 20 дней до дня проведения конкурса. Общее число членов конкурсной комиссии в муниципальном образовании и порядок ее формирования устанавливаются представительным органом муниципального образования.</li>
                   <li>
-                  Представитель нанимателя (работодатель) заключает трудовой договор и назначает на должность муниципальной службы одного из кандидатов, отобранных конкурсной комиссией по результатам конкурса на замещение должности муниципальной службы.
+                     Представитель нанимателя (работодатель) заключает трудовой договор и назначает на должность муниципальной службы одного из кандидатов, отобранных конкурсной комиссией по результатам конкурса на замещение должности муниципальной службы.
                   </li>
                </ol>
                <div className={`mt38 ${s.description}`}>В соответствии со ст. 17 Федерального закона от 2 марта 2007 года N 25-ФЗ «О муниципальной службе в Российской Федерации» и решением Совета депутатов муниципального образования городского округа Химки Московской области от 26.12.2019 № 31/11 «Об утверждении Положения о порядке проведения конкурса на замещение вакантной должности муниципальной службы в органе местного самоуправления городского округа Химки Московской области»</div>

@@ -3,8 +3,9 @@ import ContantContainerMain from '../../total/ContantContainerMain';
 import CardHuman from '../../Components/CardHuman';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 import s from './TIC.module.css';
+
+import LinkContainer from '../../Components/LinkContainer';
 
 const TIC = (props) => {
    return (
@@ -17,8 +18,8 @@ const TIC = (props) => {
             <div className={`mt24 pageTitle`}>Территориальная избирательная комиссия города химки </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink to={ROUTER.khimkiDistrict.ticDocuments} className={`${s.link}`}>Документы <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.khimkiDistrict.contactInformation} className={`${s.link}`}>Контактная информация избирательных участков, образованных на территории городского округа Химки <div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link={ROUTER.khimkiDistrict.ticDocuments} text={'Документы'} />
+               <div className="mt20"><LinkContainer link={ROUTER.khimkiDistrict.contactInformation} text={'Контактная информация избирательных участков, образованных на территории городского округа Химки'} /></div>
             </div>
 
             <div className="mt80">

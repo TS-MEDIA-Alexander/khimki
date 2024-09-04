@@ -2,10 +2,10 @@ import React from 'react';
 import s from './CitizensAppeals.module.css';
 import ContantContainerMain from '../../total/ContantContainerMain';
 
-import { NavLink } from "react-router-dom";
+/* import { NavLink } from "react-router-dom"; */
 import { ROUTER } from '../../config';
 
-import arrow from '../../assets/icons/arrow_btn_link.svg';
+import LinkContainer from '../../Components/LinkContainer';
 
 const CitizensAppeals = (props) => {
    return (
@@ -13,14 +13,14 @@ const CitizensAppeals = (props) => {
          <ContantContainerMain>
             <div className="mt80 pageTitle">Работа с обращениями граждан</div>
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink to={ROUTER.citizensAppeals.legalRegulation} className={`${s.link}`}>Правовое регулирование<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.citizensAppeals.virtualReceptionHeadCityDistrict} className={`mt24 ${s.link}`}>Виртуальная приемная Главы городского округа<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.citizensAppeals.resultsConsiderationApplications} className={`mt24 ${s.link}`}>Результаты рассмотрения обращений<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.citizensAppeals.writeAdministration} className={`mt24 ${s.link}`}>Написать в Администрацию<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.citizensAppeals.receptionProcedureTime} className={`mt24 ${s.link}`}>Порядок и время приема<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.citizensAppeals.allRussianDayReceptionCitizens} className={`mt24 ${s.link}`}>Общероссийский день приёма граждан в День Конституции Российской Федерации 12 декабря<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.citizensAppeals.informationForReview} className={`mt24 ${s.link}`}>Информация для ознакомления желающим отправить обращение в форме электронного документа<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink to={ROUTER.citizensAppeals.responsesInquiriesIndefiniteNumberPersons} className={`mt24 ${s.link}`}>Ответы на обращения, затрагивающие интересы неопределенного круга лиц<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link={ROUTER.citizensAppeals.legalRegulation} text={'Правовое регулирование'} />
+               <div className="mt24"><LinkContainer link={ROUTER.citizensAppeals.virtualReceptionHeadCityDistrict} text={'Виртуальная приемная Главы городского округа'} /></div>
+               <div className="mt24"><LinkContainer link={ROUTER.citizensAppeals.resultsConsiderationApplications} text={'Результаты рассмотрения обращений'} /></div>
+               <div className="mt24"><LinkContainer link={ROUTER.citizensAppeals.writeAdministration} text={'Написать в Администрацию'} /></div>
+               <div className="mt24"><LinkContainer link={ROUTER.citizensAppeals.receptionProcedureTime} text={'Порядок и время приема'} /></div>
+               <div className="mt24"><LinkContainer link={ROUTER.citizensAppeals.allRussianDayReceptionCitizens} text={'Общероссийский день приёма граждан в День Конституции Российской Федерации 12 декабря'} /></div>
+               <div className="mt24"><LinkContainer link={ROUTER.citizensAppeals.informationForReview} text={'Информация для ознакомления желающим отправить обращение в форме электронного документа'} /></div>
+               <div className="mt24"><LinkContainer link={ROUTER.citizensAppeals.responsesInquiriesIndefiniteNumberPersons} text={'Ответы на обращения, затрагивающие интересы неопределенного круга лиц'} /></div>
             </div>
 
             <div className="mt80 text">

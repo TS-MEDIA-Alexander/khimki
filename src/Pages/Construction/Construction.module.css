@@ -2,32 +2,12 @@
    padding: 32px;
 }
 
-.link {
-   text-decoration: none;
-   padding: 9px 0;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   color: #303030;
-   font-size: 20px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 24px;
-   letter-spacing: -0.2px;
-   cursor: pointer;
-}
-
 .btnContainerRow {
    display: flex;
    align-items: start;
 }
 
 @media screen and (max-width: 745px) {
-   .link {
-      font-size: 16px;
-      line-height: 20px;
-   }
-
    .btnContainerRow {
       flex-direction: column;
    }

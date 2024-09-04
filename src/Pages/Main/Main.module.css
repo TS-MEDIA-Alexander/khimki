@@ -45,10 +45,7 @@
 
    .mobilBannerRow {
       flex-wrap: wrap;
-   }
-
-   .mobilBannerRow>* {
-      margin-top: 16px;
+      gap: 16px;
    }
 
    .mobilStatistics {

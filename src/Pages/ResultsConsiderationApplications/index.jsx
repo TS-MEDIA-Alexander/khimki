@@ -5,13 +5,14 @@ import ContantContainerMain from '../../total/ContantContainerMain';
 import { ROUTER } from '../../config';
 import { NavLink } from 'react-router-dom';
 
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 import Table from '../../Components/Table';
 
 import rezultaty_rassmotreniya_obrascheniy_tablitsa from '../../assets/tables/rezultaty_rassmotreniya_obrascheniy_tablitsa.json';
 
 import banner_1 from '../../assets/img/citizensAppeals/banner_1.png';
 import banner_2 from '../../assets/img/citizensAppeals/banner_2.png';
+
+import LinkContainer from '../../Components/LinkContainer';
 
 import DocumentContainerDownload from '../../Components/DocumentContainerDownload';
 
@@ -29,7 +30,7 @@ const ResultsConsiderationApplications = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Обращения граждан, поступивших на "горячую линию" Администрации<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/dokumenty/rezultaty-rassmotreniya-obrashenij/' text={'Обращения граждан, поступивших на "горячую линию" Администрации'} />
             </div>
 
             <div className="mt80 pageSubtitle">
@@ -44,11 +45,11 @@ const ResultsConsiderationApplications = (props) => {
             <div className={`mt40 ${s.description}`}>Дата публикации: 04.03.2024</div>
 
             <div className="text">
-            <div className="mt120 fw600">Обращения 2018 г.</div>
-            <div className="mt38">
-               <div className={`${s.bannerContainer}`}><img src={banner_1} alt="" /></div>
-            </div>
-            
+               <div className="mt120 fw600">Обращения 2018 г.</div>
+               <div className="mt38">
+                  <div className={`${s.bannerContainer}`}><img src={banner_1} alt="" /></div>
+               </div>
+
                <div className="mt38 pageSubtitle">
                   Поступление обращений граждан в администрацию
                   городского округа химки за 2018 год</div>
@@ -78,10 +79,10 @@ const ResultsConsiderationApplications = (props) => {
             </div>
             <div className="mt120 fw600">Обращения Ⅰ квартал 2018 г.</div>
             <div className="text">
-            <div className="mt38">
-               <div className={`${s.bannerContainer}`}><img src={banner_2} alt="" /></div>
-            </div>
-            
+               <div className="mt38">
+                  <div className={`${s.bannerContainer}`}><img src={banner_2} alt="" /></div>
+               </div>
+
                <div className="mt38 pageSubtitle">Информация о результатах рассмотрения обращений граждан и принятых по ним мерах за первый квартал 2018 года </div>
                <p>
                   В I квартале 2018 г. в адрес Администрации городского округа Химки поступило 3036 обращений граждан, в том числе 518 обращений, направленных на рассмотрение из Администрации Губернатора Московской области.

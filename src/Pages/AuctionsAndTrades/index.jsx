@@ -4,7 +4,8 @@ import s from './AuctionsAndTrades.module.css';
 
 import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
+
+import LinkContainer from '../../Components/LinkContainer';
 
 
 const AuctionsAndTrades = (props) => {
@@ -18,9 +19,9 @@ const AuctionsAndTrades = (props) => {
             <div className={`mt24 pageTitle`}>Аукционы и торги</div>
             <div className={`mt38 text`}>
                <div className={`mt80 borderMain ${s.linkContainer}`}>
-                  <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Земельные участки<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Нежилые помещения<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Организация ярмарок<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+                  <LinkContainer link='https://www.admhimki.ru/aukciony-i-torgi/zemelnye-uchastki/' text={'Земельные участки'} />
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/torgi/' text={'Нежилые помещения'} /></div>
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/nestacionarnye-torgovye-obekty/aukcioni/' text={'Организация ярмарок'} /></div>
                </div>
 
                <div className="mt80 pageSubtitle">Уважаемые посетители сайта!</div>

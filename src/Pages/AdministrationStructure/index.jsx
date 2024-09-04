@@ -72,14 +72,14 @@ const AdministrationStructure = (props) => {
                      <SpoilerItem title={'Территориальные управления'}>
                         <div className="mt40 containerGap24">
                            <СardAdministratiorStructure url={'petrukhin'} img={petrukhin} jobTitleTop={'Территориальное управление микрорайонов Сходня - Фирсановка'} surname={'Петрухин'} name={'Сергей Сергеевич '} />
-                           <СardAdministratiorStructure url={'shpendik'} img={shpendik} jobTitleTop={'Территориальное управление микрорайонов Новогорск-Планерная'} surname={'Шпендик'} name={'Ярослав Олегович'} />
+                           <СardAdministratiorStructure url={'shpendik'} /* img={shpendik} */ jobTitleTop={'Территориальное управление микрорайонов Новогорск-Планерная'} /* surname={'Шпендик'} */ name={'Информация уточняется'} />
                            <СardAdministratiorStructure url={'mishina'} img={mishina} jobTitleTop={'Территориальное управление микрорайона Левобережный'} surname={'Мишина'} name={'Наталья Владимировна '} />
                            <СardAdministratiorStructure url={'kapustina'} img={kapustina} jobTitleTop={'Территориальное управление микрорайона Подрезково'} surname={'Капустина'} name={'Людмила Юрьевна '} />
                         </div>
                         <div className="mt20 containerGap24">
                            <СardAdministratiorStructure url={'genter'} img={genter} jobTitleTop={'Территориальное управление микрорайона Клязьма - Старбеево'} surname={'Гентер'} name={'Анна Сергеевна  '} />
-                           <СardAdministratiorStructure url={'voronov'} img={voronov} jobTitleTop={'Территориальное управление Кутузовское'} surname={'Воронов'} name={'Дмитрий Александрович '} />
-                           <СardAdministratiorStructure url={'mashkovtsev'} img={mashkovtsev} jobTitleTop={'Территориальное управление Лунёвское'} surname={'Машковцев'} name={'Эдуард Александрович '} />
+                           <СardAdministratiorStructure url={'voronov'}  /* img={voronov} */ jobTitleTop={'Территориальное управление Кутузовское'} /* surname={'Воронов'} */ name={'Информация уточняется'} />
+                           <СardAdministratiorStructure /* url={'mashkovtsev'} */ /* img={mashkovtsev} */ jobTitleTop={'Территориальное управление Лунёвское'} /* surname={'Машковцев'} */ name={'Информация уточняется'} />
                         </div>
                      </SpoilerItem>
                   </div>

@@ -4,8 +4,8 @@ import s from './PropertyRelations.module.css';
 
 import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 
+import LinkContainer from '../../Components/LinkContainer';
 
 const PropertyRelations = (props) => {
    return (
@@ -18,11 +18,11 @@ const PropertyRelations = (props) => {
             <div className={`mt24 pageTitle`}>Имущественные отношения</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Нормативно-правовые акты<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Перечени объектов недвижимости<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Сообщения об изъятии объектов недвижимого имущества<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Новости<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-               <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Государственная кадастровая оценка зданий, помещений, сооружений, объектов незавершенного строительства, <br /> машино-мест, расположенных на территории Московской области<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+               <LinkContainer link='https://www.admhimki.ru/dokumenty/rasporyazheniya_komitet_upr_imush/' text={'Нормативно-правовые акты'} />
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/perecheni-obektov-nedvizhimosti/' text={'Перечени объектов недвижимости'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/imushestvennye-otnosheniya/soobsheniya-ob-izyatii-obektov-nedvizhimogo-imushestva/' text={'Сообщения об изъятии объектов недвижимого имущества'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/imushestvennye-otnosheniya/novosti/' text={'Новости'} /></div>
+               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/gosudarstvennaya-kadastrovaya-ocenka-zdanij-pomeshenij-sooruzhenij-obektov-nezavershennogo-stroitelstva-mashino-mest-raspolozhennyh-na-territorii-mosk/' text={'Государственная кадастровая оценка зданий, помещений, сооружений, объектов незавершенного строительства, машино-мест, расположенных на территории Московской области'} /></div>
             </div>
          </ContantContainerMain>
       </div>

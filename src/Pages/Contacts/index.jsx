@@ -45,12 +45,12 @@ const Contacts = (props) => {
 
                   <div className="mt20 line"></div>
 
-                  <div className="mt20 pageSubtitle">Единый контактный номер </div>
+                  {/* <div className="mt20 pageSubtitle">Единый контактный номер </div>
                   <div className="mt20">Режим работы: Круглосуточно</div>
 
                   <a href={`tel: +7 (495) 572-65-00`} className={`mt16 oval ${s.tel}`}>+7 (495) 572-65-00</a>
 
-                  <div className="mt20 line"></div>
+                  <div className="mt20 line"></div> */}
 
                   <div className="mt20 pageSubtitle">«Горячая линия» </div>
 
@@ -61,8 +61,8 @@ const Contacts = (props) => {
 
                   <div className="mt20 pageSubtitle">Социальные сети</div>
                   <div className="flexContainer">
-                     <div className={`mt16 oval ${s.btn}`}><img src={tg} alt="" />Телеграм</div>
-                     <div className={`mt16 oval ${s.btn}`}><img src={vk} alt="" />Вконтакте</div>
+                     <a href='https://t.me/adm_himki' target='_blank' className={`mt16 oval ${s.btn}`}><img src={tg} alt="" />Телеграм</a>
+                     <a href='https://vk.com/gohimkiadm' target='_blank' className={`mt16 oval ${s.btn}`}><img src={vk} alt="" />Вконтакте</a>
                   </div>
                </div>
             </div>

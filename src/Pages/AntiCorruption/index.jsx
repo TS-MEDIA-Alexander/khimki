@@ -4,8 +4,8 @@ import s from './AntiCorruption.module.css';
 
 import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
-import arrow from '../../assets/icons/arrow_btn_link.svg';
 import AntiCorruptionBanner from '../../BannersComopnents/AntiCorruptionBanner';
+import LinkContainer from '../../Components/LinkContainer';
 
 
 const AntiCorruption = (props) => {
@@ -24,17 +24,17 @@ const AntiCorruption = (props) => {
                </div>
 
                <div className={`mt80 borderMain ${s.linkContainer}`}>
-                  <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Независимая антикоррупционная экспертиза<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.associationApartmentBuildingsKhimki} */ className={`mt24 ${s.link}`}>Методические материалы<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Формы документов, связанные с противодействием коррупции, для заполнения<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Комиссия по соблюдению требований к служебному поведению и урегулированию конфликта интересов<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Обратная связь для сообщений о фактах коррупции<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
-                  <NavLink /* to={ROUTER.khimkiDistrict.mooAgainstCorruption} */ className={`mt24 ${s.link}`}>Главное управление региональной безопасности московской области<div className={`btnCircleG imgContainerArrow`}><img src={arrow} alt="" /></div></NavLink>
+                  <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/protivodejstvie-korrupcii/antikorrupcionnaya-ekspertiza/' text={'Независимая антикоррупционная экспертиза'} />
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/protivodejstvie-korrupcii/metodicheskie-materialy/' text={'Методические материалы'} /></div>
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/formy-dokumentov-svyazannye-s-protivodejstviem-kor/' text={'Формы документов, связанные с противодействием коррупции, для заполнения'} /></div>
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/protivodejstvie-korrupcii/komissiya-po-soblyudeniyu-trebovanij-k-sluzhebnomu-povedeniyu-i-uregulirovaniyu-konflikta-interesov/' text={'Комиссия по соблюдению требований к служебному поведению и урегулированию конфликта интересов'} /></div>
+                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/rabota-s-obrasheniyami-grazhdan/napisat-v-administraciyu/' text={'Обратная связь для сообщений о фактах коррупции'} /></div>
+                  <div className="mt24"><LinkContainer link='https://gurb.mosreg.ru/' text={'Главное управление региональной безопасности московской области'} /></div>
                </div>
 
                <div className={`mt40 ${s.description}`}>
                   <p>Ссылки размещены в соответствии с обращением Главного управления региональной безопасности Московской области</p>
-                   от 30.05.2022 № 09ИСХ-4285/08-01</div>
+                  от 30.05.2022 № 09ИСХ-4285/08-01</div>
 
             </div>
          </ContantContainerMain>

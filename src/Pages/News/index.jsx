@@ -24,16 +24,19 @@ const NewsPage = (props) => {
 
    const [news, setNews] = useState([]);
    const [currentPage, setCurrentPage] = useState(1);
-   const [emailSubscribe, setEmailSubscribe] = useState('')
+   const [emailSubscribe, setEmailSubscribe] = useState('');
+
+   const getAndSaveNews = (page, limit, dateFrom, dateTo) => {
+      API.getNews(page, limit, dateFrom, dateTo)
+         .then(data => setNews(data))
+   }
 
    useEffect(() => {
-      API.getNews()
-         .then(data => setNews(data))
+      getAndSaveNews(1, 12, calendarDateStart)
    }, [])
 
    const shiwMore = () => {
-      setCurrentPage(currentPage + 1)
-      API.getNews(currentPage + 1)
+      getAndSaveNews(currentPage + 1, 12, calendarDateStart, calendarDateEnd)
          .then(data => setNews([...news, ...data]))
    }
 
@@ -67,19 +70,23 @@ const NewsPage = (props) => {
    const [filterTheme, setFilterTheme] = useState(filterThemeData[0]);
 
    /* Календарь */
-   const [calendarDateStart, setCalendarDateStart] = useState('24.06.2024')
-   const handleDateStartChange = e => setCalendarDateStart(formatterCalendar.format(e));
+   const [calendarDateStart, setCalendarDateStart] = useState('');
+   const [calendarDateEnd, setCalendarDateEnd] = useState('');
+
+   const handleDateChange = () => {
+      getAndSaveNews(currentPage + 1, 12, calendarDateStart, calendarDateEnd);
+   }
 
    //Открытие PopUp окна на подписаться на рассылку
    const [modalActive, setModalActive] = useState();
 
    //Подписаться на рассылку
-   const subscribe=()=>{
-      API.postSubscribeNews({email: emailSubscribe})
-      .then(response=>{
-         setModalActive(false);
-         setEmailSubscribe('')
-      })
+   const subscribe = () => {
+      API.postSubscribeNews({ email: emailSubscribe })
+         .then(response => {
+            setModalActive(false);
+            setEmailSubscribe('')
+         })
    }
 
    return (
@@ -95,8 +102,8 @@ const NewsPage = (props) => {
                         name='filterRelevance'
                         valuesOptions={filterRelevanceData}//Сюда передать данные списка выбора
                         isMulti={false}//множественный выбор
-                        placeholder={filterRelevance.text}
-                        initialValue={filterRelevance}//Выбранное/ые данные по дефолту. Если isMulti true, то передавать массив!
+                        placeholder={'Актуальность'}
+                        /* initialValue={filterRelevance} *///Выбранное/ые данные по дефолту. Если isMulti true, то передавать массив!
                         onChangeValue={setFilterRelevance}//функция, возвращающая выбранное значение
                         labelName={'text'}//Какие данные отображать в label (видимые пользователем)
                         valueName={'value'}//Какие данные отображать в value (видимые только нам)
@@ -108,8 +115,8 @@ const NewsPage = (props) => {
                            name='filterTheme'
                            valuesOptions={filterThemeData}//Сюда передать данные списка выбора
                            isMulti={false}//множественный выбор
-                           placeholder={filterTheme.text}
-                           initialValue={filterTheme}//Выбранное/ые данные по дефолту. Если isMulti true, то передавать массив!
+                           placeholder={'Тип'}
+                           /* initialValue={filterTheme} *///Выбранное/ые данные по дефолту. Если isMulti true, то передавать массив!
                            onChangeValue={setFilterTheme}//функция, возвращающая выбранное значение
                            labelName={'text'}//Какие данные отображать в label (видимые пользователем)
                            valueName={'value'}//Какие данные отображать в value (видимые только нам)
@@ -118,11 +125,14 @@ const NewsPage = (props) => {
                      </div>
 
                      <div className="mt20 filterThemeContainer">
-                        <input type="text" value={calendarDateStart} onChange={() => false} className="inputCalendar" />
-                        <Calendar onChange={handleDateStartChange} />
+                        <input placeholder='Выберите дату' type="text" value={calendarDateStart} onChange={() => false} className="inputCalendar" />
+                        <Calendar onChange={e => setCalendarDateStart(formatterCalendar.format(e))} />
                      </div>
 
                      <div className="mt20 filterSearchContainer"><input type="text" placeholder='Ключевое слово' className="filterSearch" /></div>
+
+                     <div onChange={handleDateChange} className={`mt20 btnY ${s.btnApply}`}>Применить </div>
+
                      <button className='mt20 filterBtnNewsArchive'>Архив новостей</button>
                      <button onClick={() => setModalActive(true)} className='mt20 subscribe'>Подписаться на рассылку</button>
                      <div className="mt12 juridicalInfo">Свидетельство о регистрации СМИ от 22.04.2024 ЭЛ № ФС 77 - 87145</div>
