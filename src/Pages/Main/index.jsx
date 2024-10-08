@@ -123,16 +123,14 @@ const Main = (props) => {
                   <CardContainerGovernor />
                </div>
 
-               <div className="ml20 columnSmal">
-                  <div className={s.mobilBannerCityDay}>
+               <div className={`ml20 columnSmal ${s.mtCityDayBannerMobil}`}>
                      <CityDay />
-                  </div>
                </div>
             </div>
 
             <div className="mt32 columnContainer">
                <div className="columnLarge">
-                  <div className="mt32">
+                  <div className={`mt32 ${s.mtGovernmentServicesBannerMobil}`}>
                      <GovernmentServicesLarge />
                   </div>
                </div>

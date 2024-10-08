@@ -22,7 +22,7 @@ const SavePast = (props) => {
                   <img className={s.imgMain} src={imgBg} alt="" />
                   <div className={s.mainTextContainer}>
                      {/* Фильтры, на будущее */}
-                     <div className={`mt40 ${s.filterText}`}>Мероприятия, 12 августа, 11:50</div>
+                     <div className={`mt40 ${s.filterText}`}>Мероприятия, 4 сентября, 11:50</div>
 
                      <div className={`mt48 pageSubtitle ${s.mobilMt32}`}>В День города в Химках открыли мемориал героям-защитникам Отечества. Это первый подобный монумент в округе.</div>
 

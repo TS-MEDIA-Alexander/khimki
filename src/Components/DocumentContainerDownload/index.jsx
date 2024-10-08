@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './DocumentContainerDownload.module.css';
-import pdf from '../../assets/icons/pdf.svg';
-import doc from '../../assets/icons/doc.svg';
+import IconWordPdfText from '../IconWordPdfText';
 
 const DocumentContainerDownload = ({ document, documentName, text, date, type }) => {
    return (
@@ -9,9 +8,7 @@ const DocumentContainerDownload = ({ document, documentName, text, date, type })
          <a
             download={documentName}
             href={document} className={s.link}>
-            <div className={s.imgContainer}>
-               {type === 'DOCX' ? <img className={`${s.documentIcon} ${s.DOCX}`} src={doc} alt="" /> : <img className={`${s.documentIcon} ${s.PDF}`} src={pdf} alt="" />}
-            </div>
+               <IconWordPdfText type={type}/>
             <div className={s.textInner}>
                {text}
             </div>

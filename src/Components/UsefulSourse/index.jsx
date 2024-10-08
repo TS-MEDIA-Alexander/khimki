@@ -25,13 +25,13 @@ const UsefulSourse = (props) => {
                         <a href='https://www.mosoblduma.ru/' target='_blank' className={s.item}>Официальный сайт Московской областной Думы</a>
                         <a href='https://invest.mosreg.ru/' target='_blank'  className={s.item}>Инвестиционный портал Московской области</a>
                         <a href='https://smbn.ru/' target='_blank' className={s.item}>Бизнес-навигатор МСП</a>
-                        <a href='https://upch.mosreg.ru/' target='_blank' className={s.item}>Представитель уполномоченного по правам человека в ГО Химки​</a>
+                        <a href='https://upch.mosreg.ru/' target='_blank' className={s.item}>Представитель уполномоченного по правам человека в г.о. Химки​</a>
                         <a href='https://detimo.mosreg.ru/' target='_blank' className={s.item}>Уполномоченный по правам ребёнка в Московской области</a>
-                        <a href='https://epp.genproc.gov.ru/web/proc_50' target='_blank' className={s.item}>Прокуратура</a>
+                        <NavLink to={ROUTER.prosecutorOffice.main} className={s.item}>Прокуратура г.о. Химки</NavLink>
                      </div>
                      <div className={`${s.column} ${s.columnSecond} `}>
                         <a href='https://sfr.gov.ru/' target='_blank' className={s.item}>Социальный фонд Российской Федерации (до 01.01.2023 - Пенсионный фонд Москвы <p>и Московской области)</p></a>
-                        <a href='https://www.nalog.gov.ru/rn50/ifns/imns_50_21/' target='_blank' className={s.item}>Межрайонная инспекция ФНС России по ГО Химки</a>
+                        <a href='https://www.nalog.gov.ru/rn50/ifns/imns_50_21/' target='_blank' className={s.item}>Межрайонная инспекция ФНС России по г.о. Химки</a>
                         <a href='https://gust.mosreg.ru/?ysclid=ll3k9953x1825169916' target='_blank' className={s.item}>Главное управление содержания территорий Московской области (до 10.01.2022 - ГАТН Московской области)</a>
                         <a href='https://mpmo.ru/archives/category/novosti' target='_blank' className={s.item}>Служба медицинской профилактики Московской области</a>
                         <a href='http://budget.admhimki.ru/analitika/ispolnenie-byudzheta/osnovnye-parametry-byudzheta' target='_blank' className={s.item}>Открытый бюджет городского округа Химки​</a>
@@ -45,6 +45,7 @@ const UsefulSourse = (props) => {
                         <a href='https://parkihimki.ru/' target='_blank' className={s.item}>Дирекция парков​</a>
                         <a href='http://hmfc.ru/' target='_blank' className={s.item}>МФЦ</a>
                         <a href='https://uslugi.mosreg.ru/' target='_blank' className={s.item}>Портал государственныхи муниципальных услуг Московской области</a>
+                        <a href='https://epp.genproc.gov.ru/web/proc_50' target='_blank' className={s.item}>Прокуратура Московской области</a>
                      </div>
                   </div>
                </div>
@@ -69,7 +70,7 @@ const UsefulSourse = (props) => {
          </div>
          <div className={s.linkContainer}>
             {/* <a href="#" className={s.link}>Карта сайта</a> */}
-            <a href="https://www.admhimki.ru/" target='_blank' className={s.link}>Предыдущая версия сайта</a>
+            <a href="http://old.admhimki.ru/" target='_blank' className={s.link}>Предыдущая версия сайта</a>
          </div>
       </ContantContainerMain>
       </div >

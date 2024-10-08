@@ -16,7 +16,7 @@ const FamilyYear = (props) => {
             </div>
          </div>
 
-         <div className={`btnWBanner ${s.button}`}><span className="btnText">Подробнее</span></div>
+         {/* <div className={`btnWBanner ${s.button}`}><span className="btnText">Подробнее</span></div> */}
       </div>
    )
 }

@@ -27,11 +27,11 @@ const BurialFuneralServices = (props) => {
             />
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/pogrebenie-i-pohoronnoe-delo/normativno-pravovye-akty/' text={'Нормативно-правовые акты'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/pogrebenie-i-pohoronnoe-delo/municipalnye-uslugi-v-sfere-pogrebeniya-i-pohoronnogo-dela/' text={'Муниципальные услуги в сфере погребения и похоронного дела'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/pogrebenie-i-pohoronnoe-delo/perechen-kladbish/' text={'Перечень кладбищ'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/pogrebenie-i-pohoronnoe-delo/prinuditelnyj-demontazh/' text={'Принудительный демонтаж'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/pogrebenie-i-pohoronnoe-delo/kontaktnaya-informaciya/' text={'Контактная информация'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/pogrebenie-i-pohoronnoe-delo/normativno-pravovye-akty/' text={'Нормативно-правовые акты'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/pogrebenie-i-pohoronnoe-delo/municipalnye-uslugi-v-sfere-pogrebeniya-i-pohoronnogo-dela/' text={'Муниципальные услуги в сфере погребения и похоронного дела'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/pogrebenie-i-pohoronnoe-delo/perechen-kladbish/' text={'Перечень кладбищ'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/pogrebenie-i-pohoronnoe-delo/prinuditelnyj-demontazh/' text={'Принудительный демонтаж'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/pogrebenie-i-pohoronnoe-delo/kontaktnaya-informaciya/' text={'Контактная информация'} /></div>
                <div className="mt24"><LinkContainer link='https://gurb.mosreg.ru/deyatelnost/pogrebenie-i-pokhoronnoe-delo/novosti-po-teme/26-03-2024-12-38-21-kak-zakhoronit-i-poluchit-vyplaty-semyam-pogibshikh' text={'Как захоронить и получить выплаты семьям погибших и пострадавшим при теракте в Крокус Сити холл'} /></div>
             </div>
 

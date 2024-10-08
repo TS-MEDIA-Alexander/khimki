@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import { ROUTER } from '../../config';
 import arrow from '../../assets/icons/arrow_btn_link.svg';
 import ministry_economic_development from '../../assets/img/activity/ministry_economic_development.png';
-import ministry_investment_industry_and_science from '../../assets/img/activity/ministry_investment_industry_and_science.png';
+import ministryInvestment from '../../assets/img/activity/ministry_investment.png';
 
 import LinkContainer from '../../Components/LinkContainer';
 
@@ -48,7 +48,7 @@ const PublicPrivatePartnership = (props) => {
                   <div className={`btnCircleG imgContainerArrow ${s.mobilArrowNone}`}><img src={arrow} alt="" /></div>
                </NavLink>
                <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`borderMain ${s.link} ${s.link_min} ${s.mobilCardLink}`}>
-                  <div className={s.logoContainer}><img src={ministry_investment_industry_and_science} alt="" /></div>
+                  <div className={s.logoContainer}><img src={ministryInvestment} alt="" /></div>
                   <div className={s.textContainer}>
                      <div className={s.description}>Полезный ресурс</div>
                      <div className={s.text}>Министерство
@@ -60,8 +60,8 @@ const PublicPrivatePartnership = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/gosudarstvenno-chastnoe-partnerstvo/normativnaya-baza/' text={'Нормативная база'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/proekty/' text={'Проекты'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/gosudarstvenno-chastnoe-partnerstvo/normativnaya-baza/' text={'Нормативная база'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/investicii/proekty/' text={'Проекты'} /></div>
             </div>
          </ContantContainerMain>
       </div>

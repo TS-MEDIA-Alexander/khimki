@@ -1,8 +1,6 @@
 import React from 'react';
 import icon from '../../assets/iconsBanners/tg_channel_mini.svg'
 import s from './TgChannelMini.module.css';
-import { NavLink } from 'react-router-dom';
-import { ROUTER } from '../../config';
 
 const TgChannelMini = (props) => {
    return (

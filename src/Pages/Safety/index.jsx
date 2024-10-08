@@ -19,14 +19,14 @@ const Safety = (props) => {
             <div className={`mt24 pageTitle`}>Безопасность</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/okrug/municipalnye-programmy/bezopasnost/' text={'Муниципальная программа "Безопасность и обеспечение безопасности жизнедеятельности населения"'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/bezopasnost/obekty-bezopasnosti-gorodskogo-okruga/' text={'Объекты безопасности городского округа'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/bezopasnost/ohrana-truda/' text={'Охрана труда'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/bezopasnost/pozharnyj-nadzor/' text={'Пожарный надзор'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/policiya/' text={'Полиция'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/mdiamore/video/profilaktika-rasprostraneniya-narkotikov-i-narkomanii/' text={'Профилактика распространения наркотиков и наркомании'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/himkinskij-otdel-vnevedomstvennoj-ohrany/' text={'Химкинский отдел вневедомственной охраны'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/bezopasnost/antiterroristicheskaya-deyatelnost/' text={'Антитеррористическая деятельность'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/okrug/municipalnye-programmy/bezopasnost/' text={'Муниципальная программа "Безопасность и обеспечение безопасности жизнедеятельности населения"'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/bezopasnost/obekty-bezopasnosti-gorodskogo-okruga/' text={'Объекты безопасности городского округа'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/bezopasnost/ohrana-truda/' text={'Охрана труда'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/bezopasnost/pozharnyj-nadzor/' text={'Пожарный надзор'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/dokumenty/policiya/' text={'Полиция'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/mdiamore/video/profilaktika-rasprostraneniya-narkotikov-i-narkomanii/' text={'Профилактика распространения наркотиков и наркомании'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/dokumenty/himkinskij-otdel-vnevedomstvennoj-ohrany/' text={'Химкинский отдел вневедомственной охраны'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/bezopasnost/antiterroristicheskaya-deyatelnost/' text={'Антитеррористическая деятельность'} /></div>
             </div>
 
             <div className="mt80 pageSubtitle">Cделаем подмосковье безопасным вместе! </div>

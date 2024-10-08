@@ -187,6 +187,10 @@ li.description {
    line-height: 16px;
 }
 
+.descriptionItemContainer {
+   max-width: 566px;
+}
+
 @media screen and (max-width: 1370px) {
    .mapContainer {
       flex-direction: column;

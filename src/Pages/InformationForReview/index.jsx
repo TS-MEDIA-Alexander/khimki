@@ -32,7 +32,7 @@ const InformationForReview = (props) => {
             </div>
 
             <div className="mt38 borderMain">
-               <DocumentContainerDownload text={'Устав городского округа Химки московской области'} date={'06.02.2023 '} />
+               <DocumentContainerDownload type={'PDF'} text={'Устав городского округа Химки московской области'} date={'06.02.2023 '} />
             </div>
 
             <div className={`mt80 text`}>

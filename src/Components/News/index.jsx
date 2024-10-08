@@ -11,7 +11,7 @@ const News = ({ news, mobilFullPhoto }) => {
          >
             <div>
                <div className={`${s.preview} ${mobilFullPhoto || s.previewMobilHidden}`}><img src={el.image_preview} alt="" /></div>
-               <div className={`${s.filterText} ${mobilFullPhoto && 'mt20'}`}>{el.dateTime}</div>
+               <div className={`${s.filterText} mt20 `}>{el.dateTime}</div>
                <div className={s.title}>{el.name}</div>
             </div>
             <div className={s.moreDetails}>Подробнее</div>

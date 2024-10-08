@@ -1,8 +1,6 @@
 import React from 'react';
 import icon from '../../assets/iconsBanners/guide_mini.svg'
 import s from './GuideMini.module.css';
-import { NavLink } from 'react-router-dom';
-import { ROUTER } from '../../config';
 
 const GuideMini = (props) => {
    return (

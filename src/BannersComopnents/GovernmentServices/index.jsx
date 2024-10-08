@@ -15,7 +15,7 @@ const GovernmentServices = (props) => {
             </div>
          </div>
 
-         <div className={`btnGosBanner ${s.button}`}>Подать обращение</div>
+         <a href='https://pos.gosuslugi.ru/backoffice/login' className={`btnGosBanner ${s.button}`}>Участвовать</a>
       </a>
    )
 }

@@ -18,9 +18,9 @@ const MunicipalСontrol = (props) => {
             <div className={`mt24 pageTitle`}>Муниципальный контроль</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/municipalnyj-kontrol/municipalnyj-kontrol-na-avtomobilnom-transporte-gorodskom-nazemnom-elektricheskom-transporte-i-v-dorozhnom-hozyajstve/' text={'Муниципальный контроль на автомобильном транспорте, городском наземном электрическом транспорте и в дорожном хозяйстве'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/municipalnyj-kontrol/presechenie-samovolnogo-stroitelstva/' text={'Пресечение самовольного строительства'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zemelnye-otnosheniya/municipalnyj-zemelnyj-kontrol2/' text={'Муниципальный земельный контроль'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/municipalnyj-kontrol/municipalnyj-kontrol-na-avtomobilnom-transporte-gorodskom-nazemnom-elektricheskom-transporte-i-v-dorozhnom-hozyajstve/' text={'Муниципальный контроль на автомобильном транспорте, городском наземном электрическом транспорте и в дорожном хозяйстве'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/municipalnyj-kontrol/presechenie-samovolnogo-stroitelstva/' text={'Пресечение самовольного строительства'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/zemelnye-otnosheniya/municipalnyj-zemelnyj-kontrol2/' text={'Муниципальный земельный контроль'} /></div>
             </div>
 
          </ContantContainerMain>

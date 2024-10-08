@@ -53,6 +53,11 @@
    padding: 16px;
 }
 
+.btn img {
+   width: 24px;
+   height: 24px;
+}
+
 @media screen and (max-width: 745px) {
    .cardContainer {
       justify-content: space-between;

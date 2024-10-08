@@ -33,9 +33,9 @@ const ReceptionProcedureTime = (props) => {
             </div>
             <div className="mt80 text">
                <div className="pageSubtitle">
-                  График личного приёма граждан Главой городского округа <br />
+                  График личного приёма граждан Главой городского округа
                   и заместителями Главы городского округа Химки <br />
-                  в июле 2024 года
+                  в октябре 2024 года
                </div>
                <p>
                   Информацию о порядке записи на приём и порядке проведения приёмов
@@ -64,12 +64,12 @@ const ReceptionProcedureTime = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/stranica-nahoditsya-v-stadii-dorabotki-i-napolneniya-/' text={'График встреч жителей городского округа с Администрацией'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/rabota-s-obrasheniyami-grazhdan/poryadok-i-vremya-priema-2/grafik-lichnogo-priyoma-grazhdan-v-obshestvennyh-priyomnyh-organov-ispolnitelnoj-vlasti-moskovskoj-oblasti-i-organov-mestnogo-samoupravleniya-moskovsk/' text={'График личного приёма граждан в общественных приёмных исполнительных органов Московской области'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stranica-nahoditsya-v-stadii-dorabotki-i-napolneniya-/' text={'График личного приёма граждан Председателем Совета депутатов городского округа'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/rabota-s-obrasheniyami-grazhdan/poryadok-i-vremya-priema-2/grafik-priema-grazhdan-v-priyomnoj-pravitelstva-moskovskoj-oblasti-advokatami-moskovskoj/' text={'График приёма граждан в Приёмной Правительства Московской области'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/rabota-s-obrasheniyami-grazhdan/poryadok-i-vremya-priema-2/den-priema-grafik-priema-sotrudnikami-administraciii-i-podvedomstvennyh-uchrezhdenij-i-predstavitelyami-territorialnyh-organov-gosudarstvennoj-vlasti-/' text={'"День приема" График приема сотрудниками Администрации и подведомственных учреждений и представителями территориальных органов государственной власти в МФЦ городского округа Химки'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/rabota-s-obrasheniyami-grazhdan/poryadok-i-vremya-priema-2/grafik-provedeniya-tematicheskih-priemov-grazhdan/' text={'График проведения тематических и личных приемов граждан'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/stranica-nahoditsya-v-stadii-dorabotki-i-napolneniya-/' text={'График встреч жителей городского округа с Администрацией'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/rabota-s-obrasheniyami-grazhdan/poryadok-i-vremya-priema-2/grafik-lichnogo-priyoma-grazhdan-v-obshestvennyh-priyomnyh-organov-ispolnitelnoj-vlasti-moskovskoj-oblasti-i-organov-mestnogo-samoupravleniya-moskovsk/' text={'График личного приёма граждан в общественных приёмных исполнительных органов Московской области'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/stranica-nahoditsya-v-stadii-dorabotki-i-napolneniya-/' text={'График личного приёма граждан Председателем Совета депутатов городского округа'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/rabota-s-obrasheniyami-grazhdan/poryadok-i-vremya-priema-2/grafik-priema-grazhdan-v-priyomnoj-pravitelstva-moskovskoj-oblasti-advokatami-moskovskoj/' text={'График приёма граждан в Приёмной Правительства Московской области'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/rabota-s-obrasheniyami-grazhdan/poryadok-i-vremya-priema-2/den-priema-grafik-priema-sotrudnikami-administraciii-i-podvedomstvennyh-uchrezhdenij-i-predstavitelyami-territorialnyh-organov-gosudarstvennoj-vlasti-/' text={'"День приема" График приема сотрудниками Администрации и подведомственных учреждений и представителями территориальных органов государственной власти в МФЦ городского округа Химки'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/rabota-s-obrasheniyami-grazhdan/poryadok-i-vremya-priema-2/grafik-provedeniya-tematicheskih-priemov-grazhdan/' text={'График проведения тематических и личных приемов граждан'} /></div>
             </div>
          </ContantContainerMain>
       </div>

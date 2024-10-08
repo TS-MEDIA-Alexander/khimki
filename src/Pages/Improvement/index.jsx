@@ -19,11 +19,11 @@ const Improvement = (props) => {
             <div className={`mt24 pageTitle`}>Благоустройство</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/blagoustrojstvo/obshestvennye-prostranstva/' text={'Общественные пространства'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/blagoustrojstvo/remont-obektov-dorozhnogo-hozyajstva-v-ramkah-povysheniya-bgd/' text={'Ремонт объектов дорожного хозяйства в рамках повышения БДД'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/blagoustrojstvo/remont-dorog/' text={'Ремонт дорог'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/blagoustrojstvo/blagoustrojstvo-dvorov/' text={'Благоустройство дворов'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/blagoustrojstvo/blagoustrojstvo-parkov/' text={'Благоустройство парков'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/blagoustrojstvo/obshestvennye-prostranstva/' text={'Общественные пространства'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/blagoustrojstvo/remont-obektov-dorozhnogo-hozyajstva-v-ramkah-povysheniya-bgd/' text={'Ремонт объектов дорожного хозяйства в рамках повышения БДД'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/blagoustrojstvo/remont-dorog/' text={'Ремонт дорог'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/blagoustrojstvo/blagoustrojstvo-dvorov/' text={'Благоустройство дворов'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/blagoustrojstvo/blagoustrojstvo-parkov/' text={'Благоустройство парков'} /></div>
             </div>
          </ContantContainerMain>
       </div>

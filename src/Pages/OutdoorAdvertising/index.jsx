@@ -22,8 +22,8 @@ const OutdoorAdvertising = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/naruzhnaya-reklama/normativno-pravovye-akty/' text={'Правовые и нормативные акты'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/naruzhnaya-reklama/shema-razmesheniya-reklamnyh-konstrukcij-gorodskogo-okruga-himki/' text={'Схема размещения рекламных конструкций городского округа Химки'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/naruzhnaya-reklama/normativno-pravovye-akty/' text={'Правовые и нормативные акты'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/naruzhnaya-reklama/shema-razmesheniya-reklamnyh-konstrukcij-gorodskogo-okruga-himki/' text={'Схема размещения рекламных конструкций городского округа Химки'} /></div>
             </div>
 
             <div className="mt80 pageSubtitle">Начальник управления</div>

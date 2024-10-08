@@ -16,13 +16,13 @@ const Construction = (props) => {
             </div>
             <div className="mt24 pageTitle">Строительство</div>
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/stroitelstvo/o-strojkomplekse/' text={'О Стройкомплексе'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stroitelstvo/pravila-zemlepolzovaniya-i-zastrojki/' text={'Правила землепользования и застройки'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stroitelstvo/rasselenie-vethogo-fonda/' text={'Расселение ветхого фонда'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stroitelstvo/standarty-kachestva-zhilogo-pomesheniya-i-komfortnosti-prozhivaniya-na-territorii-moskovskoj-oblasti/' text={'Стандарты качества жилого помещения и комфортности проживания на территории Московской области'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stroitelstvo/mestnye-normativy-gradostroitelnogo-proektirovaniya-mngp/' text={'Местные нормативы градостроительного проектирования (МНГП)'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stroitelstvo/aeroport-sheremetevo/' text={'Аэропорт Шереметьево'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/stroitelstvo/dokumentaciya-po-planirovke-territorii/' text={'Документация по планировке территории'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/stroitelstvo/o-strojkomplekse/' text={'О Стройкомплексе'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/stroitelstvo/pravila-zemlepolzovaniya-i-zastrojki/' text={'Правила землепользования и застройки'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/stroitelstvo/rasselenie-vethogo-fonda/' text={'Расселение ветхого фонда'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/stroitelstvo/standarty-kachestva-zhilogo-pomesheniya-i-komfortnosti-prozhivaniya-na-territorii-moskovskoj-oblasti/' text={'Стандарты качества жилого помещения и комфортности проживания на территории Московской области'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/stroitelstvo/mestnye-normativy-gradostroitelnogo-proektirovaniya-mngp/' text={'Местные нормативы градостроительного проектирования (МНГП)'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/stroitelstvo/aeroport-sheremetevo/' text={'Аэропорт Шереметьево'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/stroitelstvo/dokumentaciya-po-planirovke-territorii/' text={'Документация по планировке территории'} /></div>
             </div>
             <div className="text">
                <div className={`mt80 pageSubtitle`}>Муниципальное казенное учреждение «Управление капитального строительства и архитектуры» </div>

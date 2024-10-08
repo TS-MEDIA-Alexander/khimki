@@ -21,8 +21,8 @@ const RegulatoryImpactAssessment = (props) => {
                воздействия</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/ocenka-reguliruyushego-vozdejstviya/zakonodatelstvo/' text={'Законодательство'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/publichnye-konsultacii/' text={'Публичные консультации'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/ocenka-reguliruyushego-vozdejstviya/zakonodatelstvo/' text={'Законодательство'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/dokumenty/publichnye-konsultacii/' text={'Публичные консультации'} /></div>
             </div>
 
             <div className="mt80 pageSubtitle">Что такое ОРВ?</div>

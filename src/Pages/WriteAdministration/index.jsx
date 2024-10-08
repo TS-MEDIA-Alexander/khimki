@@ -36,6 +36,8 @@ const WriteAdministration = (props) => {
 
    const [agree, setAgree] = useState(true);
 
+   const [disable, setDisable] = useState(false);
+
    const [important, setImportant] = useState('');
 
    const handler = (name, value) => {
@@ -43,16 +45,19 @@ const WriteAdministration = (props) => {
    }
 
    const submit = () => {
+      setDisable(true);
       API.postСomplaint(form)
          .then(response => {
             console.log(response.data)
             for (let key in form) {
                setForm(prev => ({ ...prev, [key]: '' }))
             }
-            setSuccusess(true)
+            setSuccusess(true);
+            setDisable(false);
          })
          .catch(() => {
-            setErr(true)
+            setErr(true);
+            setDisable(false);
          })
    }
 
@@ -154,7 +159,7 @@ const WriteAdministration = (props) => {
                      <input onChange={() => setAgree(!agree)}  name='agree' id='agree' type="checkbox" />
                      <label htmlFor="agree" className={`ml16 ${s.description}`}>Я даю согласие на использование персональных данных</label>
                   </div>
-                  <button onClick={submit} disabled={agree || important} className={`mt48 ${s.submit}`}>Отправить</button>
+                  <button onClick={submit} disabled={disable || agree || important} style={{background: disable && 'grey'}} className={`mt48 btnY ${s.submit}`}>Отправить</button>
                   <div className={`mt80 borderMain flexContainer ${s.description} ${s.descriptionContainer}`}>
                      <img src={inverted_exclamation_mark} alt="" />
                      <span>В соответствии с Федеральным законом от 02.05.2006 № 59-ФЗ «О порядке рассмотрения обращений граждан Российской Федерации» и законом Московской области от 05.10.2006 № 164/2006-03 «О рассмотрении обращений граждан» вопросы без указания личных данных считаются анонимными и будут удалены. Не будут рассматриваться обращения, содержащие нецензурные либо оскорбительные выражения, угрозы жизни, здоровью и имуществу должностного лица и членов его семьи, а также скрытую и явную рекламу. Конфиденциальность информации о персональных данных граждан, задавших вопрос в электронном виде, гарантируется Администрацией.</span>

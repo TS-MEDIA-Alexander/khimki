@@ -20,10 +20,10 @@ const HumanResourcesManagement = (props) => {
             <div className={`mt24 pageTitle`}>Кадровое управление</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/poryadok-postupleniya-grazhdan-na-gosudarstvennuyu-i-municipalnuyu-sluzhbuu/' text={'Порядок поступления граждан на государственную и муниципальную службу'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/kontakty-upravleniya-municipalnoj-sluzhby-i-kadrov/' text={'Контакты управления муниципальной службы и кадров'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/pravovoe-obespechenie/' text={'Правовое регулирование'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/vedomstvennyj-kontrol-za-soblyudeniem-trudovogo-zakonodatelstva/' text={'Ведомственный контроль за соблюдением трудового законодательства'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/poryadok-postupleniya-grazhdan-na-gosudarstvennuyu-i-municipalnuyu-sluzhbuu/' text={'Порядок поступления граждан на государственную и муниципальную службу'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/kontakty-upravleniya-municipalnoj-sluzhby-i-kadrov/' text={'Контакты управления муниципальной службы и кадров'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/pravovoe-obespechenie/' text={'Правовое регулирование'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/vedomstvennyj-kontrol-za-soblyudeniem-trudovogo-zakonodatelstva/' text={'Ведомственный контроль за соблюдением трудового законодательства'} /></div>
             </div>
 
             <div className="mt80 pageSubtitle">Начальник управления</div>

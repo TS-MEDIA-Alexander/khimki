@@ -43,15 +43,17 @@ const KhimkiDistrict = (props) => {
             </div>
             <div className="bannerArrowContainer">
                <div className={`mt32 borderMain ${s.districtCard}`}>
-                  <DistrictCard title={'Сходня-Фирсановка'} img={skhodnya} src='' />
-                  <DistrictCard title={'Новогорск-Планерная'} src='' />
-                  <DistrictCard title={'Левобережный'} src='' />
-                  <DistrictCard title={'Подрезково'} img={podrezkovo} src='' />
-                  <DistrictCard title={'Клязьма-Старбеево'} img={klyazmaStarbeevo} src='' />
-                  <DistrictCard title={'Кутузовское'} img={kutuzovskoye} src='' />
-                  <DistrictCard title={'Луневское'} img={lunyovskoye} src='' />
+                  <DistrictCard fnSet={setCurDistrictId} id={'skhodnya-firsanovka'} title={'Сходня-Фирсановка'} img={skhodnya} src='' />
+                  <DistrictCard fnSet={setCurDistrictId} id={'novogorsk-planernaya'} title={'Новогорск-Планерная'} src='' />
+                  <DistrictCard fnSet={setCurDistrictId} id={'levoberezhniy'} title={'Левобережный'} src='' />
+                  <DistrictCard fnSet={setCurDistrictId} id={'podrezkovo'} title={'Подрезково'} img={podrezkovo} src='' />
                </div>
-               <div className={`mt32 borderMain ${s.districtBanner}`}>
+               <div className={`mt32 borderMain ${s.districtCard}`}>
+                  <DistrictCard fnSet={setCurDistrictId} id={'klyazma-starbeevo'} title={'Клязьма-Старбеево'} img={klyazmaStarbeevo} src='' />
+                  <DistrictCard fnSet={setCurDistrictId} id={'kutuzovskoye'} title={'Кутузовское'} img={kutuzovskoye} src='' />
+                  <DistrictCard fnSet={setCurDistrictId} id={'lunyovskoye'} title={'Луневское'} img={lunyovskoye} src='' />
+               </div>
+               {/* <div className={`mt32 borderMain ${s.districtBanner}`}>
                   <div className={s.textContainer}>
                      <div className={s.bannerTitle}><img src={arrow} alt="" />411 000 человек</div>
                      <div className={`mt8 ${s.description} ${s.description_center}`}>Cуммарная численность населения округа в 2023 г.</div>
@@ -87,9 +89,8 @@ const KhimkiDistrict = (props) => {
                         <div className={s.statistiCscount}>45 185</div>
                      </div>
                   </div>
-
-               </div>
-               <div className={`mt32 borderMain ${s.districtBanner}`}>
+               </div> */}
+               {/* <div className={`mt32 borderMain ${s.districtBanner}`}>
                   <div className={s.bannerTitle}>Городской округ Химки</div>
                   <div className={`mt8 ${s.description}`}>В цифрах 2023 г.</div>
                   <div className={`mt32 ${s.container}`}>
@@ -129,10 +130,8 @@ const KhimkiDistrict = (props) => {
                         <div className={`${s.lineChart} ${s.skyscrapers}`}>Небоскребы</div>
                         <div className={s.statistiCscount}>12</div>
                      </div>
-
                   </div>
-
-               </div>
+               </div> */}
             </div>
             <div className="bannerArrowContainer">
                <div className={`mt32 borderMain ${s.districtVideo}`}>

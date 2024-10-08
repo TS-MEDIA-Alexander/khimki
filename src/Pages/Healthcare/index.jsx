@@ -24,10 +24,10 @@ const Healthcare = (props) => {
                </div>
 
                <div className={`mt80 borderMain ${s.linkContainer}`}>
-                  <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zdravoohranenie/grafik-raboty-uchrezhdenij-zdravoohraneniya-v-prazdnechnii-dni/' text={'График работы учреждений здравоохранения в праздничные дни'} />
-                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zdravoohranenie/dispanserizaciya/' text={'Диспансеризация'} /></div>
-                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zdravoohranenie/ekspertnoe-mnenie/' text={'Экспертное мнение'} /></div>
-                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/zdravoohranenie/aptechnye-organizacii/' text={'Аптечные организации'} /></div>
+                  <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/zdravoohranenie/grafik-raboty-uchrezhdenij-zdravoohraneniya-v-prazdnechnii-dni/' text={'График работы учреждений здравоохранения в праздничные дни'} />
+                  <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/zdravoohranenie/dispanserizaciya/' text={'Диспансеризация'} /></div>
+                  <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/zdravoohranenie/ekspertnoe-mnenie/' text={'Экспертное мнение'} /></div>
+                  <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/zdravoohranenie/aptechnye-organizacii/' text={'Аптечные организации'} /></div>
                </div>
 
                <div className={`mt80 text`}>

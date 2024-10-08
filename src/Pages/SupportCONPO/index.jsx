@@ -23,10 +23,10 @@ const SupportCONPO = (props) => {
             <div className={`mt24 pageTitle`}>Поддержка СО НКО</div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/podderzhka-so-nko/podderzhka-socialno-orientirovannyh-nekommercheskih-organizacij-i-ih-obosoblennyh-podrazdelenij-na-urovne-municipalnogo-obrazovaniya/' text={'Поддержка социально ориентированных некоммерческих организаций (и их обособленных подразделений) на уровне муниципального образования'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/podderzhka-so-nko/vklyuchenie-so-nko-v-reestr-postavshikov-socialnyh-uslug-mo/' text={'Включение СО НКО в реестр поставщиков социальных услуг МО'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/podderzhka-so-nko/ponyatie-so-nko-ispolniteli-obshestvenno-poleznyh-uslug/' text={'Понятие СО НКО - исполнители общественно полезных услуг'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/reestr-so-nko-v-sfere-obrazovaniya/' text={'Реестр СО НКО в сфере образования'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/podderzhka-so-nko/podderzhka-socialno-orientirovannyh-nekommercheskih-organizacij-i-ih-obosoblennyh-podrazdelenij-na-urovne-municipalnogo-obrazovaniya/' text={'Поддержка социально ориентированных некоммерческих организаций (и их обособленных подразделений) на уровне муниципального образования'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/podderzhka-so-nko/vklyuchenie-so-nko-v-reestr-postavshikov-socialnyh-uslug-mo/' text={'Включение СО НКО в реестр поставщиков социальных услуг МО'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/podderzhka-so-nko/ponyatie-so-nko-ispolniteli-obshestvenno-poleznyh-uslug/' text={'Понятие СО НКО - исполнители общественно полезных услуг'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/dokumenty/reestr-so-nko-v-sfere-obrazovaniya/' text={'Реестр СО НКО в сфере образования'} /></div>
             </div>
 
             <div className="mt80">

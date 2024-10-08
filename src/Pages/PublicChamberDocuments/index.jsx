@@ -27,9 +27,9 @@ const PublicChamberDocuments = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.documentContainer}`}>
-               <DocumentContainerDownload document={resolution345} documentName={'15.05.2020_№_345.pdf'} text='Постановление Администрации г.о. Химки от 15.05.2020 № 345 "О продлении срока для приема заявлений и документов на кандидатов в члены Общественной палаты городского округа Химки Московской области"' date="06.02.2023" />
-               <DocumentContainerDownload document={resolution292} documentName={'15.04.2020_№_292.pdf'}  text='Постановление Администрации г.о. Химки от 15.04.2020 № 292 "О продлении срока для приема заявлений и документов на кандидатов в члены Общественной палаты городского округа Химки Московской области"' date="06.02.2023" />
-               <DocumentContainerDownload document={resolution194} documentName={'28.02.2020_№_194.pdf'}  text='Постановление Администрации г.о. Химки от 28.02.2020 № 194 "О формировании нового состава Общественной палаты городского округа Химки Московской области"' date="06.02.2023" />
+               <DocumentContainerDownload type={'PDF'} document={resolution345} documentName={'15.05.2020_№_345.pdf'} text='Постановление Администрации г.о. Химки от 15.05.2020 № 345 "О продлении срока для приема заявлений и документов на кандидатов в члены Общественной палаты городского округа Химки Московской области"' date="06.02.2023" />
+               <DocumentContainerDownload type={'PDF'} document={resolution292} documentName={'15.04.2020_№_292.pdf'}  text='Постановление Администрации г.о. Химки от 15.04.2020 № 292 "О продлении срока для приема заявлений и документов на кандидатов в члены Общественной палаты городского округа Химки Московской области"' date="06.02.2023" />
+               <DocumentContainerDownload type={'PDF'} document={resolution194} documentName={'28.02.2020_№_194.pdf'}  text='Постановление Администрации г.о. Химки от 28.02.2020 № 194 "О формировании нового состава Общественной палаты городского округа Химки Московской области"' date="06.02.2023" />
                <DocumentContainerDownload document={appendix_no_2_resolution} type="DOCX" documentName={'appendix_no_2_resolution.docx'} text='Приложение № 2 к постановлению Администрации от 28.02.2020 № 194' date="06.02.2023" />
             </div>
 

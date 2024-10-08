@@ -1,6 +1,8 @@
 import React from 'react';
 import s from './DistrictAboutCard.module.css';
 
+import img from '../../assets/img/Persons/img.png'
+
 const DistrictAboutCard = ({ title, description, chairman, districtImg, historicalBackground, historicalMonuments }) => {
    return (
       <div className={`${s.districtAboutContainer}`}>
@@ -11,10 +13,11 @@ const DistrictAboutCard = ({ title, description, chairman, districtImg, historic
                   {description}
                </div>
             </div>
-            <img className={`mt24 ${s.img}`} src={districtImg} alt="" />
-
+            <div className={s.imgContainerMap}>
+               <img src={districtImg} alt="" />
+            </div>
             <div className={`mt24 ${s.imgContainer}`}>
-               <img className={`${s.imgPerson}`} src={chairman.img} alt="" />
+               <img className={`${s.imgPerson}`} src={chairman.img || img} alt="" />
                <div className={`mt16 ${s.description}`}>
                   Председатель территориального управления {title}
                </div>
@@ -28,7 +31,7 @@ const DistrictAboutCard = ({ title, description, chairman, districtImg, historic
             </div>
          </div>
 
-         <div className={`borderMain ${s.container}`}>
+         <div className={`borderMain ${s.container_buttom} ${s.container}`}>
             <div className={s.textBlock}>
                <div className={s.title}>Краткая историческая справка</div>
                <div className={`mt8 ${s.description}`}>

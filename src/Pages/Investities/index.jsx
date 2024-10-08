@@ -28,12 +28,12 @@ const Investities = (props) => {
             <div className={s.containtContainer}>
 
                <div className={`mt80 borderMain ${s.linkContainer}`}>
-                  <LinkContainer link='https://www.admhimki.ru/investicii/investicionnye-programmy/' text={'Инвестиционные программы'} />
-                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/torgi/' text={'Торги'} /></div>
-                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/lgoty-i-preferencii/' text={'Льготы и преференции'} /></div>
-                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/zakonodatelstvo/' text={'Законодательство'} /></div>
-                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/oprosy/' text={'Опросы'} /></div>
-                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/kontakty/' text={'Контакты'} /></div>
+                  <LinkContainer link='http://old.admhimki.ru/investicii/investicionnye-programmy/' text={'Инвестиционные программы'} />
+                  <div className="mt24"><LinkContainer link='http://old.admhimki.ru/investicii/torgi/' text={'Торги'} /></div>
+                  <div className="mt24"><LinkContainer link='http://old.admhimki.ru/investicii/lgoty-i-preferencii/' text={'Льготы и преференции'} /></div>
+                  <div className="mt24"><LinkContainer link='http://old.admhimki.ru/investicii/zakonodatelstvo/' text={'Законодательство'} /></div>
+                  <div className="mt24"><LinkContainer link='http://old.admhimki.ru/investicii/oprosy/' text={'Опросы'} /></div>
+                  <div className="mt24"><LinkContainer link='http://old.admhimki.ru/investicii/kontakty/' text={'Контакты'} /></div>
                </div>
 
                <div className="mt80 pageSubtitle">Округ, нацеленный на результат</div>

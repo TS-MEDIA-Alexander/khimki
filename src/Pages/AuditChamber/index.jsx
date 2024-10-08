@@ -23,9 +23,9 @@ const AuditChamber = (props) => {
             </div>
             <CardHuman
                jobTitle={'Председатель палаты'}
-               name={'Меликова'}
-               surname={'Надежда Александровна'}
-               info={'ул. Московская, 15'}
+               name={'Барабенов'}
+               surname={'Павел Александрович'}
+               info={'г. Химки, ул. Кирова, д.24'}
                WorkingHours={'Пн-Чт 9:00-18:00, Пт 9:00-16:45, 13:00-13:45'}
                contactsArr={['+7 (495) 572-50-04', 'info@ksphimki.ru', 'ksphimki.ru']}
             />

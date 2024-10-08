@@ -1,8 +1,6 @@
 import React from 'react';
 import icon from '../../assets/iconsBanners/virtual_museum_mini.svg';
 import s from './VirtualMuseumMini.module.css';
-import { NavLink } from 'react-router-dom';
-import { ROUTER } from '../../config';
 
 const VirtualMuseumMini = (props) => {
    return (

@@ -19,9 +19,9 @@ const AuctionsAndTrades = (props) => {
             <div className={`mt24 pageTitle`}>Аукционы и торги</div>
             <div className={`mt38 text`}>
                <div className={`mt80 borderMain ${s.linkContainer}`}>
-                  <LinkContainer link='https://www.admhimki.ru/aukciony-i-torgi/zemelnye-uchastki/' text={'Земельные участки'} />
-                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/investicii/torgi/' text={'Нежилые помещения'} /></div>
-                  <div className="mt24"><LinkContainer link='https://www.admhimki.ru/maloe-i-srednee-predprinimatelstvo/nestacionarnye-torgovye-obekty/aukcioni/' text={'Организация ярмарок'} /></div>
+                  <LinkContainer link='http://old.admhimki.ru/aukciony-i-torgi/zemelnye-uchastki/' text={'Земельные участки'} />
+                  <div className="mt24"><LinkContainer link='http://old.admhimki.ru/investicii/torgi/' text={'Нежилые помещения'} /></div>
+                  <div className="mt24"><LinkContainer link='http://old.admhimki.ru/maloe-i-srednee-predprinimatelstvo/nestacionarnye-torgovye-obekty/aukcioni/' text={'Организация ярмарок'} /></div>
                </div>
 
                <div className="mt80 pageSubtitle">Уважаемые посетители сайта!</div>

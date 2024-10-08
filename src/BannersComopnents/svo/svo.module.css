@@ -3,11 +3,12 @@
    flex-direction: column;
    justify-content: space-between;
    align-items: flex-start;
-   background: url('../../assets/img/banners/svo.png') 0 0/auto auto no-repeat;
+   background: url("../../assets/img/banners/svo.png") 0 0 / auto auto no-repeat;
    background-size: cover;
    width: calc(100% - 80px);
    height: 370px;
    overflow: hidden;
+   text-decoration: none;
    cursor: pointer;
 }
 
@@ -20,7 +21,6 @@
    width: 100px;
    width: 80px;
 }
-
 
 .title {
    display: inline-block;

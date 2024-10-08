@@ -30,7 +30,7 @@ const ResultsConsiderationApplications = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/dokumenty/rezultaty-rassmotreniya-obrashenij/' text={'Обращения граждан, поступивших на "горячую линию" Администрации'} />
+               <LinkContainer link='http://old.admhimki.ru/dokumenty/rezultaty-rassmotreniya-obrashenij/' text={'Обращения граждан, поступивших на "горячую линию" Администрации'} />
             </div>
 
             <div className="mt80 pageSubtitle">
@@ -98,7 +98,7 @@ const ResultsConsiderationApplications = (props) => {
                </p>
             </div>
             <div className={`mt40 borderMain borderDocumentContainer`}>
-               <DocumentContainerDownload text='Информация о рассмотрении обращений граждан за 2017 год' date='06.02.2023' />
+               <DocumentContainerDownload type={'PDF'} text='Информация о рассмотрении обращений граждан за 2017 год' date='06.02.2023' />
             </div>
             <div className="mt120 text">
                <div className="pageSubtitle">Информация о результатах рассмотрения обращений граждан

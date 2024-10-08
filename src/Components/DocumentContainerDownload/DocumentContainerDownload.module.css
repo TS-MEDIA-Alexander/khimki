@@ -30,20 +30,6 @@
    letter-spacing: -0.28px;
 }
 
-.documentIcon {
-   margin-right: 24px;
-   border-radius: 12px;
-   padding: 12px;
-}
-
-.PDF {
-   background: #E13D34;
-}
-
-.DOCX {
-   background: #307CF1;
-}
-
 .documentContainer {
    width: 100%;
    display: flex;
@@ -63,10 +49,5 @@
    .textInner {
       font-size: 12px;
       line-height: 16px;
-   }
-
-   .documentIcon {
-      border-radius: 6px;
-      padding: 5px;
    }
 }

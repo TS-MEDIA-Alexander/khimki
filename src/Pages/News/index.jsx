@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import News from '../../Components/News';
 import ContantContainerMain from '../../total/ContantContainerMain';
-import Calendar from '../../total/Calendar';
+import CalendarDouble from '../../total/CalendarDouble';
 import ReactSelect from '../../total/ReactSelect';
 import Modal from '../../total/modal';
 /* import ScrollButton from '../../total/ScrollButton'; */
@@ -15,9 +15,6 @@ import EventAnnouncements from '../../Components/EventAnnouncements';
 import VkChannel from '../../BannersComopnents/VkChannel';
 import TgChannel from '../../BannersComopnents/TgChannel';
 
-/* Форматор - преобразует дату */
-import { formatterCalendar } from '../../utils/index';
-
 import close from '../../assets/icons/close.svg';
 
 const NewsPage = (props) => {
@@ -26,17 +23,17 @@ const NewsPage = (props) => {
    const [currentPage, setCurrentPage] = useState(1);
    const [emailSubscribe, setEmailSubscribe] = useState('');
 
-   const getAndSaveNews = (page, limit, dateFrom, dateTo) => {
-      API.getNews(page, limit, dateFrom, dateTo)
-         .then(data => setNews(data))
+   const getAndSaveNews = (page, limit, dateFrom, dateTo, searchDate) => {
+      return API.getNews(page, limit, dateFrom, dateTo, searchDate)
    }
 
    useEffect(() => {
-      getAndSaveNews(1, 12, calendarDateStart)
+      getAndSaveNews(1, 12, calendarDateForServer[0], calendarDateForServer[1])
+         .then(data => setNews(data))
    }, [])
 
-   const shiwMore = () => {
-      getAndSaveNews(currentPage + 1, 12, calendarDateStart, calendarDateEnd)
+   const showMore = () => {
+      getAndSaveNews(currentPage + 1, 12, calendarDateForServer[0], calendarDateForServer[1])
          .then(data => setNews([...news, ...data]))
    }
 
@@ -69,12 +66,16 @@ const NewsPage = (props) => {
 
    const [filterTheme, setFilterTheme] = useState(filterThemeData[0]);
 
+   /* Поиск по ключевому слову */
+   const [search, setSearch] = useState('');
+
    /* Календарь */
-   const [calendarDateStart, setCalendarDateStart] = useState('');
-   const [calendarDateEnd, setCalendarDateEnd] = useState('');
+   const [calendarDate, setCalendarDate] = useState('');
+   const [calendarDateForServer, setCalendarDateForServer] = useState([]);
 
    const handleDateChange = () => {
-      getAndSaveNews(currentPage + 1, 12, calendarDateStart, calendarDateEnd);
+      getAndSaveNews(currentPage, 12, calendarDateForServer[0], calendarDateForServer[1], search)
+      .then(data => setNews(data))
    }
 
    //Открытие PopUp окна на подписаться на рассылку
@@ -98,42 +99,42 @@ const NewsPage = (props) => {
                <div className="mr20 columnSmal">
                   <div className="filter">
 
-                     <ReactSelect
+                     {/* <ReactSelect
                         name='filterRelevance'
                         valuesOptions={filterRelevanceData}//Сюда передать данные списка выбора
                         isMulti={false}//множественный выбор
                         placeholder={'Актуальность'}
-                        /* initialValue={filterRelevance} *///Выбранное/ые данные по дефолту. Если isMulti true, то передавать массив!
+                        //initialValue={filterRelevance}//Выбранное/ые данные по дефолту. Если isMulti true, то передавать массив!
                         onChangeValue={setFilterRelevance}//функция, возвращающая выбранное значение
                         labelName={'text'}//Какие данные отображать в label (видимые пользователем)
                         valueName={'value'}//Какие данные отображать в value (видимые только нам)
                         isSearchable={false}//Тут можно отключить поиск
-                     />
+                     /> */}
 
-                     <div className="mt20">
+                     {/* <div className="mt20">
                         <ReactSelect
                            name='filterTheme'
                            valuesOptions={filterThemeData}//Сюда передать данные списка выбора
                            isMulti={false}//множественный выбор
                            placeholder={'Тип'}
-                           /* initialValue={filterTheme} *///Выбранное/ые данные по дефолту. Если isMulti true, то передавать массив!
+                           //initialValue={filterTheme}//Выбранное/ые данные по дефолту. Если isMulti true, то передавать массив!
                            onChangeValue={setFilterTheme}//функция, возвращающая выбранное значение
                            labelName={'text'}//Какие данные отображать в label (видимые пользователем)
                            valueName={'value'}//Какие данные отображать в value (видимые только нам)
                            isSearchable={false}//Тут можно отключить поиск
                         />
+                     </div> */}
+
+                     <div className="filterThemeContainer">
+                        <input placeholder='Выберите дату' type="text" value={calendarDate} onChange={() => false} className="inputCalendar" />
+                        <CalendarDouble onChange={setCalendarDate} onChangeServer={setCalendarDateForServer} />
                      </div>
 
-                     <div className="mt20 filterThemeContainer">
-                        <input placeholder='Выберите дату' type="text" value={calendarDateStart} onChange={() => false} className="inputCalendar" />
-                        <Calendar onChange={e => setCalendarDateStart(formatterCalendar.format(e))} />
-                     </div>
+                     <div className="mt20 filterSearchContainer"><input value={search} onChange={(e) => setSearch(e.target.value)} type="text" placeholder='Поиск по новостям' className="filterSearch" /></div>
 
-                     <div className="mt20 filterSearchContainer"><input type="text" placeholder='Ключевое слово' className="filterSearch" /></div>
+                     <div onClick={handleDateChange} className={`mt20 btnY ${s.btnApply}`}>Применить </div>
 
-                     <div onChange={handleDateChange} className={`mt20 btnY ${s.btnApply}`}>Применить </div>
-
-                     <button className='mt20 filterBtnNewsArchive'>Архив новостей</button>
+                     <a href='https://old.admhimki.ru/novosti/novosti/2024/09/23/2024/09/25/?page=1' target='_blank' className='mt20 filterBtnNewsArchive'>Архив новостей</a>
                      <button onClick={() => setModalActive(true)} className='mt20 subscribe'>Подписаться на рассылку</button>
                      <div className="mt12 juridicalInfo">Свидетельство о регистрации СМИ от 22.04.2024 ЭЛ № ФС 77 - 87145</div>
 
@@ -151,7 +152,7 @@ const NewsPage = (props) => {
                </div>
                <div className="columnLarge">
                   <News news={news} mobilFullPhoto={true} />
-                  <div onClick={shiwMore} className={`btnW ${s.showMore}`}>Загрузить еще</div>
+                  <div onClick={showMore} className={`btnW ${s.showMore}`}>Загрузить еще</div>
                </div>
 
             </div>

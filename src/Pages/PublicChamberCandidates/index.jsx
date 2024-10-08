@@ -20,7 +20,7 @@ const PublicChamberCandidates = (props) => {
                палаты
             </div>
             <div className={`mt80 borderMain ${s.border}`}>
-               <DocumentContainerDownload text='Список кандидатов в члены общественной палаты городского округа Химки' date="21.06.2024" />
+               <DocumentContainerDownload type={'PDF'} text='Список кандидатов в члены общественной палаты городского округа Химки' date="21.06.2024" />
             </div>
             <div className={`mt80 ${s.title}`}>Вниманию кандидатов в Общественную палату г.о. Химки! </div>
 
@@ -64,7 +64,7 @@ const PublicChamberCandidates = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.border}`}>
-               <DocumentContainerDownload text='Список кандидатов в члены Общественной палаты городского округа Химки Московской области' date="21.06.2024" />
+               <DocumentContainerDownload type={'PDF'} text='Список кандидатов в члены Общественной палаты городского округа Химки Московской области' date="21.06.2024" />
             </div>
 
          </ContantContainerMain>

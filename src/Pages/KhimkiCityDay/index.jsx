@@ -8,8 +8,11 @@ import VkChannel from '../../BannersComopnents/VkChannel';
 import TgChannel from '../../BannersComopnents/TgChannel';
 
 import khimkiCityDay from '../../assets/img/events/khimki_city_day.png';
+import khimkiCityDayMobil from '../../assets/img/events/khimki_city_day_mobil.png';
 
 const KhimkiCityDay = (props) => {
+
+   const isMobil = window.innerWidth > 500;
 
    return (
       <div>
@@ -20,7 +23,9 @@ const KhimkiCityDay = (props) => {
             </div>
             <div className="mt40 columnContainer">
                <div className="columnLarge">
-                  <img className={s.imgMain} src={khimkiCityDay} alt="" />
+                  <div className={s.imgMainContainer}>
+                     <img className={s.imgMain} src={isMobil ? khimkiCityDay : khimkiCityDayMobil} alt="" />
+                  </div>
                   <div className={s.mainTextContainer}>
                      {/* Фильтры, на будущее */}
                      <div className={`mt40 ${s.filterText}`}>Мероприятия, 12 августа, 11:50</div>

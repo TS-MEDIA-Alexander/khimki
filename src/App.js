@@ -9,7 +9,6 @@ import Header from './Components/Header';
 import UsefulSourse from './Components/UsefulSourse';
 
 /* Pages */
-/* import Map from './Components/Map'; */
 import Main from './Pages/Main';
 import NewsPage from './Pages/News';
 import NewsArticle from './Pages/NewsArticle';
@@ -103,7 +102,6 @@ function App() {
 
    return (
       <div className="App">
-         {/* <Map/> */}
          <Header />
 
          <div className="wrapper">

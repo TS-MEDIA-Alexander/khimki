@@ -22,7 +22,7 @@ const PublicChamber = (props) => {
             </div>
             <div className="mt24 pageTitle">Общественная палата</div>
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/okrug/obshestvennaya-palata/chleny-obshestvennoj-palaty-gorodskogo-okruga/' text={'Члены Общественной палаты городского округа'} />
+               <LinkContainer link='http://old.admhimki.ru/okrug/obshestvennaya-palata/chleny-obshestvennoj-palaty-gorodskogo-okruga/' text={'Члены Общественной палаты городского округа'} />
                <div className="mt20"><LinkContainer link={ROUTER.khimkiDistrict.publicChamberDocuments} text={'Документы'} /></div>
                <div className="mt20"><LinkContainer link={ROUTER.khimkiDistrict.publicChamberCandidates} text={'Кандидаты в члены муниципальной общественной палаты'} /></div>
                <div className="mt20"><LinkContainer link={ROUTER.khimkiDistrict.listCommissionsPublicChamber} text={'Перечень Комиссий Общественной палаты'} /></div>

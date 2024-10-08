@@ -69,6 +69,12 @@
    right: 40px;
    bottom: 40px;
    padding: 16px;
+   cursor: pointer;
+}
+
+.btn img {
+   width: 24px;
+   height: 24px;
 }
 
 .btnContainer {

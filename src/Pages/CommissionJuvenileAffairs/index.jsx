@@ -22,10 +22,10 @@ const CommissionJuvenileAffairs = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/komissiya-po-delam-nesovershennoletnih-i-zashite-ih-prav/sostav-komissii-po-delam-nesovershennoletnih-i-zashite-ih-prav-gorodsko-go-okruga-himki/' text={'Состав Комиссии по делам несовершеннолетних и защите их прав городско-го округа Химки'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/komissiya-po-delam-nesovershennoletnih-i-zashite-ih-prav/uchrezhdeniya-sistemy-profilaktiki-beznadzornosti-i-pravonarushenij-nesovershennoletnih/' text={'Учреждения системы профилактики безнадзорности и правонарушений несовершеннолетних'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/dokumenty/normativnye-dokumenty/' text={'Нормативные документы'} /></div>
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/okrug/deyatelnost/komissiya-po-delam-nesovershennoletnih-i-zashite-ih-prav/kontakty/' text={'Контакты (перенести на основную страницу “Комиссия по делам несовершеннолетних и защите их прав”)'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/komissiya-po-delam-nesovershennoletnih-i-zashite-ih-prav/sostav-komissii-po-delam-nesovershennoletnih-i-zashite-ih-prav-gorodsko-go-okruga-himki/' text={'Состав Комиссии по делам несовершеннолетних и защите их прав городско-го округа Химки'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/komissiya-po-delam-nesovershennoletnih-i-zashite-ih-prav/uchrezhdeniya-sistemy-profilaktiki-beznadzornosti-i-pravonarushenij-nesovershennoletnih/' text={'Учреждения системы профилактики безнадзорности и правонарушений несовершеннолетних'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/dokumenty/normativnye-dokumenty/' text={'Нормативные документы'} /></div>
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/komissiya-po-delam-nesovershennoletnih-i-zashite-ih-prav/kontakty/' text={'Контакты (перенести на основную страницу “Комиссия по делам несовершеннолетних и защите их прав”)'} /></div>
             </div>
 
 
@@ -55,16 +55,16 @@ const CommissionJuvenileAffairs = (props) => {
             <div className="mt80 pageSubtitle">Деятельность Комиссии</div>
 
             <div className={`mt40 borderMain borderDocumentContainer`}>
-               <DocumentContainerDownload text='Отчет о состоянии и мерах по предупреждению беспризорности, безнадзорности, наркомании, токсикомании, алкоголизма, правонарушений несовершеннолетних и защите их прав на территории городского округа Химки в 2022 году' />
-               <DocumentContainerDownload text='Отчет о состоянии и мерах по предупреждению беспризорности, безнадзорности, наркомании, токсикомании, алкоголизма, правонарушений несовершеннолетних и защите их прав на территории городского округа Химки в 2021 году' />
-               <DocumentContainerDownload text='Комплексный план мероприятий по профилактике безнадзорности, беспризорности, наркомании, токсикомании,  алкоголизма, суицидов, правонарушений несовершеннолетних, защите их прав на территории городского округа Химки Московской области на 2023 год ' />
-               <DocumentContainerDownload text='План работы Комиссии по делам несовершеннолетних и защите их прав городского округа Химки на II полугодие 2020 года ' />
-               <DocumentContainerDownload text='Комплексный план мероприятий по профилактике безнадзорности, беспризорности, наркомании, токсикомании, алкоголизма, суицидов, правонарушений несовершеннолетних, защите их прав на территории городского округа Химки Московской области на 2020 год' />
-               <DocumentContainerDownload text='План работы Комиссии по делам несовершеннолетних и защите их прав городского округа Химки на I полугодие 2020 года ' />
-               <DocumentContainerDownload text='Сведения о деятельности комиссии по делам несовершеннолетних и защите их прав по профилактике безнадзорности и правонарушений несовершеннолетних за 2019 год ' />
-               <DocumentContainerDownload text='Комплексный план работы по профилактике безнадзорности, беспризорности, наркомании, алкоголизма, суицидов, правонарушений несовершеннолетних, защите их прав на 2018 год   ' />
-               <DocumentContainerDownload text='План работы Комиссии по делам несовершеннолетних и защите их прав городского округа Химки на II полугодие 2018 года' />
-               <DocumentContainerDownload text='Отчет о работе Комиссии по делам несовершеннолетних и защите их прав городского округа Химки за I полугодие 2018 года ' />
+               <DocumentContainerDownload type={'PDF'} text='Отчет о состоянии и мерах по предупреждению беспризорности, безнадзорности, наркомании, токсикомании, алкоголизма, правонарушений несовершеннолетних и защите их прав на территории городского округа Химки в 2022 году' />
+               <DocumentContainerDownload type={'PDF'} text='Отчет о состоянии и мерах по предупреждению беспризорности, безнадзорности, наркомании, токсикомании, алкоголизма, правонарушений несовершеннолетних и защите их прав на территории городского округа Химки в 2021 году' />
+               <DocumentContainerDownload type={'PDF'} text='Комплексный план мероприятий по профилактике безнадзорности, беспризорности, наркомании, токсикомании,  алкоголизма, суицидов, правонарушений несовершеннолетних, защите их прав на территории городского округа Химки Московской области на 2023 год ' />
+               <DocumentContainerDownload type={'PDF'} text='План работы Комиссии по делам несовершеннолетних и защите их прав городского округа Химки на II полугодие 2020 года ' />
+               <DocumentContainerDownload type={'PDF'} text='Комплексный план мероприятий по профилактике безнадзорности, беспризорности, наркомании, токсикомании, алкоголизма, суицидов, правонарушений несовершеннолетних, защите их прав на территории городского округа Химки Московской области на 2020 год' />
+               <DocumentContainerDownload type={'PDF'} text='План работы Комиссии по делам несовершеннолетних и защите их прав городского округа Химки на I полугодие 2020 года ' />
+               <DocumentContainerDownload type={'PDF'} text='Сведения о деятельности комиссии по делам несовершеннолетних и защите их прав по профилактике безнадзорности и правонарушений несовершеннолетних за 2019 год ' />
+               <DocumentContainerDownload type={'PDF'} text='Комплексный план работы по профилактике безнадзорности, беспризорности, наркомании, алкоголизма, суицидов, правонарушений несовершеннолетних, защите их прав на 2018 год   ' />
+               <DocumentContainerDownload type={'PDF'} text='План работы Комиссии по делам несовершеннолетних и защите их прав городского округа Химки на II полугодие 2018 года' />
+               <DocumentContainerDownload type={'PDF'} text='Отчет о работе Комиссии по делам несовершеннолетних и защите их прав городского округа Химки за I полугодие 2018 года ' />
 
             </div>
          </ContantContainerMain>

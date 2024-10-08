@@ -38,7 +38,7 @@ const MoscowInterregionalTransport = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.border}`}>
-               <DocumentContainerDownload text='Порядок актуализации документов воинского учета' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Порядок актуализации документов воинского учета' date={'06.02.2023'}/>
             </div>
 
          </ContantContainerMain>

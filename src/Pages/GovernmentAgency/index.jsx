@@ -41,7 +41,7 @@ const GovernmentAgency = (props) => {
             </div>
 
             <div className="mt40 borderMain">
-               <DocumentContainerDownload text='Федеральный закон от 15 ноября 1997 г. № 143-ФЗ «Об актах гражданского состояния»' date="06.02.2023" />
+               <DocumentContainerDownload type={'PDF'} text='Федеральный закон от 15 ноября 1997 г. № 143-ФЗ «Об актах гражданского состояния»' date="06.02.2023" />
             </div>
 
             <div className="mt80">

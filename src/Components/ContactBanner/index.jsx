@@ -3,9 +3,11 @@ import s from './ContactBanner.module.css';
 
 import arrow_btn_link from '../../assets/icons/arrow_btn_link.svg';
 import pattern from '../../assets/icons/khimkiDistrict/pattern.svg';
+import { NavLink } from 'react-router-dom';
+import { ROUTER } from '../../config';
 
 
-const ContactBanner = ({ img, title, name, subtitle, info, WorkingHours, tel, mail }) => {
+const ContactBanner = ({ img, title, name, subtitle, info, WorkingHours, tel, mail, url }) => {
    return (
       <div className={`borderMain ${s.contactContainer}`}>
          <div className={s.titleRow}>
@@ -24,7 +26,7 @@ const ContactBanner = ({ img, title, name, subtitle, info, WorkingHours, tel, ma
             <div className={`mt16 oval ${s.mobilMt8}`}>{mail}</div>
          </div>
 
-         <div className={`btnCircleG ${s.btn}`}><img src={arrow_btn_link} alt="" /></div>
+         <NavLink to={`${ROUTER.khimkiDistrict.administrationStructurePerson}${url}`} className={`btnCircleG ${s.btn}`}><img src={arrow_btn_link} alt="" /></NavLink>
       </div>
    )
 }

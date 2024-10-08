@@ -27,7 +27,7 @@ const Symbolism = (props) => {
             <div className={`mt38 text`}>Совет депутатов городского округа Химки Московской области
                от имени граждан, проживающих на территории городского округа Химки Московской области, исходя из необходимости защиты и сохранения конституционных прав и свобод граждан и создания для них подобающих условий жизни, отдыха и трудовой деятельности принимает настоящий Устав городского округа Химки Московской области, который является основополагающим муниципальным нормативным правовым актом среди всех остальных актов, принимаемых органами местного самоуправления городского округа.</div>
             <div className={`mt40 borderMain`}>
-               <DocumentContainerDownload document={ustav} documentName={'ustav-gorodskogo-okruga-khimki-moskovskoy-oblasti'} text='Устав городского округа Химки Московской области' date="06.02.2023" />
+               <DocumentContainerDownload type={'PDF'} document={ustav} documentName={'ustav-gorodskogo-okruga-khimki-moskovskoy-oblasti'} text='Устав городского округа Химки Московской области' date="06.02.2023" />
             </div>
             <div className={`mt80 ${s.subtitle}`}>Символика</div>
             <div className="mt40 borderMain">

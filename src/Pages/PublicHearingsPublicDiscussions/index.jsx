@@ -22,8 +22,8 @@ const PublicHearingsPublicDiscussions = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
-               <LinkContainer link='https://www.admhimki.ru/publichnye-slushaniya/protokoly-i-zaklyucheniya/' text={'Протоколы и заключения'} />
-               <div className="mt24"><LinkContainer link='https://www.admhimki.ru/publichnye-slushaniya/naznachenie-publichnyh-slushanij/' text={'Назначение публичных слушаний и общественных обсуждений'} /></div>
+               <LinkContainer link='http://old.admhimki.ru/publichnye-slushaniya/protokoly-i-zaklyucheniya/' text={'Протоколы и заключения'} />
+               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/publichnye-slushaniya/naznachenie-publichnyh-slushanij/' text={'Назначение публичных слушаний и общественных обсуждений'} /></div>
             </div>
 
          </ContantContainerMain>

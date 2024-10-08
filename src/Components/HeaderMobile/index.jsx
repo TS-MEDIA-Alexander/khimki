@@ -19,7 +19,6 @@ const HeaderMobile = ({ setMobilMenu }) => {
                <div id='history' className={`mt24 ${s.item}`}>История <div className={s.imgContainer}><img src={arrow_down} alt="" /></div></div>
                <div id='khimkiDistrict' className={`mt24 ${s.item}`}>Округ <div className={s.imgContainer}><img src={arrow_down} alt="" /></div></div>
                <div id='activity' className={`mt24 ${s.item}`}>Деятельность <div className={s.imgContainer}><img src={arrow_down} alt="" /></div></div>
-               <div id='prosecutorOffice' className={`mt24 ${s.item}`}>Прокуратура <div className={s.imgContainer}><img src={arrow_down} alt="" /></div></div>
                <div id='citizensAppeals' className={`mt24 ${s.item}`}>Обращения граждан <div className={s.imgContainer}><img src={arrow_down} alt="" /></div></div>
                <NavLink to={ROUTER.contacts.main} className={`mt24 ${s.item}`}>Контакты <div className={s.imgContainer}><img src={arrow_down} alt="" /></div></NavLink>
             </div>
@@ -184,19 +183,16 @@ const HeaderMobile = ({ setMobilMenu }) => {
                <NavLink to={ROUTER.activity.transport} className={s.linkMenu}>
                   Транспорт
                </NavLink>
-               <div className={s.linkMenu}>
-                  Установка шлагбаумов во дворах
-               </div>
                <NavLink to={ROUTER.activity.ecologyEnvironmentalSafety} className={s.linkMenu}>
                   Экология и экологическая безопасность
                </NavLink>
             </div>
 
-            <div className={` ${activeID === 'prosecutorOffice' && s.linkMenuContainerActive} ${s.linkMenuContainer}`}>
+            {/* <div className={` ${activeID === 'prosecutorOffice' && s.linkMenuContainerActive} ${s.linkMenuContainer}`}>
                <NavLink to={ROUTER.prosecutorOffice.main} className={s.linkMenu}>
                   Прокуратура
                </NavLink>
-               <NavLink  /* to={ROUTER.prosecutorOffice.main} */ className={s.linkMenu}>
+               <NavLink className={s.linkMenu}>
                   Химкинская городская прокуратура
                </NavLink>
                <NavLink to={ROUTER.prosecutorOffice.militaryProsecutorOfficeSolnechnogorskGarrison} className={s.linkMenu}>
@@ -213,10 +209,10 @@ const HeaderMobile = ({ setMobilMenu }) => {
                <NavLink to={ROUTER.prosecutorOffice.northernTransportProsecutorOffice} className={s.linkMenu}>
                   Северная транспортная прокуратура
                </NavLink>
-               <NavLink  /* to={ROUTER.prosecutorOffice.main} */ className={s.linkMenu}>
+               <NavLink className={s.linkMenu}>
                   Правовое просвещение и правовое информирование
                </NavLink>
-            </div>
+            </div> */}
 
             <div className={` ${activeID === 'citizensAppeals' && s.linkMenuContainerActive} ${s.linkMenuContainer}`}>
                <NavLink to={ROUTER.citizensAppeals.main} className={s.linkMenu}>

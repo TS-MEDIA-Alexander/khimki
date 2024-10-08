@@ -10,8 +10,8 @@ const instance = axios.create({
 });
 
 const API = {
-   getNews: async (page = 1, limit = 12, dateFrom, dateTo) => {
-      return instance.get(`content/news/list?page=${page}&limit=${limit}`)/* &dateFrom=${dateFrom}&dateTo=${dateTo} */
+   getNews: async (page = 1, limit = 12, dateFrom='', dateTo='', search='') => {
+      return instance.get(`content/news/list?page=${page}&limit=${limit}&dateFrom=${dateFrom}&dateTo=${dateTo}&search=${search}`)/*  */
          .then(response => response.data)
          .catch(() => {
             console.log('Error')

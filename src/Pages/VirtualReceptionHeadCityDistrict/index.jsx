@@ -12,6 +12,9 @@ import inverted_exclamation_mark from '../../assets/icons/inverted_exclamation_m
 import MessageErr from '../../total/MessageErr';
 import MessageSuccusess from '../../total/MessageSuccusess';
 import { maskInput } from '../../utils';
+import UploadFile from '../../Components/UploadFile';
+import UploadFileOld from '../../Components/UploadFileOld';
+import UploadFileNew from '../../Components/UploadFileNew';
 
 const VirtualReceptionHeadCityDistrict = (props) => {
 
@@ -28,6 +31,7 @@ const VirtualReceptionHeadCityDistrict = (props) => {
       email: '',
       tel: '',
       text: '',
+      file: []
    }
 
 
@@ -35,23 +39,28 @@ const VirtualReceptionHeadCityDistrict = (props) => {
 
    const [agree, setAgree] = useState(true);
 
+   const [disable, setDisable] = useState(false);
+
    const [important, setImportant] = useState('');
 
    const handler = (name, value) => {
-      setForm(prev => ({ ...prev, [name]: value }))
+      setForm(prev => ({ ...prev, [name]: value }));
+      console.log(form)
    }
 
    const submit = () => {
+      setDisable(true)
       API.postСomplaint(form)
          .then(response => {
-            console.log(response.data)
             for (let key in form) {
                setForm(prev => ({ ...prev, [key]: '' }))
             }
-            setSuccusess(true)
+            setSuccusess(true);
+            setDisable(false);
          })
          .catch(() => {
-            setErr(true)
+            setErr(true);
+            setDisable(false);
          })
    }
 
@@ -137,14 +146,22 @@ const VirtualReceptionHeadCityDistrict = (props) => {
                <div className={`mt48 ${s.titleInput}`}>Текст обращения</div>
                <textarea value={form['text']} onChange={(e) => handler('text', e.target.value)} placeholder='Введите здесь Ваше обращение, при необходимости прикрепите файлы' className={`mt8 ${s.textarea}`} name="" id=""></textarea>
                <input onChange={(e) => setImportant(e.target.value)} type="text" className={s.important} />
-               {/* <div className={`mt48 ${s.btn}`}>Прикрепить файл (файлы)</div>
-               <div className={`mt48 ${s.description}`}>Внимание! Максимальное количество файлов 7, общий объём приложенных файлов не должен превышать - 20 МбДопустимые форматы: jpg, png, gif, bmp, doc, docx, xls, xlsx, pdf, txt, zip, rar, 7z</div> */}
+
+               {/* <input multiple value={form['file']} onChange={(e) => handler('file', [...form['file'], e.target.value])} className={`mt48`} type="file" /> */}
+
+               <div className="mt48">
+                  {/* <UploadFile value={form['file']} handler={handler} /> */}
+                  {/* <UploadFileNew /> */}
+                  <UploadFileOld value={form['file']} handler={handler} />
+               </div>
+
+               <div className={`mt48 ${s.description}`}>Внимание! Максимальное количество файлов 7, общий объём приложенных файлов не должен превышать - 20 МбДопустимые форматы: jpg, png, gif, bmp, doc, docx, xls, xlsx, pdf, txt, zip, rar, 7z</div>
                <div className="mt48 flexContainer">
                   <input onChange={() => setAgree(!agree)} name='agree' id='agree' type="checkbox" />
                   <label htmlFor="agree" className={`ml16 ${s.description}`}>Я даю согласие на использование персональных данных</label>
                </div>
 
-               <button onClick={submit} disabled={agree || important} className={`mt48 ${s.submit}`}>Отправить</button>
+               <button onClick={submit} disabled={disable || agree || important} style={{ background: disable && 'grey' }} className={`mt48 btnY ${s.submit}`}>Отправить</button>
 
                <div className={`mt80 borderMain flexContainer ${s.description} ${s.descriptionContainer}`}>
                   <img src={inverted_exclamation_mark} alt="" />

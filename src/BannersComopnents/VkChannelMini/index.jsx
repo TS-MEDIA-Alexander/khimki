@@ -1,8 +1,6 @@
 import React from 'react';
 import icon from '../../assets/iconsBanners/vk_channel_mini.svg'
 import s from './VkChannelMini.module.css';
-import { NavLink } from 'react-router-dom';
-import { ROUTER } from '../../config';
 
 const VkChannelMini = (props) => {
    return (

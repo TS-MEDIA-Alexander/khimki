@@ -19,7 +19,7 @@ const AdministrationStructurePerson = (props) => {
 
    const personUrl = useParams()['person-'].split('-')[1];
 
-   const [person, setPerson] = useState(() => persons.filter(el => el.url === personUrl)[0])
+   const [person, setPerson] = useState(() => persons.filter(el => el.url === personUrl)[0]);
  
    const isMobil = window.innerWidth < 500;
 
@@ -29,7 +29,7 @@ const AdministrationStructurePerson = (props) => {
 
             <div className={`mt80 breadcrumbs`}>
                <NavLink to={ROUTER.khimkiDistrict.main} className='breadcrumbsFrom'>Округ</NavLink>
-               <NavLink to={ROUTER.khimkiDistrict.administrationStructure} className='breadcrumbsTo'> / Структура администрации </NavLink>
+               <NavLink to={ROUTER.khimkiDistrict.administrationStructure} className='breadcrumbsFrom'> / Структура администрации </NavLink>
                <span className='breadcrumbsTo'> / {person?.jobTitle} </span>
             </div>
             <div className={`mt24 pageTitle ${s.title}`}>{person?.jobTitle}</div>
@@ -45,8 +45,8 @@ const AdministrationStructurePerson = (props) => {
                            <div className={s.cardName}>{person?.name}</div>
                         </div>
                         <div>
-                           <div className={`mt24 oval`}>{person?.tel || 'нет телефона'}</div>
-                           <div className={`mt24 oval ${s.cardTel}`}>{person?.mail || 'нет почты'}</div>
+                        {person?.tel && <div className={`mt24 oval`}>{person?.tel}</div>}
+                        {person?.mail && <div className={`mt24 oval ${s.cardTel}`}>{person?.mail}</div>}
                         </div>
                      </div>
                   </div>

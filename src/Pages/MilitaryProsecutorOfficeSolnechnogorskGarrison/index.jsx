@@ -45,20 +45,20 @@ const MilitaryProsecutorOfficeSolnechnogorskGarrison = (props) => {
             </div>
 
             <div className={`mt80 borderMain ${s.border}`}>
-               <DocumentContainerDownload text='Порядок актуализации документов воинского учета' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Дополнительные гарантии добровольцам' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Гарантии для отдельных категорий граждан приграничных регионов' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Гарантии для отдельных категорий граждан приграничных регионов' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Ужесточена ответственность за нарушение воинского учета' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Скорректированы некоторые вопросы деятельности войск национальной гвардии' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Эксперимент по обжалованию решений об отказе в поступлении на военную службу по контракту' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Упрощен порядок назначения выплат по ранению' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Изменения в сроках призыва на военную службу и организации общественного порядка' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Дополнительный отпуск военнослужащим, имеющим детей-инвалидов' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Двойное гражданство – основание для лишения допуска к государственной тайне' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Изменения в порядке мобилизации' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Члены семей погибших военнослужащих не будут возвращать военную ипотеку' date={'06.02.2023'}/>
-               <DocumentContainerDownload text='Изменения в воинском учете' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Порядок актуализации документов воинского учета' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Дополнительные гарантии добровольцам' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Гарантии для отдельных категорий граждан приграничных регионов' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Гарантии для отдельных категорий граждан приграничных регионов' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Ужесточена ответственность за нарушение воинского учета' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Скорректированы некоторые вопросы деятельности войск национальной гвардии' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Эксперимент по обжалованию решений об отказе в поступлении на военную службу по контракту' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Упрощен порядок назначения выплат по ранению' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Изменения в сроках призыва на военную службу и организации общественного порядка' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Дополнительный отпуск военнослужащим, имеющим детей-инвалидов' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Двойное гражданство – основание для лишения допуска к государственной тайне' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Изменения в порядке мобилизации' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Члены семей погибших военнослужащих не будут возвращать военную ипотеку' date={'06.02.2023'}/>
+               <DocumentContainerDownload type={'PDF'} text='Изменения в воинском учете' date={'06.02.2023'}/>
             </div>
 
          </ContantContainerMain>

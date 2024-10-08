@@ -74,38 +74,40 @@ const Contacts = (props) => {
             <div className={`mt40 ${s.cardBannerContainer}`}>
                <ContactBanner
                   img={skhodnya_firsanovka}
-                  title={'Территориальное управлениемикрорайона Сходня - Фирсановка'}
+                  title={'Территориальное управление микрорайона Сходня - Фирсановка'}
                   name={'Петрухин'}
                   subtitle={'Сергей Сергеевич'}
                   WorkingHours={'Пн-Пт 09:00-18:00'}
                   tel={'+7 (495) 574-72-67'}
                   mail={' sf_ta@admhimki.ru'}
+                  url={'petrukhin'}
                />
-               <ContactBanner
+               {/* <ContactBanner
                   title={'Территориальное управление микрорайонов Новогорск-Планерная'}
                   name={'Шпендик'}
                   subtitle={'Ярослав Олегович'}
                   WorkingHours={'Пн-Пт 09:00-18:00'}
                   tel={'+7 (495) 571-01-40'}
                   mail={'np_ta@admhimki.ru'}
-               />
+               /> */}
                <ContactBanner
-                  title={'Территориальное управлениемикрорайона Сходня - Фирсановка'}
+                  title={'Территориальное управление микрорайонов Новогорск – Планерная'}
                   name={'Мишина'}
                   subtitle={'Наталья Владимировна '}
                   WorkingHours={'Пн-Пт 09:00-18:00'}
                   tel={'+7 (495) 570-34-98'}
                   mail={'lv_ta@admhimki.ru'}
+                  url={'mishina'}
                />
 
                <ContactBanner
-                  img={podrezkovo}
-                  title={'Территориальное управление микрорайона Подрезково'}
+                  title={'Территориальное управление микрорайона Левобережный'}
                   name={'Капустина'}
                   subtitle={'Людмила Юрьевна'}
                   WorkingHours={'Пн-Пт 09:00-18:00'}
                   tel={'+7 (495) 574-84-85'}
                   mail={'pd_ta@admhimki.ru'}
+                  url={'kapustina'}
                />
                <ContactBanner
                   img={klyazma_starbeevo}
@@ -115,29 +117,38 @@ const Contacts = (props) => {
                   WorkingHours={'Пн-Пт 09:00-18:00'}
                   tel={'+7 (495) 572-83-88'}
                   mail={'ks_ta@admhimki.ru'}
+                  url={'genter'}
                />
                <ContactBanner
                   img={kutuzovskoe}
                   title={'Территориальное управление Кутузовское'}
-                  name={'Воронов'}
-                  subtitle={'Дмитрий Александрович'}
+                  name={'Мазуров'}
+                  subtitle={'Дмитрий Николаевич'}
                   WorkingHours={'Пн-Пт 09:00-18:00'}
                   tel={'+7 (495) 572-32-28'}
                   mail={'kutuzovskoe@admhimki.ru'}
                />
-
                <ContactBanner
                   img={lunevskoe}
                   title={'Территориальное управление Лунёвское'}
-                  name={'Машковцев'}
-                  subtitle={'Эдуард Александрович'}
+                  name={'Понятойкин'}
+                  subtitle={'Иван Николаевич'}
+                  WorkingHours={'Пн-Пт 09:00-18:00'}
+                  tel={'+7 (495) 572-03-29'}
+                  mail={'lunevo@admhimki.ru'}
+               />
+               <ContactBanner
+                  img={podrezkovo}
+                  title={'Территориальное управление микрорайона Подрезково'}
+                  name={'Зуева'}
+                  subtitle={'Ольга Александровна'}
                   WorkingHours={'Пн-Пт 09:00-18:00'}
                   tel={'+7 (495) 572-03-29'}
                   mail={'lunevo@admhimki.ru'}
                />
             </div>
 
-            <div className={`mt80 pageSubtitle ${s.textCenter}`}>Горячие линии ведомств</div>
+            {/* <div className={`mt80 pageSubtitle ${s.textCenter}`}>Горячие линии ведомств</div>
             <div className={`mt40 ${s.cardBannerContainer}`}>
                <div className={`borderMain ${s.cardHotline}`}>
                   <div className={s.title}>«Горячая линия» по вопросам незаконной торговли алкоголем, фактам незаконного игорного бизнеса, незаконной торговли</div>
@@ -173,7 +184,7 @@ const Contacts = (props) => {
                      <div className="ml16 oval">hotline@admhimki.ru</div>
                   </div>
                </div>
-            </div>
+            </div> */}
 
             <div className={`mt80 pageSubtitle ${s.textCenter}`}>Правительство Московской области</div>
             <CardHuman
