@@ -8,7 +8,7 @@ const DocumentContainerDownload = ({ document, documentName, text, date, type })
          <a
             download={documentName}
             href={document} className={s.link}>
-               <IconWordPdfText type={type}/>
+            <IconWordPdfText type={type} />
             <div className={s.textInner}>
                {text}
             </div>
