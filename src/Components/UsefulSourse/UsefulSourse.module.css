@@ -67,7 +67,7 @@
 
 .item:hover {
    color: #303030;
-   font-weight: 500;
+   /* font-weight: 500; */
 }
 
 .item:not(:first-child) {

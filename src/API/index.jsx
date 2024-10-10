@@ -5,7 +5,7 @@ const instance = axios.create({
    headers: {
       'API-KEY': 'Ключ'
    }, */
-   baseURL: 'https://dev.admhimki.ru/delara/public/api'
+   baseURL: 'https://admhimki.ru/delara/public/api'
 
 });
 

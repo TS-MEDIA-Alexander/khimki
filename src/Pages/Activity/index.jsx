@@ -50,7 +50,7 @@ const Activity = (props) => {
                      <LinkContainer radial={true} link={ROUTER.activity.commissionJuvenileAffairs} text='Комиссия по делам несовершеннолетних и защите их прав' />
                   </div>
                   <div className="mt20">
-                     <LinkContainer radial={true} link={ROUTER.activity.smallMediumBusinesses} text='Малое и среднее предпринимательство' />
+                     <LinkContainer radial={true} link={ROUTER.activity.smallMediumBusinesses.main} text='Малое и среднее предпринимательство' />
                   </div>
                </div>
                <div className={s.column}>
@@ -93,9 +93,6 @@ const Activity = (props) => {
                   </div>
                   {/* <div className="mt20">
                      <LinkContainer radial={true} link={ROUTER.activity.commissionJuvenileAffairs} text='Комиссия по делам несовершеннолетних и защите их прав' />
-                  </div> */}
-                  {/* <div className="mt20">
-                     <LinkContainer radial={true} link={ROUTER.activity.smallMediumBusinesses} text='Малое и среднее предпринимательство' />
                   </div> */}
                </div>
             </div>

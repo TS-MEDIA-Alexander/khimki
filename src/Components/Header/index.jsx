@@ -162,7 +162,7 @@ const Header = (props) => {
                               <p>Комиссия по делам несовершеннолетних</p>
                               и защите их прав
                            </NavLink>
-                           <NavLink to={ROUTER.activity.smallMediumBusinesses} className={s.linkMenu}>
+                           <NavLink to={ROUTER.activity.smallMediumBusinesses.main} className={s.linkMenu}>
                               Малое и среднее предпринимательство
                            </NavLink>
                            <NavLink to={ROUTER.activity.municipalСontrol} className={s.linkMenu}>

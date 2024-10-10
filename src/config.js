@@ -53,7 +53,6 @@ export const ROUTER = {
       propertyRelations: '/deyatelnost/imuschestvennyye-otnosheniya',
       investities: '/deyatelnost/investitsii',
       participatoryBudgeting: '/deyatelnost/initsiativnoye-byudzhetirovaniye',
-      smallMediumBusinesses: '/deyatelnost/maloye-i-srednee-predprinimatelstvo',
       humanResourcesManagement: '/deyatelnost/kadrovoye-upravleniye',
       commissionJuvenileAffairs: '/deyatelnost/komissiya-po-delam-nesovershennoletnikh',
       municipalСontrol: '/deyatelnost/munitsipalniy-kontrol',
@@ -69,6 +68,11 @@ export const ROUTER = {
       socialPrograms: '/deyatelnost/sotsialnyye-programmy',
       outdoorAdvertising: '/deyatelnost/otdel-reklamy-mku-upravleniye-delami-administratsii',
       authorityFeldHandlingAnimalsWithoutOwners: '/deyatelnost/polnomochiya-v-oblasti-obrascheniya-s-zhivotnymi-bez-vladeltsev',
+      smallMediumBusinesses: {
+         main: '/deyatelnost/maloye-i-srednee-predprinimatelstvo',
+         contests: '/deyatelnost/maloye-i-srednee-predprinimatelstvo/konkursy-na-predostavleniya-finansovoj-podderzhki'
+      }
+
    },
    prosecutorOffice: {
       main: '/prokuratura',
