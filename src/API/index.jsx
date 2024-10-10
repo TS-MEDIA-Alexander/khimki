@@ -10,7 +10,7 @@ const instance = axios.create({
 });
 
 const API = {
-   getNews: async (page = 1, limit = 12, dateFrom='', dateTo='', search='') => {
+   getNews: async (page = 1, limit = 12, dateFrom = '', dateTo = '', search = '') => {
       return instance.get(`content/news/list?page=${page}&limit=${limit}&dateFrom=${dateFrom}&dateTo=${dateTo}&search=${search}`)/*  */
          .then(response => response.data)
          .catch(() => {
@@ -31,12 +31,25 @@ const API = {
             console.log('Error')
          })
    },
-   postСomplaint: async (data) => {
-      return instance.post(`support/ticket/add`, data)
+   postСomplaint: async (data, files) => {
+      /* const formData = new FormData();
+      [...files].forEach((file, i) => {
+         formData.append(`files[${[i]}]`, file);
+      });
+      console.log(formData) */
+      return axios.post(`https://dev.admhimki.ru/chek_file.php`, { ...data, /* files: formData */ })
          .then(response => response.data)
          .catch(() => {
             console.log('Error')
          })
    }
+   /* postСomplaint: async (data) => {
+      console.log(data)
+      return instance.post(`support/ticket/add`, data)
+         .then(response => response.data)
+         .catch(() => {
+            console.log('Error')
+         })
+   } */
 }
 export default API
