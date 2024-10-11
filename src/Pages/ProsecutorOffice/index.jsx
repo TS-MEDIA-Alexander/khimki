@@ -101,7 +101,7 @@ const ProsecutorOffice = (props) => {
                <div className="mt24"><LinkContainer link='http://old.admhimki.ru/dokumenty/moskovskaya-mezhregionalnaya-transportnaya-prokura/' text={'Московская межрегиональная транспортная прокуратура'} /></div>
                <div className="mt24"><LinkContainer link='http://old.admhimki.ru/dokumenty/moskovskaya-prokuratura-po-nadzoru-za-soblyudeniem/' text={'Московская прокуратура по надзору за соблюдением законов в исправительных учреждениях московской области'} /></div>
                <div className="mt24"><LinkContainer link='http://old.admhimki.ru/dokumenty/severnaya-transportnaya-prokuratura/' text={'Северная транспортная прокуратура'} /></div>
-               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/pravovoe-prosveshenie-i-pravovoe-informirovanie/' text={'Правовое просвещение и правовое информирование'} /></div>
+               <div className="mt24"><LinkContainer link={ROUTER.prosecutorOffice.legalEducationAndLegalInformation} text={'Правовое просвещение и правовое информирование'} /></div>
             </div>
 
          </ContantContainerMain>

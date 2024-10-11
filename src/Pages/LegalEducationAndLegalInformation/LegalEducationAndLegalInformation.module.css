@@ -1,0 +1,22 @@
+.box {
+  display: flex;
+  gap: 16px;
+}
+
+@media screen and (max-width: 405px) {
+  .box {
+    gap: 8px;
+  }
+}
+
+.virtualBtn {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  color: #303030;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+}

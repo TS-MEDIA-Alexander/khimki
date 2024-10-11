@@ -1,12 +1,8 @@
-import React, { Children } from 'react';
-import s from './ContantContainerMain.module.css';
+import React, { Children } from "react";
+import s from "./ContantContainerMain.module.css";
 
-const contantContainerMain = ({children}) => {
-   return (
-      <div className={s.contantContainer}>
-         {children}
-      </div>
-   )
-}
+const ContantContainerMain = ({ children }) => {
+  return <div className={s.contantContainer}>{children}</div>;
+};
 
-export default contantContainerMain;
+export default ContantContainerMain;

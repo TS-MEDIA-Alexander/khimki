@@ -90,6 +90,7 @@ import PageNotFound from './Pages/PageNotFound';
 import SuccessSubscribe from './Pages/SuccessSubscribe';
 import SavePast from './Pages/SavePast';
 import ContestsFinancialSupport from './Pages/ContestsFinancialSupport';
+import LegalEducationAndLegalInformation from './Pages/LegalEducationAndLegalInformation';
 /* import Table from './Components/Table'; */
 
 function App() {
@@ -180,6 +181,7 @@ function App() {
                <Route path={ROUTER.prosecutorOffice.moscowInterregionalTransport} element={<MoscowInterregionalTransport />} />
                <Route path={ROUTER.prosecutorOffice.correctionalInstitutions} element={<CorrectionalInstitutions />} />
                <Route path={ROUTER.prosecutorOffice.northernTransportProsecutorOffice} element={<NorthernTransportProsecutorOffice />} />
+               <Route path={ROUTER.prosecutorOffice.legalEducationAndLegalInformation} element={<LegalEducationAndLegalInformation />} />
 
                <Route path={ROUTER.citizensAppeals.main} element={<CitizensAppeals />} />
                <Route path={ROUTER.citizensAppeals.legalRegulation} element={<LegalRegulation />} />

@@ -81,6 +81,7 @@ export const ROUTER = {
       correctionalInstitutions: '/prokuratura/moskovskaya-mezhregionalnaya-transportnaya-prokuratura',
       correctionalInstitutions: '/prokuratura/moskovskaya-prokuratura-po-nadzoru-za-soblyudeniyem-zakonov-v-ispravitelnykh-uchrezhdeniyakh-moskovskoy-oblasti',
       northernTransportProsecutorOffice: '/prokuratura/severnaya-transportnaya-prokuratura',
+      legalEducationAndLegalInformation: '/prokuratura/pravovoe-prosveshenie-i-pravovoe-informirovanie'
    },
    citizensAppeals: {
       main: '/obrascheniya-grazhdan',

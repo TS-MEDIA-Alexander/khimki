@@ -35,7 +35,7 @@ const SmallMediumBusinesses = (props) => {
                <div className="mt24"><LinkContainer link='http://old.admhimki.ru/maloe-i-srednee-predprinimatelstvo/nestacionarnye-torgovye-obekty/' text={'Нестационарные торговые объекты'} /></div>
                <div className="mt24"><LinkContainer link='http://old.admhimki.ru/maloe-i-srednee-predprinimatelstvo/predostavlenie-imushestva-za-isklyucheniem-zemelnyh-uchastkov/' text={'Предоставление имущества (за исключением земельных участков)'} /></div>
                <div className="mt24"><LinkContainer link='http://old.admhimki.ru/maloe-i-srednee-predprinimatelstvo/upolnomochennyj-po-zashite-prav-predprinimatelej-v-moskovskoj-oblasti-i-ego-apparat/' text={'Уполномоченный по защите прав предпринимателей в Московской области и его Аппарат'} /></div>
-               <div className="mt24"><LinkContainer link={ROUTER.activity.smallMediumBusinesses.contests} text={'Конкурсы на предоставления финансовой поддержки'} /></div>
+               <div className="mt24"><LinkContainer link={ROUTER.activity.smallMediumBusinesses.contests} text={'Конкурсы на предоставления финансовой поддержки субъектам малого и среднего предпринимательства на право получения субсидии'} /></div>
             </div>
 
          </ContantContainerMain>
