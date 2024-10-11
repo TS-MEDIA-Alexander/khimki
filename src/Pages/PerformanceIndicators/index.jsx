@@ -194,7 +194,7 @@ const PerformanceIndicators = (props) => {
                               <div className={`${s.imgContainer} ${s.imgContainer_small}`}>
                                  <img src={ecoberegParkLarge} alt="" />
                               </div>
-                              <div className={s.imgDescription}>Парк Толстого</div>
+                              <div className={s.imgDescription}>Парк им. Л.Н. Толстого</div>
                            </div>
 
                         </div>
@@ -215,7 +215,7 @@ const PerformanceIndicators = (props) => {
                               <div className={`${s.imgContainer} ${s.imgContainer_small}`}>
                                  <img src={podrezkovoParkLarge} alt="" />
                               </div>
-                              <div className={s.imgDescription}>Парк Толстого</div>
+                              <div className={s.imgDescription}>Парк им. Л.Н. Толстого</div>
                            </div>
                         </div>
                      </div>

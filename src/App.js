@@ -89,6 +89,7 @@ import Contacts from './Pages/Contacts';
 import PageNotFound from './Pages/PageNotFound';
 import SuccessSubscribe from './Pages/SuccessSubscribe';
 import SavePast from './Pages/SavePast';
+import ContestsFinancialSupport from './Pages/ContestsFinancialSupport';
 /* import Table from './Components/Table'; */
 
 function App() {
@@ -156,7 +157,8 @@ function App() {
                <Route path={ROUTER.activity.propertyRelations} element={<PropertyRelations />} />
                <Route path={ROUTER.activity.investities} element={<Investities />} />
                <Route path={ROUTER.activity.participatoryBudgeting} element={<ParticipatoryBudgeting />} />
-               <Route path={ROUTER.activity.smallMediumBusinesses} element={<SmallMediumBusinesses />} />
+               <Route path={ROUTER.activity.smallMediumBusinesses.main} element={<SmallMediumBusinesses />} />
+               <Route path={ROUTER.activity.smallMediumBusinesses.contests} element={<ContestsFinancialSupport />} />
                <Route path={ROUTER.activity.humanResourcesManagement} element={<HumanResourcesManagement />} />
                <Route path={ROUTER.activity.commissionJuvenileAffairs} element={<CommissionJuvenileAffairs />} />
                <Route path={ROUTER.activity.municipalСontrol} element={<MunicipalСontrol />} />

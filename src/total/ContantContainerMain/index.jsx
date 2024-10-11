@@ -1,5 +1,5 @@
 import React, { Children } from 'react';
-import s from './contantContainerMain.module.css';
+import s from './ContantContainerMain.module.css';
 
 const contantContainerMain = ({children}) => {
    return (

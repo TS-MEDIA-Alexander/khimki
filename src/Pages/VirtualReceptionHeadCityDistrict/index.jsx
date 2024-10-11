@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import s from './VirtualReceptionHeadCityDistrict.module.css';
 
 import ContantContainerMain from '../../total/ContantContainerMain';
@@ -20,6 +20,20 @@ const VirtualReceptionHeadCityDistrict = (props) => {
 
    const config =
    {
+      first_name: 'dfdfd',
+      middle_name: 'dfdfd',
+      last_name: 'dgdgfd',
+      locality: 'dfdfd',
+      street: 'dfd',
+      house: '10',
+      building: '44',
+      flat: '7',
+      email: 'sfdsjkj@mail.ru',
+      tel: '+7 (545) 454-54-54',
+      text: 'dfdfd',
+      /* files: null */
+   }
+   /* {
       first_name: '',
       middle_name: '',
       last_name: '',
@@ -32,8 +46,7 @@ const VirtualReceptionHeadCityDistrict = (props) => {
       tel: '',
       text: '',
       file: []
-   }
-
+   } */
 
    const [form, setForm] = useState(config);
 
@@ -45,7 +58,6 @@ const VirtualReceptionHeadCityDistrict = (props) => {
 
    const handler = (name, value) => {
       setForm(prev => ({ ...prev, [name]: value }));
-      console.log(form)
    }
 
    const submit = () => {
@@ -150,12 +162,12 @@ const VirtualReceptionHeadCityDistrict = (props) => {
                {/* <input multiple value={form['file']} onChange={(e) => handler('file', [...form['file'], e.target.value])} className={`mt48`} type="file" /> */}
 
                <div className="mt48">
-                  {/* <UploadFile value={form['file']} handler={handler} /> */}
+                  <UploadFile value={form['file']} handler={handler} data={form} setForm={setForm} />
                   {/* <UploadFileNew /> */}
-                  <UploadFileOld value={form['file']} handler={handler} />
+                  {/* <UploadFileOld value={form['file']} handler={handler} /> */}
                </div>
 
-               <div className={`mt48 ${s.description}`}>Внимание! Максимальное количество файлов 7, общий объём приложенных файлов не должен превышать - 20 МбДопустимые форматы: jpg, png, gif, bmp, doc, docx, xls, xlsx, pdf, txt, zip, rar, 7z</div>
+               <div className={`mt48 ${s.description}`}>Внимание! Максимальное количество файлов 7, общий объём приложенных файлов не должен превышать - 20 Мб Допустимые форматы: jpg, png, gif, bmp, doc, docx, xls, xlsx, pdf, txt, zip, rar, 7z</div>
                <div className="mt48 flexContainer">
                   <input onChange={() => setAgree(!agree)} name='agree' id='agree' type="checkbox" />
                   <label htmlFor="agree" className={`ml16 ${s.description}`}>Я даю согласие на использование персональных данных</label>
