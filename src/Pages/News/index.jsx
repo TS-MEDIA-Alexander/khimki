@@ -11,7 +11,7 @@ import s from './NewsPage.module.css';
 import API from '../../API/index';
 
 /* Новости */
-import EventAnnouncements from '../../Components/EventAnnouncements';
+/* import EventAnnouncements from '../../Components/EventAnnouncements'; */
 import VkChannel from '../../BannersComopnents/VkChannel';
 import TgChannel from '../../BannersComopnents/TgChannel';
 
@@ -33,6 +33,7 @@ const NewsPage = (props) => {
    }, [])
 
    const showMore = () => {
+      setCurrentPage(currentPage + 1)
       getAndSaveNews(currentPage + 1, 12, calendarDateForServer[0], calendarDateForServer[1])
          .then(data => setNews([...news, ...data]))
    }
