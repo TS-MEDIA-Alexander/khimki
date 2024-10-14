@@ -64,7 +64,10 @@ export const ROUTER = {
       construction: '/deyatelnost/stroitelstvo',
       transport: '/deyatelnost/transport',
       ecologyEnvironmentalSafety: '/deyatelnost/ekologiya-i-ekologicheskaya-bezopasnost',
-      municipalPrograms: '/deyatelnost/munitsipalnyye-programmy',
+      municipalPrograms: {
+         main: '/deyatelnost/munitsipalnyye-programmy',
+         healthCare: '/deyatelnost/munitsipalnyye-programmy/zdravoohranenie',
+      },
       socialPrograms: '/deyatelnost/sotsialnyye-programmy',
       outdoorAdvertising: '/deyatelnost/otdel-reklamy-mku-upravleniye-delami-administratsii',
       authorityFeldHandlingAnimalsWithoutOwners: '/deyatelnost/polnomochiya-v-oblasti-obrascheniya-s-zhivotnymi-bez-vladeltsev',

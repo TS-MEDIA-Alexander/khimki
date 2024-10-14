@@ -6,7 +6,7 @@ import { ROUTER } from '../../config';
 
 const MunicipalPrograms = (props) => {
    return (
-      <NavLink to={ROUTER.activity.municipalPrograms} className={s.bannerContainer}>
+      <NavLink to={ROUTER.activity.municipalPrograms.main} className={s.bannerContainer}>
          <div className={s.topContainer}>
             <img src={icon} alt="" />
             <div className={s.title}>

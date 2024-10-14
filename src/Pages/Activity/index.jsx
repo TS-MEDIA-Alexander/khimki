@@ -56,7 +56,7 @@ const Activity = (props) => {
                <div className={s.column}>
                   <LinkContainer radial={true} link={ROUTER.activity.municipalСontrol} text='Муниципальный контроль' />
                   <div className="mt20">
-                     <LinkContainer radial={true} link={ROUTER.activity.municipalPrograms} text='Муниципальные программы' />
+                     <LinkContainer radial={true} link={ROUTER.activity.municipalPrograms.main} text='Муниципальные программы' />
                   </div>
                   <div className="mt20">
                      <LinkContainer radial={true} link={ROUTER.activity.socialPrograms} text='Социальные программы' />

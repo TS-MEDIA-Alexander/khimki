@@ -180,7 +180,7 @@ const LegalEducationAndLegalInformation = (props) => {
           </p>
         </div>
         <div className="mt38">
-          <div style={{ display: "flex" }}>
+          <div className={s.flexBox}>
             <a
               href="http://pravo.gov.ru/proxy/ips/?docbody=&nd=102014157"
               className={`btnY ${s.virtualBtn}`}

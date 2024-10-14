@@ -90,7 +90,7 @@ p {
    letter-spacing: -0.4px;
 }
 
-.text ol:not(:first-child), ul:not(:first-child), p:not(:first-child) {
+.text p:not(:first-child), ol:not(:first-child), ul:not(:first-child) {
    margin-top: 38px;
 }
 

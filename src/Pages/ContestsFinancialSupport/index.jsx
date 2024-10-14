@@ -62,7 +62,7 @@ const ContestsFinancialSupport = (props) => {
           </p>
           <p>Контактные телефоны:</p>
           <div className="mt38 oval">+7 (495) 573-31-62</div>
-          <div className={`mt38 ${s.desription}`}>
+          <div className={`mt38 juridicalInfo`}>
             Приёмная МКУ «Малый бизнес Химки».
           </div>
           <p>

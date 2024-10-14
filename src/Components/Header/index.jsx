@@ -168,7 +168,7 @@ const Header = (props) => {
                            <NavLink to={ROUTER.activity.municipalСontrol} className={s.linkMenu}>
                               Муниципальный контроль
                            </NavLink>
-                           <NavLink to={ROUTER.activity.municipalPrograms} className={s.linkMenu}>
+                           <NavLink to={ROUTER.activity.municipalPrograms.main} className={s.linkMenu}>
                               Муниципальные программы
                            </NavLink>
                            <NavLink to={ROUTER.activity.socialPrograms} className={s.linkMenu}>
@@ -190,10 +190,10 @@ const Header = (props) => {
                               <p>Полномочия в области обращения</p>
                               с животными без владельцев
                            </NavLink>
-                           <div className={s.linkMenu}>
+                           <NavLink to={ROUTER.prosecutorOffice.legalEducationAndLegalInformation} className={s.linkMenu}>
                               <p>Правовое просвещение и правовое</p>
                               информирование
-                           </div>
+                           </NavLink>
                            <NavLink to={ROUTER.activity.antiCorruption} className={s.linkMenu}>
                               Противодействие коррупции
                            </NavLink>

@@ -3,14 +3,14 @@ import s from './CardHuman.module.css';
 import plug from '../../assets/img/Persons/img.png';
 import plugMob from '../../assets/img/Persons/img_mobil.png';
 
-const CardHuman = ({ jobTitle, name, surname, subtitle, info, adress, WorkingHours, contactsArr, img, imgMob, btn, btnSrc, btnStyle }) => {
+const CardHuman = ({ jobTitle, name, surname, subtitle, info, adress, WorkingHours, contactsArr, img, imgMob, btn, btnSrc, btnStyle, style }) => {
 
    const isMobil = window.innerWidth < 400;
 
    const isMobilFn = (mob, desktop) => isMobil ? (mob || desktop) : desktop
 
    return (
-      <div className={`mt80 borderMain ${s.card}`}>
+      <div className={`mt80 borderMain ${s.card} `} style={style}>
          <div className={s.portrainContainer}>
             <img src={isMobilFn(imgMob, img) || isMobilFn(plugMob, plug)} alt="" />
          </div>

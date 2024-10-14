@@ -165,7 +165,7 @@ const KhimkiDistrict = (props) => {
                      <div className={s.column}>
                         <NavLink to={ROUTER.khimkiDistrict.symbolism}  className={s.item}>Устав, символика, карта </NavLink>
                         <NavLink to={ROUTER.khimkiDistrict.administrationStructure} className={s.item}>Структура Администрации </NavLink>
-                        <NavLink to={ROUTER.activity.municipalPrograms} className={s.item}>Муниципальные программы </NavLink>
+                        <NavLink to={ROUTER.activity.municipalPrograms.main} className={s.item}>Муниципальные программы </NavLink>
                         <NavLink to={ROUTER.khimkiDistrict.auditChamber} className={s.item}>Контрольно-счетная палата </NavLink>
                      </div>
                      <div className={s.column}>

@@ -21,7 +21,7 @@ const MunicipalPrograms = (props) => {
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <div className={s.column}>
-                  <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/zdravoohranenie/' text='Здравоохранение' />
+                  <LinkContainer radial={true} link={ROUTER.activity.municipalPrograms.healthCare} text='Здравоохранение' />
                   <div className="mt24">
                      <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/kultura/' text='Культура' />
                   </div>

@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const MunicipalProgramsMini = (props) => {
    return (
-      <NavLink to={ROUTER.activity.municipalPrograms} className={s.bannerContainer}>
+      <NavLink to={ROUTER.activity.municipalPrograms.main} className={s.bannerContainer}>
          <div className={s.topContainer}>
             <div className={s.title}>
                <div>Муниципальные</div>
