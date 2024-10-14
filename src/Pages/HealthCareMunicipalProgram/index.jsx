@@ -35,7 +35,7 @@ const HealthCareMunicipalProgram = (props) => {
           <div className="mt24">
             <LinkContainer
               link="https://old.admhimki.ru/dokumenty/zdravoohranenie2020-2024_213_arhiv/"
-              text={"Здравоохранение 2020-2024 (архив)"}
+              text="Здравоохранение 2020-2024 (архив)"
             />
           </div>
         </div>
@@ -51,7 +51,7 @@ const HealthCareMunicipalProgram = (props) => {
           info="Контакты для обращения граждан:"
           contactsArr={["+7 (495) 573-05-02", "priem_health@admhimki.ru"]}
           img={vatutina}
-          style={{ marginTop: '40px' }}
+          style={{ marginTop: "40px" }}
         />
 
         <div className="mt80 pageSubtitle">
@@ -67,7 +67,7 @@ const HealthCareMunicipalProgram = (props) => {
           adress={"г. Химки, Кирова, д. 24"}
           contactsArr={["+7 (495) 572-30-97", "yck@admhimki.ru"]}
           img={emblem}
-          style={{ marginTop: '40px' }}
+          style={{ marginTop: "40px" }}
         />
 
         <div className="text">
