@@ -29,7 +29,7 @@ const MunicipalPrograms = (props) => {
                      <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/obrazovanie/' text='Образование' />
                   </div>
                   <div className="mt24">
-                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/socialnaya-zashita-naseleniya-gorodskogo-okruga-himki/' text='Социальная защита населения городского округа Химки' />
+                     <LinkContainer radial={true} link={ROUTER.activity.municipalPrograms.socialProtectionOfThePopulation} text='Социальная защита населения городского округа Химки' />
                   </div>
                   <div className="mt24">
                      <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/sport/' text='Спорт городского округа Химки' />

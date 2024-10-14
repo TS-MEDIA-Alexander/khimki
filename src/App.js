@@ -92,6 +92,7 @@ import SavePast from './Pages/SavePast';
 import ContestsFinancialSupport from './Pages/ContestsFinancialSupport';
 import LegalEducationAndLegalInformation from './Pages/LegalEducationAndLegalInformation';
 import HealthCareMunicipalProgram from './Pages/HealthCareMunicipalProgram';
+import SocialProtectionOfThePopulation from './Pages/SocialProtectionOfThePopulation';
 /* import Table from './Components/Table'; */
 
 function App() {
@@ -174,6 +175,7 @@ function App() {
                <Route path={ROUTER.activity.ecologyEnvironmentalSafety} element={<EcologyEnvironmentalSafety />} />
                <Route path={ROUTER.activity.municipalPrograms.main} element={<MunicipalPrograms />} />
                <Route path={ROUTER.activity.municipalPrograms.healthCare} element={<HealthCareMunicipalProgram />} />
+               <Route path={ROUTER.activity.municipalPrograms.socialProtectionOfThePopulation} element={<SocialProtectionOfThePopulation />} />
                <Route path={ROUTER.activity.socialPrograms} element={<SocialPrograms />} />
                <Route path={ROUTER.activity.outdoorAdvertising} element={<OutdoorAdvertising />} />
                <Route path={ROUTER.activity.authorityFeldHandlingAnimalsWithoutOwners} element={<AuthorityFeldHandlingAnimalsWithoutOwners />} />
