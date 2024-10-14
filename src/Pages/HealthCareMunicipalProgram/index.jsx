@@ -35,7 +35,7 @@ const HealthCareMunicipalProgram = (props) => {
           <div className="mt24">
             <LinkContainer
               link="https://old.admhimki.ru/dokumenty/zdravoohranenie2020-2024_213_arhiv/"
-              text="Здравоохранение 2020-2024 (архив)"
+              text={"Здравоохранение 2020-2024 (архив)"}
             />
           </div>
         </div>
