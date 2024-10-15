@@ -6,7 +6,6 @@ import { ROUTER } from "../../config";
 import LinkContainer from "../../Components/LinkContainer";
 import CardHuman from "../../Components/CardHuman";
 import vatutina from "../../assets/img/Persons/vatutina.png";
-import emblem from "../../assets/img/khimkiDistrict/Symbolism/gerb.png";
 
 const SocialProtectionOfThePopulation = (props) => {
   return (
@@ -65,7 +64,6 @@ const SocialProtectionOfThePopulation = (props) => {
           info="Контакты для обращения граждан:"
           adress={"г. Химки, Кирова, д. 24"}
           contactsArr={["+7 (495) 572-30-97", "yck@admhimki.ru"]}
-          img={emblem}
           style={{ marginTop: "40px" }}
         />
 
