@@ -94,6 +94,7 @@ import LegalEducationAndLegalInformation from './Pages/LegalEducationAndLegalInf
 import HealthCareMunicipalProgram from './Pages/HealthCareMunicipalProgram';
 import SocialProtectionOfThePopulation from './Pages/SocialProtectionOfThePopulation';
 import FormationModernUrbanEnvironment from './Pages/FormationModernUrbanEnvironment';
+import Housing from './Pages/Housing';
 /* import Table from './Components/Table'; */
 
 function App() {
@@ -178,6 +179,7 @@ function App() {
                <Route path={ROUTER.activity.municipalPrograms.healthCare} element={<HealthCareMunicipalProgram />} />
                <Route path={ROUTER.activity.municipalPrograms.socialProtectionOfThePopulation} element={<SocialProtectionOfThePopulation />} />
                <Route path={ROUTER.activity.municipalPrograms.formationModernUrbanEnvironment} element={<FormationModernUrbanEnvironment />} />
+               <Route path={ROUTER.activity.municipalPrograms.housing} element={<Housing />} />
                <Route path={ROUTER.activity.socialPrograms} element={<SocialPrograms />} />
                <Route path={ROUTER.activity.outdoorAdvertising} element={<OutdoorAdvertising />} />
                <Route path={ROUTER.activity.authorityFeldHandlingAnimalsWithoutOwners} element={<AuthorityFeldHandlingAnimalsWithoutOwners />} />

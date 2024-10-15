@@ -44,7 +44,7 @@ const MunicipalPrograms = (props) => {
                      <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/bezopasnost/' text='Безопасность и обеспечение безопасности жизнедеятельности населения' />
                   </div>
                   <div className="mt24">
-                     <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/zhilishe/' text='Жилище' />
+                     <LinkContainer radial={true} link={ROUTER.activity.municipalPrograms.housing} text='Жилище' />
                   </div>
                   <div className="mt24">
                      <LinkContainer radial={true} link='https://www.admhimki.ru/okrug/municipalnye-programmy/soderzhanie-i-razvitie-inzhenernoj-infrastruktury-i-energoeffektivnosti/' text='Развитие инженерной инфраструктуры, энергоэффективности и отрасли обращения с отходами' />

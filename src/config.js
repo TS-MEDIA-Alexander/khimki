@@ -68,7 +68,8 @@ export const ROUTER = {
          main: '/deyatelnost/munitsipalnyye-programmy',
          healthCare: '/deyatelnost/munitsipalnyye-programmy/zdravoohranenie',
          socialProtectionOfThePopulation: '/deyatelnost/munitsipalnyye-programmy/socialnaya-zashita-naseleniya-gorodskogo-okruga-himki',
-         formationModernUrbanEnvironment: '/deyatelnost/munitsipalnyye-programmy/formirovanie-sovremennoj-gorodskoj-sredy'
+         formationModernUrbanEnvironment: '/deyatelnost/munitsipalnyye-programmy/formirovanie-sovremennoj-gorodskoj-sredy',
+         housing: '/deyatelnost/munitsipalnyye-programmy/zhilishe'
       },
       socialPrograms: '/deyatelnost/sotsialnyye-programmy',
       outdoorAdvertising: '/deyatelnost/otdel-reklamy-mku-upravleniye-delami-administratsii',

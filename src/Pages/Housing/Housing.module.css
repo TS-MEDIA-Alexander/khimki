@@ -1,0 +1,125 @@
+.linkContainer {
+  padding: 32px;
+}
+
+.card {
+  display: flex;
+}
+
+.imgContainer {
+  width: 285px;
+  height: 285px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.imgContainer img {
+  width: 100%;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.btn img {
+  margin-right: 8px;
+}
+
+.btn:not(:first-child) {
+  margin-left: 16px;
+}
+
+.tel {
+  text-decoration: none;
+}
+
+.description {
+  color: #808080;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.scheduleItem {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.scheduleItem,
+.timeItem {
+  color: #303030;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.timeItem {
+  width: 300px;
+}
+
+.textBlock {
+  margin-left: 40px;
+}
+
+hr {
+  background-color: rgb(237, 237, 237);
+  height: 1px;
+  border: none;
+  margin: 0;
+}
+
+.mt {
+  margin-top: 78px;
+}
+
+@media screen and (max-width: 1160px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .textBlock {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .mt {
+    margin-top: 38px;
+  }
+  hr {
+    display: none;
+  }
+
+  .imgContainer {
+    width: 100%;
+    border-radius: 24px;
+  }
+
+  .textBlock {
+    margin-left: 0;
+  }
+
+  .description,
+  .scheduleItem {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .timeItem {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .btn img {
+    height: 16px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .imgContainer {
+    height: 160px;
+  }
+}
