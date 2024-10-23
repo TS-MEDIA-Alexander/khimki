@@ -125,6 +125,10 @@
    cursor: pointer;
 }
 
+.cardBtnLink:hover {
+   background: #FFEC00;
+}
+
 @media screen and (max-width: 1160px) {
    .card {
       flex-direction: column;

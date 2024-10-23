@@ -23,7 +23,7 @@ const ContactBanner = ({ img, title, name, subtitle, info, WorkingHours, tel, ma
 
          <div className={s.btnContainer}>
             <a href={`tel: ${tel}`} className={`mt16 oval ${s.tel} ${s.mobilMt8}`}>{tel}</a>
-            <div className={`mt16 oval ${s.mobilMt8}`}>{mail}</div>
+            <a href={`mailto: ${mail}`} className={`mt16 oval ${s.mobilMt8}`}>{mail}</a>
          </div>
 
          <NavLink to={`${ROUTER.khimkiDistrict.administrationStructurePerson}${url}`} className={`btnCircleG ${s.btn}`}><img src={arrow_btn_link} alt="" /></NavLink>
