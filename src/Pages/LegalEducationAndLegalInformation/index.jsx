@@ -39,7 +39,7 @@ const LegalEducationAndLegalInformation = (props) => {
         </div>
         <div className="text">
           <div className="mt80 pageSubtitle">
-            О прокуратуре российской федерации
+            О прокуратуре Российской Федерации
           </div>
           <div className={s.box}>
             <div className="mt38 oval">Конституция Российской Федерации</div>

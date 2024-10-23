@@ -101,7 +101,7 @@ const HeaderMobile = ({ setMobilMenu }) => {
                <NavLink to={ROUTER.activity.auctionsAndTrades} className={s.linkMenu}>
                   Аукционы и торги
                </NavLink>
-               <NavLink to={ROUTER.activity.safety} className={s.linkMenu}>
+               <NavLink to={ROUTER.activity.safety.main} className={s.linkMenu}>
                   Безопасность
                </NavLink>
                <NavLink to={ROUTER.activity.improvement} className={s.linkMenu}>

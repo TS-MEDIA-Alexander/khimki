@@ -43,7 +43,10 @@ export const ROUTER = {
    activity: {
       main: '/deyatelnost',
       auctionsAndTrades: '/deyatelnost/auktsiony-i-torgi',
-      safety: '/deyatelnost/bezopasnost',
+      safety: {
+         main: '/deyatelnost/bezopasnost',
+         laborProtection: '/deyatelnost/bezopasnost/ohrana-truda'
+      },
       improvement: '/deyatelnost/blagoustroystvo',
       publicPrivatePartnership: '/deyatelnost/gosudarstvenno-chastnoye-partnerstvo',
       communalServices: '/deyatelnost/zhkkh',

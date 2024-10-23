@@ -14,7 +14,7 @@ const Activity = (props) => {
                <div className={s.column}>
                   <LinkContainer radial={true} link={ROUTER.activity.auctionsAndTrades} text='Аукционы и торги' />
                   <div className="mt20">
-                     <LinkContainer radial={true} link={ROUTER.activity.safety} text='Безопасность' />
+                     <LinkContainer radial={true} link={ROUTER.activity.safety.main} text='Безопасность' />
                   </div>
                   <div className="mt20">
                      <LinkContainer radial={true} link={ROUTER.activity.improvement} text='Благоустройство' />
