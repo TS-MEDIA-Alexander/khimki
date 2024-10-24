@@ -96,6 +96,7 @@ import SocialProtectionOfThePopulation from './Pages/SocialProtectionOfThePopula
 import FormationModernUrbanEnvironment from './Pages/FormationModernUrbanEnvironment';
 import Housing from './Pages/Housing';
 import LaborProtection from './Pages/LaborProtection';
+import SecurityFacilitiesCityDistrict from './Pages/SecurityFacilitiesCityDistrict';
 /* import Table from './Components/Table'; */
 
 function App() {
@@ -155,6 +156,7 @@ function App() {
                <Route path={ROUTER.activity.auctionsAndTrades} element={<AuctionsAndTrades />} />
                <Route path={ROUTER.activity.safety.main} element={<Safety />} />
                <Route path={ROUTER.activity.safety.laborProtection} element={<LaborProtection />} />
+               <Route path={ROUTER.activity.safety.securityFacilitiesCityDistrict} element={<SecurityFacilitiesCityDistrict />} />
                <Route path={ROUTER.activity.improvement} element={<Improvement />} />
                <Route path={ROUTER.activity.publicPrivatePartnership} element={<PublicPrivatePartnership />} />
                <Route path={ROUTER.activity.communalServices} element={<CommunalServices />} />

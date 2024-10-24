@@ -45,7 +45,8 @@ export const ROUTER = {
       auctionsAndTrades: '/deyatelnost/auktsiony-i-torgi',
       safety: {
          main: '/deyatelnost/bezopasnost',
-         laborProtection: '/deyatelnost/bezopasnost/ohrana-truda'
+         laborProtection: '/deyatelnost/bezopasnost/ohrana-truda',
+         securityFacilitiesCityDistrict: '/deyatelnost/bezopasnost/obekty-bezopasnosti-gorodskogo-okruga'
       },
       improvement: '/deyatelnost/blagoustroystvo',
       publicPrivatePartnership: '/deyatelnost/gosudarstvenno-chastnoye-partnerstvo',

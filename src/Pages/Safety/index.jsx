@@ -20,7 +20,7 @@ const Safety = (props) => {
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/okrug/municipalnye-programmy/bezopasnost/' text={'Муниципальная программа "Безопасность и обеспечение безопасности жизнедеятельности населения"'} />
-               <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/bezopasnost/obekty-bezopasnosti-gorodskogo-okruga/' text={'Объекты безопасности городского округа'} /></div>
+               <div className="mt24"><LinkContainer link={ROUTER.activity.safety.securityFacilitiesCityDistrict} text={'Объекты безопасности городского округа'} /></div>
                <div className="mt24"><LinkContainer link={ROUTER.activity.safety.laborProtection} text={'Охрана труда'} /></div>
                <div className="mt24"><LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/bezopasnost/pozharnyj-nadzor/' text={'Пожарный надзор'} /></div>
                <div className="mt24"><LinkContainer link='http://old.admhimki.ru/dokumenty/policiya/' text={'Полиция'} /></div>
