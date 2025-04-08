@@ -1,0 +1,62 @@
+:root {
+  --text-color: var(--text_base-text_1, #303030);
+  --font-family: Inter;
+  --font-size: 20px;
+  --line-height: 28px; /* 140% */
+  --letter-spacing: -0.4px;
+}
+
+.container {
+  width: 900px;
+  height: auto;
+  padding :0px 115px 80px 0px;
+  border-top: 40px;
+}
+
+.text,
+.strongText,
+.contactInfo {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-style: normal;
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+}
+
+.text {
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+.strongText {
+  font-weight: 600;
+  margin-top: 40px ;
+}
+
+.contactInfo {
+  font-weight: 400;
+}
+
+.table1 {
+  max-width: 490px;
+}
+
+.numbers {
+  margin-left: 15px;
+}
+
+.cardBtnRow {
+  /* gap: 24px; */
+  flex-wrap: wrap;
+  margin: 38px 0px;
+  display: flex;
+  justify-content: start;
+gap: 12px;
+
+}
+
+.cardBtnImgContainer {
+  width: 144px;
+  height: 24px;
+}
