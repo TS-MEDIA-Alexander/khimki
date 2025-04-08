@@ -1,0 +1,151 @@
+.card {
+   display: flex;
+}
+
+.imgContainer {
+   width: 285px;
+   height: 285px;
+   border-radius: 40px;
+   overflow: hidden;
+}
+
+.imgContainer img {
+   width: 100%;
+}
+
+.textBlock {
+   margin-left: 40px;
+}
+
+.description {
+   color: #808080;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.scheduleItem {
+   display: flex;
+   justify-content: space-between;
+   width: 450px;
+}
+
+.scheduleItem,
+.timeItem {
+   color: #303030;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.timeItem {
+   width: 300px;
+}
+
+.btn {
+   text-decoration: none;
+}
+
+.btn img {
+   margin-right: 8px;
+}
+
+.btn:not(:first-child) {
+   margin-left: 16px;
+}
+
+.textCenter {
+   text-align: center;
+}
+
+.cardBannerContainer {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.cardHotline {
+   width: 580px;
+}
+
+.title {
+   color: #303030;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 32px;
+   letter-spacing: -0.48px;
+}
+
+.date {
+   color: #303030;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.tel {
+   text-decoration: none;
+}
+
+@media screen and (max-width: 1160px) {
+   .card {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .textBlock {
+      margin-top: 24px;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .imgContainer {
+      width: 100%;
+      border-radius: 24px;
+   }
+
+   .textBlock {
+      margin-left: 0;
+   }
+
+   .timeItem {
+      width: 150px;
+      font-size: 14px;
+   }
+
+   .description,
+   .scheduleItem {
+      width: 100%;
+      font-size: 14px;
+   }
+
+   .title,
+   .date {
+      font-size: 14px;
+      line-height: 20px;
+   }
+
+   .mobilFlexContainer {
+      flex-direction: column;
+      align-items: start;
+   }
+
+   .mobilFlexContainer>div:not(:first-child) {
+      margin: 24px 0 0 0;
+   }
+
+   .btn img {
+      height: 16px;
+   }
+}
+
+@media screen and (max-width: 390px) {
+   .imgContainer {
+      height: 160px;
+   }
+}

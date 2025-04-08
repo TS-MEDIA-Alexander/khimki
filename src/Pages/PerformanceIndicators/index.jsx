@@ -812,7 +812,7 @@ const PerformanceIndicators = (props) => {
                                  <div className={s.textRow}>
                                     <div className={s.date}>2014-2023 гг.</div>
                                  </div>
-                                 <div className={`mt16 ${s.textBody}`}><span>NN</span> трлн</div>
+                                 <div className={`mt16 ${s.textBody}`}><span>1</span> трлн</div>
                                  <div className={`mt16 ${s.description}`}>Сальдированный финансовый результат </div>
                               </div>
                            </div>
@@ -829,7 +829,7 @@ const PerformanceIndicators = (props) => {
                                  <div className={s.textRow}>
                                     <div className={s.date}>2014-2023 гг.</div>
                                  </div>
-                                 <div className={`mt16 ${s.textBody}`}><span>NN</span> трлн</div>
+                                 <div className={`mt16 ${s.textBody}`}><span>3,1</span> трлн</div>
                                  <div className={`mt16 ${s.description}`}>Объем отгруженных товаров, оказанных услуг, выполненных работ по крупным и средним предприятиям  </div>
                               </div>
                            </div>
@@ -846,7 +846,7 @@ const PerformanceIndicators = (props) => {
                                  <div className={s.textRow}>
                                     <div className={s.date}>2014-2023 гг.</div>
                                  </div>
-                                 <div className={`mt16 ${s.textBody}`}><span>NN</span> трлн</div>
+                                 <div className={`mt16 ${s.textBody}`}><span>1,4</span> трлн</div>
                                  <div className={`mt16 ${s.description}`}>Оборот розничной торговли по крупным и средним предприятиям </div>
                               </div>
                            </div>
@@ -863,7 +863,7 @@ const PerformanceIndicators = (props) => {
                                  <div className={s.textRow}>
                                     <div className={s.date}>2014-2023 гг.</div>
                                  </div>
-                                 <div className={`mt16 ${s.textBody}`}><span>NN</span> трлн</div>
+                                 <div className={`mt16 ${s.textBody}`}><span>515</span> млрд</div>
                                  <div className={`mt16 ${s.description}`}>Оборот розничной торговли по крупным и средним предприятиям</div>
                               </div>
                            </div>
