@@ -1,0 +1,364 @@
+.mapContainer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.districtTextContainer {
+   width: 222px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.districtCard {
+   padding: 24px;
+   width: 622px;
+}
+
+.districtBanner {
+   margin-left: 16px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 246px;
+   text-decoration: none;
+}
+
+.textContainer {
+   width: 200px;
+}
+
+.radialDiagram {
+   width: 178px;
+   height: 178px;
+}
+
+.bannerTitle {
+   display: flex;
+   width: 100%;
+   /* align-items: center; */
+   color: #303030;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: -0.4px;
+}
+
+.bannerTitle img {
+   margin-left: 4px;
+}
+
+.districtName {
+   position: relative;
+   padding-left: 20px;
+   color: #808080;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px;
+   letter-spacing: -0.24px;
+}
+
+.districtName::before {
+   content: '';
+   position: absolute;
+   top: 7px;
+   left: 7px;
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+}
+
+/* Цвета маркеров списка округов*/
+.skhodnyaFirsanovka::before {
+   background: #90CCFF;
+}
+
+.novogorskPlanernaya::before {
+   background: #A9FFAC;
+}
+
+.levoberezhniy::before {
+   background: #FFC7C1;
+}
+
+.podrezkovo::before {
+   background: #FFDE69;
+}
+
+.klyazmaStarbeevo::before {
+   background: #BD9DFF;
+}
+
+.kutuzovskoye::before {
+   background: #BAFFEA;
+}
+
+.lunevskoye::before {
+   background: #FFC38C;
+}
+
+/*  */
+
+.statistiCscount {
+   color: #303030;
+   font-size: 12px;
+   font-weight: 550;
+   line-height: 20px;
+   letter-spacing: -0.24px;
+}
+
+.description {
+   width: 100%;
+   color: #808080;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px;
+   letter-spacing: -0.24px;
+}
+
+.description.description_center {
+   text-align: center;
+}
+
+.districtLineChart {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.districtLineChart:not(:first-child) {
+   margin-top: 10px;
+}
+
+.lineChart {
+   width: 201px;
+   padding: 6px 15px;
+   border-radius: 6px;
+   background: #F6F6F6;
+   color: #303030;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px;
+   letter-spacing: -0.24px;
+}
+
+
+
+/* Линейная диаграмма */
+.area {
+   width: 175px;
+}
+
+.forest {
+   width: 178px;
+}
+
+.schools {
+   width: 157px;
+}
+
+.outpatientClinics {
+   width: 152px;
+}
+
+.kindergartens {
+   width: 166px;
+}
+
+.sports {
+   width: 146px;
+}
+
+.busines {
+   width: 135px;
+}
+
+.flightsStairs {
+   width: 128px;
+}
+
+.skyscrapers {
+   width: 89px;
+}
+
+.districtVideo {
+   width: 69%;
+   aspect-ratio: 950 / 464;
+   /* height: 464px; */
+   padding: 32px;
+}
+
+.imgContainerMayor {
+   width: 261px;
+}
+
+.borderR {
+   width: 100%;
+   height: 100%;
+   border-radius: 20px;
+}
+
+.text {
+   color: #303030;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.author {
+   width: 100%;
+   color: #303030;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 28px;
+   letter-spacing: -0.2px;
+}
+
+.btn {
+   position: absolute;
+   bottom: 32px;
+   right: 32px;
+   padding: 16px;
+}
+
+.btn img {
+   width: 24px;
+   height: 24px;
+}
+
+.sectionMap {
+   width: 100%;
+   padding: 32px;
+}
+
+.sectionMapTitle {
+   color: #303030;
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: -0.56px;
+}
+
+.item {
+   display: block;
+   position: relative;
+   color: #303030;
+   padding: 16px 0px 0px 24px;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   text-decoration: none;
+}
+
+/* .item:not(:first-child){
+   padding: 16px 0px 0px 48px;
+}
+ */
+.item::before {
+   content: '';
+   position: absolute;
+   border-radius: 50%;
+   left: 4px;
+   top: 25px;
+   width: 6px;
+   height: 6px;
+   background: #F1E43D;
+}
+
+@media screen and (max-width: 1370px) {
+   .mapContainer {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .mapContainer>div:not(:first-child) {
+      margin-top: 32px;
+   }
+
+   .mobilBannerArrowContainer {
+      justify-content: center;
+   }
+
+   .mobilBannerArrowContainer>a:not(:first-child) {
+      margin-top: 32px;
+   }
+}
+
+@media screen and (max-width: 1360px) {
+   .districtVideo {
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 1225px) {
+   .mobilMt24 {
+      margin-top: 24px;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .sectionMapTitle {
+      text-align: center;
+   }
+
+   .mobilArrowContainer {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .item {}
+
+   .sectionMapTitle {
+      text-align: left;
+   }
+
+   .mobilArrowContainer {
+      align-items: start;
+   }
+
+   .districtCard {
+      width: calc(100% - 48px);
+   }
+
+   .districtBanner {
+      width: calc(100% - 32px);
+      margin: 32px 0 0 0;
+   }
+
+   .districtVideo {
+      width: calc(100% - 48px);
+      padding: 24px;
+      height: 168px;
+   }
+
+   .sectionMap {
+      width: calc(100% - 48px);
+      padding: 24px;
+   }
+
+   .container {
+      width: 100%;
+   }
+
+   .imgContainerMayor {
+      width: 100%;
+   }
+
+   .btn {
+      bottom: 24px;
+      right: 24px;
+      padding: 8px;
+   }
+
+}

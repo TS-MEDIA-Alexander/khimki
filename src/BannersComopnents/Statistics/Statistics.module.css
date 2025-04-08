@@ -1,0 +1,83 @@
+.bannerContainer {
+   background-size: cover;
+   width: calc(100% - 80px);
+   height: 399px;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.topContainer {
+   display: flex;
+   flex-direction: column;
+}
+
+.topContainer img {
+   width: 100px;
+   width: 80px;
+}
+
+
+.title {
+   display: flex;
+   align-items: center;
+   color: #303030;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: -0.4px;
+}
+
+.title img {
+   margin-right: 4px;
+}
+
+.textBody {
+   color: #808080;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: -0.24px;
+}
+
+.tags {
+   display: inline-block;
+   padding: 4px 12px;
+   color: #303030;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: -0.24px;
+   border-radius: 40px;
+   background: rgba(255, 236, 0, 0.24);
+   ;
+}
+
+.rowContainer {
+   display: flex;
+}
+
+.rowContainer .tags:first-child {
+   margin: 0;
+}
+
+.rowContainer .tags:last-child {
+   margin: 0 0 0 8px;
+}
+
+.tags {
+   margin-top: 8px;
+}
+
+@media screen and (max-width: 1370px) {
+   .bannerContainer {
+      height: 240px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .bannerContainer {
+      width: calc(100% - 48px);
+   }
+}

@@ -1,0 +1,38 @@
+.filterTagNameContainer {
+   padding: 8px;
+   border-radius: 20px;
+   border: 1px solid #EDEDED;
+}
+
+.filterTagName {
+   border-radius: 12px;
+   color: #808080;
+   padding: 6px 24px;
+   cursor: pointer;
+}
+
+.filterTagName:not(:first-child) {
+   margin-top: 4px;
+}
+
+.filterTagName.active {
+   color: #303030;
+   background: #F6F6F6;
+}
+
+.showMore {
+   margin: 40px auto 0 auto;
+   display: flex;
+   width: 325px;
+   padding: 24px 0;
+   justify-content: center;
+   align-items: center;
+   border-radius: 40px;
+   border: 1px solid #B0B0B0;
+   cursor: pointer;
+   color: #303030;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}

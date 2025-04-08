@@ -1,0 +1,29 @@
+.linkContainer {
+   padding: 32px;
+}
+
+.imgContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 24px;
+   height: 24px;
+   padding: 9px;
+   border-radius: 50%;
+   background: #F6F6F6;
+}
+
+.imgContainer img {
+   width: 100%;
+}
+
+iframe {
+   border-radius: 40px;
+}
+
+@media screen and (max-width: 745px) {
+   .link {
+      font-size: 16px;
+      line-height: 16px;
+   }
+}

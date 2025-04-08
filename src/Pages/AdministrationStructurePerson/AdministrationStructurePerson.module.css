@@ -1,0 +1,130 @@
+.title {
+   width: 1015px;
+}
+
+.card {
+   display: flex;
+}
+
+.rightContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-left: 24px;
+   padding: 0 20px;
+}
+
+.cardSurname {
+   color: #212121;
+   font-size: 38px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: -0.76px;
+}
+
+.cardName {
+   color: #212121;
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: -0.56px;
+}
+
+.portrainContainer {
+   overflow: hidden;
+   width: 277px;
+   height: 277px;
+   border-radius: 24px;
+}
+
+.portrainContainer img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.cardBtnImgContainer {
+   display: flex;
+   align-items: center;
+   margin-left: 8px;
+   width: 16px;
+   height: 16px;
+}
+
+.cardBtnImgContainer img {
+   width: 100%;
+}
+
+.areaTitle {
+   color: #212121;
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: -0.56px;
+}
+
+.spoilerContainer {
+   width: 900px;
+}
+
+.spoilerItemText {
+   color: #505050;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.contactsContainer {
+   display: flex;
+   flex-direction: column;
+}
+
+@media screen and (max-width: 1100px) {
+   .title {
+      width: 100%;
+   }
+
+   .spoilerContainer {
+      width: calc(100% - 48px);
+   }
+}
+
+@media screen and (max-width: 900px) {
+   .card {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .cardSurname {
+      margin-top: 16px;
+   }
+
+   .areaTitle,
+   .cardSurname,
+   .cardName {
+      font-size: 20px;
+      line-height: 28px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .portrainContainer {
+      width: 100%;
+   }
+
+   .portrainContainer {
+      height: 220px;
+   }
+
+   .rightContainer {
+      width: 100%;
+      margin-left: 0;
+      padding: 0;
+   }
+}

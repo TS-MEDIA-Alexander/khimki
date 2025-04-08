@@ -1,0 +1,37 @@
+.linkContainer {
+   padding: 32px;
+}
+
+.link {
+   padding: 9px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-decoration: none;
+   color: #303030;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: -0.2px;
+   cursor: pointer;
+}
+
+.imgBanner {
+   border-radius: 40px;
+   overflow: hidden;
+}
+
+.imgBanner img {
+   width: 100%;
+}
+
+@media screen and (max-width: 745px) {
+   .link {
+      font-size: 16px;
+      line-height: 20px;
+   }
+   .imgBanner{
+   border-radius: 24px;
+   }
+}

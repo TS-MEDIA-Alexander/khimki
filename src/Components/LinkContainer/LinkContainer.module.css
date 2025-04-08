@@ -1,0 +1,54 @@
+.link {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   text-decoration: none;
+   color: #303030;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: -0.2px;
+   cursor: pointer;
+}
+
+.textContainer {
+   display: flex;
+   align-items: center;
+   align-self: stretch;
+}
+
+.longText {
+   align-items: flex-start;
+}
+
+.text {
+   margin-right: 40px;
+}
+
+.radial {
+   flex: 0 0 42px;
+   width: 42px;
+   height: 42px;
+   margin-right: 20px;
+   border-radius: 50%;
+   background: var(--main-radial-radial, radial-gradient(446.15% 170.03% at 105.79% 213.75%, #F5982A 0%, #FFEC00 100%));
+}
+
+@media screen and (max-width: 745px) {
+   .text {
+      margin-right: 24px;
+      font-size: 16px;
+      line-height: 16px;
+   }
+}
+
+@media screen and (max-width: 390px) {
+   .radial {
+      display: none;
+   }
+
+   .text {
+      margin-left: 0;
+   }
+}

@@ -1,0 +1,35 @@
+path {
+   cursor: pointer;
+}
+
+.lunyovskoye:hover{
+   fill: #FFC38C;
+}
+
+.kutuzovskoye:hover{
+   fill: #BAFFEA;
+}
+
+.skhodnyaFirsanovka:hover{
+   fill: #90CCFF;
+}
+
+.podrezkovo:hover{
+   fill: #BD9DFF;
+}
+
+.klyazma-starbeevo:hover{
+   fill: #BD9DFF;
+}
+
+.klyazmaStarbeevo:hover{
+   fill: #FFDE69;
+}
+
+.levoberezhniy:hover{
+   fill: #FFC7C1;
+}
+
+.novogorskPlanernaya:hover{
+   fill: #A9FFAC;
+}

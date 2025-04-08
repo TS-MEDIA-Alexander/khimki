@@ -1,0 +1,11 @@
+.eventsContainer {
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1371px){
+   .eventsContainer {
+      justify-content: center;
+   }
+}

@@ -1,0 +1,111 @@
+.mainContainer {
+   height: 420px;
+   width: 100%;
+}
+
+.window {
+   position: relative;
+   border-radius: 40px;
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+}
+
+
+progress {
+   position: absolute;
+   bottom: 0px;
+   right: 5%;
+   left: 5%;
+   width: 90%;
+   height: 4px;
+   border-radius: 6px;
+}
+
+progress {
+   appearance: none;
+   -moz-appearance: none;
+   -webkit-appearance: none;
+   border: none;
+   margin-top: 10px;
+   background: #eee;
+   border: 0;
+}
+
+progress::-webkit-progress-bar {
+   background: #eeeeee;
+   border-radius: 6px;
+}
+
+progress::-webkit-progress-value {
+   background: #FFEC00;
+   border-radius: 6px;
+}
+
+progress::-moz-progress-bar {
+   background: #FFEC00;
+   border-radius: 6px;
+}
+
+
+.allPagesContainer {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   transition: all ease-in-out 1s;
+}
+
+
+.btnArrowSlider {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 24px;
+   height: 24px;
+   padding: 8px;
+   border-radius: 50%;
+   background: #F6F6F6;
+   cursor: pointer;
+   z-index: 999;
+}
+
+.btnContainer {
+   margin: 28px 0 24px 0;
+   position: relative;
+   display: flex;
+   flex-wrap: nowrap;
+   overflow: hidden;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.btnContainer::after {
+   content: '';
+   position: absolute;
+   right: 0;
+   top: calc(100% - 65px);
+   width: 104px;
+   height: 92px;
+   background: url('../../assets/img/sliders/effect.png') 0 0/auto auto no-repeat;
+   background-size: cover;
+}
+
+@media screen and (max-width: 745px) {
+   .window {
+      border-radius: 24px;
+   }
+
+   .btnArrowSlider {
+      display: none;
+   }
+   .btnContainer::-webkit-scrollbar{
+      width: 0;
+   }
+
+   .btnContainer {
+      overflow: auto;
+   }
+
+   .btnContainer::after {
+      display: none;
+   }
+}

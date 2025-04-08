@@ -1,0 +1,172 @@
+.border {
+   border-radius: 40px;
+   overflow: hidden;
+   border: 1px solid #EDEDED;
+}
+
+.cardContainer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.headerBlock {
+   width: 100%;
+   height: 70px;
+   background: #F6F6F6;
+}
+
+.contantContainer {
+   padding: 24px;
+}
+
+.titleGreen {
+   width: 970px;
+   color: #73921A;
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: -0.56px;
+}
+
+.textRow {
+   display: flex;
+}
+
+.year {
+   padding: 4px 12px;
+   border-radius: 40px;
+   background: #F6F6F6;
+   color: #303030;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px;
+}
+
+.statisticsContainer {
+   width: 566px;
+}
+
+.statistics:not(:first-child) {
+   border-top: 1px solid #EDEDED;
+   padding-top: 32px;
+}
+
+.textStatistics {
+   margin-left: 16px;
+   color: #303030;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.statisticsNumber {
+   color: #303030;
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 48px;
+   letter-spacing: -0.96px;
+}
+
+.statisticsNumberText {
+   color: #303030;
+   font-size: 40px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 48px;
+   letter-spacing: -0.8px;
+}
+
+.imgContainer {
+   width: 606px;
+   height: 218px;
+   overflow: hidden;
+   border-radius: 20px;
+}
+
+.imgContainer img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.borderPreferentialCategories {
+   padding: 16px 24px;
+   display: flex;
+}
+
+@media screen and (max-width: 1370px) {
+   .titleGreen {
+      width: 100%;
+   }
+
+   .borderPreferentialCategories {
+      flex-direction: column;
+   }
+}
+
+@media screen and (max-width: 1043px) {
+   .cardContainer {
+      flex-direction: column;
+   }
+
+   .imgContainer {
+      margin-top: 32px;
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .headerBlock {
+      height: 44px;
+   }
+
+   .titleGreen {
+      margin-top: 0;
+      font-size: 20px;
+      line-height: 28px;
+   }
+
+   .statisticsContainer {
+      width: 100%;
+   }
+
+   .statisticsNumber,
+   .statisticsNumberText {
+      margin-left: 8px;
+      font-size: 16px;
+      line-height: 20px;
+   }
+
+   .statistics:not(:first-child) {
+      padding-top: 24px;
+   }
+
+   .imgContainer {
+      height: 180px;
+   }
+}
+
+@media screen and (max-width: 471px) {
+   /* .imgContainer {
+      display: none;
+   } */
+
+   .textRow {
+      align-items: start;
+   }
+
+   .borderPreferentialCategories {
+      border: none;
+      padding: 0;
+   }
+
+   .textStatistics {
+      font-size: 14px;
+      line-height: 14px;
+      margin-left: 16px;
+   }
+}

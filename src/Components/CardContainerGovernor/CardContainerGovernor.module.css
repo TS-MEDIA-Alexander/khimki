@@ -1,0 +1,109 @@
+.title {
+   width: 400px;
+   font-size: 32px;
+   font-weight: 500;
+   line-height: 40px;
+   letter-spacing: -0.02em;
+}
+
+.subtitle {
+   margin-top: 29px;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 28px;
+   letter-spacing: -0.01em;
+   text-align: left;
+   color: #303030;
+}
+
+.textBody {
+   margin-top: 33px;
+   width: 505px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.buttonGovernment {
+   display: inline-flex;
+   margin-top: 40px;
+   padding: 8px 24px 8px 24px;
+   border-radius: 40px;
+   text-decoration: none;
+
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   color: #8C7E00;
+}
+
+.imgPortrainContainer {
+   width: 290px;
+   height: 290px;
+   border-radius: 20px;
+   overflow: hidden;
+}
+
+.imgPortrainContainer img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+@media screen and (max-width: 1005px) {
+   .mobilCardContainer {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .textBlock {
+      order: 2;
+   }
+
+   .imgPortrainContainer {
+      margin-top: 24px;
+      order: 1;
+   }
+
+   .title {
+      width: 100%;
+      text-align: center;
+   }
+
+   .subtitle {
+      text-align: center;
+   }
+
+   .textBody {
+      width: auto;
+   }
+}
+
+
+@media screen and (max-width: 500px) {
+   .title,
+   .subtitle {
+      text-align: left;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.2px;
+   }
+   
+
+   .buttonGovernment {
+      font-size: 12px;
+      padding: 8px 16px;
+      line-height: 16px;
+   }
+
+   .buttonGovernment img {
+      width: 16px;
+      height: 16px;
+   }
+}
+
+@media screen and (max-width: 390px) {
+   .imgPortrainContainer {
+      width: 100%;
+   }
+}

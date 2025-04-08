@@ -1,0 +1,188 @@
+.react_select {
+   position: relative;
+}
+
+/* .react_select__err {
+   border: 1px solid red;
+}
+
+.react_select__messageErr {
+   color: red;
+}
+
+.inputDisplayNone {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 0;
+   width: 0;
+} */
+
+/* Валидация */
+
+
+@keyframes scaleIn {
+   0% {
+      opacity: 0;
+      transform: scale(0.9);
+   }
+
+   50% {
+      opacity: 0.3;
+   }
+
+   100% {
+      opacity: 1;
+      transform: scale(1);
+   }
+}
+
+.react_select__control {
+   background-color: #F6F6F6 !important;
+   color: black !important;
+   border-radius: 12px !important;
+   border-width: 0 !important;
+}
+
+/* сам элемент input */
+
+.react_select__control--menu-is-open {
+   border-color: none !important;
+}
+
+/* input при открытии меню */
+
+.react_select__control--is-focused {
+   position: relative;
+   box-shadow: none !important;
+   
+   /* box-sizing: border-box !important; */
+   /* box-sizing: content-box !important; */
+}
+
+.react_select__control--is-focused::before {
+   content: '';
+   position: absolute;
+   top: 0px;
+   left: 0;
+   width: calc(100% - 2px) !important;
+   height: calc(100% - 2px) !important;
+   border-radius: 12px !important;
+   border: 1px solid #EDEDED !important;
+}
+
+/* Убирает синюю обводку вокруг input при фокусе  */
+
+
+.react_select__value-container {
+   padding: 12px !important;
+   /* отступы в от результата */
+   cursor: text !important;
+}
+
+/* Область вокруг результата */
+
+.react_select__input-container {
+   color: black !important;
+}
+
+/* Стилизация самого input */
+
+.react_select__indicator-separator {
+   display: none;
+}
+
+/* Разделительная черта */
+
+.react_select__indicators {
+   padding-right: 5.9px !important;
+}
+
+/* Область вокруг крестика и стрелочки */
+
+.react_select__indicator {
+   color: transparent !important;
+   background: url('../../assets/icons/arrowDownSelect.svg') center center no-repeat;
+}
+
+/* Цвета крестиков, стрелочек */
+
+.react_select__indicator:hover {}
+
+/* стили крестиков, стрелочек при наведении */
+
+.react_select__multi-value {
+   background-color: #fff !important;
+
+   /* animation: scaleIn 0.35s ease-in-out; */
+   /* Анимация появления элемента */
+}
+
+/* стили выбранных элементов */
+
+.react_select__multi-value__label {
+   background-color: #fff !important;
+   /* color: red !important; */
+}
+
+/* стили шрифта выбранных элементов */
+
+.react_select__multi-value__remove {
+   color: white !important;
+}
+
+/* стили крестиков удаления на выбранных элементах*/
+
+.react_select__multi-value__remove:hover {
+   background-color: red !important;
+   border-radius: 50%;
+   color: red !important;
+   cursor: pointer !important;
+}
+
+/* стили кнопки удаления */
+
+.react_select__menu {
+   background-color: #fff !important;
+   border-radius: 16px;
+   padding: 12px 8px !important;
+   box-shadow: none !important;
+   /* animation: scaleIn 0.35s ease-in-out; */
+   /* Анимация открытия списка */
+}
+
+/* стили выпадающего меню */
+
+.react_select__menu-list {
+   padding: 0 !important;
+   max-height: 460px !important;
+}
+
+/* стили контейнера, в котором находятся option */
+
+
+
+.react_select__option {
+   background-color: #fff !important;
+   padding: 4px 8px !important;
+   color: #B0B0B0 !important;
+   font-size: 16px !important;
+   font-style: normal;
+   font-weight: 400 !important;
+   line-height: 24px !important;
+   cursor: pointer !important;
+
+}
+
+/* стили элементов выпадающего меню */
+
+.react_select__option--is-focused {
+   color: #303030 !important;
+   font-size: 16px !important;
+   font-style: normal !important;
+   font-weight: 400 !important;
+   line-height: 24px !important;
+   background-color: #fff !important;
+}
+
+/* стили активных элементов выпадающего меню */

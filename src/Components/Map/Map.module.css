@@ -1,0 +1,130 @@
+.mapBlock {
+   width: 590px;
+   height: 590px;
+   overflow: hidden;
+}
+
+.title {
+   color: #303030;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 22px;
+   letter-spacing: -0.2px;
+}
+
+.description {
+   width: 181px;
+   color: #808080;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: -0.24px;
+}
+
+
+.mapContainer {
+   position: relative;
+   top: -33px;
+   left: 42px;
+}
+
+.district {
+   position: absolute;
+   cursor: pointer;
+}
+
+/* Лунёвское */
+.lunyovskoye {
+   top: 46px;
+   left: 230px;
+}
+
+/* Сходня-Фирсановка */
+.skhodnyaFirsanovka {
+   top: 277px;
+   left: 176px;
+}
+
+/* Кутузовское */
+.kutuzovskoye {
+   top: 273px;
+   left: 70px;
+}
+
+/* Клязьма-Старбеево */
+.klyazmaStarbeevo {
+   top: 250px;
+   left: 368px;
+}
+
+/* Подрезково */
+.podrezkovo {
+   top: 250px;
+   left: 238px;
+}
+
+/* Новогорск-Планерная */
+.novogorskPlanernaya {
+   top: 351px;
+   left: 238px;
+}
+
+/* Левобережный */
+.levoberezhniy {
+   top: 402px;
+   left: 426px;
+}
+
+.popUpDistrictKhimki {
+   display: flex;
+   align-items: center;
+
+   width: 152px;
+   height: 46px;
+   padding-left: 17px;
+   border-radius: 16px;
+   box-shadow: 0px 4px 4px 0px #00000040;
+   text-decoration: none;
+   background: white;
+   z-index: 999;
+   font-family: sans-serif;
+   color: #808080;
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: -0.02em;
+}
+
+@media screen and (max-width: 1370px) {
+   .textBlock {
+      text-align: center;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .mapContainer {
+      margin-top: 64px;
+   }
+
+   .mapContainer svg {
+      width: 90%;
+      height: auto;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .mapBlock {
+      width: calc(100% - 48px);
+      height: 90%;
+   }
+
+   .title,
+   .description {
+      width: 100%;
+      text-align: left;
+   }
+}

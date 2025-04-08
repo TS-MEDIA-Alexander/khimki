@@ -1,0 +1,33 @@
+.table:nth-child(1) {
+   max-width: 490px;
+}
+
+.table:nth-child(2) {
+   max-width: 220px;
+}
+
+.table:nth-child(3) {
+   max-width: 220px;
+}
+
+.table:nth-child(4) {
+   max-width: 260px;
+}
+
+.description {
+   color: #808080;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: -0.28px;
+}
+
+.bannerContainer {
+   margin: 0 auto;
+   width: 728px;
+}
+
+.bannerContainer img {
+   width: 100%;
+}

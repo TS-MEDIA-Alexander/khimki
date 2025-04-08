@@ -1,0 +1,19 @@
+.linkContainer {
+   padding: 32px;
+}
+
+.btnContainerRow {
+   display: flex;
+   align-items: start;
+}
+
+@media screen and (max-width: 745px) {
+   .btnContainerRow {
+      flex-direction: column;
+   }
+
+   .btnContainerRow>div:not(:first-child) {
+      margin-top: 16px;
+      margin-left: 0;
+   }
+}

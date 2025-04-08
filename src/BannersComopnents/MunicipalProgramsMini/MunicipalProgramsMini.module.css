@@ -1,0 +1,65 @@
+.bannerContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding: 32px;
+   border-radius: 40px;
+   /* background: url('../../assets/img/banners/municipal_programs.png') 0 0/auto auto no-repeat; */
+   /* background-size: cover; */
+   width: 202px;
+   height: 185px;
+   text-decoration: none;
+   overflow: hidden;
+   cursor: pointer;
+
+background: var(--main-radial-radial, radial-gradient(446.15% 170.03% at 105.79% 213.75%, #F5982A 0%, #FFEC00 100%));
+}
+
+.topContainer {
+   display: flex;
+   align-items: start;
+   flex-direction: column;
+}
+
+.topContainer img {
+   height: 80px;
+}
+
+
+.title {
+   display: inline-block;
+   font-size: 24px;
+   letter-spacing: -0.01em;
+   line-height: 28px;
+   font-weight: 500;
+   color: #303030;
+}
+
+.textBody {
+   width: 245px;
+   margin-top: 16px;
+   font-size: 14px;
+   letter-spacing: -0.14px;
+   line-height: 20px;
+   font-weight: 500;
+   color: #323232;
+}
+
+.button {
+   padding: 8px 24px;
+   border-radius: 40px;
+   background-color: #fff;
+   font-size: 16px;
+   line-height: 24px;
+   color: #303030;
+}
+
+@media screen and (max-width: 745px) {
+   .bannerContainer {
+      width: calc(100% - 48px);
+      margin: 0;
+      border-radius: 24px;
+      padding: 24px;
+   }
+}

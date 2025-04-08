@@ -1,0 +1,12 @@
+.linkContainer {
+   padding: 32px;
+}
+
+.description {
+   color: #808080;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: -0.28px;
+}

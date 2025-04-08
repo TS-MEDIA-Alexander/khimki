@@ -1,0 +1,82 @@
+.footer {
+   background: #212121;
+   padding: 35px 0 34px 0;
+}
+
+.footerRow {
+   display: flex;
+   justify-content: space-between;
+}
+
+@media screen and (max-width: 810px) {
+   .footerRow {
+      flex-direction: column;
+   }
+
+   .footerColumn {
+      margin-top: 32px;
+   }
+
+   .footerColumn>div {
+      text-align: left;
+   }
+
+   .adress,
+   .tsMedia {
+      margin-top: 32px;
+   }
+}
+
+
+.footerLogoBlock {
+   display: flex;
+   text-decoration: none;
+}
+
+.textMain {
+   margin-left: 13.33px;
+   width: 204px;
+}
+
+.titleInfo {
+   font-size: 10px;
+   font-weight: 400;
+   line-height: 14.12px;
+   color: #A1A1A1;
+}
+
+.titleAdministration {
+   font-size: 10px;
+   font-weight: 600;
+   line-height: 14.12px;
+   color: #FFFFFF;
+}
+
+.footerColumn {
+   font-size: 12px;
+   text-align: right;
+}
+
+.copyright {
+   font-weight: 400;
+   line-height: 16px;
+   color: #FFFFFFA6;
+}
+
+.adress {
+   font-weight: 400;
+   line-height: 16px;
+   color: #FFFFFF;
+}
+
+.adress a{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+
+.tsMedia {
+   color: #656565;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+}

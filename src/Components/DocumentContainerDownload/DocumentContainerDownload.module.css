@@ -1,0 +1,43 @@
+.link {
+   width: 80%;
+   text-decoration: none;
+   display: flex;
+   color: #303030;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: -0.32px;
+}
+
+.textInner {
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   font-weight: 600;
+   /* text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden; */
+}
+
+.documentContainer {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+@media screen and (max-width: 745px) {
+   .link {
+      width: 100%;
+   }
+
+   .datePublication {
+      display: none;
+   }
+
+   .textInner {
+      font-size: 12px;
+      line-height: 16px;
+   }
+}

@@ -1,0 +1,393 @@
+/* .title {
+   color: #303030;
+   font-size: 64px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 72px;
+   letter-spacing: -2.56px;
+} */
+
+.subtitle {
+   width: 308px;
+   color: #303030;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 22px;
+   letter-spacing: -0.2px;
+}
+
+.mapDescription {
+   width: 181px;
+   color: #808080;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: -0.24px;
+}
+
+.mapContainer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.mapImgContainer {
+   width: 547px;
+   position: absolute;
+   top: 113px;
+   left: 95px;
+}
+
+.mapImgContainer img {
+   width: 100%;
+}
+
+.mapBlock {
+   position: relative;
+   width: 590px;
+   height: 590px;
+}
+
+.imgMayorContainer {
+   overflow: hidden;
+   border-radius: 20px;
+   width: 230px;
+   height: 197px;
+}
+
+.imgMayorContainer img {
+   width: 100%;
+}
+
+.mayorBlock {
+   display: flex;
+   justify-content: space-between;
+   width: 590px;
+   height: 197px;
+}
+
+.blockContainerColumn {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.infoBlock {
+   width: 590px;
+   height: 292px;
+}
+
+.description {
+   color: #303030;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+li.description {
+   list-style: disc;
+}
+
+.columnContainerRow {
+   display: flex;
+   justify-content: space-between;
+}
+
+.columnContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.flexContainerRow {
+   display: flex;
+   justify-content: space-between;
+}
+
+.textRow {
+   display: flex;
+}
+
+.date {
+   padding: 4px 12px;
+   border-radius: 40px;
+   background: #F6F6F6;
+   color: #303030;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px;
+}
+
+.textBody {
+   color: #303030;
+   font-size: 40px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 48px;
+   letter-spacing: -0.8px;
+}
+
+.textBody span {
+   font-size: 48px;
+}
+
+.indicatorsBlock {
+   width: 566px;
+}
+
+.indicatorsBlock:not(:first-child) {
+   border-top: 1px solid #EDEDED;
+}
+
+.imgContainer {
+   overflow: hidden;
+   border-radius: 40px;
+   width: 606px;
+   height: 350px;
+
+}
+
+.imgContainer.imgContainer_small {
+   height: 296px;
+}
+
+.imgContainer img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.imgContainerDuble {
+   display: flex;
+}
+
+.imgContainerDuble div:last-child {
+   margin-left: 20px;
+}
+
+.imgContainerDuble .imgContainer {
+   width: 293px;
+   height: 286px;
+}
+
+.imgContainerDuble .imgContainer img {
+   height: 100%;
+}
+
+.imgDescription {
+   margin-top: 14px;
+   margin-left: 12px;
+   color: #808080;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px;
+}
+
+.descriptionItemContainer {
+   max-width: 566px;
+}
+
+.btnLinkOld {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 24px;
+   border-radius: 40px;
+   border: 1px solid #EDEDED;
+   color: #303030;
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: -0.56px;
+}
+
+.btnLink{
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      color: #5B5B5B;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: -0.32px;
+      border-radius: 40px;
+      border: 1px solid #B0B0B0;
+      cursor: pointer;
+}
+
+.rotate {
+   transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 1370px) {
+   .mapContainer {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .blockContainerColumn {
+      width: 100%;
+      align-items: center;
+   }
+
+   .mapContainer>div.indicatorsBlock:not(:first-child),
+   .blockContainerColumn>div {
+      margin-top: 32px;
+   }
+}
+
+@media screen and (max-width: 1370px) {
+   .textBlock {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .mapImgContainer {
+      margin-top: 64px;
+   }
+
+   .mapBlock {
+      height: 654px;
+   }
+
+   .flexContainerRow {
+      flex-direction: column;
+   }
+
+   .columnContainerRow {
+      flex-direction: column;
+      border: none;
+      padding: 0;
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .textBlock {
+      align-items: start;
+   }
+
+   .subtitle {
+      text-align: left;
+      width: 100%;
+   }
+
+   .mapBlock {
+      width: calc(100% - 48px);
+   }
+
+   .mapImgContainer {
+      width: 80%;
+      top: 100px;
+      left: 20px;
+   }
+
+   .mayorBlock {
+      width: calc(100% - 48px);
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+   }
+
+   .infoBlock {
+      display: none;
+   }
+
+   .pageTitle {
+      font-size: 24px;
+      padding: 0;
+   }
+
+   .mapDescription {
+      text-align: left;
+   }
+
+   .imgMayorContainer {
+      width: 100%;
+   }
+
+   .textRow {
+      flex-direction: column;
+      align-items: start;
+   }
+
+   .date {
+      font-size: 12px;
+   }
+
+   .description {
+      margin-top: 14px;
+      font-size: 14px;
+   }
+
+   .textBody,
+   .textBody span {
+      font-size: 24px;
+   }
+
+   .columnContainer {
+      flex-direction: column;
+      border: none;
+      padding: 0;
+      width: 100%;
+   }
+
+   .imgContainer {
+      margin-top: 32px;
+      width: 100%;
+      border-radius: 24px;
+   }
+
+   .imgContainerDuble {
+      flex-direction: column;
+      width: 100%;
+   }
+
+   .imgContainerDuble .imgContainer {
+      width: 100%;
+   }
+
+   .imgContainerDuble div:last-child {
+      margin-left: 0px;
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .imgContainer.imgContainer_small {
+      height: auto;
+   }
+
+   .imgContainer {
+      height: 192px !important;
+   }
+
+   .imgContainer img {
+      height: 100%;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .mapBlock {
+      height: 600px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .mapBlock {
+      height: 520px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .mapBlock {
+      height: 450px;
+   }
+}

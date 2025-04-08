@@ -1,0 +1,103 @@
+.bannerContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   background: url('../../assets/img/banners/khimki_urban_district.png') 0 0/auto auto no-repeat;
+   background-size: cover;
+   width: calc(100% - 80px);
+   height: 398px;
+   overflow: hidden;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.title {
+   display: inline-block;
+   font-size: 28px;
+   letter-spacing: -0.02em;
+   line-height: 40px;
+   font-weight: 600;
+   color: #212121;
+}
+
+.textBody {
+   margin-top: 24px;
+   letter-spacing: -0.01em;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   color: #808080;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   padding: 8px 24px;
+   border-radius: 40px;
+   color: rgb(140, 126, 0);
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.button img {
+   margin-left: 4px;
+   width: 24px;
+   height: 24px;
+}
+
+@media screen and (max-width: 745px) {
+   .bannerContainer {
+      background-size: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      width: calc(100% - 48px);
+   }
+
+   .topContainer {
+      width: 100%;
+   }
+
+   .title {
+      width: 100%;
+      font-size: 24px;
+      text-align: center;
+   }
+
+   .textBody {
+      text-align: center;
+   }
+
+   .button {
+      margin-top: 24px;
+      font-size: 12px;
+      padding: 8px 16px;
+   }
+}
+
+@media screen and (max-width: 470px) {
+   .bannerContainer {
+      background-size: 150%;
+      background-position: -140px 0px;
+      align-items: start;
+   }
+
+   .title {
+      text-align: left;
+   }
+
+   .textBody {
+      text-align-last: left;
+   }
+
+   .button {
+      font-size: 12px;
+      padding: 8px 16px;
+      line-height: 16px;
+   }
+
+   .button img {
+      width: 16px;
+      height: 16px;
+   }
+}

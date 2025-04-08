@@ -1,0 +1,228 @@
+.card {
+   display: flex;
+   padding: 24px;
+}
+
+.portrainContainer {
+   overflow: hidden;
+   width: 277px;
+   height: 277px;
+   border-radius: 24px;
+}
+
+.portrainContainer img {
+   width: 100%;
+}
+
+.rightContainer {
+   margin-left: 24px;
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.cardSubtitle {
+   color: #808080;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: -0.28px;
+}
+
+.cardSurname {
+   color: #212121;
+   font-size: 38px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: -0.76px;
+}
+
+.cardName {
+   color: #212121;
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: -0.56px;
+}
+
+.citation {
+   width: 685px;
+   color: #303030;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.cardMoreDetails {
+   text-decoration: none;
+   color: #808080;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px;
+   letter-spacing: -0.24px;
+}
+
+.cardBtnRow {
+   display: flex;
+   justify-content: flex-start;
+   gap: 5px;
+   flex-wrap: wrap;
+   align-items: flex-start
+}
+
+.btnFlexContainer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.virtualBtn {
+   display: block;
+   padding: 8px 24px;
+   color: #303030;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.cardBtnImgContainer {
+   display: flex;
+   align-items: center;
+   margin-left: 8px;
+   width: 16px;
+   height: 16px;
+}
+
+.schedule {
+   margin-left: 4px;
+   color: #505050;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px;
+   letter-spacing: -0.24px;
+}
+
+.cardBtnLink {
+   margin-left: 8px;
+   display: flex;
+   width: 40px;
+   height: 40px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 40px;
+   background: #F6F6F6;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 1160px) {
+   .card {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .rightContainer {
+      margin-top: 24px;
+   }
+
+   .citation {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 881px) {
+   .btnFlexContainer {
+      margin-top: 24px;
+   }
+}
+
+@media screen and (max-width: 745px) {
+   .cardSubtitle {
+      font-size: 12px;
+   }
+
+   .portrainContainer {
+      width: 100%;
+      height: 190px;
+   }
+
+   .cardSurname,
+   .cardName {
+      font-size: 20px;
+      line-height: 27px
+   }
+
+   .cardName {
+      font-weight: 400;
+   }
+
+   .virtualBtn {
+      padding: 8px 16px;
+   }
+
+   .cardBtnLink {
+      width: 32px;
+      height: 32px;
+   }
+}
+
+@media screen and (max-width: 723px) {
+   .virtualBtn {
+      margin-bottom: 32px;
+   }
+
+   .btnFlexContainer {
+      margin-top: 0px;
+   }
+}
+
+@media screen and (max-width: 625px) {
+   .btnFlexContainer {
+      margin-top: 24px;
+   }
+}
+
+@media screen and (max-width: 468px) {
+   .rightContainer {
+      margin: 24px 0 0 0;
+      padding: 0;
+      justify-content: start;
+   }
+
+   .cardBtnImgContainer,
+   .schedule {
+      display: none;
+   }
+
+   .btnFlexContainer {
+      margin-top: 0px;
+   }
+}
+
+@media screen and (max-width: 428px) {
+
+   .cardBtnImgContainer,
+   .schedule {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 370px) {
+   .btnFlexContainer {
+      margin-top: 24px;
+   }
+}

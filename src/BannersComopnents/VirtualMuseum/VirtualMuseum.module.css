@@ -1,0 +1,71 @@
+.bannerContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   background: url('../../assets/img/banners/museum.png') 0 0/auto auto no-repeat;
+   background-size: cover;
+   width: 590px;
+   height: 250px;
+   overflow: hidden;
+   cursor: pointer;
+   padding: 40px;
+   border-radius: 40px;
+   text-decoration: none;
+}
+
+.title {
+   display: inline-block;
+   font-size: 24px;
+   letter-spacing: -0.02em;
+   line-height: 28px;
+   font-weight: 500;
+   color: #fff;
+}
+
+.textBody {
+   margin-top: 24px;
+   font-size: 14px;
+   letter-spacing: -0.01em;
+   line-height: 20px;
+   font-weight: 500;
+   color: #fff;
+}
+
+.button {
+   padding: 8px 24px;
+   border-radius: 40px;
+   font-size: 16px;
+   line-height: 24px;
+   color: #fff;
+}
+
+@media screen and (max-width: 775px) {
+   .bannerContainer {
+      width: calc(90% - 48px);
+      border-radius: 24px;
+      padding: 24px;
+   }
+
+   .button {
+      margin-top: 30px;
+      padding: 8px 16px;
+      font-size: 12px;
+      line-height: 16px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .bannerContainer {
+      width: calc(342px - 48px);
+      height: calc(320px - 48px);
+      background: url('../../assets/img/banners/museum_mobil.png') 0 0/auto auto no-repeat;
+      background-size: cover;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .button {
+      margin-top: 10px;
+   }
+}
