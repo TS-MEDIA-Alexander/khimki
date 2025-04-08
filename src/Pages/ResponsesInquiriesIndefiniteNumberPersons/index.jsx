@@ -5,6 +5,8 @@ import { ROUTER } from '../../config';
 import { NavLink } from 'react-router-dom';
 import SpoilerContainer from '../../Components/SpoilerContainer';
 import SpoilerItem from '../../Components/SpoilerContainer/SpoilerItem';
+import Table from '../../Components/Table';
+import tableResponce from '../../assets/tables/tableResponce.json'
 
 const ResponsesInquiriesIndefiniteNumberPersons = () => {
   return (
@@ -287,7 +289,7 @@ const ResponsesInquiriesIndefiniteNumberPersons = () => {
       <div className={css.strongText}>Как реализована Губернаторская программа по открытию аптечных пунктов, осуществляющих отпуск препаратов льготным категориям граждан? </div>
       <div className={css.text}>На территории городского округа Химки по Губернаторской программе в Московской области открыто и функционируют 7 государственных аптечных учреждений ГБУ МО «МОСОБЛМЕДСЕРВИС», осуществляющих отпуск препаратов льготным категориям граждан, что дало возможность увеличить доступность оказания качественной лекарственной помощи населению:</div>
 <div className='mt40'>
-{/* <Table table={table} style=   {css.table} />  Таблицу засунуть сюда*/ }
+<Table table = {tableResponce} style = {css}/>
 </div>
       <div className={css.strongText}>Что такое квота на высокотехнологичное лечение и как её получить? </div>
       <div className={css.text}>Высокотехнологичная медицинская помощь жителям Московской области оказывается в рамках Московской областной программы государственных гарантий бесплатного оказания гражданам медицинской помощи на 2021 год и плановый период 2022 и 2023 годов, утвержденной постановлением Правительства Московской области от 27.12.2019 № 1047/45 и приказа Минздрава России от 02.10.2019 № 824н «Об утверждении порядка организации оказания высокотехнологичной медицинской помощи с применением единой государственной информационной системы в сфере здравоохранения». </div>
