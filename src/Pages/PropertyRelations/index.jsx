@@ -15,7 +15,7 @@ const PropertyRelations = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Имущественные отношения</span>
             </div>
-            <div className={`mt24 pageTitle`}>Имущественные отношения</div>
+            <h1 className={`mt24 pageTitle`}>Имущественные отношения</h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/dokumenty/rasporyazheniya_komitet_upr_imush/' text={'Нормативно-правовые акты'} />

@@ -14,11 +14,11 @@ const PublicChamberCandidates = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.publicChamber} className='breadcrumbsFrom'> / Общественная палата</NavLink>
                <span className='breadcrumbsTo'> / Кандидаты в члены муниципальной общественной палаты</span>
             </div>
-            <div className="mt24 pageTitle">
+            <h1 className="mt24 pageTitle">
                <p>Кандидаты в члены</p>
                <p>муниципальной общественной</p>
                палаты
-            </div>
+            </h1>
             <div className={`mt80 borderMain ${s.border}`}>
                <DocumentContainerDownload type={'PDF'} text='Список кандидатов в члены общественной палаты городского округа Химки' date="21.06.2024" />
             </div>

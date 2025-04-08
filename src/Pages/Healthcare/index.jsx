@@ -16,7 +16,7 @@ const Healthcare = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Здравоохранение</span>
             </div>
-            <div className={`mt24 pageTitle`}>Здравоохранение</div>
+            <h1 className={`mt24 pageTitle`}>Здравоохранение</h1>
 
             <div className={s.containtContainer}>
                <div className="mt80">

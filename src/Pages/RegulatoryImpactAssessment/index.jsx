@@ -16,9 +16,9 @@ const RegulatoryImpactAssessment = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Оценка регулирующего воздействия</span>
             </div>
-            <div className={`mt24 pageTitle`}>
+            <h1 className={`mt24 pageTitle`}>
                <p>Оценка регулирующего</p>
-               воздействия</div>
+               воздействия</h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/ocenka-reguliruyushego-vozdejstviya/zakonodatelstvo/' text={'Законодательство'} />

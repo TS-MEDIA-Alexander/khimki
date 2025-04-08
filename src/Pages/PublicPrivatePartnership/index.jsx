@@ -18,7 +18,7 @@ const PublicPrivatePartnership = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Государственно-частное партнерство</span>
             </div>
-            <div className={`mt24 pageTitle`}>Государственно-частное партнерство</div>
+            <h1 className={`mt24 pageTitle`}>Государственно-частное партнерство</h1>
 
             <div className="mt80 text">
                <p>

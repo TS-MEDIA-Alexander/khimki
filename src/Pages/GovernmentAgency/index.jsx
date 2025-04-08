@@ -20,7 +20,7 @@ const GovernmentAgency = (props) => {
                <NavLink to={ROUTER.main} className='breadcrumbsFrom'>Округ</NavLink>
                <span className='breadcrumbsTo'> / Государственные организации</span>
             </div>
-            <div className="mt24 pageTitle">Государственные организации</div>
+            <h1 className="mt24 pageTitle">Государственные организации</h1>
 
             <div className="columnContainer">
                <div className="columnLarge">

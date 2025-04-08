@@ -11,7 +11,7 @@ const CitizensAppeals = (props) => {
    return (
       <div>
          <ContantContainerMain>
-            <div className="mt80 pageTitle">Работа с обращениями граждан</div>
+            <h1 className="mt80 pageTitle">Работа с обращениями граждан</h1>
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link={ROUTER.citizensAppeals.legalRegulation} text={'Правовое регулирование'} />
                <div className="mt24"><LinkContainer link={ROUTER.citizensAppeals.receptionProcedureTime} text={'Порядок и время приема'} /></div>

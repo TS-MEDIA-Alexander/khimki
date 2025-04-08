@@ -20,7 +20,7 @@ const ScienceCity = (props) => {
             </div>
             <div className="mt24 columnContainer">
                <div className="columnLarge">
-                  <div className="pageTitle">Наукоград</div>
+                  <h1 className="pageTitle">Наукоград</h1>
                   <img className={`mt40 ${s.imgMain}`} src={img} alt="" />
                   <div className="mt80 pageSubtitle">Развитие городского округа химки как наукограда</div>
                   <div className="mt38 text">

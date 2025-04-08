@@ -16,7 +16,7 @@ const Improvement = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Благоустройство</span>
             </div>
-            <div className={`mt24 pageTitle`}>Благоустройство</div>
+            <h1 className={`mt24 pageTitle`}>Благоустройство</h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/blagoustrojstvo/obshestvennye-prostranstva/' text={'Общественные пространства'} />

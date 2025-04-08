@@ -16,7 +16,7 @@ const BurialFuneralServices = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Погребение и похоронное дело</span>
             </div>
-            <div className={`mt24 pageTitle`}>Погребение и похоронное дело</div>
+            <h1 className={`mt24 pageTitle`}>Погребение и похоронное дело</h1>
 
             <CardHuman
                jobTitle={'Муниципальное казенное учреждение «Специализированная служба в сфере погребения и похоронного дела»'}

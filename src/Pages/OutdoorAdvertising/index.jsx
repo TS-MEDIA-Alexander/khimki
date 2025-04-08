@@ -16,10 +16,10 @@ const OutdoorAdvertising = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Наружная реклама</span>
             </div>
-            <div className={`mt24 pageTitle`}>
+            <h1 className={`mt24 pageTitle`}>
                <p>Отдел рекламы МКУ «Управление</p>
                делами администрации»
-            </div>
+            </h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/naruzhnaya-reklama/normativno-pravovye-akty/' text={'Правовые и нормативные акты'} />

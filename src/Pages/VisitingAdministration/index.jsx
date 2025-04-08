@@ -17,9 +17,9 @@ const VisitingAdministration = (props) => {
                <NavLink to={ROUTER.citizensAppeals.main} className='breadcrumbsFrom'>Обращения граждан</NavLink>
                <span className='breadcrumbsTo'> / Выездная администрация </span>
             </div>
-            <div className="mt24 pageTitle">
+            <h1 className="mt24 pageTitle">
                Выездная администрация
-            </div>
+            </h1>
 
             <div className="text mt80">
                <p>

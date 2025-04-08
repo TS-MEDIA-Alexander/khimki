@@ -14,12 +14,12 @@ const AllRussianDayReceptionCitizens = (props) => {
                <NavLink to={ROUTER.citizensAppeals.main} className='breadcrumbsFrom'>Обращения граждан</NavLink>
                <span className='breadcrumbsTo'> / Общероссийский день приёма граждан в День Конституции Российской Федерации 12 декабря</span>
             </div>
-            <div className="mt24 pageTitle">
+            <h1 className="mt24 pageTitle">
                Общероссийский день приёма <br />
                граждан в День Конституции <br />
                Российской Федерации 12 <br />
                декабря
-            </div>
+            </h1>
 
             <div className="text">
                <div className="mt80 pageSubtitle">О проведении общероссийского дня приёма граждан в день конституции российской федерации 12 декабря 2019 года</div>

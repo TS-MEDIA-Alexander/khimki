@@ -15,10 +15,10 @@ const SmallMediumBusinesses = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Малое и среднее предпринимательство</span>
             </div>
-            <div className={`mt24 pageTitle`}>
+            <h1 className={`mt24 pageTitle`}>
                <p>Малое и среднее</p>
                предпринимательство
-            </div>
+            </h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/maloe-i-srednee-predprinimatelstvo/normativno-pravovye-akty/' text={'Правовые и нормативные акты'} />

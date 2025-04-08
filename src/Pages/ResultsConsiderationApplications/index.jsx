@@ -34,10 +34,10 @@ const ResultsConsiderationApplications = (props) => {
                <NavLink to={ROUTER.citizensAppeals.main} className='breadcrumbsFrom'>Обращения граждан</NavLink>
                <span className='breadcrumbsTo'> / Результаты рассмотрения обращений</span>
             </div>
-            <div className="mt24 pageTitle">
+            <h1 className="mt24 pageTitle">
                <p>Результаты рассмотрения</p>
                обращений
-            </div>
+            </h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/dokumenty/rezultaty-rassmotreniya-obrashenij/' text={'Обращения граждан, поступивших на «горячую линию» Администрации'} />

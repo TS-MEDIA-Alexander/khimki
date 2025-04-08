@@ -26,7 +26,7 @@ const Contacts = (props) => {
    return (
       <div>
          <ContantContainerMain>
-            <div className="mt80 pageTitle">Контакты</div>
+            <h1 className="mt80 pageTitle">Контакты</h1>
             <div className={`mt80 borderMain ${s.card}`}>
                <div className={s.imgContainer}>
                   <img src={isMobil ? img_yellow_mobil : img_yellow} alt="" />
@@ -129,8 +129,8 @@ const Contacts = (props) => {
                   tel={['+7 (985) 634-67-97', '+7 (495) 571-01-40']}
                   mail={'np_ta@admhimki.ru'}
                   url={'ponyatoykin'}
-               />               
-               
+               />
+
                <ContactBanner
                   img={kutuzovskoe}
                   title={'Территориальное управление Кутузовское'}
@@ -151,7 +151,7 @@ const Contacts = (props) => {
                   mail={'lunevo@admhimki.ru'}
                   url={'konova'}
                />
-               
+
             </div>
 
             {/* <div className={`mt80 pageSubtitle ${s.textCenter}`}>Горячие линии ведомств</div>

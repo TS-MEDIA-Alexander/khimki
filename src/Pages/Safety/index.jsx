@@ -16,7 +16,7 @@ const Safety = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Безопасность</span>
             </div>
-            <div className={`mt24 pageTitle`}>Безопасность</div>
+            <h1 className={`mt24 pageTitle`}>Безопасность</h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/okrug/municipalnye-programmy/bezopasnost/' text={'Муниципальная программа "Безопасность и обеспечение безопасности жизнедеятельности населения"'} />

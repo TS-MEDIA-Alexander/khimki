@@ -24,7 +24,7 @@ const ProsecutorOffice = (props) => {
    return (
       <div>
          <ContantContainerMain>
-            <div className={`mt80 pageTitle`}>Прокуратура </div>
+            <h1 className={`mt80 pageTitle`}>Прокуратура </h1>
             <div className="mt80">
                <CardHuman
                   jobTitle={'Химкинский городской прокурор - старший советник юстиции'}

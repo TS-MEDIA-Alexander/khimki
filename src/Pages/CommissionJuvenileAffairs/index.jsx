@@ -15,11 +15,11 @@ const CommissionJuvenileAffairs = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Комиссия по делам несовершеннолетних и защите их прав</span>
             </div>
-            <div className={`mt24 pageTitle`}>
+            <h1 className={`mt24 pageTitle`}>
                <p>Комиссия по делам</p>
                <p>несовершеннолетних и защите</p>
                их прав
-            </div>
+            </h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/komissiya-po-delam-nesovershennoletnih-i-zashite-ih-prav/sostav-komissii-po-delam-nesovershennoletnih-i-zashite-ih-prav-gorodsko-go-okruga-himki/' text={'Состав Комиссии по делам несовершеннолетних и защите их прав городско-го округа Химки'} />

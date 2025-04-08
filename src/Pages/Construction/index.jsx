@@ -14,7 +14,7 @@ const Construction = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Строительство</span>
             </div>
-            <div className="mt24 pageTitle">Строительство</div>
+            <h1 className="mt24 pageTitle">Строительство</h1>
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/stroitelstvo/o-strojkomplekse/' text={'О Стройкомплексе'} />
                <div className="mt24"><LinkContainer link='http://old.admhimki.ru/stroitelstvo/pravila-zemlepolzovaniya-i-zastrojki/' text={'Правила землепользования и застройки'} /></div>

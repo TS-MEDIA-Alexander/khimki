@@ -27,7 +27,7 @@ const GorodPobratim = (props) => {
                <NavLink to={ROUTER.history.main} className='breadcrumbsFrom'>История</NavLink>
                <span className={'breadcrumbsTo'}> / Город-побратим</span>
             </div>
-            <div className={`mt24 pageTitle`}>Город-побратим</div>
+            <h1 className={`mt24 pageTitle`}>Город-побратим</h1>
             <div className="mt80 columnContainer">
                <div className="columnLarge">
 
@@ -53,7 +53,7 @@ const GorodPobratim = (props) => {
                         <div className={`mt38 ${s.footnote}`}>
                            Официальный портал Гродненского городского исполнительного комитета:
                         </div>
-                        <a href="http://grodno.gov.by/" target='_blank' className={`mt38 btnWBanner ${s.btn}`}> <img src={icon} alt="" /> grodno.gov.by</a>
+                        <a href="http://grodno.gov.by/" target='_blank' className={`mt38 btnWBanner ${s.btn}`} rel="noreferrer"> <img src={icon} alt="" /> grodno.gov.by</a>
                      </div>
 
                   </div>

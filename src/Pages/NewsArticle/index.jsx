@@ -45,7 +45,7 @@ const NewsArticle = (props) => {
                      {/* Фильтры, на будущее */}
                      <div className={`mt40 ${s.filterText}`}>{currentNews?.filter?.subject} {currentNews?.dateTime}</div>
 
-                     <div className={`mt48 pageTitle ${s.mobilMt32}`}>{currentNews.title}</div>
+                     <h1 className={`mt48 pageTitle ${s.mobilMt32}`}>{currentNews.title}</h1>
                      <div className={`mt48 ${s.subtitle}`}>{currentNews.description}</div>
 
                      {/* Цитаты, если есть */}

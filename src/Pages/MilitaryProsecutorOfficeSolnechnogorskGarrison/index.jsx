@@ -22,9 +22,9 @@ const MilitaryProsecutorOfficeSolnechnogorskGarrison = (props) => {
                <NavLink to={ROUTER.prosecutorOffice.main} className='breadcrumbsFrom'>Прокуратура</NavLink>
                <span className='breadcrumbsTo'> / Военная прокуратура солнечногорского гарнизона</span>
             </div>
-            <div className={`mt24 pageTitle`}>
+            <h1 className={`mt24 pageTitle`}>
                <p>Военная прокуратура</p>
-               солнечногорского гарнизона </div>
+               солнечногорского гарнизона </h1>
             <div className="mt80">
                <CardHuman
                   jobTitle={'Военный прокурор солнечногорского гарнизона - полковник юстиции'}

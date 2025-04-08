@@ -17,7 +17,7 @@ const InformationSystems = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.main} className='breadcrumbsFrom'>Округ</NavLink>
                <span className='breadcrumbsTo'> / Информационные системы</span>
             </div>
-            <div className={`mt24 pageTitle`}>Информационные системы</div>
+            <h1 className={`mt24 pageTitle`}>Информационные системы</h1>
 
             <div className="mt80 pageSubtitle">
                <p>Перечень информационных систем, находящихся в ведении администрации городского</p>
@@ -34,7 +34,7 @@ const InformationSystems = (props) => {
             </div>
             <div className={`mt38 text`}>
                Утвержден Постановлением Администрации городкого округа Химки Московской области от 26.02.2019 № 128 "Об
-               утверждении Перечня цифровых информационных ресурсов в сфере культуры городского округа Химки 
+               утверждении Перечня цифровых информационных ресурсов в сфере культуры городского округа Химки
                Московской области"</div>
             <div className="mt40">
                <Table table={cifrovie_resurs} style={s} />

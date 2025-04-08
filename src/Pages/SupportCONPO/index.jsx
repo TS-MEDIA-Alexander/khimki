@@ -20,7 +20,7 @@ const SupportCONPO = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Поддержка СО НКО</span>
             </div>
-            <div className={`mt24 pageTitle`}>Поддержка СО НКО</div>
+            <h1 className={`mt24 pageTitle`}>Поддержка СО НКО</h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/podderzhka-so-nko/podderzhka-socialno-orientirovannyh-nekommercheskih-organizacij-i-ih-obosoblennyh-podrazdelenij-na-urovne-municipalnogo-obrazovaniya/' text={'Поддержка социально ориентированных некоммерческих организаций (и их обособленных подразделений) на уровне муниципального образования'} />

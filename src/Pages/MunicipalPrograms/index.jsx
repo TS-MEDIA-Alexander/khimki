@@ -17,7 +17,7 @@ const MunicipalPrograms = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Муниципальные программы</span>
             </div>
-            <div className="mt80 pageTitle">Муниципальные программы</div>
+            <h1 className="mt80 pageTitle">Муниципальные программы</h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <div className={s.column}>

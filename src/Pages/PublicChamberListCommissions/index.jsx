@@ -15,10 +15,10 @@ const PublicChamberListCommissions = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.publicChamber} className='breadcrumbsFrom'> / Общественная палата</NavLink>
                <span className='breadcrumbsTo'> / Перечень Комиссий Общественной палаты</span>
             </div>
-            <div className="mt24 pageTitle">
+            <h1 className="mt24 pageTitle">
                <p>Перечень Комиссий</p>
                Общественной палаты
-            </div>
+            </h1>
             <div className={`mt80 ${s.title}`}>
                <p>Перечень комиссий общественной палаты городского округа</p> Химки Московской области
             </div>

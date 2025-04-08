@@ -15,9 +15,9 @@ const ParticipatoryBudgeting = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Инициативное бюджетирование</span>
             </div>
-            <div className={`mt24 pageTitle`}>
+            <h1 className={`mt24 pageTitle`}>
                Инициативное бюджетирование
-            </div>
+            </h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/dokumenty/protokoly-konkursnoj-komissii-go-himki-po-otboru-p/' text={'Протоколы Конкурсной комиссии г.о. Химки по отбору проектов инициативного бюджетирования'} />

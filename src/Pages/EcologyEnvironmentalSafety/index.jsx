@@ -13,8 +13,9 @@ const EcologyEnvironmentalSafety = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Экология и экологическая безопасность</span>
             </div>
-            <div className={`mt24 pageTitle`}><p>Экология и экологическая</p> безопасность
-            </div>
+            <h1 className={`mt24 pageTitle`}>
+               <p>Экология и экологическая</p> безопасность
+            </h1>
 
             <div className={`mt80 text`}>
                <p>

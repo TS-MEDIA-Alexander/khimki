@@ -17,7 +17,7 @@ const LandRelations = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Земельные отношения</span>
             </div>
-            <div className={`mt24 pageTitle`}>Земельные отношения</div>
+            <h1 className={`mt24 pageTitle`}>Земельные отношения</h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/aukciony-i-torgi/' text={'Аукционы и торги'} />

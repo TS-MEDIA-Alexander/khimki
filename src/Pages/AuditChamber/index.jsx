@@ -15,7 +15,7 @@ const AuditChamber = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.main} className='breadcrumbsFrom'>Округ</NavLink>
                <span className='breadcrumbsTo'> / Контрольно-счетная палата </span>
             </div>
-            <div className={`mt24 pageTitle`}>Контрольно-счетная палата </div>
+            <h1 className={`mt24 pageTitle`}>Контрольно-счетная палата </h1>
 
             <div className={`mt80 pageSubtitle`}>Деятельность палаты</div>
             <div className={`mt38 text`}>

@@ -22,12 +22,12 @@ const CorrectionalInstitutions = (props) => {
                <NavLink to={ROUTER.prosecutorOffice.main} className='breadcrumbsFrom'>Прокуратура</NavLink>
                <span className='breadcrumbsTo'> / Московская прокуратура по надзору за соблюдением законов в исправительных учреждениях Московской области</span>
             </div>
-            <div className={`mt24 pageTitle`}>
+            <h1 className={`mt24 pageTitle`}>
                <p>Московская прокуратура по</p>
                <p>надзору за соблюдением законов</p>
                <p>в исправительных учреждениях</p>
                <p>Московской области</p>
-            </div>
+            </h1>
             <div className="mt80">
                <CardHuman
                   jobTitle={'Московский прокурор по надзору за соблюдением законов в исправительных учреждениях Московской области'}

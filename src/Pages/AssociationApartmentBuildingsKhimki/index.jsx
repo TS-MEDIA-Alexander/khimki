@@ -14,7 +14,7 @@ const AssociationApartmentBuildingsKhimki = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.publicOrganizations} className='breadcrumbsTo'>Общественные организации</NavLink>
                <span className='breadcrumbsTo'> / Ассоциация МКД Химок</span>
             </div>
-            <div className="mt24 pageTitle">Ассоциация МКД Химок</div>
+            <h1 className="mt24 pageTitle">Ассоциация МКД Химок</h1>
 
             <div className={`mt80 ${s.title}`}>
                <p>Отделение ассоциации председателей советов</p>

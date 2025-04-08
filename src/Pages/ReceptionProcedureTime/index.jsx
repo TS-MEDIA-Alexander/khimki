@@ -23,10 +23,10 @@ const ReceptionProcedureTime = (props) => {
                <NavLink to={ROUTER.citizensAppeals.main} className='breadcrumbsFrom'>Обращения граждан</NavLink>
                <span className='breadcrumbsTo'> / Порядок и время приема</span>
             </div>
-            <div className="mt24 pageTitle">
+            <h1 className="mt24 pageTitle">
                <p>График личного приёма граждан</p>
                <p>Главой городского округа</p>
-            </div>
+            </h1>
             <div className="mt80">
                <MayorCard />
             </div>
@@ -34,7 +34,7 @@ const ReceptionProcedureTime = (props) => {
                <div className="pageSubtitle">
                   График личного приёма граждан Главой городского округа <br />
                   и заместителями Главы городского округа Химки
-                  в апреле 2025 года 
+                  в апреле 2025 года
                </div>
                <p>
                   Информацию о порядке записи на приём и порядке проведения приёмов можно получить по телефону с 9.00 до 18.00 (пятница с 9.00 до 16.45), кроме выходных и праздничных дней
@@ -42,7 +42,7 @@ const ReceptionProcedureTime = (props) => {
             </div>
             <div className="mt40 flexContainer">
                <div className="oval">+7 (495) 572-73-38</div>
-               <a href='https://old.admhimki.ru/dokumenty/poryadok-i-vremya-priema-arhiv/' target="_blank" className={`btnY ${s.virtualBtn}`}>Архив графиков <img src={arrow} alt="" /></a>
+               <a href='https://old.admhimki.ru/dokumenty/poryadok-i-vremya-priema-arhiv/' target="_blank" className={`btnY ${s.virtualBtn}`} rel="noreferrer">Архив графиков <img src={arrow} alt="" /></a>
             </div>
 
             {/* <div className="columnContainer">

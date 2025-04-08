@@ -25,10 +25,10 @@ const ContestsFinancialSupport = (props) => {
             / Конкурсы на предоставления финансовой поддержки
           </span>
         </div>
-        <div className={`mt24 pageTitle`}>
+        <h1 className={`mt24 pageTitle`}>
           <p>Конкурсы на предоставления</p>
           финансовой поддержки
-        </div>
+        </h1>
 
         <div className="text">
           <div className="mt80 pageSubtitle">

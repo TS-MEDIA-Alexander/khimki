@@ -37,7 +37,7 @@ const KhimkiDistrict = (props) => {
    return (
       <div>
          <ContantContainerMain>
-            <div className={`mt80 pageTitle`}>Городской округ Химки</div>
+            <h1 className={`mt80 pageTitle`}>Городской округ Химки</h1>
             <div className={`mt80 ${s.mapContainer}`}>
                <Map fnSet={setCurDistrictId} />
                <DistrictAbout curDistrictId={curDistrictId} />
@@ -159,7 +159,7 @@ const KhimkiDistrict = (props) => {
                   <br />
                   <br />
                   <br />
-                  
+
                   <div className={`btnCircleG ${s.btn}`}><img src={arrow_btn_link} alt="" /></div>
                </NavLink>
             </div>
@@ -174,7 +174,7 @@ const KhimkiDistrict = (props) => {
                         <NavLink to={ROUTER.khimkiDistrict.auditChamber} className={s.item}>Контрольно-счетная палата </NavLink>
                      </div>
                      <div className={s.column}>
-                        <a href='https://sdhimki.ru/' target='_blank' className={s.item}>Совет депутатов </a>
+                        <a href='https://sdhimki.ru/' target='_blank' className={s.item} rel="noreferrer">Совет депутатов </a>
                         <NavLink to={ROUTER.khimkiDistrict.tic} className={s.item}>ТИК города Химки </NavLink>
                         <NavLink to={ROUTER.khimkiDistrict.publicOrganizations} className={s.item}>Общественные организации  </NavLink>
                      </div>

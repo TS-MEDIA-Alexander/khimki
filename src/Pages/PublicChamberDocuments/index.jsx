@@ -20,11 +20,11 @@ const PublicChamberDocuments = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.publicChamber} className='breadcrumbsFrom'> / Общественная палата</NavLink>
                <span className='breadcrumbsTo'> / Документы</span>
             </div>
-            <div className={`mt24 pageTitle`}>
+            <h1 className={`mt24 pageTitle`}>
                <p>Общественная палата городского</p>
                <p>округа Химки Московской</p>
                <p>области</p>
-            </div>
+            </h1>
 
             <div className={`mt80 borderMain ${s.documentContainer}`}>
                <DocumentContainerDownload type={'PDF'} document={resolution345} documentName={'15.05.2020_№_345.pdf'} text='Постановление Администрации г.о. Химки от 15.05.2020 № 345 "О продлении срока для приема заявлений и документов на кандидатов в члены Общественной палаты городского округа Химки Московской области"' date="06.02.2023" />

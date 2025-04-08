@@ -14,11 +14,11 @@ const AuthorityFeldHandlingAnimalsWithoutOwners = (props) => {
                <span className='breadcrumbsTo'> / Полномочия в области обращения с животными
                   без владельцев</span>
             </div>
-            <div className={`mt24 pageTitle`}>
+            <h1 className={`mt24 pageTitle`}>
                <p>Полномочия в области</p>
                <p>обращения с животными</p>
                <p>без владельцев</p>
-            </div>
+            </h1>
 
 
             <div className={`mt80 pageSubtitle`}>Правовое регулирование</div>

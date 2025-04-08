@@ -26,7 +26,7 @@ const GreatPatrioticWar = (props) => {
                <NavLink to={ROUTER.history.main} className='breadcrumbsFrom'>История</NavLink>
                <span className={'breadcrumbsTo'}> / Великая Отечественная война 1941-1945 гг.</span>
             </div>
-            <div className={`mt24 pageTitle`}>Великая Отечественная война 1941-1945 гг.</div>
+            <h1 className={`mt24 pageTitle`}>Великая Отечественная война 1941-1945 гг.</h1>
             <div className="mt80 columnContainer">
                <div className="columnLarge">
 

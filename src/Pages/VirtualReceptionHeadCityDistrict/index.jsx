@@ -80,7 +80,7 @@ const VirtualReceptionHeadCityDistrict = (props) => {
                <NavLink to={ROUTER.citizensAppeals.main} className='breadcrumbsFrom'>Обращения граждан</NavLink>
                <span className='breadcrumbsTo'> / Виртуальная приемная Главы городского округа</span>
             </div>
-            <div className="mt24 pageTitle">Виртуальная приемная Главы <br /> городского округа</div>
+            <h1 className="mt24 pageTitle">Виртуальная приемная Главы <br /> городского округа</h1>
             <div className={`mt40 ${s.imgContainer}`}>
                <img src={isMobil ? mayor : virtual_reception_head_city_district} alt="" />
             </div>

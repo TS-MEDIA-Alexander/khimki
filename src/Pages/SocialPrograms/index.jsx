@@ -25,7 +25,7 @@ const SocialPrograms = (props) => {
                <span className='breadcrumbsTo'> / Социальные программы</span>
             </div>
 
-            <div className="mt80 pageTitle">Социальные программы</div>
+            <h1 className="mt80 pageTitle">Социальные программы</h1>
 
             <div className="mt80 ">
                <CardHuman
@@ -121,40 +121,40 @@ const SocialPrograms = (props) => {
 
             <div className="mt80">
                <SpoilerContainer title={''}>
-                  <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/o-socialnoj-programme-vmeste/" target="_blank">
+                  <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/o-socialnoj-programme-vmeste/" target="_blank" rel="noreferrer">
                      <SpoilerItem title={'О социальной программе «Вместе»'}></SpoilerItem>
                   </a>
                   <div className="mt24">
-                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/preimushestva-uchastiya-v-socialnoj-programme-vmeste/" target="_blank">
+                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/preimushestva-uchastiya-v-socialnoj-programme-vmeste/" target="_blank" rel="noreferrer">
                         <SpoilerItem title={'Преимущества участия в социальной программе «Вместе»'}></SpoilerItem>
                      </a>
                   </div>
                   <div className="mt24">
-                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/spisok-lgotnyh-kategorij-grazhdan/" target="_blank">
+                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/spisok-lgotnyh-kategorij-grazhdan/" target="_blank" rel="noreferrer">
                         <SpoilerItem title={'Список льготных категорий граждан'}></SpoilerItem>
                      </a>
                   </div>
                   <div className="mt24">
-                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/adresa-raspolozheniya-socialnyh-obektov/" target="_blank">
+                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/adresa-raspolozheniya-socialnyh-obektov/" target="_blank" rel="noreferrer">
                         <SpoilerItem title={'Адреса расположения социальных объектов'}></SpoilerItem>
                      </a>
                   </div>
                   <div className="mt24">
-                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/poryadok-vstupleniya-predprinimatelej-v-socialnuyu-programmu-vmeste/" target="_blank">
+                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/poryadok-vstupleniya-predprinimatelej-v-socialnuyu-programmu-vmeste/" target="_blank" rel="noreferrer">
                         <SpoilerItem title={'Порядок вступления предпринимателей в социальную программу «Вместе»'}></SpoilerItem>
                      </a>
                   </div>
                   <div className="mt24">
-                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/perechen-produktov-pitaniya-v-socialnyh-magazinah/" target="_blank">
+                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/perechen-produktov-pitaniya-v-socialnyh-magazinah/" target="_blank" rel="noreferrer">
                         <SpoilerItem title={'Перечень продуктов питания в социальных магазинах'}></SpoilerItem>
                      </a>
                   </div>
                   <div className="mt24">
-                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/perechen-lekarstv-v-socialnyh-aptekah/" target="_blank">
+                     <a href="https://www.admhimki.ru/okrug/socialnye-programmy/socialnaya-programma-vmeste/perechen-lekarstv-v-socialnyh-aptekah/" target="_blank" rel="noreferrer">
                         <SpoilerItem title={'Перечень лекарств в социальных аптеках'}></SpoilerItem>
                      </a>
                   </div>
-                  
+
                </SpoilerContainer>
             </div>
          </ContantContainerMain>

@@ -16,7 +16,7 @@ const AntiCorruption = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Противодействие коррупции</span>
             </div>
-            <div className={`mt24 pageTitle`}>Противодействие коррупции</div>
+            <h1 className={`mt24 pageTitle`}>Противодействие коррупции</h1>
 
             <div className={s.containtContainer}>
                <div className="mt80">

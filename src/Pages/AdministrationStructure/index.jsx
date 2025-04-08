@@ -37,7 +37,7 @@ const AdministrationStructure = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.main} className='breadcrumbsFrom'>Округ</NavLink>
                <span className='breadcrumbsTo'> / Структура администрации </span>
             </div>
-            <div className={`mt24 pageTitle`}>Структура администрации </div>
+            <h1 className={`mt24 pageTitle`}>Структура администрации </h1>
             <MayorCard/>
 
             <div className="mt80">

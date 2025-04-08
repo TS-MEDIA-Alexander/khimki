@@ -5,13 +5,13 @@ import s from './PoliticsCookie.module.css';
 import ContantContainerMain from '../../total/ContantContainerMain';
 
 const PoliticsCookie = (props) => {
-   
+
    return (
       <div>
          <ContantContainerMain>
-            <div className="mt24 pageTitle">
+            <h1 className="mt24 pageTitle">
                Политика Cookie
-            </div>
+            </h1>
 
             <div className="text">
                <div className={`mt80 ${s.pageSubtitle}`}>Этот сайт использует сервис веб-аналитики Яндекс Метрика, предоставляемый компанией ООО «ЯНДЕКС», 119021, Россия, Москва, ул. Л. Толстого, 16 (далее — Яндекс).</div>
@@ -24,7 +24,7 @@ const PoliticsCookie = (props) => {
                <p>
                   Вы можете отказаться от использования cookies, выбрав соответствующие настройки в браузере. Также вы можете использовать инструмент:
                </p>
-               <a href={'https://yandex.ru/support/metrica/general/opt-out.html'} target="_blank" className="mt38 oval"><img src={planet} alt="" /> Блокировщик Яндекс Метрики</a>
+               <a href={'https://yandex.ru/support/metrica/general/opt-out.html'} target="_blank" className="mt38 oval" rel="noreferrer"><img src={planet} alt="" /> Блокировщик Яндекс Метрики</a>
                <p>
                   Однако это может повлиять на работу некоторых функций сайта. Используя этот сайт, вы соглашаетесь на обработку данных о вас Яндексом в порядке и целях, указанных выше.
                </p>

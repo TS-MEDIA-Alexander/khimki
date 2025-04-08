@@ -15,7 +15,7 @@ const CommunalServices = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / ЖКХ</span>
             </div>
-            <div className={`mt24 pageTitle`}>ЖКХ</div>
+            <h1 className={`mt24 pageTitle`}>ЖКХ</h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <NavLink /* to={ROUTER.khimkiDistrict.unionSummerResidents} */ className={`${s.link}`}>Управляющие организации г. о. Химки<div className={`btnCircleG ${s.imgContainer}`}><img src={arrow} alt="" /></div></NavLink>

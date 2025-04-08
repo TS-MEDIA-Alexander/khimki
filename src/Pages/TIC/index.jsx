@@ -15,7 +15,7 @@ const TIC = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.main} className='breadcrumbsFrom'>Округ</NavLink>
                <span className='breadcrumbsTo'> / ТИК города Химки </span>
             </div>
-            <div className={`mt24 pageTitle`}>Территориальная избирательная комиссия города химки </div>
+            <h1 className={`mt24 pageTitle`}>Территориальная избирательная комиссия города химки </h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link={ROUTER.khimkiDistrict.ticDocuments} text={'Документы'} />

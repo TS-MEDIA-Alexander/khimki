@@ -16,7 +16,7 @@ const PublicOrganizations = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.main} className='breadcrumbsFrom'>Округ</NavLink>
                <span className='breadcrumbsTo'> / Общественные организации</span>
             </div>
-            <div className={`mt24 pageTitle`}>Общественные организации </div>
+            <h1 className={`mt24 pageTitle`}>Общественные организации </h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link={ROUTER.khimkiDistrict.unionSummerResidents} text={'Союз дачников Подмосковья'} />

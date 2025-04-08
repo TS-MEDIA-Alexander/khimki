@@ -34,7 +34,7 @@ const HistoryKhimki = (props) => {
                <NavLink to={ROUTER.history.main} className='breadcrumbsFrom'>История</NavLink>
                <span className='breadcrumbsTo'> / История города Химки </span>
             </div>
-            <div className={`mt24 pageTitle ${s.title}`}>История города Химки </div>
+            <h1 className={`mt24 pageTitle ${s.title}`}>История города Химки </h1>
             <div className="mt80 columnContainer">
                <div className="columnLarge">
 

@@ -15,7 +15,7 @@ const MunicipalСontrol = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Муниципальный контроль</span>
             </div>
-            <div className={`mt24 pageTitle`}>Муниципальный контроль</div>
+            <h1 className={`mt24 pageTitle`}>Муниципальный контроль</h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/municipalnyj-kontrol/municipalnyj-kontrol-na-avtomobilnom-transporte-gorodskom-nazemnom-elektricheskom-transporte-i-v-dorozhnom-hozyajstve/' text={'Муниципальный контроль на автомобильном транспорте, городском наземном электрическом транспорте и в дорожном хозяйстве'} />

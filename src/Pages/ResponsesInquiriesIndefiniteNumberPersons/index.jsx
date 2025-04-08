@@ -22,9 +22,9 @@ const ResponsesInquiriesIndefiniteNumberPersons = () => {
           </span>
         </div>
 
-        <div className="mt24 pageTitle">
+        <h1d className="mt24 pageTitle">
           Ответы на обращения, <br /> затрагивающие интересы <br /> неопределенного круга лиц
-        </div>
+        </h1d>
 
         <div className="mt80">
           <SpoilerContainer>

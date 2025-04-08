@@ -8,7 +8,7 @@ const Activity = (props) => {
    return (
       <div>
          <ContantContainerMain>
-            <div className="mt80 pageTitle">Деятельность</div>
+            <h1 className="mt80 pageTitle">Деятельность</h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <div className={s.column}>

@@ -14,7 +14,7 @@ const MOOAgainstCorruption = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.publicOrganizations} className='breadcrumbsTo'>Общественные организации</NavLink>
                <span className='breadcrumbsTo'> / MOO «Против коррупции»</span>
             </div>
-            <div className="mt24 pageTitle">MOO «Против коррупции»</div>
+            <h1 className="mt24 pageTitle">MOO «Против коррупции»</h1>
 
             <div className={`mt80 ${s.title}`}>Цели и задачи организации</div>
 

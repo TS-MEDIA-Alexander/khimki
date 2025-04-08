@@ -16,7 +16,7 @@ const AuctionsAndTrades = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Аукционы и торги</span>
             </div>
-            <div className={`mt24 pageTitle`}>Аукционы и торги</div>
+            <h1 className={`mt24 pageTitle`}>Аукционы и торги</h1>
             <div className={`mt38 text`}>
                <div className={`mt80 borderMain ${s.linkContainer}`}>
                   <LinkContainer link='http://old.admhimki.ru/aukciony-i-torgi/zemelnye-uchastki/' text={'Земельные участки'} />
@@ -33,7 +33,7 @@ const AuctionsAndTrades = (props) => {
                   Для получения актуальных данных необходимо перейти на Официальный сайт Российской Федерации для размещения информации о проведении торгов.
                </p>
                <div className="mt38 oval">
-                  <a target="_blank" href="https://torgi.gov.ru/">torgi.gov.ru</a>
+                  <a target="_blank" href="https://torgi.gov.ru/" rel="noreferrer">torgi.gov.ru</a>
                </div>
                <p>
                   В соответствии с п. 19 ст. 39.11 Земельного кодекса РФ извещения о торгах (аукционах, конкурсах) публикуются не менее чем за 30 дней до их проведения.

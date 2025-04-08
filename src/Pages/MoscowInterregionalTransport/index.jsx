@@ -22,9 +22,9 @@ const MoscowInterregionalTransport = (props) => {
                <NavLink to={ROUTER.prosecutorOffice.main} className='breadcrumbsFrom'>Прокуратура</NavLink>
                <span className='breadcrumbsTo'> / Mосковская межрегиональная транспортная прокуратура</span>
             </div>
-            <div className={`mt24 pageTitle`}>
+            <h1 className={`mt24 pageTitle`}>
                <p>Mосковская межрегиональная</p>
-               транспортная прокуратура</div>
+               транспортная прокуратура</h1>
             <div className="mt80">
                <CardHuman
                   jobTitle={'Московский Межрегиональный Транспортный Прокурор'}

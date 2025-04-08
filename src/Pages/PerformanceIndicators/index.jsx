@@ -64,7 +64,7 @@ const PerformanceIndicators = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.main} className='breadcrumbsFrom'>Округ</NavLink>
                <span className='breadcrumbsTo'> / Городской округ Химки </span>
             </div>
-            <div className={`mt80 pageTitle`}>Городской округ Химки</div>
+            <h1 className={`mt80 pageTitle`}>Городской округ Химки</h1>
             <div className={`mt80 ${s.mapContainer}`}>
 
                <div className={`borderMain ${s.mapBlock}`}>
@@ -106,7 +106,7 @@ const PerformanceIndicators = (props) => {
 
             <div className={`mt80 bgMain ${s.btnLinkOld}`}>
                Химки 2024 и 2025: итоги и планы
-               <a href='https://old.admhimki.ru/itogi-2024-goda/' target='_blank' className={s.btnLink}>Посмотреть <img className={s.rotate} src={arrow} alt="" /></a>
+               <a href='https://old.admhimki.ru/itogi-2024-goda/' target='_blank' className={s.btnLink} rel="noreferrer">Посмотреть <img className={s.rotate} src={arrow} alt="" /></a>
             </div>
 
             <div className="mt80">

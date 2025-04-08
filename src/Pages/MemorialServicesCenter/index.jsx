@@ -14,8 +14,8 @@ const MemorialServicesCenter = (props) => {
                <NavLink to={ROUTER.activity.burialFuneralServices.main} className='breadcrumbsFrom'>/ Погребение и похоронное дело</NavLink>
                <span className='breadcrumbsTo'> / Государственное бюджетное учреждение Московской области «Центр мемориальных услуг»</span>
             </div>
-            <div className={`mt24 pageTitle`}>Государственное бюджетное учреждение Московской области «Центр мемориальных услуг»</div>
-
+            <h1 className={`mt24 pageTitle`}>Государственное бюджетное учреждение Московской области «Центр мемориальных услуг»</h1>
+h1
             <div className="mt80 pageSubtitle">Cделаем подмосковье безопасным вместе! </div>
 
             <div className={`mt38 text`}>

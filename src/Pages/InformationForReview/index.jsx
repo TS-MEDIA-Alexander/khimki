@@ -15,9 +15,9 @@ const InformationForReview = (props) => {
                <NavLink to={ROUTER.citizensAppeals.main} className='breadcrumbsFrom'>Работа с обращениями граждан</NavLink>
                <span className='breadcrumbsTo'> / Информация для ознакомления желающим отправить обращение в форме электронного документа</span>
             </div>
-            <div className={`mt24 pageTitle`}>
+            <h1 className={`mt24 pageTitle`}>
                Информация для ознакомления <br /> желающим отправить обращение <br /> в форме электронного документа
-            </div>
+            </h1>
 
             <div className="mt80 pageSubtitle">
                Информация для ознакомления желающим отправить <br /> обращение в форме электронного документа

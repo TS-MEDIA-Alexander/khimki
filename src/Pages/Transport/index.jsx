@@ -15,8 +15,8 @@ const Transport = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Транспорт</span>
             </div>
-            <div className={`mt24 pageTitle`}>Транспорт
-            </div>
+            <h1 className={`mt24 pageTitle`}>Транспорт
+            </h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/transport/sredstva-individualnoj-mobilnosti/' text={'Средства индивидуальной мобильности'} />

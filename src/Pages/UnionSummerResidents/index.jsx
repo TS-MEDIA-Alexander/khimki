@@ -15,7 +15,7 @@ const UnionSummerResidents = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.publicOrganizations} className='breadcrumbsTo'> / Общественные организации</NavLink>
                <span className='breadcrumbsTo'> / Союз дачников Подмосковья</span>
             </div>
-            <div className={`mt24 pageTitle`}>Союз дачников Подмосковья</div>
+            <h1 className={`mt24 pageTitle`}>Союз дачников Подмосковья</h1>
             <div className={`mt80 ${s.container}`}>
                <div className={s.imgContainer}>
                   <img src={union_summer} alt="" />
@@ -29,7 +29,7 @@ const UnionSummerResidents = (props) => {
 
             <div className={`mt38 ${s.text}`}>С 27.03.2020 Союз дачников Подмосковья обеспечил ввод в эксплуатацию интернет-сервиса «Электронный председатель» по адресу: Preds.ru. Указанный интернет-сервис позволяет осуществлять информирование дачников, организацию и проведение общих собраний в СНТ в дистанционном режиме.</div>
 
-            <div className={`mt38 oval`}> <a className={s.link} target='_blank' href="https://preds.ru/">Preds.ru</a> </div>
+            <div className={`mt38 oval`}> <a className={s.link} target='_blank' href="https://preds.ru/" rel="noreferrer">Preds.ru</a> </div>
 
             <div className={`mt38 ${s.description}`}>Дата публикации: 27.03.2020</div>
 
@@ -47,7 +47,7 @@ const UnionSummerResidents = (props) => {
 
             <div className={`mt38 ${s.description}`}>Формы для заполнения опубликованы на сайте общественной организации</div>
 
-            <div className="oval mt38"><a className={s.link} target='_blank' href="https://www.xn----7sbhfcwapdtfqcbj0b5f2epc.xn--p1ai/">Союз дачников Подмосковья</a></div>
+            <div className="oval mt38"><a className={s.link} target='_blank' href="https://www.xn----7sbhfcwapdtfqcbj0b5f2epc.xn--p1ai/" rel="noreferrer">Союз дачников Подмосковья</a></div>
 
          </ContantContainerMain>
       </div>

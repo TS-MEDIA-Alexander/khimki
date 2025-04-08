@@ -22,7 +22,7 @@ const CityCoatOfArms = (props) => {
                <NavLink to={ROUTER.history.main} className='breadcrumbsFrom'>История</NavLink>
                <span className={'breadcrumbsTo'}> / Герб города</span>
             </div>
-            <div className={`mt24 pageTitle`}>Герб города</div>
+            <h1 className={`mt24 pageTitle`}>Герб города</h1>
             <div className="mt80 columnContainer">
                <div className="columnLarge">
 

@@ -17,7 +17,7 @@ const HumanResourcesManagement = (props) => {
                <NavLink to={ROUTER.activity.main} className='breadcrumbsFrom'>Деятельность</NavLink>
                <span className='breadcrumbsTo'> / Кадровое управление</span>
             </div>
-            <div className={`mt24 pageTitle`}>Кадровое управление</div>
+            <h1 className={`mt24 pageTitle`}>Кадровое управление</h1>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>
                <LinkContainer link='http://old.admhimki.ru/okrug/deyatelnost/kadrovoe-obespechenie/poryadok-postupleniya-grazhdan-na-gosudarstvennuyu-i-municipalnuyu-sluzhbuu/' text={'Порядок поступления граждан на государственную и муниципальную службу'} />

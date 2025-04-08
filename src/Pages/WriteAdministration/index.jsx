@@ -79,7 +79,7 @@ const WriteAdministration = (props) => {
                <NavLink to={ROUTER.citizensAppeals.main} className='breadcrumbsFrom'>Обращения граждан</NavLink>
                <span className='breadcrumbsTo'> / Написать в Администрацию</span>
             </div>
-            <div className="mt24 pageTitle">Написать в Администрацию</div>
+            <h1 className="mt24 pageTitle">Написать в Администрацию</h1>
             <div className={`mt40 ${s.imgContainer}`}>
                <img src={write_administration} alt="" />
             </div>

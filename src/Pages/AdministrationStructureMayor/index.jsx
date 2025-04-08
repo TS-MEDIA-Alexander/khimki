@@ -26,7 +26,7 @@ const AdministrationStructureMayor = (props) => {
                <NavLink to={ROUTER.khimkiDistrict.administrationStructure} className='breadcrumbsTo'> / Структура администрации </NavLink>
                <span className='breadcrumbsTo'> / Глава городского округа </span>
             </div>
-            <div className={`mt24 pageTitle`}>Глава городского округа </div>
+            <h1 className={`mt24 pageTitle`}>Глава городского округа </h1>
             <div className="columnContainer">
                <div className="columnLarge">
                   <div className={`mt80  ${s.card}`}>
@@ -44,8 +44,8 @@ const AdministrationStructureMayor = (props) => {
                               <div className={s.cardBtnImgContainer}><img src={clock} alt="" /></div>
                               <div className={s.schedule}>Круглосуточно </div>
                            </div>
-                           <a href='https://vk.com/gohimkiadm' target='_blank' className={s.cardBtnLink}><img src={ok} alt="" /></a>
-                           <a href='https://t.me/adm_himki' target='_blank' className={s.cardBtnLink}><img src={vk} alt="" /></a>
+                           <a href='https://vk.com/gohimkiadm' target='_blank' className={s.cardBtnLink} rel="noreferrer"><img src={ok} alt="" /></a>
+                           <a href='https://t.me/adm_himki' target='_blank' className={s.cardBtnLink} rel="noreferrer"><img src={vk} alt="" /></a>
                            <a href='https://ok.ru/profile/580707341478' className={s.cardBtnLink}><img src={telegram} alt="" /></a>
                         </div>
                      </div>
