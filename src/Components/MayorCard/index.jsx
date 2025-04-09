@@ -30,6 +30,7 @@ const MayorCard = (props) => {
                   <div className={s.cardBtnImgContainer}><img src={clock} alt="" /></div>
                   <div className={s.schedule}>Круглосуточно </div>
                </div>
+               <div className='oval'>zemlyakova_ev@admhimki.ru</div>
                {/* <div className='oval'>voloshin_dv@admhimki.ru</div>
                <div className={s.btnFlexContainer}>
                   <a href='https://ok.ru/profile/580707341478' target='_blank' className={s.cardBtnLink} rel="noreferrer"><img src={ok} alt="" /></a>
