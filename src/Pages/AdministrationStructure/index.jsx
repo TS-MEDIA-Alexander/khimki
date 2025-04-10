@@ -14,7 +14,7 @@ import zhdankina from '../../assets/img/Persons/img.png';
 import madatova from '../../assets/img/Persons/madatova.png';
 import khazanovich from '../../assets/img/Persons/khazanovich.jpg';
 import vatutina from '../../assets/img/Persons/vatutina.png';
-import batyshev from '../../assets/img/Persons/batyshev.png';
+import kosolapov from '../../assets/img/Persons/img.png';
 import gureva from '../../assets/img/Persons/gureva.png';
 import zaytsev from '../../assets/img/Persons/zaytsev.png';
 import tsukanov from '../../assets/img/Persons/tsukanov.png';
@@ -51,7 +51,7 @@ const AdministrationStructure = (props) => {
                      <div className="mt20 containerGap24">
                         <СardAdministratiorStructure url={'khazanovich'} img={khazanovich} jobTitle={'Заместитель Главы городского округа по вопросам жилищно-коммунального хозяйства'} surname={'Хазанович'} name={'Станислав Викторович'} />
                         <СardAdministratiorStructure url={'vatutina'} img={vatutina} jobTitle={'Заместитель Главы городского округа по вопросам социальной политики, культуры и спорта'} surname={'Ватутина'} name={'Анна Эдуардовна '} />
-                        <СardAdministratiorStructure url={'batyshev'} img={batyshev} jobTitle={'Заместитель Главы городского округа по вопросам благоустройства'} surname={'Батышев'} name={'Николай Николаевич'} />
+                        <СardAdministratiorStructure url={'kosolapov'} img={kosolapov} jobTitle={'Заместитель Главы городского округа по вопросам благоустройства'} surname={'Косолапов'} name={'Василий Михайлович'} />
                         <СardAdministratiorStructure url={'gureva'} img={gureva} jobTitle={'Заместитель Главы городского округа – начальник Финансового управления'} surname={'Гурьева'} name={'Наталия Николаевна'} />
                      </div>
                      <div className="mt20 containerGap24">

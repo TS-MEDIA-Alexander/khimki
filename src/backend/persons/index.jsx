@@ -4,7 +4,7 @@ import zhdankina from '../../assets/img/Persons/img.png';
 import madatova from '../../assets/img/Persons/madatova.png';
 import khazanovich from '../../assets/img/Persons/khazanovich.jpg';
 import vatutina from '../../assets/img/Persons/vatutina.png';
-import batyshev from '../../assets/img/Persons/batyshev.png';
+import kosolapov from '../../assets/img/Persons/img.png';
 import gureva from '../../assets/img/Persons/gureva.png';
 import zaytsev from '../../assets/img/Persons/zaytsev.png';
 import tsukanov from '../../assets/img/Persons/tsukanov.png';
@@ -288,10 +288,10 @@ const persons = [
    },
    {
       id: 5,
-      url: 'batyshev',
-      img: batyshev,
-      surname: 'Батышев',
-      name: 'Николай Николаевич',
+      url: 'kosolapov',
+      img: kosolapov,
+      surname: 'Косолапов',
+      name: 'Василий Михайлович',
       jobTitle: 'Заместитель Главы городского округа по вопросам благоустройства',
       tel: ['+7 (495) 572-66-38'],
       mail: null,
