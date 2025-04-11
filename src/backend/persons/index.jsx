@@ -5,7 +5,7 @@ import madatova from '../../assets/img/Persons/madatova.png';
 import khazanovich from '../../assets/img/Persons/khazanovich.jpg';
 import vatutina from '../../assets/img/Persons/vatutina.png';
 import kosolapov from '../../assets/img/Persons/img.png';
-import gureva from '../../assets/img/Persons/gureva.png';
+// import gureva from '../../assets/img/Persons/gureva.png';
 import zaytsev from '../../assets/img/Persons/zaytsev.png';
 import tsukanov from '../../assets/img/Persons/tsukanov.png';
 import petrukhin from '../../assets/img/Persons/petrukhin.png';
@@ -17,6 +17,8 @@ import poznyakova from '../../assets/img/Persons/poznyakova.png';
 import pashin from '../../assets/img/Persons/pashin.png';
 import shipov from '../../assets/img/Persons/shipov.png';
 import prekrasa from '../../assets/img/Persons/prekrasa.png';
+import zarubina from '../../assets/img/Persons/img.png';
+
 
 const persons = [
    {
@@ -51,6 +53,79 @@ const persons = [
                { id: 3, text: 'Адрес: г. Химки, ул.Кирова, д.30' },
             ]
          },
+         {
+            id: 3,
+            title: 'Управление «Аппарат Администрации городского округа и кадровой политики»',
+            textBody: [
+               { id: 1, text: 'Начальник Управления – Познякова Ирина Александровна' },
+               { id: 2, text: 'Телефон: 8 (495) 793-31-30' },
+            ]
+         },
+         {
+            id: 4,
+            title: 'Управление делами и контроля',
+            textBody: [
+               { id: 1, text: 'Начальник Управления - Пашин Василий Вадимович' },
+               { id: 2, text: 'Телефон: 8 (495) 572-32-58' },
+            ]
+         },
+         {
+            id: 5,
+            title: 'Отдел контрактной службы',
+            textBody: [
+               { id: 1, text: 'Начальник отдела – Бернацкая Ирина Михайловна' },
+               { id: 2, text: 'Адрес: г. Химки, ул. Московская, д. 28/2' },
+               { id: 2, text: 'Телефон: 8 (495) 572-32-16' },
+               { id: 2, text: 'Электронная почта: zakupkiadm@admhimki.ru' },
+            ]
+         },
+         {
+            id: 6,
+            title: 'МКУ «Управление централизации закупок»',
+            textBody: [
+               { id: 1, text: 'Муниципальное казенное учреждение «Управление централизации закупок»' },
+               { id: 2, text: 'Руководитель - Соколов Дамир Маратович' },
+               { id: 3, text: 'Адрес: г. Химки, ул.Ленинградская, д.25' },
+               { id: 4, text: 'Телефон: +7 (495) 572-74-15' },
+               { id: 5, text: 'Электронная почта: zakupki@admhimki.ru' },
+            ]
+         },
+         {
+            id: 7,
+            title: 'МКУ «Управление делами Администрации»',
+            textBody: [
+               { id: 1, text: 'Муниципальное казенное учреждение «Управление делами администрации»' },
+               { id: 2, text: 'Руководитель - Галкина Елена Николаевна' },
+               { id: 3, text: 'Адрес -  г.Химки, ул.Калинина, д.4' }
+            ]
+         },
+         {
+            id: 8,
+            title: 'АУ «Центр аварийно-технического обслуживания и ремонта»',
+            textBody: [
+               { id: 1, text: 'И.о. директора– Пирожков Андрей Владимирович' },
+               { id: 2, text: 'Адрес: г. Химки, ул. Молодежная, д.44' },
+               { id: 3, text: 'Телефон: +7 (498) 764-27-96, +7 (495) 571-10-45' },
+               { id: 4, text: 'Электронная почта: augohcato@mail.ru' },
+            ]
+         },
+         {
+            id: 9,
+            title : 'Oбъединенная дирекция парков',
+            textBody : [
+               {id:1,text :'г. Химки, Ленинградская ул., д.18а'}
+            ]
+         },
+         {
+            id: 10,
+            title : 'Управление правового обеспечения и судебно-претензионной работы',
+            textBody:[
+               {id:1,text:'Начальник Управления: Прекраса Ольга Николаевна'},
+               {id:2,text:'Телефон: +7 (495) 572-00-88'},
+               {id:3,text:'Электронная почта: judge@admhimki.ru'},
+
+            ]
+         }
       ]
    },
    {
@@ -252,16 +327,8 @@ const persons = [
                { id: 3, text: 'Электронная почта: khp-himki@ya.ru' },
             ]
          },
-         {
-            id: 7,
-            title: 'АУ «Центр аварийно-технического обслуживания и ремонта»',
-            textBody: [
-               { id: 1, text: 'И.о. директора– Пирожков Андрей Владимирович' },
-               { id: 2, text: 'Адрес: г. Химки, ул. Молодежная, д.44' },
-               { id: 3, text: 'Телефон: +7 (498) 764-27-96, +7 (495) 571-10-45' },
-               { id: 4, text: 'Электронная почта: augohcato@mail.ru' },
-            ]
-         },
+
+
          {
             id: 8,
             title: 'ЦПММС “Успех”',
@@ -316,22 +383,15 @@ const persons = [
                { id: 2, text: 'Адрес: г. Химки, ул.Ленинградская, д.25' },
             ]
          },
-         {
-            id: 3,
-            title: 'МКУ «Центр бухгалтерского и кадрового сопровождения муниципальной сферы благоустройства, жилищно-коммунального и дорожного хозяйства»',
-            textBody: [
-               { id: 1, text: 'Руководитель Мкртумян Кристина Самвели' },
-               { id: 2, text: 'Адрес: г. Химки, ул.Калинина, д.4' },
-            ]
-         }
+
       ]
    },
    {
       id: 6,
-      url: 'gureva',
-      img: gureva,
-      surname: 'Гурьева ',
-      name: 'Наталия Николаевна ',
+      url: 'zarubina',
+      img: zarubina,
+      surname: 'Зарубина ',
+      name: 'Татьяна Юрьевна ',
       jobTitle: 'Заместитель Главы городского округа – начальник Финансового Управления',
       tel: ['+7 (495) 572-55-27'],
       mail: null,
@@ -369,6 +429,14 @@ const persons = [
                { id: 5, text: 'Электронная почта: buh@admhimki.ru' },
             ]
          },
+         {
+            id: 4,
+            title: 'МКУ «Центр бухгалтерского и кадрового сопровождения муниципальной сферы благоустройства, жилищно-коммунального и дорожного хозяйства»',
+            textBody: [
+               { id: 1, text: 'Руководитель Мкртумян Кристина Самвели' },
+               { id: 2, text: 'Адрес: г. Химки, ул.Калинина, д.4' },
+            ]
+         }
       ]
    },
    {
@@ -452,7 +520,7 @@ const persons = [
             id: 10,
             title: 'Территориальное управление Лунёвское',
             textBody: [
-               { id: 1, text: 'Руководитель – Конова Вера Николаевна' },
+               { id: 1, text: 'Руководитель – Михайлов Денис Сергеевич' },
             ]
          },
          {
@@ -521,7 +589,7 @@ const persons = [
    },
    {
       id: 9,
-      url: 'zarubina',
+      url: 'unknown',
       img: '',
       surname: 'Зарубина',
       name: 'Татьяна Юрьевна',
@@ -553,52 +621,7 @@ const persons = [
                { id: 4, text: 'Электронная почта: mkuritual@admhimki.ru' },
             ]
          }, */
-         {
-            id: 3,
-            title: 'Управление «Аппарат Администрации городского округа и кадровой политики»',
-            textBody: [
-               { id: 1, text: 'Начальник Управления – Познякова Ирина Александровна' },
-               { id: 2, text: 'Телефон: 8 (495) 793-31-30' },
-            ]
-         },
-         {
-            id: 4,
-            title: 'Управление делами и контроля',
-            textBody: [
-               { id: 1, text: 'Начальник Управления - Пашин Василий  Вадимович' },
-               { id: 2, text: 'Телефон: 8 (495) 572-32-58' },
-            ]
-         },
-         {
-            id: 5,
-            title: 'Отдел контрактной службы',
-            textBody: [
-               { id: 1, text: 'Начальник отдела – Бернацкая Ирина Михайловна' },
-               { id: 2, text: 'Адрес: г. Химки, ул. Московская, д. 28/2' },
-               { id: 2, text: 'Телефон: 8 (495) 572-32-16' },
-               { id: 2, text: 'Электронная почта: zakupkiadm@admhimki.ru' },
-            ]
-         },
-         {
-            id: 6,
-            title: 'МКУ «Управление централизации закупок»',
-            textBody: [
-               { id: 1, text: 'Муниципальное казенное учреждение «Управление централизации закупок»' },
-               { id: 2, text: 'Руководитель - Соколов Дамир Маратович' },
-               { id: 3, text: 'Адрес: г. Химки, ул.Ленинградская, д.25' },
-               { id: 4, text: 'Телефон: +7 (495) 572-74-15' },
-               { id: 5, text: 'Электронная почта: zakupki@admhimki.ru' },
-            ]
-         },
-         {
-            id: 7,
-            title: 'МКУ «Управление делами Администрации»',
-            textBody: [
-               { id: 1, text: 'Муниципальное казенное учреждение «Управление делами администрации»' },
-               { id: 2, text: 'Руководитель - Галкина Елена Николаевна' },
-               { id: 3, text: 'Адрес -  г.Химки, ул.Калинина, д.4' }
-            ]
-         }
+
       ]
    },
    {
@@ -696,7 +719,7 @@ const persons = [
             id: 7,
             title: 'Территориальное управление Луневское',
             textBody: [
-               { id: 1, text: 'Руководитель – Конова Вера Николаевна' },
+               { id: 1, text: 'Руководитель – Михайлов Денис Сергеевич' },
             ]
          },
          {
@@ -759,7 +782,7 @@ const persons = [
             id: 6,
             title: 'Территориальное управление Луневское',
             textBody: [
-               { id: 1, text: 'Руководитель – Конова Вера Николаевна' },
+               { id: 1, text: 'Руководитель – Михайлов Денис Сергеевич' },
             ]
          },
          {
@@ -785,11 +808,11 @@ const persons = [
       areaSpoler: null
    },
    {
-      id: 17,
-      url: 'konova',
+      id: 16,
+      url: 'michailov',
       img: null,
-      surname: 'Конова ',
-      name: 'Вера Николаевна',
+      surname: 'Михайлов ',
+      name: 'Денис Сергеевич.',
       jobTitle: 'Территориальное Управление Лунёвское',
       tel: ['+7 (985) 634-73-93'],
       mail: 'lunevo@admhimki.ru',
@@ -798,7 +821,7 @@ const persons = [
       areaSpoler: null
    },
    {
-      id: 18,
+      id: 17,
       url: 'poznyakova',
       img: poznyakova,
       surname: 'Познякова ',
@@ -829,21 +852,11 @@ const persons = [
                { id: 5, text: 'Электронная почта: uprav@admhimki.ru' },
             ]
          },
-         {
-            id: 3,
-            title: 'МКУ «Малый бизнес Химки»',
-            textBody: [
-               { id: 1, text: 'Муниципальное казенное учреждение «малый бизнес Химки»' },
-               { id: 2, text: 'И.о. руководителя – Феляева Ольга Юрьевна' },
-               { id: 3, text: 'Адрес: г. Химки, пр-т Мельникова, д. 12' },
-               { id: 4, text: 'Телефон: +7 (495) 255-39-06' },
-               { id: 5, text: 'Электронная почта: info.mbh@admhimki.ru' },
-            ]
-         },
+
       ]
    },
    {
-      id: 19,
+      id: 18,
       url: 'pashin',
       img: pashin,
       surname: 'Пашин ',
@@ -856,7 +869,7 @@ const persons = [
       areaSpoler: null
    },
    {
-      id: 20,
+      id: 19,
       url: 'shipov',
       img: shipov,
       surname: 'Шипов ',
@@ -868,8 +881,35 @@ const persons = [
       area: null,
       areaSpoler: null
    },
+
+   {
+      id: 20,
+      url: 'ponyatoykin',
+      img: null,
+      surname: 'Понятойкин ',
+      name: 'Иван Николаевич ',
+      jobTitle: 'Территориальное управление Новогорск – Планерная',
+      tel: ['+7 (985) 634-67-97', '+7 (495) 571-01-40'],
+      mail: 'np_ta@admhimki.ru',
+      socialNetwork: null,
+      area: null,
+      areaSpoler: null
+   },
    {
       id: 21,
+      url: 'mazurov',
+      img: null,
+      surname: 'Мазуров ',
+      name: 'Дмитрий Николаевич ',
+      jobTitle: 'Территориальное управление Кутузовское',
+      tel: ['+7 (985) 634-45-08', '+7 (495) 572-32-28'],
+      mail: 'kutuzovskoe@admhimki.ru',
+      socialNetwork: null,
+      area: null,
+      areaSpoler: null
+   },
+   {
+      id: 25,
       url: 'prekrasa',
       img: prekrasa,
       surname: 'Прекраса ',
@@ -883,32 +923,6 @@ const persons = [
    },
    {
       id: 22,
-      url: 'ponyatoykin',
-      img: null,
-      surname: 'Понятойкин ',
-      name: 'Иван Николаевич ',
-      jobTitle: 'Территориальное управление Новогорск – Планерная',
-      tel: ['+7 (985) 634-67-97', '+7 (495) 571-01-40'],
-      mail: 'np_ta@admhimki.ru',
-      socialNetwork: null,
-      area: null,
-      areaSpoler: null
-   },
-   {
-      id: 23,
-      url: 'mazurov',
-      img: null,
-      surname: 'Мазуров ',
-      name: 'Дмитрий Николаевич ',
-      jobTitle: 'Территориальное управление Кутузовское',
-      tel: ['+7 (985) 634-45-08', '+7 (495) 572-32-28'],
-      mail: 'kutuzovskoe@admhimki.ru',
-      socialNetwork: null,
-      area: null,
-      areaSpoler: null
-   },
-   {
-      id: 24,
       url: 'zhdankina',
       img: zhdankina,
       surname: 'Жданкина',
@@ -961,6 +975,17 @@ const persons = [
                { id: 4, text: 'Телефон: +7 (495) 571-05-07' },
                { id: 5, text: 'Электронная почта: himtrol@himki.net' },
                { id: 6, text: 'Сайт: www.Химкиэлектротранс.рф' },
+            ]
+         },
+         {
+            id: 5,
+            title: 'МКУ «Малый бизнес Химки»',
+            textBody: [
+               { id: 1, text: 'Муниципальное казенное учреждение «малый бизнес Химки»' },
+               { id: 2, text: 'И.о. руководителя – Феляева Ольга Юрьевна' },
+               { id: 3, text: 'Адрес: г. Химки, пр-т Мельникова, д. 12' },
+               { id: 4, text: 'Телефон: +7 (495) 573-31-62, доб. 726, +7 (985) 684- 94-92' },
+               { id: 5, text: 'Электронная почта: info.mbh@admhimki.ru' },
             ]
          },
       ]

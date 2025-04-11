@@ -14,7 +14,7 @@ import zhdankina from '../../assets/img/Persons/img.png';
 import madatova from '../../assets/img/Persons/madatova.png';
 import khazanovich from '../../assets/img/Persons/khazanovich.jpg';
 import vatutina from '../../assets/img/Persons/vatutina.png';
-import kosolapov from '../../assets/img/Persons/img.png';
+import batyshev from '../../assets/img/Persons/batyshev.png';
 import gureva from '../../assets/img/Persons/gureva.png';
 import zaytsev from '../../assets/img/Persons/zaytsev.png';
 import tsukanov from '../../assets/img/Persons/tsukanov.png';
@@ -28,7 +28,7 @@ import pashin from '../../assets/img/Persons/pashin.png';
 import shipov from '../../assets/img/Persons/shipov.png';
 import prekrasa from '../../assets/img/Persons/prekrasa.png';
 import MayorCard from '../../Components/MayorCard';
-
+import kosolapov from '../../assets/img/Persons/img.png'
 const AdministrationStructure = (props) => {
    return (
       <div>
@@ -46,21 +46,21 @@ const AdministrationStructure = (props) => {
                      <div className={`mt40 containerGap24`}>
                         <СardAdministratiorStructure url={'minaev'} img={minaev} jobTitle={'Первый заместитель Главы городского округа'} surname={'Минаев'} name={'Николай Валерьевич'} />
                         <СardAdministratiorStructure url={'madatova'} img={madatova} jobTitle={'Первый заместитель Главы городского округа'} surname={'Мадатова'} name={'Кристина Артуровна'} />
-                        <СardAdministratiorStructure url={'zhdankina'} img={zhdankina} jobTitle={'Заместитель Главы городского округа по вопросам развития территорий и инвестициям'} surname={'Жданкина'} name={'Ирина Васильевна'} />
                      </div>
                      <div className="mt20 containerGap24">
+                        <СardAdministratiorStructure url={'zhdankina'} img={zhdankina} jobTitle={'Заместитель Главы городского округа по вопросам развития территорий и инвестициям'} surname={'Жданкина'} name={'Ирина Васильевна'} />
                         <СardAdministratiorStructure url={'khazanovich'} img={khazanovich} jobTitle={'Заместитель Главы городского округа по вопросам жилищно-коммунального хозяйства'} surname={'Хазанович'} name={'Станислав Викторович'} />
                         <СardAdministratiorStructure url={'vatutina'} img={vatutina} jobTitle={'Заместитель Главы городского округа по вопросам социальной политики, культуры и спорта'} surname={'Ватутина'} name={'Анна Эдуардовна '} />
-                        <СardAdministratiorStructure url={'kosolapov'} img={kosolapov} jobTitle={'Заместитель Главы городского округа по вопросам благоустройства'} surname={'Косолапов'} name={'Василий Михайлович'} />
-                        <СardAdministratiorStructure url={'gureva'} img={gureva} jobTitle={'Заместитель Главы городского округа – начальник Финансового управления'} surname={'Гурьева'} name={'Наталия Николаевна'} />
-                     </div>
-                     <div className="mt20 containerGap24">
+                        <СardAdministratiorStructure url={'kosolapov'} img={kosolapov} jobTitle={'Заместитель Главы городского округа по вопросам благоустройства'} surname={'Косолапов'} name={'Николай Николаевич'} />
+                        {/* <СardAdministratiorStructure url={'gureva'} img={gureva} jobTitle={'Заместитель Главы городского округа – начальник Финансового управления'} surname={'Гурьева'} name={'Наталия Николаевна'} /> */}
                         <СardAdministratiorStructure url={'zaytsev'} img={zaytsev} jobTitle={'Заместитель Главы городского округа по работе со средствами массовой информации, территориальному развитию и молодежной политике'} surname={'Зайцев'} name={'Андрей Валерьевич'} />
                         <СardAdministratiorStructure url={'tsukanov'} img={tsukanov} jobTitle={'Заместитель Главы городского округа по территориальной безопасности, взаимодействию с правоохранительными органами и противодействию коррупции'} surname={'Цуканов'} name={'Александр Геннадьевич '} />
-                        <СardAdministratiorStructure url={'zarubina'} jobTitle={'Заместитель Главы городского округа по административной работе'} surname={'Зарубина'} name={'Татьяна Юрьевна'} />
+                        <СardAdministratiorStructure url={'zarubina'} jobTitle={'Заместитель Главы городского округа – начальник Финансового управления'} surname={'Зарубина'} name={'Татьяна Юрьевна'} />
+                     </div>
+                     {/* <div className="mt20 containerGap24"> */}
                         {/* <СardAdministratiorStructure url={'pashin'} img={pashin} jobTitle={'Управление делами и контроля'} surname={'Пашин'} name={'Василий Вадимович'} /> */}
                         {/* <СardAdministratiorStructure url={'poznyakova'} img={poznyakova} jobTitle={'Управление "Аппарат Администрации городского округа и кадровой политики"'} surname={'Познякова'} name={'Ирина Александровна'} /> */}
-                     </div>
+                     {/* </div> */}
                   </SpoilerItem>
                   <div className="mt48">
                      <SpoilerItem title={'Территориальные управления'}>
@@ -73,7 +73,7 @@ const AdministrationStructure = (props) => {
                         <div className="mt20 containerGap24">
                            <СardAdministratiorStructure url={'genter'} img={genter} jobTitleTop={'Территориальное управление микрорайона Клязьма - Старбеево'} surname={'Гентер'} name={'Анна Сергеевна  '} />
                            <СardAdministratiorStructure url={'mazurov'}  /* img={voronov} */ jobTitleTop={'Территориальное управление Кутузовское'} surname={'Мазуров'} name={'Дмитрий Николаевич'} />
-                           <СardAdministratiorStructure url={'konova'} /* img={mashkovtsev} */ jobTitleTop={'Территориальное управление Лунёвское'} surname={'Конова'} name={'Вера Николаевна'} />
+                           <СardAdministratiorStructure url={'michailov'} /* img={mashkovtsev} */ jobTitleTop={'Территориальное управление Лунёвское'} surname={'Михайлов'} name={'Денис Сергеевич.'} />
                         </div>
                      </SpoilerItem>
                   </div>
