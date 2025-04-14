@@ -51,11 +51,11 @@ const AdministrationStructure = (props) => {
                         <СardAdministratiorStructure url={'zhdankina'} img={zhdankina} jobTitle={'Заместитель Главы городского округа по вопросам развития территорий и инвестициям'} surname={'Жданкина'} name={'Ирина Васильевна'} />
                         <СardAdministratiorStructure url={'khazanovich'} img={khazanovich} jobTitle={'Заместитель Главы городского округа по вопросам жилищно-коммунального хозяйства'} surname={'Хазанович'} name={'Станислав Викторович'} />
                         <СardAdministratiorStructure url={'vatutina'} img={vatutina} jobTitle={'Заместитель Главы городского округа по вопросам социальной политики, культуры и спорта'} surname={'Ватутина'} name={'Анна Эдуардовна '} />
-                        <СardAdministratiorStructure url={'kosolapov'} img={kosolapov} jobTitle={'Заместитель Главы городского округа по вопросам благоустройства'} surname={'Косолапов'} name={'Николай Николаевич'} />
+                        <СardAdministratiorStructure url={'kosolapov'} img={kosolapov} jobTitle={'Заместитель Главы городского округа по вопросам благоустройства'} surname={'Косолапов'} name={'Василий Михайлович'} />
                         {/* <СardAdministratiorStructure url={'gureva'} img={gureva} jobTitle={'Заместитель Главы городского округа – начальник Финансового управления'} surname={'Гурьева'} name={'Наталия Николаевна'} /> */}
                         <СardAdministratiorStructure url={'zaytsev'} img={zaytsev} jobTitle={'Заместитель Главы городского округа по работе со средствами массовой информации, территориальному развитию и молодежной политике'} surname={'Зайцев'} name={'Андрей Валерьевич'} />
                         <СardAdministratiorStructure url={'tsukanov'} img={tsukanov} jobTitle={'Заместитель Главы городского округа по территориальной безопасности, взаимодействию с правоохранительными органами и противодействию коррупции'} surname={'Цуканов'} name={'Александр Геннадьевич '} />
-                        <СardAdministratiorStructure url={'zarubina'} jobTitle={'Заместитель Главы городского округа – начальник Финансового управления'} surname={'Зарубина'} name={'Татьяна Юрьевна'} />
+                        <СardAdministratiorStructure url={'zarubina'} jobTitle={'Заместитель Главы городского округа '} surname={'Зарубина'} name={'Татьяна Юрьевна'} />
                      </div>
                      {/* <div className="mt20 containerGap24"> */}
                         {/* <СardAdministratiorStructure url={'pashin'} img={pashin} jobTitle={'Управление делами и контроля'} surname={'Пашин'} name={'Василий Вадимович'} /> */}
@@ -81,7 +81,7 @@ const AdministrationStructure = (props) => {
                      <SpoilerItem title={'Структурные подразделения в подчинении Главы'}>
                         <div className="mt40 containerGap24">
                            <СardAdministratiorStructure url={'shipov'} img={shipov} jobTitle={'Контрольно - ревизионное управление'} surname={'Шипов'} name={'Олег Николаевич'} />
-                           <СardAdministratiorStructure url={'prekrasa'} img={prekrasa} jobTitle={'Управление правового обеспечения и судебно-претензионной работы'} surname={'Прекраса'} name={'Ольга Николаевна'} />
+                           {/* <СardAdministratiorStructure url={'prekrasa'} img={prekrasa} jobTitle={'Управление правового обеспечения и судебно-претензионной работы'} surname={'Прекраса'} name={'Ольга Николаевна'} /> */}
                         </div>
                      </SpoilerItem>
                   </div>

@@ -144,12 +144,12 @@ const Contacts = (props) => {
                <ContactBanner
                   img={lunevskoe}
                   title={'Территориальное управление Лунёвское'}
-                  name={'Конова'}
-                  subtitle={'Вера Николаевна'}
+                  name={'Михайлов'}
+                  subtitle={'Денис Сергеевич'}
                   WorkingHours={'Пн-Пт 09:00-18:00'}
                   tel={['+7 (985) 634-73-93']}
                   mail={'lunevo@admhimki.ru'}
-                  url={'konova'}
+                  url={'michailov'}
                />
 
             </div>
