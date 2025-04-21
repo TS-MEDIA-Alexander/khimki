@@ -34,7 +34,7 @@ const UsefulSourse = (props) => {
                         <a href='https://www.nalog.gov.ru/rn50/ifns/imns_50_21/' target='_blank' className={s.item} rel="noreferrer">Межрайонная инспекция ФНС России по г.о. Химки</a>
                         <a href='https://gust.mosreg.ru/?ysclid=ll3k9953x1825169916' target='_blank' className={s.item} rel="noreferrer">Главное управление содержания территорий Московской области (до 10.01.2022 - ГАТН Московской области)</a>
                         <a href='https://mpmo.ru/archives/category/novosti' target='_blank' className={s.item} rel="noreferrer">Служба медицинской профилактики Московской области</a>
-                        <a href='http://budget.admhimki.ru/analitika/ispolnenie-byudzheta/osnovnye-parametry-byudzheta' target='_blank' className={s.item} rel="noreferrer">Открытый бюджет городского округа Химки​</a>
+                        {/* <a href='http://budget.admhimki.ru/analitika/ispolnenie-byudzheta/osnovnye-parametry-byudzheta' target='_blank' className={s.item} rel="noreferrer">Открытый бюджет городского округа Химки​</a> */}
                         <a href='https://50.mchs.gov.ru/' target='_blank' className={s.item} rel="noreferrer">Главное управление МЧС России по Московской области</a>
                      </div>
                      <div className={`${s.column} ${s.columnLast}`}>

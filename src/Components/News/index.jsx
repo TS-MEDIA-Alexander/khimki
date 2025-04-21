@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
 
 const News = ({ news, mobilFullPhoto }) => {
+
    return (
       <div className={s.newsWrapper}>
-         {news?.map((el, i) => <NavLink to={`${ROUTER.newsArticle}${el.id}`} key={i}
+         {news?.list?.map((el, i) => <NavLink to={`${ROUTER.newsArticle}${el.id}`} key={i}
             className={`${s.newsContainer} borderMain`}
          >
             <div>

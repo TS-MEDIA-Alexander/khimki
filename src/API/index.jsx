@@ -1,4 +1,5 @@
 import axios from 'axios';
+import {getQuerySettings} from '../utils'
 /* import { useLocation } from "react-router-dom";
 
 const { pathname } = useLocation(); */
@@ -8,7 +9,7 @@ const instance = axios.create({
    headers: {
       'API-KEY': 'Ключ'
    }, */
-   baseURL: 'https://admhimki.ru/delara/public/api'
+   baseURL: 'https://dev.admhimki.ru/delara/public/api'
 });
 
 const API = {
@@ -19,7 +20,8 @@ const API = {
             console.log('Error')
          })
    },
-   getItemNews: async (id) => {
+
+    getItemNews: async (id) => {
       return instance.get(`content/news/item?id=${id}`)
          .then(response => response.data)
          .catch(() => {
@@ -41,5 +43,32 @@ const API = {
             console.log('Error')
          })
    },
+   postLogin: async (data) => {
+      return await instance
+         .post("user/auth", data)
+         .then((response) => response.data)
+         .catch((err) => {
+            console.log(`Error: ${err?.message}`)
+         })
+   },
+
+   postAddElement: async (data) => {
+      return await instance
+         .post(`content/add`, data)
+         .then((response) => response.data)
+         .catch((err) => {
+            console.log(`Error: ${err?.message}`)
+         })
+   },
+
+   postChangeElement: async (data) => {
+      return await instance
+         .post(`content/edit`, data)
+         .then((response) => response.data)
+         .catch((err) => {
+            console.log(`Error: ${err?.message}`)
+         })
+   },
+
 }
 export default API

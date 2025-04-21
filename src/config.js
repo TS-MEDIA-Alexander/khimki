@@ -107,5 +107,13 @@ export const ROUTER = {
       savePast: '/novosti/sokhranyaya-proshloye-zaschischayem-buduschee',
       schoolMuseumFestival: '/novosti/festival-shkolnyh-muzeev',
    },
+   admin: {
+      main: '/admin',
+      login: '/admin/login',
+      news: '/admin/novost',
+      AdmNewsArcticlePage: '/admin/dobavit-novost',
+      newsArticleEdit: '/admin/redaktirovat-novost/:id',
+
+   },
    successSubscribe: '/vy-uspeshno-podpisalis'
 }

@@ -81,6 +81,8 @@ const Main = (props) => {
          .then(data => setNews(data))
    }, [])
 
+
+
    return (
       <div>
          <ContantContainerMain>
@@ -226,7 +228,7 @@ const Main = (props) => {
                   src={'https://www.himkismi.ru/'}
                   colorMobil={'white'}
                />
-               <a href="https://memorialmo.ru/info/useful-info/" target="_blank">
+               <a href="https://memorialmo.ru/info/useful-info/" target="_blank" rel="noreferrer">
                   <Slide
                      img={GBU_MO_CMU}
                      imgMobil={GBU_MO_CMU_mobil}

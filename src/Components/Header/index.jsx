@@ -99,7 +99,7 @@ const Header = () => {
                            <NavLink to={ROUTER.khimkiDistrict.auditChamber} className={s.linkMenu}>
                               Контрольно-счетная палата
                            </NavLink>
-                           <a href="https://sdhimki.ru/" target='_blank' className={s.linkMenu}>Совет депутатов</a>
+                           <a href="https://sdhimki.ru/" target='_blank' className={s.linkMenu} rel="noreferrer">Совет депутатов</a>
                            <NavLink to={ROUTER.khimkiDistrict.tic} className={s.linkMenu}>
                               ТИК города Химки
                            </NavLink>
@@ -202,7 +202,7 @@ const Header = () => {
                               <p>Публичные слушания и общественные</p>
                               обсуждения
                            </NavLink>
-                           <a href="https://old.admhimki.ru/okrug/deyatelnost/rekvizity-dohodov/" target='_blank' /* to={ROUTER.activity.publicHearingsPublicDiscussions} */ className={s.linkMenu}>
+                           <a href="https://old.admhimki.ru/okrug/deyatelnost/rekvizity-dohodov/" target='_blank' /* to={ROUTER.activity.publicHearingsPublicDiscussions} */ className={s.linkMenu} rel="noreferrer">
                               Реквизиты доходов городского округа
                            </a>
                            <NavLink to={ROUTER.activity.construction} className={s.linkMenu}>
@@ -217,7 +217,7 @@ const Header = () => {
                         </div>
                      </div>
                      <a href='http://old.admhimki.ru/dokumenty/' className={s.item}>Документы</a>
-                     {/* <div id='prosecutorOffice' className={`${s.item} ${s.itemArrow}`}>
+                     <div id='prosecutorOffice' className={`${s.item} ${s.itemArrow}`}>
                         Прокуратура
                         <div className={`${s.dropDownMenu} ${activeID === 'prosecutorOffice' && s.dropDownMenuActive}`}>
                            <NavLink to={ROUTER.prosecutorOffice.main} className={s.linkMenu}>
@@ -243,11 +243,11 @@ const Header = () => {
                               Северная транспортная прокуратура
                            </NavLink>
                            <NavLink className={s.linkMenu}>
-                              <p>Правовое просвещение и правовое</p> 
+                              <p>Правовое просвещение и правовое</p>
                               информирование
                            </NavLink>
                         </div>
-                     </div> */}
+                     </div>
                      <div id='citizensAppeals' className={`${s.item} ${s.itemArrow}`}>
                         Обращения граждан
                         <div className={`${s.dropDownMenu} ${activeID === 'citizensAppeals' && s.dropDownMenuActive}`}>

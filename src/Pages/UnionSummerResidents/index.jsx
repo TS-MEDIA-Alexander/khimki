@@ -3,7 +3,7 @@ import ContantContainerMain from '../../total/ContantContainerMain';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
 import s from './UnionSummerResidents.module.css';
-import union_summer from '../../assets/img/khimkiDistrict/union_summer.svg';
+import union_summer from '../../assets/img/khimkiDistrict/mobMos.png';
 import union_summer_residents_doc from '../../assets/img/khimkiDistrict/union_summer_residents_doc.png';
 
 const UnionSummerResidents = (props) => {

@@ -4,9 +4,6 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import { ROUTER } from './config';
 import './App.css';
 /* Components */
-import Footer from './Components/Footer';
-import Header from './Components/Header';
-import UsefulSourse from './Components/UsefulSourse';
 
 /* Pages */
 import Main from './Pages/Main';
@@ -93,8 +90,14 @@ import SuccessSubscribe from './Pages/SuccessSubscribe';
 import SavePast from './Pages/SavePast';
 import ContestsFinancialSupport from './Pages/ContestsFinancialSupport';
 import SchoolMuseumFestival from './Pages/SchoolMuseumFestival';
-import MessageCookies from './Components/MessageCookies';
 import PoliticsCookie from './Pages/PoliticsCookie';
+import LoginPage from './PagesAdmin/LoginPage';
+import MainContainerAdmin from './PagesAdmin/MainContainerAdmin';
+import NewsArticlePageEdit from './PagesAdmin/NewsArticlePageEdit';
+import NewsPageList from './ComponentsAdmin/NewsPageList';
+import AdmNewsArcticlePage from './PagesAdmin/AdmNewsArticlePage'
+import MainContainer from './Pages/MainContainer';
+
 /* import Table from './Components/Table'; */
 
 function App() {
@@ -114,11 +117,11 @@ function App() {
 
    return (
       <div className="App">
-         <Header />
-         <MessageCookies />
+
 
          <div className="wrapper">
             <Routes>
+            <Route path={ROUTER.main} element={<MainContainer  />} >
                <Route path={ROUTER.main} element={<Main />} />
                <Route path={ROUTER.news} element={<NewsPage />} />
                <Route path={ROUTER.politicsCookie} element={<PoliticsCookie />} />
@@ -213,17 +216,30 @@ function App() {
                <Route path={ROUTER.events.schoolMuseumFestival} element={<SchoolMuseumFestival />} />
 
                <Route path={ROUTER.successSubscribe} element={<SuccessSubscribe />} />
-
+            </Route>
                {/* Временно */}
+
                <Route path={ROUTER.khimkiDistrict.administrationStructureMayor} element={<PageNotFound />} />
                <Route path='*' element={<PageNotFound />} />
 
 
+
+
+               {/* Админка */}
+
+               <Route path={ROUTER.admin.login} element={<LoginPage />} />
+
+               <Route patch={ROUTER.admin.main} element={<MainContainerAdmin />}>
+
+                  <Route path={ROUTER.admin.news} element={<NewsPageList />} />
+                  <Route path={ROUTER.admin.AdmNewsArcticlePage} element={<AdmNewsArcticlePage />} />
+                  <Route path={ROUTER.admin.newsArticleEdit} element={<NewsArticlePageEdit />} />
+
+               </Route>
+
             </Routes>
          </div>
 
-         <UsefulSourse />
-         <Footer />
 
       </div>
    );
