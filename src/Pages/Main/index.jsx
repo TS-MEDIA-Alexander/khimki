@@ -78,10 +78,8 @@ const Main = (props) => {
 
    useEffect(() => {
       API.getNews(1, 9)
-         .then(data => setNews(data))
+         .then(data => setNews(data.news.list))
    }, [])
-
-
 
    return (
       <div>

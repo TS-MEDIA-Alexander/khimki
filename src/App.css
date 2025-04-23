@@ -583,6 +583,10 @@ p {
    margin-top: 48px;
 }
 
+.mt54 {
+   margin-top: 54px;
+}
+
 .mt75 {
    margin-top: 75px;
 }
@@ -754,17 +758,59 @@ p {
 
 
 
+/* Календарь */
 
+/* Заголовок страницы */
+.pageTitleAdmin {
+   color: var(--text-1);
+   font-family: "Inter";
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: -0.56px;
+}
 
-/* * Административная паннель */
+.rowContainer {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+
+.rowContainer .columnInput {
+   width: 50%;
+}
+
+.rowContainer .columnInput * {
+   width: 100%;
+}
+
+.calendarContainer {
+   position: relative;
+}
+
+.rowContainer input {
+   width: 210px;
+}
+
+.rowContainer input[type="checkbox"] {
+   width: auto;
+}
+
+.calendarContainer:hover .calendar {
+   display: block;
+}
+
+/* Административная паннель */
+
+.flexContainerSB {
+   display: flex;
+   justify-content: space-between;
+}
 
 /* Главная заливка */
 .bgMainAdmin {
    background: var(--bg-bg-1);
-}
-
-.pageTitleAdmin {
-   color: var(--text-1);
 }
 
 .inputTitle {
@@ -844,7 +890,7 @@ p {
    width: 100%;
    border-radius: var(--radius-12);
    border-width: 1px;
-   padding: 12px 12px 12px 36px;
+   padding: 13px 12px 13px 36px;
    box-sizing: border-box;
    border: 1px solid var(--stroke-color-2);
 }
@@ -888,13 +934,17 @@ p {
    width: 64%;
    text-decoration: none;
    color: inherit;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
 }
 
 .publishedBlock {
-   width: 164px;
+   width: 155px;
    white-space: nowrap;
    overflow: hidden;
    text-overflow: ellipsis;
+
 }
 
 .favoriteBlock {
@@ -908,6 +958,14 @@ p {
    white-space: nowrap;
    overflow: hidden;
    text-overflow: ellipsis;
+}
+
+.dateBlock.dateBlock_m1 {
+   margin: 0 10px 0 0;
+}
+
+.dateBlock.dateBlock_m2 {
+   margin: 0 20px 0 0;
 }
 
 .fileContainer {
@@ -943,7 +1001,37 @@ p {
 /* Кнопки */
 /* Состояние кнопок */
 
+.err {
+   color: red;
+}
+
+.preloader {
+   position: absolute;
+   top: 12px;
+   left: 10px;
+   transform: translate(0, -50%);
+   animation-name: rotate;
+   animation-duration: 2s;
+   /* Скорость вращения (2 секунды на оборот) */
+   animation-iteration-count: infinite;
+   /* Бесконечное повторение */
+   animation-timing-function: linear;
+   /* Чтобы вращение было равномерным */
+}
+
+@keyframes rotate {
+   from {
+      transform: rotate(0deg);
+   }
+
+   to {
+      transform: rotate(360deg);
+   }
+}
+
 .publishBtn {
+   position: relative;
+   width: 170px;
    padding: var(--paddings-padding-btn);
    font-size: var(--font-size-14);
    text-align: center;
@@ -955,6 +1043,8 @@ p {
 }
 
 .unpublished {
+   position: relative;
+   width: 250px;
    padding: var(--paddings-padding-btn);
    font-size: var(--font-size-14);
    text-align: center;
@@ -972,17 +1062,17 @@ p {
 .publishBtn.disable,
 .publishBtn.disable:hover,
 .publishBtn.disable:active {
-   background: var(--bg-bg-5);
-   color: #f2f5fc;
+   background: var(--bg-bg-2) !important;
+   color: var(--text-2);
    cursor: not-allowed;
 }
 
 .publishBtn:hover {
-   background: var(--main-main-hover);
+   background: var(--main-main-hover) !important;
 }
 
 .publishBtn:active {
-   background: var(--main-main-active);
+   background: var(--main-main-active) !important;
 }
 
 .loginBtn {
@@ -991,6 +1081,14 @@ p {
    border-radius: var(--radius-12);
    padding: var(--paddings-padding-12);
    border: 1px solid var(--stroke-color-2);
+}
+
+.loginBtn:hover {
+   background: var(--bg-bg-1);
+}
+
+.loginBtn:active {
+   background: var(--bg-bg-2);
 }
 
 @media screen and (max-width: 1246px) {

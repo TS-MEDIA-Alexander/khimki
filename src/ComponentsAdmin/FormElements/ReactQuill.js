@@ -1,6 +1,6 @@
 import React, { useCallback, useRef } from 'react';
 import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
+import '../../total/quill.snow.css';
 import s from './FormElements.module.css';
 import { useController } from 'react-hook-form';
 

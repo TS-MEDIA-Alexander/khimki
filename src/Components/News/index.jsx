@@ -7,7 +7,7 @@ const News = ({ news, mobilFullPhoto }) => {
 
    return (
       <div className={s.newsWrapper}>
-         {news?.list?.map((el, i) => <NavLink to={`${ROUTER.newsArticle}${el.id}`} key={i}
+         {news?.map((el, i) => <NavLink to={`${ROUTER.newsArticle}${el.id}`} key={i}
             className={`${s.newsContainer} borderMain`}
          >
             <div>

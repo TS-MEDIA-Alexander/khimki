@@ -24,18 +24,18 @@ const NewsPage = (props) => {
    const [emailSubscribe, setEmailSubscribe] = useState('');
 
    const getAndSaveNews = (page, limit, dateFrom, dateTo, searchDate) => {
-      return API.getNews(page, limit, dateFrom, dateTo, searchDate)
+      return API.getNews(page, limit, "", "", searchDate,  dateFrom, dateTo)
    }
 
    useEffect(() => {
       getAndSaveNews(1, 12, calendarDateForServer[0], calendarDateForServer[1])
-         .then(data => setNews(data))
+         .then(data => setNews(data?.news?.list))
    }, [])
 
    const showMore = () => {
       setCurrentPage(currentPage + 1)
       getAndSaveNews(currentPage + 1, 12, calendarDateForServer[0], calendarDateForServer[1])
-         .then(data => setNews([...news, ...data]))
+         .then(data => setNews([...news, ...data?.news?.list]))
    }
 
    //ReactSelect
@@ -48,7 +48,7 @@ const NewsPage = (props) => {
 
    /* const [filterRelevance, setFilterRelevance] = useState(filterRelevanceData[0]);
  */
-   const filterThemeData = [
+   /* const filterThemeData = [
       { id: 1, value: 'all', text: 'Все новости' },
       { id: 2, value: 'Администрация', text: 'Администрация' },
       { id: 3, value: 'Благоустройство', text: 'Благоустройство' },
@@ -63,9 +63,9 @@ const NewsPage = (props) => {
       { id: 12, value: 'Транспорт', text: 'Транспорт' },
       { id: 13, value: 'Экология', text: 'Экология' },
       { id: 14, value: 'Мероприятия', text: 'Мероприятия' },
-   ]
+   ] */
 
-   const [filterTheme, setFilterTheme] = useState(filterThemeData[0]);
+   //const [filterTheme, setFilterTheme] = useState(filterThemeData[0]);
 
    /* Поиск по ключевому слову */
    const [search, setSearch] = useState('');
@@ -76,7 +76,7 @@ const NewsPage = (props) => {
 
    const handleDateChange = () => {
       getAndSaveNews(currentPage, 12, calendarDateForServer[0], calendarDateForServer[1], search)
-      .then(data => setNews(data))
+         .then(data => setNews(data?.news?.list))
    }
 
    //Открытие PopUp окна на подписаться на рассылку

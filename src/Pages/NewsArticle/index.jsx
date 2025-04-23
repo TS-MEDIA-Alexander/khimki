@@ -23,7 +23,7 @@ const NewsArticle = (props) => {
          .then(data => setCurrentNews(data))
 
       API.getNews(1, 4)
-         .then(data => setNews(data))
+         .then(data => setNews(data.news.list))
    }, [newsId])
 
    /* Удапляет пустые тэги <p>&nbsp</p> */

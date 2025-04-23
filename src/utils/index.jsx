@@ -111,96 +111,135 @@ export const useTimeoutProgress = (timeout, handler, deps) => {
    return [storedValue, setValue];
 }
 
-export function useDataManagement(selector, getData, fetchDataAction, updatePublishedData, addOrRemoveChoiceCheckbox, setChoiceCheckboxRemoveOrAddAll) {
-  const dispatch = useDispatch();
-  const data = useSelector(selector, shallowEqual);
-  const [checkboxAll, setCheckboxAll] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [limit] = useState(14);
-  const [isReloading, setIsReloading] = useState(false);
+/*Хук для защиты роутов и перенаправления пользователей в зависимости от статуса аутентификации.*/
+export function useRequireAuth(requireAuth) {
+   const auth = useSelector(state => state.auth);
+   const navigate = useNavigate();
+   const location = useLocation();
 
-  // Функция загрузки данных
-  const loadData = useCallback(async () => {
+   useEffect(() => {
+      if (requireAuth && !auth.isAuth) {
+         // Если требуется аутентификация и пользователь не залогинен,
+         // перенаправляем на страницу входа, сохраняя текущий путь.
+         navigate(ROUTER.admin.login, { replace: true, state: { from: location.pathname } });
+         // Этот вариант заменяет текущую запись в истории браузера на текущую страницу
+      }
+   }, [auth.isAuth, navigate, location, requireAuth]);
 
-     setIsReloading(true);
-     try {
-        const data = await getData(currentPage, limit, "admin"); //  Используем API для документов
-        dispatch(fetchDataAction(data)); //  Диспатчим action
-     } catch (error) {
-        console.error('Ошибка при загрузке документов:', error);
-        // Обработка ошибок
-     } finally {
-        setIsReloading(false);
-     }
-  }, [currentPage, limit, dispatch]);
+   return auth;
+}
 
-  useEffect(() => {
-     loadData();
-  }, [loadData]);
+export function useDebounce(func, delay, cleanUp = false) {
+   const timeoutRef = useRef();
 
-  //Функция снятия/постановки на публикацию
-  const UpdateCheckbox = (id, currentPublished) => {
-     dispatch(updatePublishedData({ id: id, published: currentPublished }));
-  };
+   function clearTimer() {
+      if (timeoutRef.current) {
+         clearTimeout(timeoutRef.current);
+         timeoutRef.current = undefined;
+      }
+   }
 
-  // Функция для обновления данных (например, после удаления)
-  const handleUpdate = () => {
-     loadData(); //  Перезагружаем данные
-  };
+   useEffect(() => (cleanUp ? clearTimer : undefined), [cleanUp]);
 
-  const changePage = (page) => {
-     if (page >= 1 && page <= Math.ceil(data?.all / limit)) {
-        setCurrentPage(page);
-     }
-  };
+   return (...args) => {
+      clearTimer();
+      timeoutRef.current = setTimeout(() => func(...args), delay);
+   };
+}
 
-  //Логика изменения индивидуального cчекбокса(групповое выделение)
-  const choiceCheckbox = data.choiceCheckbox;
-  const handleChoiceCheckbox = useCallback((id) => dispatch(addOrRemoveChoiceCheckbox(id)), [dispatch]);
+export function useDataManagement(selector, getData, fetchDataAction, updatePublishedData, addOrRemoveChoiceCheckbox, setChoiceCheckboxRemoveOrAddAll, search) {
 
-  const handleChoiceCheckboxAll = useCallback(() => {
-     const allIds = data?.list?.map(el => el.id) || [];
-     const allSelected = allIds.every(id => choiceCheckbox.includes(id));
+   const dispatch = useDispatch();
+   const data = useSelector(selector, shallowEqual);
+   const [checkboxAll, setCheckboxAll] = useState(false);
+   const [currentPage, setCurrentPage] = useState(1);
+   const [limit] = useState(14);
+   const [isReloading, setIsReloading] = useState(false);
 
-     dispatch(setChoiceCheckboxRemoveOrAddAll(allSelected ? [] : allIds));
-     setCheckboxAll(!allSelected);
-  }, [data?.list, checkboxAll])
+   // Функция загрузки данных
+   const loadData = useCallback(async (search) => {
+      setIsReloading(true);
+      try {
+         const data = await getData(currentPage, limit, "admin", "", search); //  Используем API для документов
+         dispatch(fetchDataAction(data)); //  Диспатчим action
+      } catch (error) {
+         console.error('Ошибка при загрузке документов:', error);
+         // Обработка ошибок
+      } finally {
+         setIsReloading(false);
+      }
+   }, [currentPage, limit, dispatch]);
 
-  const removeSelectionsChecboxAll = useCallback(() => {
-     dispatch(setChoiceCheckboxRemoveOrAddAll([]));
-     setCheckboxAll(false);
-  }, [dispatch, setCheckboxAll])
+   useEffect(() => {
+      loadData();
+   }, [loadData]);
 
-  /* Групповое изменение по массиву id */
-  const publickAll = () => {
-     API.postAddMultipleElementsPublick({ id: choiceCheckbox, published: 1 })
-        .then(_ => {
-           loadData();
-           removeSelectionsChecboxAll();
-        })
-  }
-  const removePublickAll = () => {
-     API.postAddMultipleElementsPublick({ id: choiceCheckbox, published: 0 })
-        .then(_ => {
-           loadData();
-           removeSelectionsChecboxAll();
-        })
-  }
-  const moveInBasketInAll = () => {
-     API.postAddMultipleElementsPublick({ id: choiceCheckbox, remove: 1 })
-        .then(_ => {
-           loadData();
-           removeSelectionsChecboxAll();
-        })
-  }
+   //Поиск
+   const searchDebounce = useDebounce(() => loadData(search), 500);
 
-  return {
-     data, checkboxAll, currentPage,
-     limit, isReloading, UpdateCheckbox,
-     handleUpdate, changePage, choiceCheckbox,
-     handleChoiceCheckbox, handleChoiceCheckboxAll, removeSelectionsChecboxAll,
-     publickAll, removePublickAll, moveInBasketInAll,
-  }
+   //Функция снятия/постановки на публикацию
+   const UpdateCheckbox = (id, currentPublished) => {
+      dispatch(updatePublishedData({ id: id, published: currentPublished }));
+   };
+
+   // Функция для обновления данных (например, после удаления)
+   const handleUpdate = () => {
+      loadData(); //  Перезагружаем данные
+   };
+
+   const changePage = (page) => {
+      if (page >= 1 && page <= Math.ceil(data?.all / limit)) {
+         setCurrentPage(page);
+      }
+   };
+
+   //Логика изменения индивидуального cчекбокса(групповое выделение)
+   const choiceCheckbox = data.choiceCheckbox;
+   const handleChoiceCheckbox = useCallback((id) => dispatch(addOrRemoveChoiceCheckbox(id)), [dispatch]);
+
+   const handleChoiceCheckboxAll = useCallback(() => {
+      const allIds = data?.list?.map(el => el.id) || [];
+      const allSelected = allIds.every(id => choiceCheckbox.includes(id));
+
+      dispatch(setChoiceCheckboxRemoveOrAddAll(allSelected ? [] : allIds));
+      setCheckboxAll(!allSelected);
+   }, [data?.list, checkboxAll])
+
+   const removeSelectionsChecboxAll = useCallback(() => {
+      dispatch(setChoiceCheckboxRemoveOrAddAll([]));
+      setCheckboxAll(false);
+   }, [dispatch, setCheckboxAll])
+
+   /* Групповое изменение по массиву id */
+   const publickAll = () => {
+      API.postAddMultipleElementsPublick({ id: choiceCheckbox, published: 1 })
+         .then(_ => {
+            loadData();
+            removeSelectionsChecboxAll();
+         })
+   }
+   const removePublickAll = () => {
+      API.postAddMultipleElementsPublick({ id: choiceCheckbox, published: 0 })
+         .then(_ => {
+            loadData();
+            removeSelectionsChecboxAll();
+         })
+   }
+   const moveInBasketInAll = () => {
+      API.postAddMultipleElementsPublick({ id: choiceCheckbox, remove: 1 })
+         .then(_ => {
+            loadData();
+            removeSelectionsChecboxAll();
+         })
+   }
+
+   return {
+      data, checkboxAll, currentPage,
+      limit, isReloading, UpdateCheckbox,
+      handleUpdate, changePage, choiceCheckbox,
+      handleChoiceCheckbox, handleChoiceCheckboxAll, removeSelectionsChecboxAll,
+      publickAll, removePublickAll, moveInBasketInAll, searchDebounce
+   }
 }
 
 export function formatDateToEurope(dateString) {

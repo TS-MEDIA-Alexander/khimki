@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import s from "./NewsPageList.module.css";
 import API from "../../API";
 import { NavLink } from "react-router-dom";
@@ -14,6 +14,8 @@ import { useDataManagement } from "utils";
 
 const NewsPageList = () => {
 
+   const [search, setSearch] = useState('');
+
    const {
       data,
       checkboxAll,
@@ -24,14 +26,16 @@ const NewsPageList = () => {
       handleNewsUpdate,
       changePage, choiceCheckbox,
       handleChoiceCheckbox, handleChoiceCheckboxAll, removeSelectionsChecboxAll,
-      publickAll, removePublickAll, moveInBasketInAll
+      publickAll, removePublickAll, moveInBasketInAll,
+      searchDebounce
    } = useDataManagement(
       state => state.news,
       API.getNews,
       data => news(data),
       updatePublished,
       addOrRemoveChoiceCheckbox,
-      setChoiceCheckboxRemoveOrAddAll
+      setChoiceCheckboxRemoveOrAddAll,
+      search
    );
 
    return (
@@ -40,8 +44,8 @@ const NewsPageList = () => {
          {isReloading || <ContantContainerAdmin>
             <h1 className={"h3-600 pageTitleAdmin"}>Новости</h1>
             <div className={s.container}>
-               <div className="mt40 flexContainer">
-                  <SearchInput placeholder="Поиск по новостям" />
+               <div className="mt40 flexContainerSB">
+               <SearchInput set={setSearch} get={search} onKeyUp={searchDebounce} placeholder="Поиск по новостям" />
                   <NavLink to={ROUTER.admin.AdmNewsArcticlePage} className="publishBtn">Добавить новость</NavLink>
                </div>
                <DropDownMenu
@@ -64,7 +68,7 @@ const NewsPageList = () => {
                   </div>
                   <div className='titleBlock'>Заголовок</div>
                   <div className='publishedBlock'>Опубликовано</div>
-                  <div className='dateBlock'>Дата публикации</div>
+                  <div className='dateBlock dateBlock_m1'>Дата публикации</div>
                </div>
                <div>
                   {data?.list?.map((el) => (

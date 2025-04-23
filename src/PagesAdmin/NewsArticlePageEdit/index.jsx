@@ -16,6 +16,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import Input from 'ComponentsAdmin/FormElements/Input';
 import ReactQuillForm from 'ComponentsAdmin/FormElements/ReactQuill';
+import Button from 'ComponentsAdmin/Button/Button';
 
 const NewsArticlePageEdit = (props) => {
 
@@ -23,8 +24,10 @@ const NewsArticlePageEdit = (props) => {
 
    const [statusSend, setStatusSend] = useState({});
    const [loading, setLoading] = useState(true);
+   const [preload, setPreloading] = useState(false);
+   const [unexpectedError, setUnexpectedError] = useState({})
 
-   const saveNews = (isPublished) => {
+   const saveNews = async (isPublished) => {
       const form = getValues();
       const formData = new FormData();
 
@@ -45,8 +48,20 @@ const NewsArticlePageEdit = (props) => {
          }
       }
 
-      API.postChangeElement(formData)
-         .then(response => setStatusSend(response))
+      try {
+         const response = await API.postChangeElement(formData);
+         if (response) {
+            setStatusSend(response);
+            reset();
+            setUnexpectedError({});
+         } else {
+            setUnexpectedError({ result: 'err', title: 'Непредвиденная ошибка. Проверьте соединение с Интернетом' });
+         }
+      } catch (error) {
+         console.error("Ошибка при сохранении:", error);
+      } finally {
+         setPreloading(false);
+      }
    };
 
 
@@ -202,6 +217,7 @@ const NewsArticlePageEdit = (props) => {
    }, [setValue]);
 
    const onSubmit = () => {
+      setPreloading(true);
       if (document.activeElement.attributes.name.value === 'publish') {
          saveNews(true);
       } else if (document.activeElement.attributes.name.value === 'saveDraft') {
@@ -222,8 +238,8 @@ const NewsArticlePageEdit = (props) => {
             </div>
 
             {statusSend?.result ? (
-               <div className="pageTitle mt160">{statusSend.title}</div>
-            ) : <><h1 className="pageTitle mt40">Редактировать новость</h1>
+               <div className="pageTitleAdmin mt160">{statusSend.title}</div>
+            ) : <><h1 className="pageTitleAdmin mt40">Редактировать новость</h1>
                <form onSubmit={handleSubmit(onSubmit)} className="text text_admin mt40">
                   <div className='mt40'>
                      <UploadFileAdminMono
@@ -314,20 +330,25 @@ const NewsArticlePageEdit = (props) => {
                   </div>
 
                   <div className="rowContainer mt40">
-                     <button
-                        type='submit'
-                        className={`publishBtn ${!isValid && 'disable'}`}
-                        disabled={!isValid}
-                        name="publish"
-                     >Опубликовать</button>
-                     <button
-                        type='submit'
-                        className={`unpublished ${!isValid && 'disable'}`}
-                        disabled={!isValid}
-                        name="saveDraft"
-                     >Сохранить без публикации</button>
+                     <Button
+                        isValid={isValid}
+                        preload={preload}
+                        classNames={'publishBtn'}
+                        text={'Опубликовать'}
+                        name={'publish'}
+                     />
+                     <Button
+                        isValid={isValid}
+                        preload={preload}
+                        classNames={'unpublished'}
+                        text={'Сохранить без публикации'}
+                        name={'saveDraft'}
+                     />
                   </div>
                </form>
+               {unexpectedError?.title ? (
+                  <div className="pageTitle err">{unexpectedError.title}</div>
+               ) : false}
 
                <div className="h3-600 mt40">Предпросмотр:</div>
 
