@@ -21,7 +21,7 @@ import lunyovskoye from '../../assets/icons/khimkiDistrict/lunyovskoye.svg';
 import DistrictCard from '../../Components/DistrictCard';
 
 /* Фото */
-import mayor from '../../assets/img/Persons/mayorPortrain.png';
+import mayor from '../../assets/img/Persons/ZemlyakovaEV.png';
 
 /* Баннеры */
 import MunicipalProgramsMini from '../../BannersComopnents/MunicipalProgramsMini';
@@ -154,11 +154,9 @@ const KhimkiDistrict = (props) => {
                   <div className={`mt48 ${s.imgContainerMayor}`}>
                      <img className={s.borderR} src={mayor} /* src={gerb} */ alt="" />
                   </div>
-                  <div className={`mt32 ${s.text}`}>Мы любим наш город и сделаем все, что бы каждый день он становился лучше!</div>
+                  <div className={`mt32 ${s.text}`}>Вместе с командой единомышленников мы реализуем сотни проектов, чтобы сделать жизнь химчан комфортнее.</div>
                   <div className={`mt20 ${s.author}`}>Землякова Е. В.</div>
-                  <br />
-                  <br />
-                  <br />
+                  <div className={`mt32 ${s.text}`}>Глава г.о. Химки</div>
 
                   <div className={`btnCircleG ${s.btn}`}><img src={arrow_btn_link} alt="" /></div>
                </NavLink>

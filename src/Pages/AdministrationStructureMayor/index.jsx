@@ -3,7 +3,7 @@ import ContantContainerMain from '../../total/ContantContainerMain';
 import s from './AdministrationStructureMayor.module.css';
 
 /* Фото */
-import mayorPortrain from '../../assets/img/Persons/mayorPortrain.png';
+import mayorPortrain from '/home/frontend/Рабочий/khimki/src/assets/img/Persons/zev_structure_of_dist.png';
 import clock from '../../assets/icons/clock.svg';
 import ok from '../../assets/icons/ok.svg';
 import vk from '../../assets/icons/vk.svg';

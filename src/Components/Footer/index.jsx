@@ -21,7 +21,11 @@ const Footer = (props) => {
                <div className={s.footerColumn}>
                  <div className={s.copyright}>Свидетельство о регистрации СМИ от 22.04.2024 ЭЛ № ФС 77 - 87145 </div>
                  <div className={`${s.adress} mt8`}>©2025 Любое использование материалов допускается только при соблюдении <br /> <a href="https://old.admhimki.ru/mdiamore/press-sluzhba-administracii/">правил перепечатки</a> и при наличии активной гиперссылки на admhimki.ru</div>
-                 <div className={`${s.tsMedia} mt8`}>Сделано - TS Media</div>
+                 <div className={s.footerLinkCoockie}>
+                  <NavLink to={ROUTER.polzovatelskoeSoglashenie} className={s.linkCock}>Политика конфиденциальности</NavLink>
+                  <NavLink to={ROUTER.politicsCookie} className={s.linkCock}>Обработка данных</NavLink>
+                 </div>
+                 {/* <div className={`${s.tsMedia} mt8`}>Сделано - TS Media</div> */}
                </div>
             </div>
          </ContantContainerMain>

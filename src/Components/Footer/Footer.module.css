@@ -8,6 +8,34 @@
    justify-content: space-between;
 }
 
+.footerLinkCoockie {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   margin-top: 10px;
+   gap: 16px;
+   color: #FFFFFFA6;
+
+   @media (max-width: 768px) {
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 8px;
+   }
+ }
+
+ .linkCock {
+   color: #FFFFFFA6;
+   text-decoration: none;
+
+   &:visited {
+     color: #FFFFFFA6;
+   }
+ }
+
+
+
+
+
 @media screen and (max-width: 810px) {
    .footerRow {
       flex-direction: column;

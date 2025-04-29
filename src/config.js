@@ -5,7 +5,8 @@ export const ROUTER = {
    galery: '/galery',
    galeryArticle: '/galery/:id',
    video: '/video',
-   politicsCookie: '/politika-cookie',
+   politicsCookie: '/politika-kuki',
+   polzovatelskoeSoglashenie : 'polzovatelskoe-soglashenie',
    history: {
       main: '/istoriya',
       khimki: '/istoriya/istoriya-himki',

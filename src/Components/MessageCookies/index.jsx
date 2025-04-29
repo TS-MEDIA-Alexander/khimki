@@ -40,7 +40,7 @@ const MessageCookies = (props) => {
                <ContantContainerMain>
                   <div className={s.flexContainer}>
                      <div className={s.text}>
-                        Данный веб-сайт использует cookie-файлы в целях предоставления вам лучшего пользовательского опыта. Продолжая использовать данный сайт, вы соглашаетесь с использованием нами cookie-файлов. Для получения дополнительной информации см. <NavLink className={s.link} to={ROUTER.politicsCookie}>Политика Cookie</NavLink>.
+                     Данный веб-сайт использует cookie-файлы в целях предоставления вам лучшего пользовательского опыта. Продолжая использовать данный сайт, вы соглашаетесь с использованием нами cookie-файлов. Для получения дополнительной информации см.  <NavLink className={s.link} to={ROUTER.politicsCookie}>Обработка данных</NavLink > или <NavLink className={s.link} to={ROUTER.polzovatelskoeSoglashenie}>Пользовательское соглашение</NavLink>.
                      </div>
                      <button onClick={handler} className={s.btn}>Принять</button>
                   </div>

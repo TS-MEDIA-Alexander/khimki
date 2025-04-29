@@ -12,7 +12,7 @@ import SpoilerItem from '../../Components/SpoilerContainer/SpoilerItem';
 import arrow from '../../assets/icons/arrowDownSelect.svg';
 
 /* Фото */
-import mayor from '../../assets/img/Persons/mayorPortrain.png';
+import mayor from '../../assets/img/Persons/ZemlyakovaEV.png';
 import map from '../../assets/img/khimkiDistrict/map.png';
 import playground from '../../assets/img/khimkiDistrict/playground.png';
 import ecoberegPark from '../../assets/img/khimkiDistrict/EcoberegPark.png';
@@ -85,7 +85,7 @@ const PerformanceIndicators = (props) => {
                      </div>
                      <div className={s.textBlock}>
                         <div className={`mt12 ${s.subtitle}`}>
-                           Вместе с командой единомышленников мы ежегодно реализуем сотни проектов, чтобы сделать жизнь химчан комфортнее
+                           Вместе с командой единомышленников мы ежегодно реализуем сотни проектов, чтобы сделать жизнь химчан комфортнее.
                         </div>
                         <div className={`mt24 ${s.subtitle}`}>
                            Землякова Е.В.

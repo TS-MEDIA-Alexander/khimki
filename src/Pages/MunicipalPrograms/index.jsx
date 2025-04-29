@@ -81,11 +81,11 @@ const MunicipalPrograms = (props) => {
                   </div>
                </div>
             </div>
-
+{/*
             <div className={`mt80 rowBlock mobileNoneContainer`}>
                <VirtualReceptionMin />
                <PerformanceIndicators />
-            </div>
+            </div> */}
          </ContantContainerMain>
       </div>
    )

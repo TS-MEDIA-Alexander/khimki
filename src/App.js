@@ -97,6 +97,7 @@ import NewsArticlePageEdit from './PagesAdmin/NewsArticlePageEdit';
 import NewsPageList from './ComponentsAdmin/NewsPageList';
 import AdmNewsArcticlePage from './PagesAdmin/AdmNewsArticlePage'
 import MainContainer from './Pages/MainContainer';
+import PolzovatelskoeSoglashenie from './Pages/PolzovatelskoeSoglashenie';
 
 /* import Table from './Components/Table'; */
 
@@ -125,6 +126,7 @@ function App() {
                <Route path={ROUTER.main} element={<Main />} />
                <Route path={ROUTER.news} element={<NewsPage />} />
                <Route path={ROUTER.politicsCookie} element={<PoliticsCookie />} />
+               <Route path={ROUTER.polzovatelskoeSoglashenie} element={<PolzovatelskoeSoglashenie />} />
                <Route path={ROUTER.newsArticle} element={<NewsArticle />} />
                {/* <Route path={ROUTER.galery} element={<GaleryPage />} /> */}
                {/* <Route path={ROUTER.galeryArticle} element={<GaleryArticle />} /> */}
