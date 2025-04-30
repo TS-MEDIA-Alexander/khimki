@@ -114,7 +114,7 @@ export const ROUTER = {
       news: '/admin/novost',
       AdmNewsArcticlePage: '/admin/dobavit-novost',
       newsArticleEdit: '/admin/redaktirovat-novost/:id',
-
+      scheduleReceptionDeputies: '/admin/redaktirovat-grafik-priyema-deputatov',
    },
    successSubscribe: '/vy-uspeshno-podpisalis'
 }

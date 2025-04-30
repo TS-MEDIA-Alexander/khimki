@@ -98,6 +98,8 @@ import NewsPageList from './ComponentsAdmin/NewsPageList';
 import AdmNewsArcticlePage from './PagesAdmin/AdmNewsArticlePage'
 import MainContainer from './Pages/MainContainer';
 import PolzovatelskoeSoglashenie from './Pages/PolzovatelskoeSoglashenie';
+import API from 'API';
+import ScheduleReceptionDeputiesEdit from 'PagesAdmin/ScheduleReceptionDeputiesEdit';
 
 /* import Table from './Components/Table'; */
 
@@ -115,6 +117,15 @@ function App() {
          document.title = title;
       } else document.title = 'Городской округ Химки';
    }, [location]);
+
+   window.getCategory = async () => {
+      const data = await API.getCategory();
+      return data;
+   }
+   window.getContentAll = async (content_category_id) => {
+      const data = await API.getContentAll(content_category_id);
+      return data;
+   }
 
    return (
       <div className="App">
@@ -237,6 +248,7 @@ function App() {
                   <Route path={ROUTER.admin.AdmNewsArcticlePage} element={<AdmNewsArcticlePage />} />
                   <Route path={ROUTER.admin.newsArticleEdit} element={<NewsArticlePageEdit />} />
 
+                  <Route path={ROUTER.admin.scheduleReceptionDeputies} element={<ScheduleReceptionDeputiesEdit level={1} />} />
                </Route>
 
             </Routes>

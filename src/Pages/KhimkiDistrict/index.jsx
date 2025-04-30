@@ -156,7 +156,7 @@ const KhimkiDistrict = (props) => {
                   </div>
                   <div className={`mt32 ${s.text}`}>Вместе с командой единомышленников мы реализуем сотни проектов, чтобы сделать жизнь химчан комфортнее.</div>
                   <div className={`mt20 ${s.author}`}>Землякова Е. В.</div>
-                  <div className={`mt32 ${s.text}`}>Глава г.о. Химки</div>
+                  <div className={` ${s.text}`}>Глава г.о. Химки</div>
 
                   <div className={`btnCircleG ${s.btn}`}><img src={arrow_btn_link} alt="" /></div>
                </NavLink>

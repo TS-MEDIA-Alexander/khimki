@@ -115,6 +115,38 @@ const API = {
             console.log(`Error: ${err?.message}`)
          })
    },
+   postGraficOfDeputies: async (data) => {
+      return await instance
+         .post('/grafic/add', data)
+         .then((response) => response.data)
+         .catch((err) => {
+            console.log(`Error: ${err?.message}`)
+         })
+   },
+   getContent: async (id) => {
+      return await instance
+         .get(`/content/item?id=${id}`)
+         .then((response) => response.data)
+         .catch((err) => {
+            console.log(`Error: ${err?.message}`)
+         })
+   },
+   getCategory: async (contentCategory, page = 1, limit = 14) => {
+      return await instance
+         .get(`/category/list?page=1&limit=10&contentCategory=${contentCategory}`)
+         .then((response) => response.data)
+         .catch((err) => {
+            console.log(`Error: ${err?.message}`)
+         })
+   },/* Полученией категорий */
+   getContentAll: async (contentCategory, page = 1, limit = 14) => {
+      return await instance
+         .get(`content/list?page=${page}&limit=${limit}&contentCategory=${contentCategory}`)
+         .then((response) => response.data)
+         .catch((err) => {
+            console.log(`Error: ${err?.message}`)
+         })
+   },/* Получение  всего контента*/
 
 }
 export default API

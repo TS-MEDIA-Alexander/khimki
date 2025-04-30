@@ -1,26 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import s from './UsefulSourse.module.css';
-
-/* Компоненты */
+import { useLocation } from 'react-router-dom';
 import ContantContainerMain from '../../total/ContantContainerMain';
-
-/* Иконки */
 import vk from '../../assets/icons/vk.svg';
 import telegram from '../../assets/icons/telegram.svg';
 import ok from '../../assets/icons/ok.svg';
 import { NavLink } from 'react-router-dom';
 import { ROUTER } from '../../config';
 
-const UsefulSourse = (props) => {
+const UsefulSourse = () => {
+   const location = useLocation();
+   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+   // отслеживаем изменение размера экрана
+   useEffect(() => {
+      const handleResize = () => setIsMobile(window.innerWidth <= 768);
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+   }, []);
+
+   // укажи путь страницы, где нужно скрыть
+   const hiddenRoutes = ['/polzovatelskoe-soglashenie', '/politika-kuki'];
+   const hideColumnLarge = hiddenRoutes.includes(location.pathname) && isMobile;
+
    return (
       <div className='mt80'>
-         <ContantContainerMain >
-         <div className='columnContainer'>
-            <div className="columnLarge">
-               <div className="borderMain">
-                  <div className={s.title}>Полезные ресурсы</div>
-                  <div className={s.itemTextContainer}>
-                     <div className={`${s.column} ${s.columnFirst}`}>
+         <ContantContainerMain>
+            <div className='columnContainer'>
+               {!hideColumnLarge && (
+                  <div className="columnLarge">
+                     <div className="borderMain">
+                        <div className={s.title}>Полезные ресурсы</div>
+                        <div className={s.itemTextContainer}>
+                        <div className={`${s.column} ${s.columnFirst}`}>
                         <a href='https://mosreg.ru/' target='_blank' className={s.item} rel="noreferrer">Сайт Правительства Московской области</a>
                         <a href='https://www.mosoblduma.ru/' target='_blank' className={s.item} rel="noreferrer">Официальный сайт Московской областной Думы</a>
                         <a href='https://invest.mosreg.ru/' target='_blank'  className={s.item} rel="noreferrer">Инвестиционный портал Московской области</a>
@@ -48,35 +60,36 @@ const UsefulSourse = (props) => {
                         <a href='https://epp.genproc.gov.ru/web/proc_50' target='_blank' className={s.item} rel="noreferrer">Прокуратура Московской области</a>
                         <a href='https://welcome.mosreg.ru/' target='_blank' className={s.item} rel="noreferrer">Путеводитель по московской области</a>
                      </div>
-                  </div>
-               </div>
-            </div>
-            <div className="ml20 columnSmal">
-               <div className={`borderMain ${s.bannerContainer}`}>
-                  <div>
-                     <div className={s.titleBanner}>Контакты</div>
-                     <div className={`mt24 ${s.tel}`}>+7 (495) 572 65 00</div>
-                     <div className={s.subTitleBanner}>Оперативный дежурный Администрации</div>
-                     <div className={`mt16 ${s.tel}`}>+7 (495) 793 01 01</div>
-                     <div className={s.subTitleBanner}>Горячая линия Администрации</div>
-                     <div className={`mt16 ${s.tel}`}>himki@mosreg.ru</div>
-                     <div className={`mt12 ${s.tel}`}>Московская обл., г.о. Химки, ул. Московская, д.15, <br /> ул. Калинина, д. 4</div>
-                     <div className={s.socialMediaContainer}>
-                        <a href='https://vk.com/gohimkiadm' target='_blank' className={s.socialMedia} rel="noreferrer"><img className={s.img} src={vk} alt="" /></a>
-                        <a href='https://t.me/adm_himki' target='_blank' className={s.socialMedia} rel="noreferrer"><img className={s.img} src={telegram} alt="" /></a>
-                        <a href='https://ok.ru/profile/580707341478' target='_blank' className={s.socialMedia} rel="noreferrer"><img className={s.img} src={ok} alt="" /></a>
+                        </div>
                      </div>
                   </div>
+               )}
+               <div className="ml20 columnSmal">
+                  <div className={`borderMain ${s.bannerContainer}`}>
+                     <div>
+                        <div className={s.titleBanner}>Контакты</div>
+                        <div className={`mt24 ${s.tel}`}>+7 (495) 572 65 00</div>
+                        <div className={s.subTitleBanner}>Оперативный дежурный Администрации</div>
+                        <div className={`mt16 ${s.tel}`}>+7 (495) 793 01 01</div>
+                        <div className={s.subTitleBanner}>Горячая линия Администрации</div>
+                        <div className={`mt16 ${s.tel}`}>himki@mosreg.ru</div>
+                        <div className={`mt12 ${s.tel}`}>Московская обл., г.о. Химки, ул. Московская, д.15, <br /> ул. Калинина, д. 4</div>
+                        <div className={s.socialMediaContainer}>
+                           <a href='https://vk.com/gohimkiadm' target='_blank' className={s.socialMedia} rel="noreferrer"><img className={s.img} src={vk} alt="" /></a>
+                           <a href='https://t.me/adm_himki' target='_blank' className={s.socialMedia} rel="noreferrer"><img className={s.img} src={telegram} alt="" /></a>
+                           <a href='https://ok.ru/profile/580707341478' target='_blank' className={s.socialMedia} rel="noreferrer"><img className={s.img} src={ok} alt="" /></a>
+                        </div>
+                     </div>
                      <NavLink to={ROUTER.contacts.main} className={`btnRad ${s.btn}`}>Все контакты</NavLink>
+                  </div>
                </div>
             </div>
-         </div>
-         <div className={s.linkContainer}>
-            {/* <a href="#" className={s.link}>Карта сайта</a> */}
-            <a href="http://old.admhimki.ru/" target='_blank' className={s.link} rel="noreferrer">Предыдущая версия сайта</a>
-         </div>
-      </ContantContainerMain>
-      </div >
-   )
-}
+            <div className={s.linkContainer}>
+               <a href="http://old.admhimki.ru/" target='_blank' className={s.link} rel="noreferrer">Предыдущая версия сайта</a>
+            </div>
+         </ContantContainerMain>
+      </div>
+   );
+};
+
 export default UsefulSourse;

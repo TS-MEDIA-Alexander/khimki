@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import s from './ReceptionProcedureTime.module.css';
 
 import { ROUTER } from '../../config';
@@ -14,8 +14,31 @@ import LinkContainer from '../../Components/LinkContainer';
 import GovernmentServicesLargeMin from '../../BannersComopnents/GovernmentServicesLargeMin'; */
 
 import graphik_glava from '../../assets/tables/graphik_glava/graphik_glava-april.json'
+import API from 'API';
 
 const ReceptionProcedureTime = (props) => {
+
+   const [data, setData] = useState({ graphic: graphik_glava });
+
+   const getItem = async () => {
+      try {
+         const value = await API.getContent(3652);
+         if (value) {
+            setData(value)
+         }
+      } catch (error) {
+         console.error("Ошибка при загрузке данных:", error)
+      }
+   }
+
+   useEffect(() => {
+      getItem();
+   }, [])
+
+   const date = new Date();
+   const year = new Date().getFullYear();
+   const currentMonth = date.toLocaleString('default', { month: 'long' });
+
    return (
       <div>
          <ContantContainerMain>
@@ -34,7 +57,7 @@ const ReceptionProcedureTime = (props) => {
                <div className="pageSubtitle">
                   График личного приёма граждан Главой городского округа <br />
                   и заместителями Главы городского округа Химки
-                  в апреле 2025 года
+                  {` ${currentMonth} ${year}`} год
                </div>
                <p>
                   Информацию о порядке записи на приём и порядке проведения приёмов можно получить по телефону с 9.00 до 18.00 (пятница с 9.00 до 16.45), кроме выходных и праздничных дней
@@ -58,7 +81,7 @@ const ReceptionProcedureTime = (props) => {
             </div> */}
 
             <div className="mt40">
-               <Table table={graphik_glava} />
+               {data?.graphic ? <Table table={data?.graphic} style={s} /> : 'Загрузка...'}
             </div>
 
             <div className={`mt80 borderMain ${s.linkContainer}`}>

@@ -15,78 +15,78 @@ export function maskInput(value, mask) {
    var numberPattern = /[0-9]/;
    var newValue = "";
    try {
-     var maskLength = mask.length;
-     var valueIndex = 0;
-     var maskIndex = 0;
+      var maskLength = mask.length;
+      var valueIndex = 0;
+      var maskIndex = 0;
 
-     for (; maskIndex < maskLength;) {
-       if (maskIndex >= value.length) break;
+      for (; maskIndex < maskLength;) {
+         if (maskIndex >= value.length) break;
 
-       if (mask[maskIndex] === "0" && value[valueIndex].match(numberPattern) === null) break;
+         if (mask[maskIndex] === "0" && value[valueIndex].match(numberPattern) === null) break;
 
-       // Found a literal
-       while (mask[maskIndex].match(literalPattern) === null) {
-         if (value[valueIndex] === mask[maskIndex]) break;
-         newValue += mask[maskIndex++];
-       }
-       newValue += value[valueIndex++];
-       maskIndex++;
-     }
+         // Found a literal
+         while (mask[maskIndex].match(literalPattern) === null) {
+            if (value[valueIndex] === mask[maskIndex]) break;
+            newValue += mask[maskIndex++];
+         }
+         newValue += value[valueIndex++];
+         maskIndex++;
+      }
 
    } catch (e) {
-     console.log(e);
+      console.log(e);
    }
    return newValue
- }
+}
 
 
- const useEvent = (callback, args) => {
+const useEvent = (callback, args) => {
    const ref = useRef(callback);
    ref.current = callback;
    return useCallback((
-     (...args) => {
-       return ref.current(...args);
-     }
+      (...args) => {
+         return ref.current(...args);
+      }
    ), []);
- };
+};
 
 export const useTimeoutProgress = (timeout, handler, deps) => {
    const ref = useRef(null);
    const memoHandler = useEvent(handler);
 
    useEffect(() => {
-     let startTime = performance.now();
-     let needTime = startTime + timeout;
-     let emit = false;
-     let mount = true;
-     let raf = requestAnimationFrame(loop);
+      let startTime = performance.now();
+      let needTime = startTime + timeout;
+      let emit = false;
+      let mount = true;
+      let raf = requestAnimationFrame(loop);
 
-     function loop(time) {
-       if (!mount || emit)
-         return;
+      function loop(time) {
+         if (!mount || emit)
+            return;
 
-       raf = requestAnimationFrame(loop);
+         raf = requestAnimationFrame(loop);
 
-       if (ref.current)
-         ref.current.value = Math.min(Math.max((time - startTime) / timeout, 0), 1);
+         if (ref.current)
+            ref.current.value = Math.min(Math.max((time - startTime) / timeout, 0), 1);
 
-       if (time >= needTime) {
-         emit = true;
-         memoHandler();
-       }
-     }
+         if (time >= needTime) {
+            emit = true;
+            memoHandler();
+         }
+      }
 
-     return () => {
-       mount = false;
-       cancelAnimationFrame(raf);
-     };
+      return () => {
+         mount = false;
+         cancelAnimationFrame(raf);
+      };
 
    }, [deps]);
 
    return ref;
- };
+};
 
- export function useLocalStorage(key, initialValue) {
+export function useLocalStorage(key, initialValue) {
    // Инициализация состояния с использованием данных из localStorage
    const [storedValue, setStoredValue] = useState(() => {
       try {
@@ -243,79 +243,106 @@ export function useDataManagement(selector, getData, fetchDataAction, updatePubl
 }
 
 export function formatDateToEurope(dateString) {
-  const parts = dateString.split('-');
-  return `${parts[2]}.${parts[1]}.${parts[0]}`;
+   const parts = dateString.split('-');
+   return `${parts[2]}.${parts[1]}.${parts[0]}`;
 }
 export function formatDateToUS(dateString) {
-  const parts = dateString.split('.');
-  return `${parts[2]}-${parts[1]}-${parts[0]}`;
+   const parts = dateString.split('.');
+   return `${parts[2]}-${parts[1]}-${parts[0]}`;
 }
 
 export function maskInputTime(val) {
-  // Заменяем все недопустимые символы
-  val = val.replace(/[^\dh:]/g, "");
+   // Заменяем все недопустимые символы
+   val = val.replace(/[^\dh:]/g, "");
 
-  // Убираем первый символ, если он не 0, 1 или 2 (для часов)
-  val = val.replace(/^[^0-2]/, "");
+   // Убираем первый символ, если он не 0, 1 или 2 (для часов)
+   val = val.replace(/^[^0-2]/, "");
 
-  // Если первый символ 2, то второй должен быть от 0 до 3
-  val = val.replace(/^([2-9])[4-9]/, "$1");
+   // Если первый символ 2, то второй должен быть от 0 до 3
+   val = val.replace(/^([2-9])[4-9]/, "$1");
 
-  // Запрещаем ввод двоеточия или "h" в начале
-  val = val.replace(/^[:h]/, "");
+   // Запрещаем ввод двоеточия или "h" в начале
+   val = val.replace(/^[:h]/, "");
 
-  // Если ввели две цифры и 'h', заменяем 'h' на ':'
-  val = val.replace(/^(\d{2})h/, "$1:");
+   // Если ввели две цифры и 'h', заменяем 'h' на ':'
+   val = val.replace(/^(\d{2})h/, "$1:");
 
-  // Ограничение часов (00-23)
-  val = val.replace(/^([01][0-9])[^:h]/, "$1");
-  val = val.replace(/^(2[0-3])[^:h]/, "$1");
+   // Ограничение часов (00-23)
+   val = val.replace(/^([01][0-9])[^:h]/, "$1");
+   val = val.replace(/^(2[0-3])[^:h]/, "$1");
 
-  // Ограничение минут (00-59)
-  val = val.replace(/^(\d{2}:[0-5])[^0-9]/, "$1");
+   // Ограничение минут (00-59)
+   val = val.replace(/^(\d{2}:[0-5])[^0-9]/, "$1");
 
-  // Запрещаем ввод символов после 2 цифр минут
-  val = val.replace(/^(\d{2}:\d[0-9])./, "$1");
+   // Запрещаем ввод символов после 2 цифр минут
+   val = val.replace(/^(\d{2}:\d[0-9])./, "$1");
 
-  // Автоматическое добавление двоеточия, если введено две цифры (часы)
-  if (/^\d{2}$/.test(val)) {
-     val += ':';
-  }
+   // Автоматическое добавление двоеточия, если введено две цифры (часы)
+   if (/^\d{2}$/.test(val)) {
+      val += ':';
+   }
 
-  // Если введены часы и первая цифра минут больше 5, заменяем ее на 5
-  val = val.replace(/^(\d{2}:)[6-9]/, "$15");
+   // Если введены часы и первая цифра минут больше 5, заменяем ее на 5
+   val = val.replace(/^(\d{2}:)[6-9]/, "$15");
 
-  // Если после двоеточия введено две цифры, то ограничиваем минуты от 00 до 59.
-  val = val.replace(/^(\d{2}:[6-9])[0-9]/, (match, p1) => p1 + "59");
-  val = val.replace(/^(\d{2}:[0-5][0-9])/, (match) => match)
+   // Если после двоеточия введено две цифры, то ограничиваем минуты от 00 до 59.
+   val = val.replace(/^(\d{2}:[6-9])[0-9]/, (match, p1) => p1 + "59");
+   val = val.replace(/^(\d{2}:[0-5][0-9])/, (match) => match)
 
-  return val;
+   return val;
 }
 
 export const getDate = (date) => {
-  const [year, month, day] = date.split(" ")[0].split("-");
-  return `${day}.${month}.${year}`;
+   const [year, month, day] = date.split(" ")[0].split("-");
+   return `${day}.${month}.${year}`;
 };
 
 export const getDateNow = () => {
-  const today = new Date();
-  const yyyy = today.getFullYear();
-  let mm = today.getMonth() + 1; // Months start at 0!
-  let dd = today.getDate();
+   const today = new Date();
+   const yyyy = today.getFullYear();
+   let mm = today.getMonth() + 1; // Months start at 0!
+   let dd = today.getDate();
 
-  if (dd < 10) dd = '0' + dd;
-  if (mm < 10) mm = '0' + mm;
+   if (dd < 10) dd = '0' + dd;
+   if (mm < 10) mm = '0' + mm;
 
-  const formattedToday = dd + '.' + mm + '.' + yyyy;
+   const formattedToday = dd + '.' + mm + '.' + yyyy;
 
-  return formattedToday;
+   return formattedToday;
 }
 
 export const getCurrentTime = () => {
-  const now = new Date();
-  const hours = String(now.getHours()).padStart(2, '0');
-  const minutes = String(now.getMinutes()).padStart(2, '0');
-  return `${hours}:${minutes}`;
+   const now = new Date();
+   const hours = String(now.getHours()).padStart(2, '0');
+   const minutes = String(now.getMinutes()).padStart(2, '0');
+   return `${hours}:${minutes}`;
 }
+
+export const useDeleteFile = (setValue, getValues, trigger = () => { }) => {
+
+   const deleteFile = (id) => {
+      const currentValues = getValues(); // Получаем текущие значения формы
+
+      // Получаем текущее значение поля с файлами (предположим, что это поле называется 'value')
+      const currentValue = currentValues.value || []; // Или используйте имя вашего поля
+      const currentFileDelete = currentValues.file_delete || []; //  Аналогично для file_delete
+
+      // 1. Фильтруем массив файлов, чтобы удалить файл с заданным id
+      const newValue = currentValue.filter((el) => el.id !== id);
+
+      // 2. Добавляем id удаленного файла в массив file_delete
+      const newFileDelete = [...currentFileDelete, id];
+
+      // 3. Обновляем состояние формы с помощью setValue
+      setValue('value', newValue);
+      setValue('file_delete', newFileDelete);
+
+      trigger()
+   };
+
+   return deleteFile;
+}
+
+export default useDeleteFile;
 
 export const getQuerySettings = (type) => type === 'admin' ? 'remove=0' : (type === 'adminBasket' ? 'remove=1' : 'remove=0&published=1&dateBetween=1');

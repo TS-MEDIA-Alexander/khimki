@@ -63,6 +63,7 @@ const UploadFileAdminMono = ({ handler, title, type, keyData }) => {
                            <IconWordPdfText type={'IMG'} /> :
                            files?.[0]?.name?.match(/.(doc|docx)$/i) ? <IconWordPdfText type={'DOCX'} /> :
                               files?.[0]?.name?.match(/.(PDF)$/i) ? <IconWordPdfText type={'PDF'} /> :
+                              files?.[0]?.name?.match(/(xlsx|xls)$/i) ? <IconWordPdfText type={'XLS'} /> :
                                  <IconWordPdfText type={'anotherFile'} />
                      }
                      <div className={s.fileInfoBlock}>
